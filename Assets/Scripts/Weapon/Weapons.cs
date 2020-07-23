@@ -20,7 +20,7 @@ abstract public class Weapons : MonoBehaviour
 
     [System.NonSerialized()]
     protected bool _isFrontPosition = true;
-    protected bool IsFronPosition
+    protected bool IsFrontPosition
     {
         get { return _isFrontPosition; }
         set { _isFrontPosition = value; }
@@ -51,6 +51,15 @@ abstract public class Weapons : MonoBehaviour
     {
         get { return _correctionYWeaponPosition; }
         set { _correctionYWeaponPosition = value; }
+    }
+
+
+    [System.NonSerialized()]
+    protected float _correctionZWeaponPosition = -1.0f;
+    protected float CorrectionZWeaponPosition
+    {
+        get { return _correctionZWeaponPosition; }
+        set { _correctionZWeaponPosition = value; }
     }
 
 
@@ -88,15 +97,17 @@ abstract public class Weapons : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 force = Vector2.ClampMagnitude(new Vector2((mousePos.x - transform.position.x), (mousePos.y - transform.position.y)), baseDistanceBullet);
 
-        RunDirections rd = RunDirections.RunS;
+        RunDirections rd = character.GetComponent<MovementPlayer>().CurrentRun;
         float zPosition = -1.0f;
+
+
 
         if (rd.Equals(RunDirections.RunE) || rd.Equals(RunDirections.RunSE))
         {
             CorrectionXWeaponPosition = 0.19f;
             CorrectionYWeaponPosition = 0.15f;
             zPosition = -1.0f;
-            IsFronPosition = true;
+            IsFrontPosition = true;
             IsRunRight = true;
             weaponObject.GetComponent<SpriteRenderer>().flipX = false;
         }
@@ -105,7 +116,7 @@ abstract public class Weapons : MonoBehaviour
             CorrectionXWeaponPosition = -0.19f;
             CorrectionYWeaponPosition = 0.15f;
             zPosition = -1.0f;
-            IsFronPosition = true;
+            IsFrontPosition = true;
             IsRunRight = false;
             weaponObject.GetComponent<SpriteRenderer>().flipX = true;
 
@@ -115,7 +126,7 @@ abstract public class Weapons : MonoBehaviour
             CorrectionXWeaponPosition = 0.19f;
             CorrectionYWeaponPosition = 0.190f;
             zPosition = 0.10f;
-            IsFronPosition = false;
+            IsFrontPosition = false;
             IsRunRight = true;
             weaponObject.GetComponent<SpriteRenderer>().flipX = false;
 
@@ -125,7 +136,7 @@ abstract public class Weapons : MonoBehaviour
             CorrectionXWeaponPosition = -0.19f;
             CorrectionYWeaponPosition = 0.190f;
             zPosition = 0.10f;
-            IsFronPosition = false;
+            IsFrontPosition = false;
             IsRunRight = false;
             weaponObject.GetComponent<SpriteRenderer>().flipX = true;
         }
@@ -133,7 +144,7 @@ abstract public class Weapons : MonoBehaviour
         {
             CorrectionXWeaponPosition = 0.100f;
             CorrectionYWeaponPosition = 0.160f;
-            IsFronPosition = true;
+            IsFrontPosition = true;
             IsRunRight = true;
             zPosition = -1.0f;
 
@@ -142,16 +153,22 @@ abstract public class Weapons : MonoBehaviour
         }
         else if (rd.Equals(RunDirections.RunN))
         {
-            CorrectionXWeaponPosition = -0.120f;
-            CorrectionYWeaponPosition = 0.140f;
-            zPosition = 0.10f;
-            IsRunRight = false;
-            IsFronPosition = false;
-            weaponObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
         WeaponPosition = new Vector3(characterTransform.position.x + CorrectionXWeaponPosition, characterTransform.position.y + CorrectionYWeaponPosition, zPosition);
 
+    }
+
+// TODO ********************************
+//Need  to apply this method 
+    private void setWeaponVariables(float weaponXPos, float weaponYPos, float WeaponsZPos, bool run, bool front, bool flip, GameObject weapon)
+    {
+        CorrectionXWeaponPosition = weaponXPos;
+        CorrectionYWeaponPosition = weaponYPos;
+        CorrectionZWeaponPosition = WeaponsZPos;
+        IsRunRight = run;
+        IsFrontPosition = front;
+        weapon.GetComponent<SpriteRenderer>().flipX = flip;
     }
 
 
@@ -166,10 +183,7 @@ abstract public class Weapons : MonoBehaviour
 
         Vector3 mousePos = CrossHair.getMousePosition();
 
-        Vector2 direction;
-
-
-        direction = new Vector2(mousePos.x - weaponTransform.position.x, mousePos.y - weaponTransform.position.y);
+        Vector2 direction = new Vector2(mousePos.x - weaponTransform.position.x, mousePos.y - weaponTransform.position.y);
 
 
         if (IsRunRight)
