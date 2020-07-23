@@ -1,0 +1,1477 @@
+fileFormatVersion: 2
+guid: 76f70c91bfa676c4e8abfea4f9f729f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2475782083999449242
+    second: Weak_Skel_Soldier_noBG_0
+  - first:
+      213: 7186975070404997269
+    second: Weak_Skel_Soldier_noBG_1
+  - first:
+      213: -2621554560553859839
+    second: Weak_Skel_Soldier_noBG_2
+  - first:
+      213: -8322657352367600755
+    second: Weak_Skel_Soldier_noBG_3
+  - first:
+      213: 1177550665828857837
+    second: Weak_Skel_Soldier_noBG_4
+  - first:
+      213: -789642193208299552
+    second: Weak_Skel_Soldier_noBG_5
+  - first:
+      213: -6939655993847459180
+    second: Weak_Skel_Soldier_noBG_6
+  - first:
+      213: 4147679207963579737
+    second: Weak_Skel_Soldier_noBG_7
+  - first:
+      213: 7748294880372529031
+    second: Weak_Skel_Soldier_noBG_8
+  - first:
+      213: 2631700159770567453
+    second: Weak_Skel_Soldier_noBG_9
+  - first:
+      213: 8787874296455104767
+    second: Weak_Skel_Soldier_noBG_10
+  - first:
+      213: 2917424136780507446
+    second: Weak_Skel_Soldier_noBG_11
+  - first:
+      213: 1592979344998451048
+    second: Weak_Skel_Soldier_noBG_12
+  - first:
+      213: -4558819268415321365
+    second: Weak_Skel_Soldier_noBG_13
+  - first:
+      213: -4210582737609712542
+    second: Weak_Skel_Soldier_noBG_14
+  - first:
+      213: -1494178476957212139
+    second: Weak_Skel_Soldier_noBG_15
+  - first:
+      213: -2459870504268256304
+    second: Weak_Skel_Soldier_noBG_16
+  - first:
+      213: 8014330436289657640
+    second: Weak_Skel_Soldier_noBG_17
+  - first:
+      213: -5190294358087435718
+    second: Weak_Skel_Soldier_noBG_18
+  - first:
+      213: 4154418383317342572
+    second: Weak_Skel_Soldier_noBG_19
+  - first:
+      213: -40029243167768846
+    second: Weak_Skel_Soldier_noBG_20
+  - first:
+      213: 2295098239082449752
+    second: Weak_Skel_Soldier_noBG_21
+  - first:
+      213: 3016573060452092130
+    second: Weak_Skel_Soldier_noBG_22
+  - first:
+      213: -3630957132813574277
+    second: Weak_Skel_Soldier_noBG_23
+  - first:
+      213: 866116639164972468
+    second: Weak_Skel_Soldier_noBG_24
+  - first:
+      213: -4019836832308643176
+    second: Weak_Skel_Soldier_noBG_25
+  - first:
+      213: -8280965307209292931
+    second: Weak_Skel_Soldier_noBG_26
+  - first:
+      213: -5804369938267355595
+    second: Weak_Skel_Soldier_noBG_27
+  - first:
+      213: 8925614890297476564
+    second: Weak_Skel_Soldier_noBG_28
+  - first:
+      213: 2866065502515444428
+    second: Weak_Skel_Soldier_noBG_29
+  - first:
+      213: -4248361036871702239
+    second: Weak_Skel_Soldier_noBG_30
+  - first:
+      213: 6002707515745333303
+    second: Weak_Skel_Soldier_noBG_31
+  - first:
+      213: 3395470634099948877
+    second: Weak_Skel_Soldier_noBG_32
+  - first:
+      213: -2646967888047228563
+    second: Weak_Skel_Soldier_noBG_33
+  - first:
+      213: -7285378455498153113
+    second: Weak_Skel_Soldier_noBG_34
+  - first:
+      213: 716279863906095684
+    second: Weak_Skel_Soldier_noBG_35
+  - first:
+      213: 7652997031468731629
+    second: Weak_Skel_Soldier_noBG_36
+  - first:
+      213: 1199801807732658563
+    second: Weak_Skel_Soldier_noBG_37
+  - first:
+      213: -1533387878227568140
+    second: Weak_Skel_Soldier_noBG_38
+  - first:
+      213: -5619207477784896107
+    second: Weak_Skel_Soldier_noBG_39
+  - first:
+      213: -8347168851221338451
+    second: Weak_Skel_Soldier_noBG_40
+  - first:
+      213: 3033532314417783636
+    second: Weak_Skel_Soldier_noBG_41
+  - first:
+      213: -6635503022009740147
+    second: Weak_Skel_Soldier_noBG_42
+  - first:
+      213: -7184464331246474893
+    second: Weak_Skel_Soldier_noBG_43
+  - first:
+      213: -22842974772962845
+    second: Weak_Skel_Soldier_noBG_44
+  - first:
+      213: 5526202785933917200
+    second: Weak_Skel_Soldier_noBG_45
+  - first:
+      213: 7600244666222724571
+    second: Weak_Skel_Soldier_noBG_46
+  - first:
+      213: 3966646200362502189
+    second: Weak_Skel_Soldier_noBG_47
+  - first:
+      213: 8567825134138651262
+    second: Weak_Skel_Soldier_noBG_48
+  - first:
+      213: 2581379889942997534
+    second: Weak_Skel_Soldier_noBG_49
+  - first:
+      213: 4617944672213738166
+    second: Weak_Skel_Soldier_noBG_50
+  - first:
+      213: 556847357492792275
+    second: Weak_Skel_Soldier_noBG_51
+  - first:
+      213: -6956504498189684427
+    second: Weak_Skel_Soldier_noBG_52
+  - first:
+      213: 1148410291486428460
+    second: Weak_Skel_Soldier_noBG_53
+  - first:
+      213: 6696783692515576780
+    second: Weak_Skel_Soldier_noBG_54
+  - first:
+      213: 6737784419485885357
+    second: Weak_Skel_Soldier_noBG_55
+  - first:
+      213: -1643611581837670660
+    second: Weak_Skel_Soldier_noBG_56
+  - first:
+      213: -3665975015072821744
+    second: Weak_Skel_Soldier_noBG_57
+  - first:
+      213: 6167015501079060970
+    second: Weak_Skel_Soldier_noBG_58
+  - first:
+      213: -2097766055869996667
+    second: Weak_Skel_Soldier_noBG_59
+  - first:
+      213: -5572938561017539295
+    second: Weak_Skel_Soldier_noBG_60
+  - first:
+      213: -4718700717909570949
+    second: Weak_Skel_Soldier_noBG_61
+  - first:
+      213: 419853121412905254
+    second: Weak_Skel_Soldier_noBG_62
+  - first:
+      213: 6019680917781525287
+    second: Weak_Skel_Soldier_noBG_63
+  - first:
+      213: 1725459809657919906
+    second: Weak_Skel_Soldier_noBG_64
+  - first:
+      213: -3553643929808563752
+    second: Weak_Skel_Soldier_noBG_65
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 780
+        width: 58
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90401a20bebb5220800000000000000
+      internalID: 2475782083999449242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 779
+        width: 56
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590f3119fb34db360800000000000000
+      internalID: 7186975070404997269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 779
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105c1ea440e5e9bd0800000000000000
+      internalID: -2621554560553859839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 779
+        width: 56
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b06dcbb3bff7c80800000000000000
+      internalID: -8322657352367600755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_4
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 779
+        width: 51
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7f0c57710875010800000000000000
+      internalID: 1177550665828857837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_5
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 778
+        width: 52
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efa826eb90aa05f0800000000000000
+      internalID: -789642193208299552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_6
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 778
+        width: 55
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492df4734a361bf90800000000000000
+      internalID: -6939655993847459180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_7
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 779
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95551f8a3448f8930800000000000000
+      internalID: 4147679207963579737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_10
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 629
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff80efacc1dc4f970800000000000000
+      internalID: 8787874296455104767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 628
+        width: 65
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639e3f39bc5cc7820800000000000000
+      internalID: 2917424136780507446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 629
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867ca2936466b1610800000000000000
+      internalID: 1592979344998451048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_13
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 629
+        width: 76
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea06ee6702dbb0c0800000000000000
+      internalID: -4558819268415321365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_14
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 629
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c916b0f410195c0800000000000000
+      internalID: -4210582737609712542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 630
+        width: 62
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5126ee9779c934be0800000000000000
+      internalID: -1494178476957212139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_16
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 629
+        width: 56
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db21af2fc8ccddd0800000000000000
+      internalID: -2459870504268256304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_17
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 628
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b75afe11f983f60800000000000000
+      internalID: 8014330436289657640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_19
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 479
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c699bf1328577a930800000000000000
+      internalID: 4154418383317342572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 478
+        width: 69
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe7b5c8d99c17ff0800000000000000
+      internalID: -40029243167768846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_21
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 479
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b422140b3d9df10800000000000000
+      internalID: 2295098239082449752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_22
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 479
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8824b47350dd920800000000000000
+      internalID: 3016573060452092130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_23
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 481
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fd9ffa9bf3c9dc0800000000000000
+      internalID: -3630957132813574277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_24
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 481
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdbb739e70150c00800000000000000
+      internalID: 866116639164972468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_25
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 481
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a3633f2bba638c0800000000000000
+      internalID: -4019836832308643176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_26
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 481
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73e4727de9141d80800000000000000
+      internalID: -8280965307209292931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_29
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 328
+        width: 77
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca3f64b36f46c720800000000000000
+      internalID: 2866065502515444428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_30
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 329
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129e6af452aca05c0800000000000000
+      internalID: -4248361036871702239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_31
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 329
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730719e8ea6ed4350800000000000000
+      internalID: 6002707515745333303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_32
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 328
+        width: 51
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d3cce3d822f1f20800000000000000
+      internalID: 3395470634099948877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_33
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 328
+        width: 89
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d693415eab4144bd0800000000000000
+      internalID: -2646967888047228563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_34
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 328
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763afb1f4e225ea90800000000000000
+      internalID: -7285378455498153113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_35
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 328
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44253efbdbcb0f900800000000000000
+      internalID: 716279863906095684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_36
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 328
+        width: 73
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec00d7b048e43a60800000000000000
+      internalID: 7652997031468731629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_38
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 180
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f91b5759df48bae0800000000000000
+      internalID: -1533387878227568140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_39
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 178
+        width: 58
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d996f12909402b0800000000000000
+      internalID: -5619207477784896107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_40
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 178
+        width: 56
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da62fbea726e82c80800000000000000
+      internalID: -8347168851221338451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_41
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 178
+        width: 56
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4536a8f4195491a20800000000000000
+      internalID: 3033532314417783636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_42
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 178
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84141b6825f9e3a0800000000000000
+      internalID: -6635503022009740147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_43
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 182
+        width: 46
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379e69271c7ab4c90800000000000000
+      internalID: -7184464331246474893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_44
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 182
+        width: 47
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e95b0b7f68deaff0800000000000000
+      internalID: -22842974772962845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_45
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 182
+        width: 46
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c7d5c972401bc40800000000000000
+      internalID: 5526202785933917200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_47
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 41
+        width: 99
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28824af3bb5c0730800000000000000
+      internalID: 3966646200362502189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_48
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 44
+        width: 83
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e727ff1b09707e670800000000000000
+      internalID: 8567825134138651262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_49
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 63
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1aa36a4557e2d320800000000000000
+      internalID: 2581379889942997534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_50
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 82
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b225b3663c361040800000000000000
+      internalID: 4617944672213738166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_51
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 78
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db0979a8b15ab700800000000000000
+      internalID: 556847357492792275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_52
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 79
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5313ffa1408857f90800000000000000
+      internalID: -6956504498189684427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_53
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 78
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d83785319ffef00800000000000000
+      internalID: 1148410291486428460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_54
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 77
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb050a8941cfec50800000000000000
+      internalID: 6696783692515576780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_55
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 81
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da32e903b3b618d50800000000000000
+      internalID: 6737784419485885357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_59
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 48
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5812ff9f2ec33e2e0800000000000000
+      internalID: -2097766055869996667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_60
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 21
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125197bc7e1f8a2b0800000000000000
+      internalID: -5572938561017539295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_61
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 18
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a8e93a2bec38eb0800000000000000
+      internalID: -4718700717909570949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_62
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 9
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629b7af703e93d500800000000000000
+      internalID: 419853121412905254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_63
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 12
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723b09da6e33a8350800000000000000
+      internalID: 6019680917781525287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_64
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 12
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a99fd41e8012f710800000000000000
+      internalID: 1725459809657919906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weak_Skel_Soldier_noBG_65
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 11
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d199818cabeeaec0800000000000000
+      internalID: -3553643929808563752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
