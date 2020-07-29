@@ -2,15 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-abstract public class Shot
+abstract public class Shot : MonoBehaviour, IShooting
 {
 
-    public int HitDamage(int currentLive, int weaponDamage){
-        return currentLive - weaponDamage; 
+    protected float _shotVelocity;
+    public float ShotVelocity { get;  }
+
+
+    protected int _shotDamage;
+    public int ShotDamage { get;  }
+
+    public void MovingShot(){
+        this.gameObject.GetComponent<Rigidbody2D>().velocity = transform.right * _shotVelocity;
     }
 
-    public void PlayAnimation(Animation animator, string animation){
-        animator.Play(animation);
-    } 
+    public void DestroyAnimation(){
+        Debug.Log("DestroyAnimation in Shot");
+    }
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        if(!other.gameObject.tag.Equals("Player")){
+            
+            DestroyAnimation();
+
+            Destroy(gameObject);
+        }
+    }
+
 
 }

@@ -13,6 +13,8 @@ public class MovementPlayer : MonoBehaviour
 
     public Transform playerTransform;
 
+    public GameObject crossHair;
+
     //Animator para reproducir la animación que corresponda, están numeradas
     private Animator animator;
     //Guardo la última dirección para pasar a las posicioines idle
@@ -33,14 +35,12 @@ public class MovementPlayer : MonoBehaviour
         rbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerTransform = GetComponent<Transform>();
-        directionMovement = GetComponentInChildren<DirectionMovement>(); 
+        directionMovement = GetComponentInChildren<DirectionMovement>();
     }
 
     void FixedUpdate()
     {
         movement();
-
-
     }
 
 
@@ -60,120 +60,63 @@ public class MovementPlayer : MonoBehaviour
         CurrentRun = gameObject.GetComponent<DirectionMovement>().CurrentDir;
         currentIdle = gameObject.GetComponent<DirectionMovement>().lastIdle;
 
+
         //Play animations depends if the character moves or not 
         if (currentPos.Equals(newPos))
         {
-
             animator.Play(currentIdle.ToString());
         }
         else
         {
-            //Si el ratón apunta hacia atrás, el personaje se girará y apuntará hacia esa dirección.
-            // Si Va hacia el Oeste (w)
-            if (CurrentRun.Equals(RunDirections.RunE) && (CrossHair.getMousePosition().x < playerTransform.position.x))
-            {
-                CurrentRun = RunDirections.RunW;
-            }
+            //Set Direction and play  
+            CurrentRun = CurrentViewFromCroshair();
 
-            //Si va hacia el Este 
-            else if (CurrentRun.Equals(RunDirections.RunW) && (CrossHair.getMousePosition().x > playerTransform.position.x))
-            {
-                CurrentRun = RunDirections.RunE;
-            }
-
-            //Si va hacia el sur
-            else if (CurrentRun.Equals(RunDirections.RunS) && (CrossHair.getMousePosition().y > playerTransform.position.y) && CurrentRun.Equals(RunDirections.RunS))
-            {
-                CurrentRun = RunDirections.RunN;
-            }
-
-            //Si va hacia el Norte
-            else if (CurrentRun.Equals(RunDirections.RunN) && (CrossHair.getMousePosition().y < playerTransform.position.y) && CurrentRun.Equals(RunDirections.RunN))
-            {
-                CurrentRun = RunDirections.RunS;
-            }
-            //Run NE direction
-            else if (CurrentRun.Equals(RunDirections.RunNE))
-            {
-                if ((CrossHair.getMousePosition().x < playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y > playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunNW;
-                }
-                else if ((CrossHair.getMousePosition().x < playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y < playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunSW;
-                }
-                else if ((CrossHair.getMousePosition().x > playerTransform.position.x) &&
-              (CrossHair.getMousePosition().y < playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunSE;
-                }
-
-            }
-            //Run NW direction
-            else if (CurrentRun.Equals(RunDirections.RunNW))
-            {
-                if ((CrossHair.getMousePosition().x > playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y > playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunNE;
-                }
-                else if ((CrossHair.getMousePosition().x > playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y < playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunSE;
-                }
-                else if ((CrossHair.getMousePosition().x < playerTransform.position.x) &&
-              (CrossHair.getMousePosition().y < playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunSW;
-                }
-
-            }
-            //Run SW direction
-            else if (CurrentRun.Equals(RunDirections.RunSW))
-            {
-                if ((CrossHair.getMousePosition().x > playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y > playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunNE;
-                }
-                else if ((CrossHair.getMousePosition().x > playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y < playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunSE;
-                }
-                else if ((CrossHair.getMousePosition().x < playerTransform.position.x) &&
-              (CrossHair.getMousePosition().y > playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunNW;
-                }
-            }
-            else if (CurrentRun.Equals(RunDirections.RunSE))
-            {
-                if ((CrossHair.getMousePosition().x > playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y > playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunNE;
-                }
-                else if ((CrossHair.getMousePosition().x < playerTransform.position.x) &&
-                (CrossHair.getMousePosition().y < playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunSW;
-                }
-                else if ((CrossHair.getMousePosition().x < playerTransform.position.x) &&
-              (CrossHair.getMousePosition().y > playerTransform.position.y))
-                {
-                    CurrentRun = RunDirections.RunNW;
-                }
-            }
+//TODO - Need to Set new last idle
 
             animator.Play(CurrentRun.ToString());
+            
         }
 
 
+    }
+
+
+    //Check the currentView between the player and crossHair
+    private RunDirections CurrentViewFromCroshair()
+    {
+        RunDirections currentView = RunDirections.RunS;
+
+        var crossDir = crossHair.GetComponent<CrossHair>().CrossHairAngle(playerTransform.position);
+
+        switch (crossDir)
+        {
+            case 0:
+                currentView = RunDirections.RunS;
+                break;
+            case 1:
+                currentView = RunDirections.RunSE;
+                break;
+            case 2:
+                currentView = RunDirections.RunE;
+                break;
+            case 3:
+                currentView = RunDirections.RunNE;
+                break;
+            case 4:
+                currentView = RunDirections.RunN;
+                break;
+            case 5:
+                currentView = RunDirections.RunNW;
+                break;
+            case 6:
+                currentView = RunDirections.RunW;
+                break;
+            case 7:
+                currentView = RunDirections.RunSW;
+                break;
+        }
+
+        return currentView;
     }
 
 }

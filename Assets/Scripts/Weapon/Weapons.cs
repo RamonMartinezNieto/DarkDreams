@@ -4,6 +4,21 @@ using UnityEngine;
 
 abstract public class Weapons : MonoBehaviour
 {
+    [Tooltip("Transform with initial point from shot")]
+    public Transform transformWeapon;
+
+    [Tooltip("Specific bullet to shot")]
+    public GameObject bulletType;
+
+    [Tooltip("Weapon Sprite Renderer to calculate the corrections to check correct initial bullet position")]
+    public SpriteRenderer weapon;
+
+    public GameObject character;
+
+    [HideInInspector] public bool canShoot;
+
+
+
 
     protected const int baseDamage = 10;
 
@@ -159,8 +174,8 @@ abstract public class Weapons : MonoBehaviour
 
     }
 
-// TODO ********************************
-//Need  to apply this method 
+    // TODO ********************************
+    //Need  to apply this method 
     private void setWeaponVariables(float weaponXPos, float weaponYPos, float WeaponsZPos, bool run, bool front, bool flip, GameObject weapon)
     {
         CorrectionXWeaponPosition = weaponXPos;
@@ -214,7 +229,19 @@ abstract public class Weapons : MonoBehaviour
         weaponTransform.right = direction;
     }
 
+    public void Shoting()
+    {
+        canShoot = false; 
 
+        Vector3 firePosition = transformWeapon.position;
+        firePosition.x += weapon.bounds.size.x / 2;
+        firePosition.y += 0.051f;
+        firePosition.z = -2f;
+
+        GameObject newShot = Instantiate(bulletType, firePosition, transformWeapon.rotation);
+
+        canShoot = true; 
+    }
 
 
 

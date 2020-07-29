@@ -5,12 +5,12 @@ using UnityEngine;
 public class DirectionMovement : MonoBehaviour
 {
 
-    int lastDirection; 
+    int lastDirection;
 
 
     [Tooltip("Transform of the object that you need the direction.")]
     public Transform transformCharacter;
-    
+
     private Vector2 currentPos;
     private Vector2 newPos;
 
@@ -33,7 +33,7 @@ public class DirectionMovement : MonoBehaviour
 
     void Awake()
     {
-        
+
         //Initial direction
         _lastIdle = RunDirections.IdleS;
 
@@ -60,48 +60,63 @@ public class DirectionMovement : MonoBehaviour
         }
     }
 
-    
-        //Check current directión, current dirrection uses to check last dir too. 
-        private void checkDirection(Vector2 currentPos, Vector2 newPos)
+
+    //Check current directión, current dirrection uses to check last dir too. 
+    private void checkDirection(Vector2 currentPos, Vector2 newPos)
+    {
+
+        if (newPos.x > currentPos.x && newPos.y == currentPos.y)
         {
+            _currentDir = RunDirections.RunE;
+            _lastIdle = RunDirections.IdleE;
 
-            if(newPos.x > currentPos.x && newPos.y == currentPos.y){
-                _currentDir = RunDirections.RunE;
-                _lastIdle = RunDirections.IdleE;
+        }
+        else if (newPos.x < currentPos.x && newPos.y == currentPos.y)
+        {
+            _currentDir = RunDirections.RunW;
+            _lastIdle = RunDirections.IdleW;
 
-            } else if(newPos.x < currentPos.x && newPos.y == currentPos.y){
-                _currentDir = RunDirections.RunW;
-                _lastIdle = RunDirections.IdleW;
+        }
+        else if (newPos.x == currentPos.x && newPos.y > currentPos.y)
+        {
+            _currentDir = RunDirections.RunN;
+            _lastIdle = RunDirections.IdleN;
 
-            } else if(newPos.x == currentPos.x && newPos.y > currentPos.y){
-                _currentDir = RunDirections.RunN;
-                _lastIdle = RunDirections.IdleN;
+        }
+        else if (newPos.x == currentPos.x && newPos.y < currentPos.y)
+        {
+            _currentDir = RunDirections.RunS;
+            _lastIdle = RunDirections.IdleS;
 
-            } else if(newPos.x == currentPos.x && newPos.y < currentPos.y){
-                _currentDir = RunDirections.RunS;
-                _lastIdle = RunDirections.IdleS;
+        }
+        else if (newPos.x > currentPos.x && newPos.y > currentPos.y)
+        {
+            _currentDir = RunDirections.RunNE;
+            _lastIdle = RunDirections.IdleNE;
 
-            } else if(newPos.x > currentPos.x && newPos.y > currentPos.y){
-                _currentDir = RunDirections.RunNE;
-                _lastIdle = RunDirections.IdleNE;
+        }
+        else if (newPos.x < currentPos.x && newPos.y > currentPos.y)
+        {
+            _currentDir = RunDirections.RunNW;
+            _lastIdle = RunDirections.IdleNW;
 
-            } else if(newPos.x < currentPos.x && newPos.y > currentPos.y){
-                _currentDir = RunDirections.RunNW;
-                _lastIdle = RunDirections.IdleNW;
+        }
+        else if (newPos.x > currentPos.x && newPos.y < currentPos.y)
+        {
+            _currentDir = RunDirections.RunSE;
+            _lastIdle = RunDirections.IdleSE;
 
-            } else if(newPos.x > currentPos.x && newPos.y < currentPos.y){
-                _currentDir = RunDirections.RunSE;
-                _lastIdle = RunDirections.IdleSE;
-
-            } else if(newPos.x < currentPos.x && newPos.y < currentPos.y){
-                _currentDir = RunDirections.RunSW;
-                _lastIdle = RunDirections.IdleSW;
-
-            } 
+        }
+        else if (newPos.x < currentPos.x && newPos.y < currentPos.y)
+        {
+            _currentDir = RunDirections.RunSW;
+            _lastIdle = RunDirections.IdleSW;
 
         }
 
-    
+    }
+
+
 
 
 }

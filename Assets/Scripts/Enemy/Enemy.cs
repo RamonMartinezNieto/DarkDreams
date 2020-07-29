@@ -21,8 +21,9 @@ abstract public class Enemy : MonoBehaviour
     public Rigidbody2D rbdEnemy;
 
     Vector2 inputVector;
-    Vector2 randomFinalPosition; 
+    Vector2 randomFinalPosition;
     Vector2 currentPos;
+
 
     public void EnemyConstructor(int healt, float speed, float visionRange, float Damage, float distanteToAttack)
     {
@@ -31,14 +32,14 @@ abstract public class Enemy : MonoBehaviour
         this.Damage = Damage;
         this.DistanteToAttack = distanteToAttack;
 
-        this.inputVector =  RandomVector(-1.0f, 1.0f);
-        this.currentPos = rbdEnemy.position; 
-        this.randomFinalPosition = RandomVector(-1.0f,1.0f) + currentPos;
-        
-        Debug.Log(currentPos);
-        Debug.Log(randomFinalPosition);
+        this.inputVector = RandomVector(-1.0f, 1.0f);
+        this.currentPos = rbdEnemy.position;
+        this.randomFinalPosition = RandomVector(-1.0f, 1.0f) + currentPos;
 
-        }
+        //  Debug.Log(currentPos);
+        //   Debug.Log(randomFinalPosition);
+
+    }
 
     public void UpdateLive(int modifyHealth)
     {
@@ -52,36 +53,94 @@ abstract public class Enemy : MonoBehaviour
     }
 
 
-    
+
     //Movement in a place, when don't get vision with the player
     public void StaticMovement()
     {
-        if(InMovement){
-            
-            currentPos = rbdEnemy.position; 
-            Vector2 movement = inputVector * Speed; 
-            Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
-            
-            rbdEnemy.MovePosition(newPos); 
+        if (InMovement)
+        {
 
-            Debug.Log("Current X: " + currentPos.x.ToString("F1"));
-            Debug.Log("FianlRandom Y: " +randomFinalPosition.x.ToString("F1")); 
+            currentPos = rbdEnemy.position;
+            Vector2 movement = inputVector * Speed;
+            Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
+
+            rbdEnemy.MovePosition(newPos);
 
             //Chekc if the enemy moves X and Y random vector
-            if(currentPos.x.ToString("F1").Equals(randomFinalPosition.x.ToString("F1")) 
-            || currentPos.y.ToString("F1").Equals(randomFinalPosition.y.ToString("F1")) ){
-                InMovement = false; 
+            if (currentPos.x.ToString("F1").Equals(randomFinalPosition.x.ToString("F1"))
+            || currentPos.y.ToString("F1").Equals(randomFinalPosition.y.ToString("F1")))
+            {
+                InMovement = false;
             }
 
-        } else {
-            //New direction to move
-            inputVector =  RandomVector(-1.0f, 1.0f);
-            currentPos = rbdEnemy.position; 
-            randomFinalPosition = RandomVector(-2.0f,2.0f) + currentPos;
-
-            InMovement = true; 
         }
+        else
+        {
+            //New direction to move
+            inputVector = RandomVector(-1.0f, 1.0f);
+            currentPos = rbdEnemy.position;
+            randomFinalPosition = RandomVector(-2.0f, 2.0f) + currentPos;
+
+            InMovement = true;
+        }
+
+
+        PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
     }
+
+    private void ChangeDirection()
+    {
+        inputVector = RandomVector(-1.0f, 1.0f);
+        currentPos = rbdEnemy.position;
+
+        var x = 0f; 
+        var y = 0f; 
+
+        if (randomFinalPosition.x < 0)
+        {
+            x = Mathf.Abs(randomFinalPosition.x);
+        }
+        else
+        {
+            x = randomFinalPosition.x * -1;
+        }
+
+        if (inputVector.y < 0)
+        {
+            y = Mathf.Abs(randomFinalPosition.y);
+        }
+        else
+        {
+            y = randomFinalPosition.y * -1;
+        }
+
+        randomFinalPosition = new Vector2(x,y) + currentPos; 
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+
+        if (other.gameObject.tag == "LimitsGround")
+        {
+            ChangeDirection();
+        }
+
+    }
+
+
+
+    public void PlayAnimation(string playAnim)
+    {
+        EnemyAnimator.Play(playAnim);
+    }
+
+    private Vector2 RandomVector(float min, float max)
+    {
+        return new Vector2(Random.Range(min, max), Random.Range(min, max));
+    }
+
+
 
     //Movement when get vision with the player
     public void MovementToPlayer()
@@ -92,16 +151,6 @@ abstract public class Enemy : MonoBehaviour
     public void Attack()
     {
 
-    }
-
-    private void PlayAnimation(string playAnim)
-    {
-        EnemyAnimator.Play(playAnim);
-    }
-
-    private Vector2 RandomVector(float min, float max)
-    {
-        return new Vector2(Random.Range(min, max), Random.Range(min, max));
     }
 
 }
