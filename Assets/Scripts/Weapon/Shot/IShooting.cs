@@ -11,7 +11,7 @@ public interface IShooting
 
     void MovingShot(); 
 
-    void DestroyAnimation();
+    void DestroyShotAnimation();
 
    
 }

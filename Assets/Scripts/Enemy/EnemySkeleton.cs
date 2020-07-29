@@ -17,15 +17,11 @@ public class EnemySkeleton : Enemy
         //Health, speed, vision, damage, distanceToAttack
         EnemyConstructor(100, 0.5f, 10.0f, 5, 2.0f);
 
-        
-
     }
+
 
     void FixedUpdate()
     {
-        StaticMovement(); 
-        
-
-        
+        StaticMovement();         
     }
 }

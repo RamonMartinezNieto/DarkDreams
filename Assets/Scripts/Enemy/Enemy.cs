@@ -4,7 +4,15 @@ using UnityEngine;
 
 abstract public class Enemy : MonoBehaviour
 {
-    private int Health;
+    private int _health;
+    public int Health
+    {
+        get { return _health; }
+
+        set { _health = value; }
+    }
+
+    [SerializeField] private HealthBar healthBar; 
 
     private float Speed;
 
@@ -25,9 +33,9 @@ abstract public class Enemy : MonoBehaviour
     Vector2 currentPos;
 
 
-    public void EnemyConstructor(int healt, float speed, float visionRange, float Damage, float distanteToAttack)
+    public void EnemyConstructor(int health, float speed, float visionRange, float Damage, float distanteToAttack)
     {
-        this.Health = healt;
+        Health = health;
         this.Speed = speed;
         this.Damage = Damage;
         this.DistanteToAttack = distanteToAttack;
@@ -36,14 +44,10 @@ abstract public class Enemy : MonoBehaviour
         this.currentPos = rbdEnemy.position;
         this.randomFinalPosition = RandomVector(-1.0f, 1.0f) + currentPos;
 
+     
         //  Debug.Log(currentPos);
-        //   Debug.Log(randomFinalPosition);
+        //  Debug.Log(randomFinalPosition);
 
-    }
-
-    public void UpdateLive(int modifyHealth)
-    {
-        this.Health -= modifyHealth;
     }
 
     //Current vision of the enemy, when is in the range the enemy run to the player
@@ -52,7 +56,30 @@ abstract public class Enemy : MonoBehaviour
 
     }
 
+    public void TakeDamage(int damage)
+    {
+        Health -= damage; 
 
+        float currentHealth = Health / 100f;
+        healthBar.SetSize(currentHealth); 
+        
+        if(currentHealth < .3f){
+            healthBar.SetColor(Color.red);
+        }
+
+        if (Health <= 0)
+        {
+            Die();
+        }
+        
+    }
+
+    public void Die()
+    {
+        Debug.Log("Die");
+        //Translate position of the enemy to simulate destroying this.
+        rbdEnemy.transform.Translate(new Vector3(-250f, -250f, -150f));
+    }
 
     //Movement in a place, when don't get vision with the player
     public void StaticMovement()
@@ -93,8 +120,8 @@ abstract public class Enemy : MonoBehaviour
         inputVector = RandomVector(-1.0f, 1.0f);
         currentPos = rbdEnemy.position;
 
-        var x = 0f; 
-        var y = 0f; 
+        var x = 0f;
+        var y = 0f;
 
         if (randomFinalPosition.x < 0)
         {
@@ -114,14 +141,13 @@ abstract public class Enemy : MonoBehaviour
             y = randomFinalPosition.y * -1;
         }
 
-        randomFinalPosition = new Vector2(x,y) + currentPos; 
+        randomFinalPosition = new Vector2(x, y) + currentPos;
 
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-
-        if (other.gameObject.tag == "LimitsGround")
+        if (other.gameObject.tag.Equals("LimitsGround"))
         {
             ChangeDirection();
         }
@@ -152,5 +178,6 @@ abstract public class Enemy : MonoBehaviour
     {
 
     }
+
 
 }
