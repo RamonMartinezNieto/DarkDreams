@@ -7,18 +7,20 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] private HealthBar healthBar;
 
-    private int _currentHealt = 100;
+    private int currentHealt = 100;
     public int CurrentHealt
     {
         get
         {
-            return _currentHealt;
+            return currentHealt;
         }
-        set
+        private set
         {
-            _currentHealt = value; 
+            currentHealt = value; 
 
-            if(_currentHealt <= 0){
+            if(currentHealt > 100){
+                currentHealt = 100; 
+            } else if(currentHealt <= 0){
                 PlayerDie();
             }
         }
@@ -31,8 +33,6 @@ public class PlayerStats : MonoBehaviour
 
     public void restHealth(int health)
     {
-        Debug.Log("hit hit hit");
-        
         CurrentHealt -= health; 
 
         float Health = CurrentHealt / 100f;
@@ -42,7 +42,14 @@ public class PlayerStats : MonoBehaviour
         {
             healthBar.SetColor(Color.red);
         }
+    }
 
+    public void sumHealth(int health)
+    {
+        CurrentHealt += health; 
+
+        float Health = CurrentHealt / 100f;
+        healthBar.SetSize(Health);
 
     }
 }

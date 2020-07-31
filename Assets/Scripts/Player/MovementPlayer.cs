@@ -9,7 +9,7 @@ public class MovementPlayer : MonoBehaviour
     private Rigidbody2D rbody;
 
     [Tooltip("Velocity, only change to test diferents speeds")]
-    public float speed = 1f;
+    public float speed = 2f;
 
 
 
