@@ -25,21 +25,26 @@ abstract public class Shot : MonoBehaviour, IShooting
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag.Equals("Enemy"))
+        
+        if (!other.isTrigger)
         {
-            //When Shot hit the enemy
-            Enemy enemy = other.GetComponent<Enemy>(); 
+            if (other.gameObject.tag.Equals("Enemy"))
+            {
+                //When Shot hit the enemy
+                Enemy enemy = other.GetComponent<Enemy>();
 
-            if(enemy != null){
-                enemy.TakeDamage(_shotDamage); 
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(_shotDamage);
+                }
+
+                DestroyShotAnimation();
+
             }
-
-            DestroyShotAnimation();
-
-        }
-        else if (!other.gameObject.tag.Equals("Player"))
-        {
-            DestroyShotAnimation();
+            else if (!other.gameObject.tag.Equals("Player"))
+            {
+                DestroyShotAnimation();
+            }
         }
     }
 

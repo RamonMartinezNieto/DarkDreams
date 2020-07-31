@@ -5,7 +5,6 @@ using UnityEngine;
 public class PrincipalWeapon : Weapons
 {
 
-
     private Transform weaponTransform;
 
     void Start()
@@ -33,16 +32,31 @@ public class PrincipalWeapon : Weapons
         debugRayCast(weaponTransform);
 
 
-        if (Input.GetButtonDown("Fire1") && canShoot)
+        /* Continuos Button Pressed
+                if (Input.GetMouseButton(0) && canShoot)
+                {
+
+                }
+        */
+
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoting();
-        } else if(Input.GetButtonDown("Fire2") && canShoot){
-//TODO secondary Shoot
+        }
+        else if (Input.GetButtonDown("Fire2") && canShoot)
+        {
+
+            //TODO secondary Shoot
             Debug.Log("secondary shoot");
         }
+
     }
 
 
-
+    public void SetActiveWeapon()
+    {
+        Debug.Log("Active");
+        gameObject.SetActive(true); 
+    }
 
 }

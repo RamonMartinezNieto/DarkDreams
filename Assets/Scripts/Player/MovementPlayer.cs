@@ -11,6 +11,8 @@ public class MovementPlayer : MonoBehaviour
     [Tooltip("Velocity, only change to test diferents speeds")]
     public float speed = 1f;
 
+
+
     public Transform playerTransform;
 
     public GameObject crossHair;

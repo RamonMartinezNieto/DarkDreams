@@ -12,18 +12,24 @@ abstract public class Enemy : MonoBehaviour
         set { _health = value; }
     }
 
-    [SerializeField] private HealthBar healthBar; 
+    private bool _playerDetection;
+    public bool PlayerDetection { get; set; }
+
+    [SerializeField] private HealthBar healthBar;
 
     private float Speed;
 
-    private float VisionRange;
+    private float VisionRangeRadius;
 
-    private float Damage;
+    private int Damage;
 
-    private float DistanteToAttack;
+    protected float DistanceToAttack;
 
-    private bool InMovement = true;
+    private bool _inMovement = true;
+    public bool InMovement { get; set; }
 
+    public bool _attacking = false;
+    public bool Attacking { get; set; }
     public Animator EnemyAnimator;
 
     public Rigidbody2D rbdEnemy;
@@ -33,37 +39,34 @@ abstract public class Enemy : MonoBehaviour
     Vector2 currentPos;
 
 
-    public void EnemyConstructor(int health, float speed, float visionRange, float Damage, float distanteToAttack)
+    public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
     {
         Health = health;
         this.Speed = speed;
         this.Damage = Damage;
-        this.DistanteToAttack = distanteToAttack;
+        this.DistanceToAttack = distanteToAttack;
 
         this.inputVector = RandomVector(-1.0f, 1.0f);
         this.currentPos = rbdEnemy.position;
         this.randomFinalPosition = RandomVector(-1.0f, 1.0f) + currentPos;
+        this.VisionRangeRadius = visionRange;
+        PlayerDetection = false;
 
-     
-        //  Debug.Log(currentPos);
-        //  Debug.Log(randomFinalPosition);
-
-    }
-
-    //Current vision of the enemy, when is in the range the enemy run to the player
-    public void Vsion()
-    {
+        this.gameObject.GetComponent<CircleCollider2D>().radius = VisionRangeRadius;
 
     }
+
+
 
     public void TakeDamage(int damage)
     {
-        Health -= damage; 
+        Health -= damage;
 
         float currentHealth = Health / 100f;
-        healthBar.SetSize(currentHealth); 
-        
-        if(currentHealth < .3f){
+        healthBar.SetSize(currentHealth);
+
+        if (currentHealth < .3f)
+        {
             healthBar.SetColor(Color.red);
         }
 
@@ -71,22 +74,23 @@ abstract public class Enemy : MonoBehaviour
         {
             Die();
         }
-        
+
     }
 
     public void Die()
     {
-        Debug.Log("Die");
+//TODO reproduce animation, how? Y_Y
+        //PlayAnimation("SkeletonDie");
         //Translate position of the enemy to simulate destroying this.
         rbdEnemy.transform.Translate(new Vector3(-250f, -250f, -150f));
     }
 
     //Movement in a place, when don't get vision with the player
-    public void StaticMovement()
+    public void StaticMovement(bool attacking)
     {
-        if (InMovement)
-        {
 
+        if (InMovement && !PlayerDetection)
+        {
             currentPos = rbdEnemy.position;
             Vector2 movement = inputVector * Speed;
             Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
@@ -111,8 +115,11 @@ abstract public class Enemy : MonoBehaviour
             InMovement = true;
         }
 
-
-        PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
+        //If the enemy is not attacking to the player
+        if (!attacking)
+        {
+            PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
+        }
     }
 
     private void ChangeDirection()
@@ -151,7 +158,6 @@ abstract public class Enemy : MonoBehaviour
         {
             ChangeDirection();
         }
-
     }
 
 
@@ -159,6 +165,7 @@ abstract public class Enemy : MonoBehaviour
     public void PlayAnimation(string playAnim)
     {
         EnemyAnimator.Play(playAnim);
+
     }
 
     private Vector2 RandomVector(float min, float max)
@@ -167,17 +174,61 @@ abstract public class Enemy : MonoBehaviour
     }
 
 
-
     //Movement when get vision with the player
-    public void MovementToPlayer()
+    public void MovementToPlayer(Vector2 playerPos)
     {
+        currentPos = rbdEnemy.position;
 
+        Vector2 direction = playerPos - currentPos;
+        direction.Normalize();
+
+        Vector2 newPos = currentPos + (direction * (Speed + .3f) * Time.fixedDeltaTime);
+
+        rbdEnemy.MovePosition(newPos);
+
+        if (!Attacking)
+        {
+            PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
+        }
     }
 
     public void Attack()
     {
+        if (Attacking)
+        {
+            PlayAnimation("SkAttackSE");
+
+        }
+    }
+
+    //Apply this method to animation attack, in the middle of the animation ocurrs this method.
+    public void FineAttack(){
+        //Rest live to the player, depends of the animation
+        GameObject.Find("Player").GetComponent<PlayerStats>().restHealth(Damage); 
 
     }
 
+    public float RayToPlayer(Rigidbody2D player)
+    {
+        float distance = 100;
 
+        Vector3 currentPos = rbdEnemy.position;
+        Vector3 playerPos = player.position;
+        //Correction from pivot
+        playerPos.y += 0.20f;
+
+        RaycastHit2D ray = Physics2D.Raycast(currentPos, playerPos);
+
+        if (ray.collider != null)
+        {
+            distance = Vector2.Distance(currentPos, playerPos);
+        }
+
+        //Remove DrawLine
+        Debug.DrawLine(currentPos, playerPos, Color.blue);
+
+        return distance;
+    }
 }
+
+
