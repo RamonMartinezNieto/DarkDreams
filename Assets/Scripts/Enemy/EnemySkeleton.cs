@@ -15,7 +15,7 @@ public class EnemySkeleton : Enemy
     void Awake()
     {
         //Health, speed, vision, damage, distanceToAttack
-        EnemyConstructor(100, 0.5f, 3.0f, 5, .7f);
+        EnemyConstructor(100, 0.5f, 3.0f, 10, .7f);
 
     }
 
@@ -27,8 +27,7 @@ public class EnemySkeleton : Enemy
             StaticMovement(Attacking);
         }
 
-
-    }
+    }   
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag.Equals("Player"))

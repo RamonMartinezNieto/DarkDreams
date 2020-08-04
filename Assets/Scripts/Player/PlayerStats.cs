@@ -6,6 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
 
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] private ArmorBar armorBar;
 
     private int currentHealt = 100;
     public int CurrentHealt
@@ -26,14 +27,34 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void PlayerDie(){
-        GameObject.FindGameObjectWithTag("Player").SetActive(false);
-    }
 
-
-    public void restHealth(int health)
+    private float _currentArmor = .8f; 
+    public float CurrentArmor
     {
-        CurrentHealt -= health; 
+        get
+        {
+            return _currentArmor;
+        }
+        private set
+        {
+            _currentArmor = value; 
+            
+            if(_currentArmor >= 1f){
+                _currentArmor = 1f; 
+            } else if(_currentArmor <= 0f){
+                _currentArmor = 0f; 
+            }
+
+            //Update armor bar when currentArmor change (increase).
+            armorBar.SetSize(_currentArmor);
+        }
+    }
+   
+    public void restHealth(int damage)
+    {
+        //Check if t he player have armor to absorve damage
+        float restHealt = armorBar.GetDamageRestArmorEffect(damage); 
+        CurrentHealt -= (int) restHealt; 
 
         float Health = CurrentHealt / 100f;
         healthBar.SetSize(Health);
@@ -52,4 +73,12 @@ public class PlayerStats : MonoBehaviour
         healthBar.SetSize(Health);
 
     }
+
+    public void restArmor(float armorDecrease) => CurrentArmor -= armorDecrease; 
+    
+    public void sumArmor(float armorIncrease) => CurrentArmor += armorIncrease; 
+
+    private void PlayerDie() =>   GameObject.FindGameObjectWithTag("Player").SetActive(false);
+    
+   
 }
