@@ -13,7 +13,7 @@ public class MainCamera : MonoBehaviour
         tranformGameObject = FollowGameObject.GetComponent<Transform>().position;
     }
 
-    void Update()
+    void LateUpdate()
     {
         UpdateCamera();
     }

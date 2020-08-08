@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 
@@ -10,6 +11,9 @@ public class MovementPlayer : MonoBehaviour
 
     [Tooltip("Velocity, only change to test diferents speeds")]
     public float speed = 2f;
+
+    [Tooltip("Make true if the player is in the menu.")]
+    public bool IsMenuPlayer; 
 
     public Transform playerTransform;
 
@@ -40,9 +44,21 @@ public class MovementPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        movement();
+        if (IsMenuPlayer)
+        {
+            staticPositionOnMenu();
+        }
+        else {
+            movement();
+        }
     }
 
+    private void staticPositionOnMenu() 
+    {
+        currentIdle = RunDirections.IdleW;
+        animator.Play(currentIdle.ToString());
+        
+    }
 
     private void movement()
     {
@@ -74,10 +90,7 @@ public class MovementPlayer : MonoBehaviour
 //TODO - Need to Set new last idle
 
             animator.Play(CurrentRun.ToString());
-            
         }
-
-
     }
 
 

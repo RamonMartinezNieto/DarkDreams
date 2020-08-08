@@ -13,6 +13,9 @@ abstract public class Weapons : MonoBehaviour
     [Tooltip("Weapon Sprite Renderer to calculate the corrections to check correct initial bullet position")]
     public SpriteRenderer weapon;
 
+    [Tooltip("Check bool when the weapoin is present in the menu")]
+    public bool IsMenuWeapon;
+
     public GameObject character;
 
     [HideInInspector] public bool canShoot;
@@ -113,7 +116,7 @@ abstract public class Weapons : MonoBehaviour
         float zPosition = -1.0f;
 
 
-
+        // TODO: Need to refactor this part
         if (rd.Equals(RunDirections.RunE) || rd.Equals(RunDirections.RunSE))
         {
             CorrectionXWeaponPosition = 0.19f;
@@ -166,6 +169,7 @@ abstract public class Weapons : MonoBehaviour
         else if (rd.Equals(RunDirections.RunN))
         {
         }
+        
 
         WeaponPosition = new Vector3(characterTransform.position.x + CorrectionXWeaponPosition, characterTransform.position.y + CorrectionYWeaponPosition, zPosition);
 

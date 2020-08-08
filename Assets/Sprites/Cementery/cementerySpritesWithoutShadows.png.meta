@@ -1,0 +1,1132 @@
+fileFormatVersion: 2
+guid: dcae2a9754a826e49aac533ba56cf2a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2350442403580086330
+    second: cementerySpritesWithoutShadows_0
+  - first:
+      213: 7809426279619495609
+    second: cementerySpritesWithoutShadows_1
+  - first:
+      213: -6911510589485980406
+    second: cementerySpritesWithoutShadows_2
+  - first:
+      213: -4167930269717424837
+    second: cementerySpritesWithoutShadows_3
+  - first:
+      213: 7458278287595052310
+    second: cementerySpritesWithoutShadows_4
+  - first:
+      213: -3444741403106057978
+    second: cementerySpritesWithoutShadows_5
+  - first:
+      213: 617101519233657161
+    second: cementerySpritesWithoutShadows_6
+  - first:
+      213: -9156148694535851736
+    second: cementerySpritesWithoutShadows_7
+  - first:
+      213: 8899588508384660807
+    second: cementerySpritesWithoutShadows_8
+  - first:
+      213: -4238651677115006870
+    second: cementerySpritesWithoutShadows_9
+  - first:
+      213: -8505579772849943217
+    second: cementerySpritesWithoutShadows_10
+  - first:
+      213: 495732783017520205
+    second: cementerySpritesWithoutShadows_11
+  - first:
+      213: -3123785024859612778
+    second: cementerySpritesWithoutShadows_12
+  - first:
+      213: 2618265673513576071
+    second: cementerySpritesWithoutShadows_13
+  - first:
+      213: 5098165864051811824
+    second: cementerySpritesWithoutShadows_14
+  - first:
+      213: 4796613162134244230
+    second: cementerySpritesWithoutShadows_15
+  - first:
+      213: 2771147315811452930
+    second: cementerySpritesWithoutShadows_16
+  - first:
+      213: 1680828003333021260
+    second: cementerySpritesWithoutShadows_17
+  - first:
+      213: -7659597739608635741
+    second: cementerySpritesWithoutShadows_18
+  - first:
+      213: 7255906971761250389
+    second: cementerySpritesWithoutShadows_19
+  - first:
+      213: 2076522953018428370
+    second: cementerySpritesWithoutShadows_20
+  - first:
+      213: -3777319717400924579
+    second: cementerySpritesWithoutShadows_21
+  - first:
+      213: -7641854468382394676
+    second: cementerySpritesWithoutShadows_22
+  - first:
+      213: 8106165758236782409
+    second: cementerySpritesWithoutShadows_23
+  - first:
+      213: -8278596067754918514
+    second: cementerySpritesWithoutShadows_24
+  - first:
+      213: 2778808175696448004
+    second: cementerySpritesWithoutShadows_25
+  - first:
+      213: 7201337582307874371
+    second: cementerySpritesWithoutShadows_26
+  - first:
+      213: 4171111075119502663
+    second: cementerySpritesWithoutShadows_27
+  - first:
+      213: 4594136114028039487
+    second: cementerySpritesWithoutShadows_28
+  - first:
+      213: 4969861441323139418
+    second: cementerySpritesWithoutShadows_29
+  - first:
+      213: -527700246343194004
+    second: cementerySpritesWithoutShadows_30
+  - first:
+      213: 8127440318407045090
+    second: cementerySpritesWithoutShadows_31
+  - first:
+      213: -4323036626744076191
+    second: cementerySpritesWithoutShadows_32
+  - first:
+      213: -6410063312981719467
+    second: cementerySpritesWithoutShadows_33
+  - first:
+      213: 1085937454874024587
+    second: cementerySpritesWithoutShadows_34
+  - first:
+      213: 8814161485547881963
+    second: cementerySpritesWithoutShadows_35
+  - first:
+      213: 2162212725784711374
+    second: cementerySpritesWithoutShadows_36
+  - first:
+      213: 3993844050393819441
+    second: cementerySpritesWithoutShadows_37
+  - first:
+      213: -7086172017062526470
+    second: cementerySpritesWithoutShadows_38
+  - first:
+      213: 7104269822344914981
+    second: cementerySpritesWithoutShadows_0
+  - first:
+      213: -2139984561601310550
+    second: cementerySpritesWithoutShadows_1
+  - first:
+      213: -5811255795773343615
+    second: cementerySpritesWithoutShadows_2
+  - first:
+      213: -392263179323857653
+    second: cementerySpritesWithoutShadows_3
+  - first:
+      213: 5344930908398105008
+    second: cementerySpritesWithoutShadows_4
+  - first:
+      213: 3028985355054888797
+    second: cementerySpritesWithoutShadows_5
+  - first:
+      213: 2277177434872202099
+    second: cementerySpritesWithoutShadows_6
+  - first:
+      213: -8584690776598280740
+    second: cementerySpritesWithoutShadows_7
+  - first:
+      213: 7128476460098802362
+    second: cementerySpritesWithoutShadows_8
+  - first:
+      213: -8725764632059072312
+    second: cementerySpritesWithoutShadows_9
+  - first:
+      213: -1627457525446718946
+    second: cementerySpritesWithoutShadows_10
+  - first:
+      213: 1442933257286817959
+    second: cementerySpritesWithoutShadows_11
+  - first:
+      213: 8499829627546229450
+    second: cementerySpritesWithoutShadows_12
+  - first:
+      213: 8918964103558936831
+    second: cementerySpritesWithoutShadows_13
+  - first:
+      213: -5938203796726533436
+    second: cementerySpritesWithoutShadows_14
+  - first:
+      213: 1640559433015385034
+    second: cementerySpritesWithoutShadows_15
+  - first:
+      213: -7628053722951825277
+    second: cementerySpritesWithoutShadows_16
+  - first:
+      213: -5867173379534589626
+    second: cementerySpritesWithoutShadows_17
+  - first:
+      213: 4164815440828264789
+    second: cementerySpritesWithoutShadows_18
+  - first:
+      213: -8112403082904208498
+    second: cementerySpritesWithoutShadows_19
+  - first:
+      213: -7649528218882248148
+    second: cementerySpritesWithoutShadows_20
+  - first:
+      213: 6180725085721871840
+    second: cementerySpritesWithoutShadows_21
+  - first:
+      213: 7314224266018646077
+    second: cementerySpritesWithoutShadows_22
+  - first:
+      213: -6870831250712341486
+    second: cementerySpritesWithoutShadows_23
+  - first:
+      213: -3671112236673211621
+    second: cementerySpritesWithoutShadows_24
+  - first:
+      213: -6973311176445772013
+    second: cementerySpritesWithoutShadows_25
+  - first:
+      213: -3241967630350697093
+    second: cementerySpritesWithoutShadows_26
+  - first:
+      213: -7643965001743667467
+    second: cementerySpritesWithoutShadows_27
+  - first:
+      213: -4683910341508147334
+    second: cementerySpritesWithoutShadows_28
+  - first:
+      213: 5058236418200100372
+    second: cementerySpritesWithoutShadows_29
+  - first:
+      213: 6425004975463968856
+    second: cementerySpritesWithoutShadows_30
+  - first:
+      213: 3951666415085403020
+    second: cementerySpritesWithoutShadows_31
+  - first:
+      213: 2450392664088825982
+    second: cementerySpritesWithoutShadows_32
+  - first:
+      213: -8552931054594684064
+    second: cementerySpritesWithoutShadows_33
+  - first:
+      213: -24246669585301281
+    second: cementerySpritesWithoutShadows_34
+  - first:
+      213: -614432222575057681
+    second: cementerySpritesWithoutShadows_35
+  - first:
+      213: 6737819451034308386
+    second: cementerySpritesWithoutShadows_36
+  - first:
+      213: 8508743301055194503
+    second: cementerySpritesWithoutShadows_37
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 522
+        width: 58
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528656d63cf679260800000000000000
+      internalID: 7104269822344914981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 525
+        width: 53
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa01fec116f3d42e0800000000000000
+      internalID: -2139984561601310550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 524
+        width: 53
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188fff1a4a54a5fa0800000000000000
+      internalID: -5811255795773343615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 534
+        width: 46
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05afe977b66e8af0800000000000000
+      internalID: -392263179323857653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_4
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 535
+        width: 32
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b13310b7520d2a40800000000000000
+      internalID: 5344930908398105008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_5
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 523
+        width: 33
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5738e5d12e190a20800000000000000
+      internalID: 3028985355054888797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_6
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 523
+        width: 36
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373c710efc82a9f10800000000000000
+      internalID: 2277177434872202099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 394
+        width: 105
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5894ae83d0dd880800000000000000
+      internalID: -8584690776598280740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_8
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 395
+        width: 46
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab25ce9729f6de260800000000000000
+      internalID: 7128476460098802362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 398
+        width: 53
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0b3785c4bd7e680800000000000000
+      internalID: -8725764632059072312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 396
+        width: 50
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a46b4d00c1a69e0800000000000000
+      internalID: -1627457525446718946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_11
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 395
+        width: 93
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a89d2b0724560410800000000000000
+      internalID: 1442933257286817959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_12
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 394
+        width: 90
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acadb31230675f570800000000000000
+      internalID: 8499829627546229450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_13
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 394
+        width: 87
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff83715f89686cb70800000000000000
+      internalID: 8918964103558936831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_14
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 394
+        width: 59
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c23d3cdb13479da0800000000000000
+      internalID: -5938203796726533436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_15
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 279
+        width: 21
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb5ccdbc1074c610800000000000000
+      internalID: 1640559433015385034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_16
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 266
+        width: 88
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3884cdbdd85b32690800000000000000
+      internalID: -7628053722951825277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_17
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 282
+        width: 45
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641763d95ec939ea0800000000000000
+      internalID: -5867173379534589626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_18
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 271
+        width: 63
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55171a9c3956cc930800000000000000
+      internalID: 4164815440828264789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_19
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 263
+        width: 74
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bf5b0a064fa6f80800000000000000
+      internalID: -8112403082904208498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_20
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 265
+        width: 81
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2272362d9a67d590800000000000000
+      internalID: -7649528218882248148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_21
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 281
+        width: 42
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e54cc4f7b856c550800000000000000
+      internalID: 6180725085721871840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_22
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 268
+        width: 58
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38659fa738518560800000000000000
+      internalID: 7314224266018646077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_23
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 145
+        width: 30
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21453a57167e5a0a0800000000000000
+      internalID: -6870831250712341486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_24
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 145
+        width: 37
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13e0820fd69d0dc0800000000000000
+      internalID: -3671112236673211621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_25
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 141
+        width: 50
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f30b36e62d93f90800000000000000
+      internalID: -6973311176445772013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_26
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 141
+        width: 51
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7db1abed973203d0800000000000000
+      internalID: -3241967630350697093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_27
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 142
+        width: 47
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5feec83945e2be590800000000000000
+      internalID: -7643965001743667467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_28
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 142
+        width: 41
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77d0ae5c586ffeb0800000000000000
+      internalID: -4683910341508147334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_29
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 140
+        width: 41
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ed2c00937723640800000000000000
+      internalID: 5058236418200100372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_30
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 142
+        width: 45
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850b5aaebf33a2950800000000000000
+      internalID: 6425004975463968856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 13
+        width: 53
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bb10eeaa327d630800000000000000
+      internalID: 3951666415085403020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_32
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 14
+        width: 39
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70dc3f252b810220800000000000000
+      internalID: 2450392664088825982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_33
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 20
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b0a7e6582ed4980800000000000000
+      internalID: -8552931054594684064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_34
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 9
+        width: 60
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0c16058cbd9aff0800000000000000
+      internalID: -24246669585301281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_35
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 9
+        width: 62
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe42cd226291977f0800000000000000
+      internalID: -614432222575057681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_36
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 6
+        width: 74
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f0e9b971b818d50800000000000000
+      internalID: 6737819451034308386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cementerySpritesWithoutShadows_37
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 6
+        width: 79
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785216873f0251670800000000000000
+      internalID: 8508743301055194503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

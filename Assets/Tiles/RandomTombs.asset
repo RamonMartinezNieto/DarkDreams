@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5e1eccedb29e4894bbfab99032590, type: 3}
+  m_Name: RandomTombs
+  m_EditorClassIdentifier: 
+  m_Cells:
+  - m_Tile: {fileID: 0}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Pivot: {x: 0, y: 0, z: 0}
+  m_CanChangeZPosition: 0
+  m_Anchor: {x: 0.5, y: 0.5, z: -5}
+  m_Prefabs:
+  - {fileID: 5067386023392455292, guid: 2ad6a811538f0e0469f970d87b989322, type: 3}
+  - {fileID: 5576510082075351357, guid: 3ed00432bf653e540abfb60504a53fe4, type: 3}
+  - {fileID: 4030690749272184208, guid: 7d8726187a19cc247bee260de7b32fa5, type: 3}
+  - {fileID: 9128063520406247338, guid: 2e68b7664c8513c4daef0f36b43a8506, type: 3}
+  - {fileID: 6358038027568436436, guid: 1f70b811706570841b8fb0a1dc588041, type: 3}
+  - {fileID: 2022509825498770522, guid: 08e31c9185848da4f863f5228e5acf6b, type: 3}
+  - {fileID: 5192668410340227505, guid: ffa191cf11e8d2d4988643d993174a83, type: 3}
+  - {fileID: 872263868434355301, guid: 4b797cfd12320aa4783387d21af554e1, type: 3}
+  - {fileID: 6012535760072008377, guid: d20eb4147c8b0e54db2951a1eaec1ef5, type: 3}
+  - {fileID: 6884991823978973834, guid: dff6b187f39279b48873192f13f3d3b0, type: 3}
+  m_PerlinScale: 0.5

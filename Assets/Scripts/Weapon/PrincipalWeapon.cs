@@ -7,6 +7,8 @@ public class PrincipalWeapon : Weapons
 
     private Transform weaponTransform;
 
+    
+
     void Start()
     {
         weaponTransform = GetComponent<Transform>();
