@@ -12,7 +12,7 @@ abstract public class Shot : MonoBehaviour, IShooting
     protected int _shotDamage;
     public int ShotDamage { get; }
 
-    public void MovingShot()
+    public virtual void MovingShot()
     {
         this.gameObject.GetComponent<Rigidbody2D>().velocity = transform.right * _shotVelocity;
     }
@@ -25,7 +25,6 @@ abstract public class Shot : MonoBehaviour, IShooting
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
         if (!other.isTrigger)
         {
             if (other.gameObject.tag.Equals("Enemy"))
@@ -46,6 +45,7 @@ abstract public class Shot : MonoBehaviour, IShooting
                 DestroyShotAnimation();
             }
         }
+       
     }
 
 

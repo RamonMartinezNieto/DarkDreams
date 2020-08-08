@@ -21,11 +21,11 @@ abstract public class Enemy : MonoBehaviour
 
     private float VisionRangeRadius;
 
-    private int Damage;
+    public int Damage { get; set; }
 
     protected float DistanceToAttack;
 
-    private bool _inMovement = true;
+    //private bool _inMovement = true;
     public bool InMovement { get; set; }
 
     public bool _attacking = false;
@@ -37,6 +37,8 @@ abstract public class Enemy : MonoBehaviour
     Vector2 inputVector;
     Vector2 randomFinalPosition;
     Vector2 currentPos;
+
+    public Rigidbody2D characterRB;
 
 
     public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
@@ -53,10 +55,9 @@ abstract public class Enemy : MonoBehaviour
         PlayerDetection = false;
 
         this.gameObject.GetComponent<CircleCollider2D>().radius = VisionRangeRadius;
-
+        
+        
     }
-
-
 
     public void TakeDamage(int damage)
     {
@@ -79,10 +80,11 @@ abstract public class Enemy : MonoBehaviour
 
     public void Die()
     {
-//TODO reproduce animation, how? Y_Y
+        //TODO reproduce animation, how? Y_Y
         //PlayAnimation("SkeletonDie");
         //Translate position of the enemy to simulate destroying this.
         rbdEnemy.transform.Translate(new Vector3(-250f, -250f, -150f));
+
     }
 
     //Movement in a place, when don't get vision with the player
@@ -157,10 +159,9 @@ abstract public class Enemy : MonoBehaviour
         if (other.gameObject.tag.Equals("LimitsGround"))
         {
             ChangeDirection();
-        }
+        }      
     }
-
-
+        
 
     public void PlayAnimation(string playAnim)
     {
@@ -186,29 +187,32 @@ abstract public class Enemy : MonoBehaviour
 
         rbdEnemy.MovePosition(newPos);
 
+        
         if (!Attacking)
         {
             PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
         }
     }
 
-    public void Attack()
+    //The animation have the method of the atack. Check the animation to know when the attack is launched.
+    public void Attack(string animationAttack)
     {
         if (Attacking)
         {
             PlayAnimation("SkAttackSE");
-
         }
     }
 
     //Apply this method to animation attack, in the middle of the animation ocurrs this method.
-    public void FineAttack(){
+    // To distance attacks is different, the atack is from shoot enemy attacks and not when the animation ocurrs. 
+    public virtual void FineAttack()
+    {
         //Rest live to the player, depends of the animation
-        GameObject.Find("Player").GetComponent<PlayerStats>().restHealth(Damage); 
-
+        GameObject.Find("Player").GetComponent<PlayerStats>().restHealth(Damage);
     }
 
-    public float RayToPlayer(Rigidbody2D player)
+
+    public float RayToPlayerDistance(Rigidbody2D player)
     {
         float distance = 100;
 
@@ -226,8 +230,64 @@ abstract public class Enemy : MonoBehaviour
 
         //Remove DrawLine
         Debug.DrawLine(currentPos, playerPos, Color.blue);
-
+        
         return distance;
+    }
+
+
+
+    void FixedUpdate()
+    {
+        if (!PlayerDetection && !Attacking)
+        {
+            //Todo, solo entra una puñetera vez
+            StaticMovement(Attacking);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        //When the player stay in the trigger Collider of the 
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            
+            if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) > DistanceToAttack - .03f)
+            {
+//TODO, I don't know if t his is the bes solution of my bug. Check it.
+                Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other);
+                MovementToPlayer(other.GetComponent<Transform>().position);
+            } 
+            else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) < DistanceToAttack && !Attacking)
+            {
+                Attacking = true;
+                Attack("SkAttackSE");
+            }
+            else
+            {
+                Attacking = false;
+            }
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            PlayerDetection = true;
+        }
+    }
+
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        //When the player exit of the trigger Collider of the 
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            InMovement = false;
+            Attacking = false;
+            PlayerDetection = false;
+        }
     }
 }
 

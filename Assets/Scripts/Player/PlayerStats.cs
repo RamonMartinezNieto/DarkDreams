@@ -27,7 +27,6 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-
     private float _currentArmor = .8f; 
     public float CurrentArmor
     {

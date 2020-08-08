@@ -17,9 +17,6 @@ abstract public class Weapons : MonoBehaviour
 
     [HideInInspector] public bool canShoot;
 
-
-
-
     protected const int baseDamage = 10;
 
     protected const float baseDistanceBullet = 2.0f;

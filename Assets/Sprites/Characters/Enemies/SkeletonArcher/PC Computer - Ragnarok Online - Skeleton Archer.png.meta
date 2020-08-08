@@ -1,0 +1,1567 @@
+fileFormatVersion: 2
+guid: 3dc4f167a72c4bc41b0d6af520f86aa6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6641437258728867142
+    second: PC Computer - Ragnarok Online - Skeleton Archer_0
+  - first:
+      213: 5711716925413293926
+    second: PC Computer - Ragnarok Online - Skeleton Archer_1
+  - first:
+      213: -1365941993527798023
+    second: PC Computer - Ragnarok Online - Skeleton Archer_2
+  - first:
+      213: 8317762184983130289
+    second: PC Computer - Ragnarok Online - Skeleton Archer_3
+  - first:
+      213: 7745470246214374158
+    second: PC Computer - Ragnarok Online - Skeleton Archer_4
+  - first:
+      213: 8401183808178652764
+    second: PC Computer - Ragnarok Online - Skeleton Archer_5
+  - first:
+      213: -6984850512904765260
+    second: PC Computer - Ragnarok Online - Skeleton Archer_6
+  - first:
+      213: 9115945851020321143
+    second: PC Computer - Ragnarok Online - Skeleton Archer_7
+  - first:
+      213: -7307433509394476817
+    second: PC Computer - Ragnarok Online - Skeleton Archer_8
+  - first:
+      213: 1338178350306440301
+    second: PC Computer - Ragnarok Online - Skeleton Archer_9
+  - first:
+      213: -3840763447890428276
+    second: PC Computer - Ragnarok Online - Skeleton Archer_10
+  - first:
+      213: -5382050620427234048
+    second: PC Computer - Ragnarok Online - Skeleton Archer_11
+  - first:
+      213: 8340056975309569183
+    second: PC Computer - Ragnarok Online - Skeleton Archer_12
+  - first:
+      213: -8890833366975389419
+    second: PC Computer - Ragnarok Online - Skeleton Archer_13
+  - first:
+      213: -3710584015484524584
+    second: PC Computer - Ragnarok Online - Skeleton Archer_14
+  - first:
+      213: -4655153472781565920
+    second: PC Computer - Ragnarok Online - Skeleton Archer_15
+  - first:
+      213: 621755720464377877
+    second: PC Computer - Ragnarok Online - Skeleton Archer_16
+  - first:
+      213: 5571317103304516702
+    second: PC Computer - Ragnarok Online - Skeleton Archer_17
+  - first:
+      213: 8309444096375608694
+    second: PC Computer - Ragnarok Online - Skeleton Archer_18
+  - first:
+      213: 1755559284545477261
+    second: PC Computer - Ragnarok Online - Skeleton Archer_19
+  - first:
+      213: 8918354749006627075
+    second: PC Computer - Ragnarok Online - Skeleton Archer_20
+  - first:
+      213: 5462885904942303984
+    second: PC Computer - Ragnarok Online - Skeleton Archer_21
+  - first:
+      213: -4952715688426193669
+    second: PC Computer - Ragnarok Online - Skeleton Archer_22
+  - first:
+      213: 4658683353604190689
+    second: PC Computer - Ragnarok Online - Skeleton Archer_23
+  - first:
+      213: 1147996484976075613
+    second: PC Computer - Ragnarok Online - Skeleton Archer_24
+  - first:
+      213: 327223254896959420
+    second: PC Computer - Ragnarok Online - Skeleton Archer_25
+  - first:
+      213: -1531765558753609555
+    second: PC Computer - Ragnarok Online - Skeleton Archer_26
+  - first:
+      213: 3260368094953576917
+    second: PC Computer - Ragnarok Online - Skeleton Archer_27
+  - first:
+      213: 7741553318416550092
+    second: PC Computer - Ragnarok Online - Skeleton Archer_28
+  - first:
+      213: -7275806880516931834
+    second: PC Computer - Ragnarok Online - Skeleton Archer_29
+  - first:
+      213: 4920108110451743827
+    second: PC Computer - Ragnarok Online - Skeleton Archer_30
+  - first:
+      213: 2960269690633249756
+    second: PC Computer - Ragnarok Online - Skeleton Archer_31
+  - first:
+      213: 2331505149111219066
+    second: PC Computer - Ragnarok Online - Skeleton Archer_32
+  - first:
+      213: -5616134945328787034
+    second: PC Computer - Ragnarok Online - Skeleton Archer_33
+  - first:
+      213: 8489649034273518861
+    second: PC Computer - Ragnarok Online - Skeleton Archer_34
+  - first:
+      213: -4879085007293562714
+    second: PC Computer - Ragnarok Online - Skeleton Archer_35
+  - first:
+      213: 7394639175117563865
+    second: PC Computer - Ragnarok Online - Skeleton Archer_36
+  - first:
+      213: -4567678400585225226
+    second: PC Computer - Ragnarok Online - Skeleton Archer_37
+  - first:
+      213: -2091198050129171955
+    second: PC Computer - Ragnarok Online - Skeleton Archer_38
+  - first:
+      213: -3759580727134950605
+    second: PC Computer - Ragnarok Online - Skeleton Archer_39
+  - first:
+      213: -2775571577071346904
+    second: PC Computer - Ragnarok Online - Skeleton Archer_40
+  - first:
+      213: -2636967619207095082
+    second: PC Computer - Ragnarok Online - Skeleton Archer_41
+  - first:
+      213: -2936861294364064729
+    second: PC Computer - Ragnarok Online - Skeleton Archer_42
+  - first:
+      213: -8781629471714491540
+    second: PC Computer - Ragnarok Online - Skeleton Archer_43
+  - first:
+      213: 5294826069019913842
+    second: PC Computer - Ragnarok Online - Skeleton Archer_44
+  - first:
+      213: 2205775549756884719
+    second: PC Computer - Ragnarok Online - Skeleton Archer_45
+  - first:
+      213: 6788210633724072238
+    second: PC Computer - Ragnarok Online - Skeleton Archer_46
+  - first:
+      213: 1577225726011778556
+    second: PC Computer - Ragnarok Online - Skeleton Archer_47
+  - first:
+      213: 612299123013542038
+    second: PC Computer - Ragnarok Online - Skeleton Archer_48
+  - first:
+      213: 699200762606286361
+    second: PC Computer - Ragnarok Online - Skeleton Archer_49
+  - first:
+      213: -7439390323037570453
+    second: PC Computer - Ragnarok Online - Skeleton Archer_50
+  - first:
+      213: -711599308252423912
+    second: PC Computer - Ragnarok Online - Skeleton Archer_51
+  - first:
+      213: -3646892056817553640
+    second: PC Computer - Ragnarok Online - Skeleton Archer_52
+  - first:
+      213: 1656884545889203709
+    second: PC Computer - Ragnarok Online - Skeleton Archer_53
+  - first:
+      213: -3356882853311253969
+    second: PC Computer - Ragnarok Online - Skeleton Archer_54
+  - first:
+      213: 2720416829224921037
+    second: PC Computer - Ragnarok Online - Skeleton Archer_55
+  - first:
+      213: 7010680518882044532
+    second: PC Computer - Ragnarok Online - Skeleton Archer_56
+  - first:
+      213: -2662484973468713480
+    second: PC Computer - Ragnarok Online - Skeleton Archer_57
+  - first:
+      213: -5332022498322770634
+    second: PC Computer - Ragnarok Online - Skeleton Archer_58
+  - first:
+      213: 7710447328444895703
+    second: PC Computer - Ragnarok Online - Skeleton Archer_59
+  - first:
+      213: 519424301285591600
+    second: PC Computer - Ragnarok Online - Skeleton Archer_60
+  - first:
+      213: -2284974636528008166
+    second: PC Computer - Ragnarok Online - Skeleton Archer_61
+  - first:
+      213: -1462723382373215756
+    second: PC Computer - Ragnarok Online - Skeleton Archer_62
+  - first:
+      213: -6649120786891882345
+    second: PC Computer - Ragnarok Online - Skeleton Archer_63
+  - first:
+      213: -1679927435946697682
+    second: PC Computer - Ragnarok Online - Skeleton Archer_64
+  - first:
+      213: 8116692898301465191
+    second: PC Computer - Ragnarok Online - Skeleton Archer_65
+  - first:
+      213: -1531756142785965851
+    second: PC Computer - Ragnarok Online - Skeleton Archer_66
+  - first:
+      213: -1398322768597266542
+    second: PC Computer - Ragnarok Online - Skeleton Archer_67
+  - first:
+      213: 8361104187110535963
+    second: PC Computer - Ragnarok Online - Skeleton Archer_68
+  - first:
+      213: -5856457177175548834
+    second: PC Computer - Ragnarok Online - Skeleton Archer_69
+  - first:
+      213: -5546926887052174838
+    second: PC Computer - Ragnarok Online - Skeleton Archer_70
+  - first:
+      213: 4213667200384891508
+    second: PC Computer - Ragnarok Online - Skeleton Archer_71
+  - first:
+      213: 172357539601866227
+    second: PC Computer - Ragnarok Online - Skeleton Archer_72
+  - first:
+      213: 2783915158988492932
+    second: PC Computer - Ragnarok Online - Skeleton Archer_73
+  - first:
+      213: -4098795843466737633
+    second: PC Computer - Ragnarok Online - Skeleton Archer_74
+  - first:
+      213: 5221920626361682147
+    second: PC Computer - Ragnarok Online - Skeleton Archer_75
+  - first:
+      213: 3992911549305679887
+    second: PC Computer - Ragnarok Online - Skeleton Archer_76
+  - first:
+      213: -134593614763520154
+    second: PC Computer - Ragnarok Online - Skeleton Archer_77
+  - first:
+      213: -4727317326746242717
+    second: PC Computer - Ragnarok Online - Skeleton Archer_78
+  - first:
+      213: 217452774699292541
+    second: PC Computer - Ragnarok Online - Skeleton Archer_79
+  - first:
+      213: -5095424816057095258
+    second: PC Computer - Ragnarok Online - Skeleton Archer_80
+  - first:
+      213: 13474412649668124
+    second: PC Computer - Ragnarok Online - Skeleton Archer_81
+  - first:
+      213: -2072488197221150767
+    second: PC Computer - Ragnarok Online - Skeleton Archer_82
+  - first:
+      213: 2651674611371134404
+    second: PC Computer - Ragnarok Online - Skeleton Archer_83
+  - first:
+      213: -2401275496569296360
+    second: PC Computer - Ragnarok Online - Skeleton Archer_84
+  - first:
+      213: -7547165583684651865
+    second: PC Computer - Ragnarok Online - Skeleton Archer_85
+  - first:
+      213: 3596826204980417373
+    second: PC Computer - Ragnarok Online - Skeleton Archer_86
+  - first:
+      213: 1483303247260031898
+    second: PC Computer - Ragnarok Online - Skeleton Archer_87
+  - first:
+      213: 4738188171591993168
+    second: PC Computer - Ragnarok Online - Skeleton Archer_88
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 748
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645049cbfff1b2c50800000000000000
+      internalID: 6641437258728867142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 748
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f78dc1848144f40800000000000000
+      internalID: 5711716925413293926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 748
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f69cf37ef23b0de0800000000000000
+      internalID: -1365941993527798023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_3
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 748
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0b81a43a0ae6370800000000000000
+      internalID: 8317762184983130289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_4
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 748
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0317f3d6207d7b60800000000000000
+      internalID: 7745470246214374158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_5
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 748
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5680438920079470800000000000000
+      internalID: 8401183808178652764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 721
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe091cc80f7c69a90800000000000000
+      internalID: -7307433509394476817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 721
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005934ed97d1f45b0800000000000000
+      internalID: -5382050620427234048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 618
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511ed3c882a6d9480800000000000000
+      internalID: -8890833366975389419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 618
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d76dc75f7b518cc0800000000000000
+      internalID: -3710584015484524584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 619
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020cdef9492956fb0800000000000000
+      internalID: -4655153472781565920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 618
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518a857988be0a800800000000000000
+      internalID: 621755720464377877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_17
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 618
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e542689236b415d40800000000000000
+      internalID: 5571317103304516702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_18
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 618
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6755f6d5163115370800000000000000
+      internalID: 8309444096375608694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_20
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 588
+        width: 6
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301457b846c54cb70800000000000000
+      internalID: 8918354749006627075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_21
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 500
+        width: 41
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa039479c110db40800000000000000
+      internalID: 5462885904942303984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_22
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 500
+        width: 40
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc3add625b644bb0800000000000000
+      internalID: -4952715688426193669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_23
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 502
+        width: 42
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e17a9cc3d7f6a040800000000000000
+      internalID: 4658683353604190689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_24
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 504
+        width: 39
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53656288b08eef00800000000000000
+      internalID: 1147996484976075613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_25
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 503
+        width: 36
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf516e01d78a8400800000000000000
+      internalID: 327223254896959420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_26
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 500
+        width: 35
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8305707531ebae0800000000000000
+      internalID: -1531765558753609555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_27
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 499
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d999b812872f3d20800000000000000
+      internalID: 3260368094953576917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_28
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 500
+        width: 37
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc807f10ab58f6b60800000000000000
+      internalID: 7741553318416550092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_34
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 357
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d057c9b01da41d570800000000000000
+      internalID: 8489649034273518861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_35
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 358
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0455f49020a4cb0800000000000000
+      internalID: -4879085007293562714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_36
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 351
+        width: 63
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7e11bb6290f9660800000000000000
+      internalID: 7394639175117563865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_37
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 344
+        width: 75
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fba4ecf1b85c90c0800000000000000
+      internalID: -4567678400585225226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_38
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 347
+        width: 69
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aaf0bf3729af2e0800000000000000
+      internalID: -2091198050129171955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_39
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 353
+        width: 69
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b67be6f3943dbc0800000000000000
+      internalID: -3759580727134950605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_40
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 353
+        width: 69
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bddf33b503b79d0800000000000000
+      internalID: -2775571577071346904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_41
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 355
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc14fcebeb976bd0800000000000000
+      internalID: -2636967619207095082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_45
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 332
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe640810d2d7c9e10800000000000000
+      internalID: 2205775549756884719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_47
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 226
+        width: 63
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf52a89f07e63e510800000000000000
+      internalID: 1577225726011778556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_48
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 223
+        width: 66
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690618beec25f7800800000000000000
+      internalID: 612299123013542038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_49
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 218
+        width: 56
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91674d9936f04b900800000000000000
+      internalID: 699200762606286361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_50
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 214
+        width: 72
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6afdd1bae9f1c890800000000000000
+      internalID: -7439390323037570453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_51
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 217
+        width: 63
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81953390334ef16f0800000000000000
+      internalID: -711599308252423912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_52
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 218
+        width: 57
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f22331ff2a36dc0800000000000000
+      internalID: -3646892056817553640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_53
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 218
+        width: 57
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df57f8747bf6ef610800000000000000
+      internalID: 1656884545889203709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_54
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 227
+        width: 64
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2278c794d4f961d0800000000000000
+      internalID: -3356882853311253969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_56
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 90
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a27b9a9c0fa4160800000000000000
+      internalID: 7010680518882044532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_57
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 84
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdf498e504fc0bd0800000000000000
+      internalID: -2662484973468713480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_58
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 102
+        width: 105
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635941db9c9d006b0800000000000000
+      internalID: -5332022498322770634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_59
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 90
+        width: 65
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d151575ef2010b60800000000000000
+      internalID: 7710447328444895703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_60
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 88
+        width: 53
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a45d566ad553700800000000000000
+      internalID: 519424301285591600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_61
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 101
+        width: 91
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1488f4aca32a40e0800000000000000
+      internalID: -2284974636528008166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_62
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 148
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f19cf465dc53bbe0800000000000000
+      internalID: -1462723382373215756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_71
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 13
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47af7a86ef3f97a30800000000000000
+      internalID: 4213667200384891508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_72
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 21
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd5452e446546200800000000000000
+      internalID: 172357539601866227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 24
+        width: 15
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4809558561472a620800000000000000
+      internalID: 2783915158988492932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_74
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 20
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18415f85e62e17c0800000000000000
+      internalID: -4098795843466737633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_75
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 17
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8c29b842df77840800000000000000
+      internalID: 5221920626361682147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_76
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 14
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f007be316eba96730800000000000000
+      internalID: 3992911549305679887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_77
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 17
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f0cfa02d3d12ef0800000000000000
+      internalID: -134593614763520154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_78
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 14
+        width: 65
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361bdbe00f1356eb0800000000000000
+      internalID: -4727317326746242717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_79
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 19
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77df5f752c840300800000000000000
+      internalID: 217452774699292541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Ragnarok Online - Skeleton Archer_80
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 17
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abe433602a6949b0800000000000000
+      internalID: -5095424816057095258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

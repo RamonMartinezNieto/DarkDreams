@@ -9,12 +9,9 @@ public class CrossHair : MonoBehaviour
 
     void Update()
     {
-        
         //detect mouse position
         crossHairPosition(crosshairTransform);
-
     }
-
 
     private void crossHairPosition(Transform corsshariTransform)
     {
