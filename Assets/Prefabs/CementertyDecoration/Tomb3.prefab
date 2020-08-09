@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1546098609955365269}
   - component: {fileID: 7488106651256012755}
   m_Layer: 0
-  m_Name: cementerySpritesWithoutShadows_24
+  m_Name: Tomb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4030690749272184208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3641646, y: -3.921, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,8 +99,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.006226212, y: -0.027184725}
+  - {x: 0.0031026006, y: -0.0021960735}
   - {x: -0.19243738, y: 0.10266042}
-  - {x: 0.0072220266, y: 0.23682475}
-  - {x: 0.21398705, y: 0.10254097}
-  - {x: 0.005577594, y: -0.027184725}
+  - {x: -0.00058689713, y: 0.19934177}
+  - {x: 0.1749422, y: 0.090046644}
+  - {x: 0.0040158033, y: -0.0037577152}

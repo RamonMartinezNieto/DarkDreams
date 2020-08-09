@@ -57,6 +57,7 @@ public class PlayerStats : MonoBehaviour
 
         float Health = CurrentHealt / 100f;
         healthBar.SetSize(Health);
+        Debug.Log($"rest size healthbar {Health}"); 
 
         if (Health < .3f)
         {

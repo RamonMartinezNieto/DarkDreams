@@ -75,7 +75,6 @@ abstract public class Enemy : MonoBehaviour
         {
             Die();
         }
-
     }
 
     public void Die()
@@ -84,13 +83,11 @@ abstract public class Enemy : MonoBehaviour
         //PlayAnimation("SkeletonDie");
         //Translate position of the enemy to simulate destroying this.
         rbdEnemy.transform.Translate(new Vector3(-250f, -250f, -150f));
-
     }
 
     //Movement in a place, when don't get vision with the player
     public void StaticMovement(bool attacking)
     {
-
         if (InMovement && !PlayerDetection)
         {
             currentPos = rbdEnemy.position;
@@ -161,13 +158,8 @@ abstract public class Enemy : MonoBehaviour
             ChangeDirection();
         }      
     }
-        
 
-    public void PlayAnimation(string playAnim)
-    {
-        EnemyAnimator.Play(playAnim);
-
-    }
+    public void PlayAnimation(string playAnim) =>  EnemyAnimator.Play(playAnim);
 
     private Vector2 RandomVector(float min, float max)
     {
@@ -188,18 +180,18 @@ abstract public class Enemy : MonoBehaviour
         rbdEnemy.MovePosition(newPos);
 
         
-        if (!Attacking)
+        if (Attacking)
         {
             PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
         }
     }
 
     //The animation have the method of the atack. Check the animation to know when the attack is launched.
-    public void Attack(string animationAttack)
+    public void Attack(string animationAttack = "SkAttackSE")
     {
         if (Attacking)
         {
-            PlayAnimation("SkAttackSE");
+            PlayAnimation(animationAttack);
         }
     }
 
@@ -210,7 +202,6 @@ abstract public class Enemy : MonoBehaviour
         //Rest live to the player, depends of the animation
         GameObject.Find("Player").GetComponent<PlayerStats>().restHealth(Damage);
     }
-
 
     public float RayToPlayerDistance(Rigidbody2D player)
     {
@@ -230,7 +221,6 @@ abstract public class Enemy : MonoBehaviour
 
         //Remove DrawLine
         Debug.DrawLine(currentPos, playerPos, Color.blue);
-        
         return distance;
     }
 
@@ -240,7 +230,7 @@ abstract public class Enemy : MonoBehaviour
     {
         if (!PlayerDetection && !Attacking)
         {
-            //Todo, solo entra una puñetera vez
+            // TODO: Solo entra una puñetera vez
             StaticMovement(Attacking);
         }
     }
@@ -253,9 +243,10 @@ abstract public class Enemy : MonoBehaviour
             
             if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) > DistanceToAttack - .03f)
             {
-//TODO, I don't know if t his is the bes solution of my bug. Check it.
+//TODO:  I don't know if t his is the bes solution of my bug. Check it.
                 Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other);
                 MovementToPlayer(other.GetComponent<Transform>().position);
+                Debug.Log("Movement To player");
             } 
             else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) < DistanceToAttack && !Attacking)
             {
@@ -267,7 +258,6 @@ abstract public class Enemy : MonoBehaviour
                 Attacking = false;
             }
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -277,7 +267,6 @@ abstract public class Enemy : MonoBehaviour
             PlayerDetection = true;
         }
     }
-
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -290,5 +279,3 @@ abstract public class Enemy : MonoBehaviour
         }
     }
 }
-
-
