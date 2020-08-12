@@ -1,21 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 abstract public class Enemy : MonoBehaviour
 {
-    private int _health;
-    public int Health
-    {
-        get { return _health; }
+    protected string[] ATTACKS = new string[4] { "SkAttackSE", "SkAttackSW", "SkAttackNW", "SkAttackNE" };
 
-        set { _health = value; }
-    }
+    //TODO: Health is very bad in bat, because it only have 50 of health, need to convert 100% an rest % not int
+    public int Health { get; set; }
+    private int initialHelath; 
 
-    private bool _playerDetection;
     public bool PlayerDetection { get; set; }
 
-    [SerializeField] private HealthBar healthBar;
+    [SerializeField] private EnemyHealthBar healthBar;
 
     private float Speed;
 
@@ -29,21 +27,30 @@ abstract public class Enemy : MonoBehaviour
     public bool InMovement { get; set; }
 
     public bool _attacking = false;
+    
     public bool Attacking { get; set; }
+
     public Animator EnemyAnimator;
 
     public Rigidbody2D rbdEnemy;
 
-    Vector2 inputVector;
-    Vector2 randomFinalPosition;
-    Vector2 currentPos;
-
     public Rigidbody2D characterRB;
 
+    public string directionToAttack { get; private set; }
+
+    private Vector2 inputVector;
+    private Vector2 randomFinalPosition;
+    private Vector2 currentPos;
+      
 
     public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
     {
-        Health = health;
+        //Health indique only the bar 
+        Health = 100;
+
+        //initialHelath uses to calc decrease bar
+        initialHelath = health; 
+
         this.Speed = speed;
         this.Damage = Damage;
         this.DistanceToAttack = distanteToAttack;
@@ -55,14 +62,14 @@ abstract public class Enemy : MonoBehaviour
         PlayerDetection = false;
 
         this.gameObject.GetComponent<CircleCollider2D>().radius = VisionRangeRadius;
-        
-        
+               
     }
 
     public void TakeDamage(int damage)
     {
-        Health -= damage;
-
+        //Rest % of the health
+        Health -= 100 * damage / initialHelath;
+        
         float currentHealth = Health / 100f;
         healthBar.SetSize(currentHealth);
 
@@ -82,6 +89,8 @@ abstract public class Enemy : MonoBehaviour
         //TODO reproduce animation, how? Y_Y
         //PlayAnimation("SkeletonDie");
         //Translate position of the enemy to simulate destroying this.
+        DropObject.InstantiateCachableObject(gameObject.transform.position);
+
         rbdEnemy.transform.Translate(new Vector3(-250f, -250f, -150f));
     }
 
@@ -156,7 +165,12 @@ abstract public class Enemy : MonoBehaviour
         if (other.gameObject.tag.Equals("LimitsGround"))
         {
             ChangeDirection();
-        }      
+        }
+
+        //Ignore collisions between enemies 
+        if (other.gameObject.tag.Equals("Enemy")) {
+            Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other.collider);
+        }
     }
 
     public void PlayAnimation(string playAnim) =>  EnemyAnimator.Play(playAnim);
@@ -179,21 +193,25 @@ abstract public class Enemy : MonoBehaviour
 
         rbdEnemy.MovePosition(newPos);
 
-        
-        if (Attacking)
+        if (!Attacking)
         {
             PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
         }
+
     }
 
+
     //The animation have the method of the atack. Check the animation to know when the attack is launched.
-    public void Attack(string animationAttack = "SkAttackSE")
-    {
-        if (Attacking)
+     public void Attack(string animationAttack = "SkAttackSE")
+     {
+        if (!Attacking)
         {
             PlayAnimation(animationAttack);
+            
+            Attacking = true;
         }
-    }
+        
+     }
 
     //Apply this method to animation attack, in the middle of the animation ocurrs this method.
     // To distance attacks is different, the atack is from shoot enemy attacks and not when the animation ocurrs. 
@@ -206,6 +224,19 @@ abstract public class Enemy : MonoBehaviour
     public float RayToPlayerDistance(Rigidbody2D player)
     {
         float distance = 100;
+        Vector3 playerPos = player.position;
+        //Correction from pivot
+        playerPos.y += 0.20f;
+
+        if (RayToPlayer(player).collider != null)
+        {
+            distance = Vector2.Distance(currentPos, playerPos);
+        }
+
+        return distance;
+    }
+
+    private RaycastHit2D RayToPlayer(Rigidbody2D player) {
 
         Vector3 currentPos = rbdEnemy.position;
         Vector3 playerPos = player.position;
@@ -214,17 +245,20 @@ abstract public class Enemy : MonoBehaviour
 
         RaycastHit2D ray = Physics2D.Raycast(currentPos, playerPos);
 
-        if (ray.collider != null)
-        {
-            distance = Vector2.Distance(currentPos, playerPos);
-        }
-
-        //Remove DrawLine
+        //RODO: Remove DrawLine
         Debug.DrawLine(currentPos, playerPos, Color.blue);
-        return distance;
+
+        return ray; 
     }
 
-
+    protected void setDirectionToAttack(Vector3 algo) 
+    {
+        if (algo.x > .0f && algo.y > .0f)      { directionToAttack = ATTACKS[3]; }
+        else if (algo.x > .0f && algo.y < .0f) { directionToAttack = ATTACKS[0]; }
+        else if (algo.x < .0f && algo.y < .0f) { directionToAttack = ATTACKS[1]; }
+        else if (algo.x < .0f && algo.y > .0f) { directionToAttack = ATTACKS[2]; }
+    }
+    
 
     void FixedUpdate()
     {
@@ -240,23 +274,27 @@ abstract public class Enemy : MonoBehaviour
         //When the player stay in the trigger Collider of the 
         if (other.gameObject.tag.Equals("Player"))
         {
-            
             if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) > DistanceToAttack - .03f)
             {
 //TODO:  I don't know if t his is the bes solution of my bug. Check it.
                 Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other);
                 MovementToPlayer(other.GetComponent<Transform>().position);
-                Debug.Log("Movement To player");
+                
+                //Attacking = false; 
             } 
             else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) < DistanceToAttack && !Attacking)
             {
-                Attacking = true;
-                Attack("SkAttackSE");
+                //Attacking = true;// TODO: skeleton archer ? 
+
+                //Change position of the attack, this change te direction look the enemy
+                Ray ray = new Ray(transform.position, (other.GetComponent<Transform>().position - transform.position));
+                setDirectionToAttack(ray.direction);
+               
+                Attack(directionToAttack);
+            } else {
+                Attacking = false; // TODO: skeleton archer ? 
             }
-            else
-            {
-                Attacking = false;
-            }
+           
         }
     }
 

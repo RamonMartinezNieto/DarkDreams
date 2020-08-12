@@ -7,7 +7,6 @@ public class PrincipalWeapon : Weapons
 
     private Transform weaponTransform;
 
-    
 
     void Start()
     {
@@ -43,13 +42,12 @@ public class PrincipalWeapon : Weapons
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoting();
+            Shoting(bulletType1);
+            
         }
-        else if (Input.GetButtonDown("Fire2") && canShoot)
+        else if (Input.GetButtonDown("Fire2") && canShoot && (UIBullets.CurrentBullets > 0))
         {
-
-            //TODO secondary Shoot
-            Debug.Log("secondary shoot");
+            Shoting(bulletType2);
         }
 
     }
@@ -57,8 +55,7 @@ public class PrincipalWeapon : Weapons
 
     public void SetActiveWeapon()
     {
-        Debug.Log("Active");
-        gameObject.SetActive(true); 
+        gameObject.SetActive(true);
     }
 
 }

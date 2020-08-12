@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4442288038858874250}
   - component: {fileID: 4442288038858874247}
   - component: {fileID: 4442288038858874244}
-  - component: {fileID: 4442288038858874246}
+  - component: {fileID: 608726985823171550}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4442288038858874246
+--- !u!114 &608726985823171550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc0ad19fb8233b4d9acebacf3697474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootContainer: {fileID: 0}
   shotVelocity: 2.5
-  arrowContainer: {fileID: 0}

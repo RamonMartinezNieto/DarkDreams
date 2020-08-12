@@ -47,4 +47,4 @@ MonoBehaviour:
   - {fileID: 872263868434355301, guid: 4b797cfd12320aa4783387d21af554e1, type: 3}
   - {fileID: 6012535760072008377, guid: d20eb4147c8b0e54db2951a1eaec1ef5, type: 3}
   - {fileID: 6884991823978973834, guid: dff6b187f39279b48873192f13f3d3b0, type: 3}
-  m_PerlinScale: 0.5
+  m_PerlinScale: 0.999

@@ -48,3 +48,6 @@ TagManager:
   - name: Ground
     uniqueID: 3051148091
     locked: 0
+  - name: CanvasParticles
+    uniqueID: 1537714257
+    locked: 0

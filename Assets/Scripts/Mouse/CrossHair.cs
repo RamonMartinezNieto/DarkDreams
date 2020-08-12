@@ -7,6 +7,26 @@ public class CrossHair : MonoBehaviour
 
     public Transform crosshairTransform;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if ((collision is CapsuleCollider2D) && (collision.tag == "Enemy"))
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.red; 
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if ((collision is CapsuleCollider2D) && (collision.tag == "Enemy"))
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        }
+    }
+
     void Update()
     {
         //detect mouse position

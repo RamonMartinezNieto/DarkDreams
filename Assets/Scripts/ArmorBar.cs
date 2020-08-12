@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
+//This class is obsolete because is remplaced by UIArmorBar
+
+[System.Obsolete("This class is obsolete, remplaced by UIArmorBar", true)]
 public class ArmorBar : MonoBehaviour
 {
     private Transform childArmorBar;
     private PlayerStats playerStats; 
     public static readonly float DAMAGE_REDUCE = 80;
+
 
     private void Start()
     {

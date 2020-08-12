@@ -15,7 +15,7 @@ public class EnemySkeleton : Enemy
     void Awake()
     {
         //Health, speed, vision, damage, distanceToAttack
-        EnemyConstructor(100, 0.5f, 3.0f, 10, .7f);
+        EnemyConstructor(90, 0.5f, 3.0f, 10, .7f);
 
     }
 

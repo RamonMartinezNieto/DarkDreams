@@ -7,11 +7,13 @@ public class EnemyBat : Enemy
     void Awake()
     {
         //Health, speed, vision, damage, distanceToAttack
-        EnemyConstructor(50, 0.7f, 2.5f, 5, .4f);
+        EnemyConstructor(35, 0.7f, 2.5f, 5, .4f);
+        
+        ATTACKS[0] = "BatAttackE";
+        ATTACKS[1] = "BatAttackW";
+        ATTACKS[2] = "BatAttackW";
+        ATTACKS[3] = "BatAttackE";
     }
-
-    //TODO: Currently bat no attack !!!! 
-
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -25,8 +27,10 @@ public class EnemyBat : Enemy
             }
             else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) < DistanceToAttack && !Attacking)
             {
-                Attacking = true;
-                Attack("BatAttackSE");
+                Ray ray = new Ray(transform.position, (other.GetComponent<Transform>().position - transform.position));
+                setDirectionToAttack(ray.direction);
+                Attack(directionToAttack);
+               
             }
             else
             {

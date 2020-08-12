@@ -8,22 +8,18 @@ using UnityEngine.UIElements;
 public class Arrow : Shot
 {
     
-    private int damage;
+    //private int damage;
 
     private Transform playerTransform;
 
-    [Tooltip("Shot velocity.")]
-    public float shotVelocity = 2.5f;
 
-    public GameObject arrowContainer; 
     
     void Awake()
     {
-        damage = GameObject.Find("SkeletonArcher").GetComponent<EnemySkeletonArcher>().Damage;
+        //damage = GameObject.Find("SkeletonArcher").GetComponent<EnemySkeletonArcher>().Damage;
         playerTransform = GameObject.Find("Player").GetComponent<Rigidbody2D>().transform;
         
-        _shotVelocity = shotVelocity;
-        _shotDamage = damage;
+       // _shotDamage = damage;
 
     }
 
@@ -43,22 +39,13 @@ public class Arrow : Shot
     {
         MovingShot(ArrowDirection(playerTransform));
 
-        SetArrowAngle(playerTransform);
-    }
-
-    //Set arrow angle,  be carefoul, the angle that changes is the angle of the arrow container 
-    private void SetArrowAngle(Transform playerTransform)
-    {
-        Quaternion _loookRotation = Quaternion.LookRotation((playerTransform.position - transform.position).normalized);
-        _loookRotation.x = 0.0f; _loookRotation.y = 0.0f;
-
-        arrowContainer.GetComponent<Transform>().rotation = _loookRotation;
-
+        //SetArrowAngle(playerTransform);
+        SetShotAngle(playerTransform.position); 
     }
 
     //sobrecharging method (orginal en Shot)
     public void MovingShot(Vector3 direction) {
-        this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * _shotVelocity;  
+        this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * shotVelocity;  
     }
 
 
@@ -74,17 +61,17 @@ public class Arrow : Shot
 
                 if (player != null)
                 {
-                    player.restHealth(_shotDamage); 
+                    player.restHealth(damage); 
                 }
 
                 DestroyShotAnimation();
-                Destroy(arrowContainer);
+                Destroy(shootContainer);
 
             }
             else if (!other.gameObject.tag.Equals("Enemy"))
             {
                 DestroyShotAnimation();
-                Destroy(arrowContainer);
+                Destroy(shootContainer);
             }
         }
     }

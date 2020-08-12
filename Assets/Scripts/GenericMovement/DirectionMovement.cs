@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -56,7 +57,7 @@ public class DirectionMovement : MonoBehaviour
 
             //Update current position of the object
             currentPos = newPos;
-
+            
         }
     }
 

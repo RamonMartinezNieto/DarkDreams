@@ -7,8 +7,11 @@ abstract public class Weapons : MonoBehaviour
     [Tooltip("Transform with initial point from shot")]
     public Transform transformWeapon;
 
-    [Tooltip("Specific bullet to shot")]
-    public GameObject bulletType;
+    [Tooltip("Specific bullet type infinite armor to shot")]
+    public GameObject bulletType1;
+
+    [Tooltip("Specific bullet type that only have 5 bullets")]
+    public GameObject bulletType2;
 
     [Tooltip("Weapon Sprite Renderer to calculate the corrections to check correct initial bullet position")]
     public SpriteRenderer weapon;
@@ -230,7 +233,7 @@ abstract public class Weapons : MonoBehaviour
         weaponTransform.right = direction;
     }
 
-    public void Shoting()
+    public void Shoting(GameObject bulletType)
     {
         canShoot = false; 
 
