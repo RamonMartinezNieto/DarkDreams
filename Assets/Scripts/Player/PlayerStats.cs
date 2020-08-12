@@ -10,7 +10,7 @@ public class PlayerStats : MonoBehaviour
     public Slider sliderHealtBar;
     public Slider sliderArmorBar;
 
-    private int currentHealt = 50;
+    private int currentHealt = 29;
     public int CurrentHealt
     {
         get
