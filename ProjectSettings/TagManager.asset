@@ -8,6 +8,7 @@ TagManager:
   - LimitsGround
   - Weapon
   - Enemy
+  - GroundEnemyDetector
   layers:
   - Default
   - TransparentFX

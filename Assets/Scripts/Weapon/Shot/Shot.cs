@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,29 +27,33 @@ abstract public class Shot : MonoBehaviour, IShooting
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.isTrigger)
-        {
-            if (other.gameObject.tag.Equals("Enemy"))
+            if (other.gameObject.tag.Equals("Enemy") && other is CapsuleCollider2D)
             {
                 //When Shot hit the enemy
                 Enemy enemy = other.GetComponent<Enemy>();
 
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(damage);
+                enemy.TakeDamage(damage);
                 }
 
                 DestroyShotAnimation();
                 Destroy(shootContainer);
 
             }
-            else if (!other.gameObject.tag.Equals("Player"))
+            else if (
+            !other.gameObject.tag.Equals("Player") &&
+            !other.gameObject.tag.Equals("GroundEnemyDetector")
+            )
             {
-                DestroyShotAnimation();
-                Destroy(shootContainer);
+                 if (!other.isTrigger)
+                 {
+                    DestroyShotAnimation();
+                    Destroy(shootContainer);
+                 }
             }
-        }
-       
+        
+      
     }
 
 

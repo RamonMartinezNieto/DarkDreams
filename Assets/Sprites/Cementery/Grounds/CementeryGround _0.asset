@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: efgtrsgfddfggdfdfgdfggdfdfggdfgfddfgdfg_0
+  m_Name: CementeryGround _0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -2958112191081173611, guid: c1b970d12caef6949b378e0a55ea5a1e,
+  m_Sprite: {fileID: 3259341228728003527, guid: 4df971b867a5dcf42bec33726b3cfaf3,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

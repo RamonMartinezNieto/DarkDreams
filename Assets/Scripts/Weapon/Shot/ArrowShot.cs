@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Arrow : Shot
+public class ArrowShot : Shot
 {
     
     //private int damage;
@@ -52,11 +52,10 @@ public class Arrow : Shot
     //Overriding OnTriggetEnter2D because Shot is maked to player shots. 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.isTrigger)
-        {
+
             if (other.gameObject.tag.Equals("Player"))
             {
-                //When Shot hit the enemy
+                //When Shot hit the Player
                 PlayerStats player = other.GetComponent<PlayerStats>();
 
                 if (player != null)
@@ -68,12 +67,18 @@ public class Arrow : Shot
                 Destroy(shootContainer);
 
             }
-            else if (!other.gameObject.tag.Equals("Enemy"))
+            else if (
+            !other.gameObject.tag.Equals("Enemy") &&
+            !other.gameObject.tag.Equals("GroundEnemyDetector")
+            )
             {
-                DestroyShotAnimation();
-                Destroy(shootContainer);
+                if (!other.isTrigger)
+                {
+                    DestroyShotAnimation();
+                    Destroy(shootContainer);
+                }
             }
-        }
+
     }
 
 

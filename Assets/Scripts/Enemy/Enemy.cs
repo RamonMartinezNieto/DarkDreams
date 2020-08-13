@@ -34,6 +34,7 @@ abstract public class Enemy : MonoBehaviour
 
     public Rigidbody2D rbdEnemy;
 
+
     public Rigidbody2D characterRB;
 
     public string directionToAttack { get; private set; }
