@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: c54f7023e7945e5448d200f48b7d8fcb
+guid: 2bf42ada11977444abb13bae57db3d21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7119731290535935118
-    second: Fence_0Degree 1_0
+      213: 2075519481220685982
+    second: FenceTest_0
   - first:
-      213: 2792709173374557173
-    second: Fence_0Degree 1_1
+      213: -2150890082336612299
+    second: FenceTest_1
+  - first:
+      213: 6512556984434503910
+    second: FenceTest_0
+  - first:
+      213: 1081927444367576711
+    second: FenceTest_1
+  - first:
+      213: -2051518363294093114
+    second: FenceTest_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,34 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fence_0Degree 1_0
+      name: FenceTest_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 2
-        width: 101
-        height: 77
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2734f5bfc12a13d90800000000000000
-      internalID: -7119731290535935118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fence_0Degree 1_1
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 79
-        width: 93
-        height: 135
+        y: 203
+        width: 262
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +115,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb17ff5232b1c620800000000000000
-      internalID: 2792709173374557173
+      spriteID: 6e035b48210416a50800000000000000
+      internalID: 6512556984434503910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FenceTest_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 157
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e86424747c30f00800000000000000
+      internalID: 1081927444367576711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FenceTest_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c03aa10bea8783e0800000000000000
+      internalID: -2051518363294093114
       vertices: []
       indices: 
       edges: []

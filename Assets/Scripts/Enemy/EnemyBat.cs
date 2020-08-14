@@ -29,6 +29,7 @@ public class EnemyBat : Enemy
             {
                 Ray ray = new Ray(transform.position, (other.GetComponent<Transform>().position - transform.position));
                 setDirectionToAttack(ray.direction);
+
                 Attack(directionToAttack);
                
             }

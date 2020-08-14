@@ -9,6 +9,7 @@ TagManager:
   - Weapon
   - Enemy
   - GroundEnemyDetector
+  - GroundPlayerDetector
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: CanvasParticles
     uniqueID: 1537714257
+    locked: 0
+  - name: Fences
+    uniqueID: 2956294199
     locked: 0

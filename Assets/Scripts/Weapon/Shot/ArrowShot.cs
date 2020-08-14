@@ -40,7 +40,7 @@ public class ArrowShot : Shot
         MovingShot(ArrowDirection(playerTransform));
 
         //SetArrowAngle(playerTransform);
-        SetShotAngle(playerTransform.position); 
+        SetShotAngle(playerTransform.position, .2f); 
     }
 
     //sobrecharging method (orginal en Shot)
@@ -53,14 +53,14 @@ public class ArrowShot : Shot
     void OnTriggerEnter2D(Collider2D other)
     {
 
-            if (other.gameObject.tag.Equals("Player"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("GroundPlayerDetector"))
             {
-                //When Shot hit the Player
-                PlayerStats player = other.GetComponent<PlayerStats>();
+            //When Shot hit the Player
+            PlayerStats player = FindObjectOfType<PlayerStats>();
 
                 if (player != null)
                 {
-                    player.restHealth(damage); 
+                    player.restHealth(damage);
                 }
 
                 DestroyShotAnimation();
@@ -68,8 +68,8 @@ public class ArrowShot : Shot
 
             }
             else if (
-            !other.gameObject.tag.Equals("Enemy") &&
-            !other.gameObject.tag.Equals("GroundEnemyDetector")
+            !other.gameObject.CompareTag("Enemy") &&
+            !other.gameObject.CompareTag("GroundEnemyDetector")
             )
             {
                 if (!other.isTrigger)
@@ -78,7 +78,6 @@ public class ArrowShot : Shot
                     Destroy(shootContainer);
                 }
             }
-
     }
 
 
@@ -89,25 +88,25 @@ public class ArrowShot : Shot
 
         if (playerTransform.position.x < 0)
         {
-            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x) - 0.1f;
+            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x); 
         }
         else
         {
-            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x) + 0.1f;
+            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x); 
         }
 
 
         if (playerTransform.position.y < 0)
         {
-            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y) - 0.1f;
+            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y + 0.2f); 
         }
         else
         {
-            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y) + 0.1f;
+            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y + 0.2f); 
         }
 
         return arrowDir;
     }
 
-  
+
 }

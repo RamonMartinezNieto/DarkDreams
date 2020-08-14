@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1720518532293778349}
   - component: {fileID: 1720518532293778354}
   - component: {fileID: 1720518532293778348}
+  - component: {fileID: 1394239922}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -57,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -191,6 +192,17 @@ MonoBehaviour:
   armorBar: {fileID: 0}
   sliderHealtBar: {fileID: 0}
   sliderArmorBar: {fileID: 0}
+--- !u!210 &1394239922
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720518532293778356}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &7446104450401095751
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +215,7 @@ GameObject:
   - component: {fileID: 1991696452757778259}
   m_Layer: 0
   m_Name: ColliderDetect
-  m_TagString: Untagged
+  m_TagString: GroundPlayerDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,6 +257,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1720518532293778353}
     m_Modifications:
+    - target: {fileID: 1532480366436700892, guid: b81b72da928bba44f812026c89d41a51,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 2531821571871269535, guid: b81b72da928bba44f812026c89d41a51,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 3721840348773780808, guid: b81b72da928bba44f812026c89d41a51,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 3721840348773780809, guid: b81b72da928bba44f812026c89d41a51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -315,6 +342,12 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 1720518532293778356}
+    - target: {fileID: 3721840348773780811, guid: b81b72da928bba44f812026c89d41a51,
+        type: 3}
+      propertyPath: bulletType2
+      value: 
+      objectReference: {fileID: 2802035933494917721, guid: ae2e4a7a13cd02442ad100fe85c524fc,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b81b72da928bba44f812026c89d41a51, type: 3}
 --- !u!4 &1720518531854162058 stripped

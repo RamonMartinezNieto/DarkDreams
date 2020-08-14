@@ -25,25 +25,25 @@ abstract public class Shot : MonoBehaviour, IShooting
         Destroy(gameObject);
     }
 
+   
     void OnTriggerEnter2D(Collider2D other)
     {
-            if (other.gameObject.tag.Equals("Enemy") && other is CapsuleCollider2D)
+            if (other.gameObject.CompareTag("Enemy") && other as CapsuleCollider2D)
             {
-                //When Shot hit the enemy
-                Enemy enemy = other.GetComponent<Enemy>();
-
+               //When Shot hit the enemy
+               Enemy enemy = other.GetComponent<Enemy>();
+               
                 if (enemy != null)
                 {
-                enemy.TakeDamage(damage);
+                    enemy.TakeDamage(damage);
                 }
 
                 DestroyShotAnimation();
                 Destroy(shootContainer);
-
-            }
+        }
             else if (
-            !other.gameObject.tag.Equals("Player") &&
-            !other.gameObject.tag.Equals("GroundEnemyDetector")
+            !other.gameObject.CompareTag("Player") &&
+            !other.gameObject.CompareTag("GroundPlayerDetector")
             )
             {
                  if (!other.isTrigger)
@@ -52,20 +52,19 @@ abstract public class Shot : MonoBehaviour, IShooting
                     Destroy(shootContainer);
                  }
             }
-        
-      
     }
+
+    
 
 
     //Set arrow angle,  be carefoul, the angle that changes is the angle of the arrow container 
-    public virtual void SetShotAngle(Vector3 objectiveTransform)
+    public virtual void SetShotAngle(Vector3 objectiveTransform, float variationOfY = .0f)
     {
+        objectiveTransform.y += .2f;
+
         Quaternion _loookRotation = Quaternion.LookRotation((objectiveTransform - transform.position).normalized);
         _loookRotation.x = 0.0f; _loookRotation.y = 0.0f;
-
+        
         shootContainer.GetComponent<Transform>().rotation = _loookRotation;
-
     }
-
-
 }

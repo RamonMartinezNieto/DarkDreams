@@ -93,13 +93,14 @@ GameObject:
   - component: {fileID: 567051122250754730}
   - component: {fileID: 567051122250754731}
   - component: {fileID: 567051122250754725}
+  - component: {fileID: 4743569536710755286}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &567051121908758283
 Transform:
   m_ObjectHideFlags: 0
@@ -108,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567051122250754732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36368763, y: -1.0692308, z: 2.0238905}
+  m_LocalPosition: {x: 0.36368763, y: -1.0692308, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 567051121914516950}
@@ -202,8 +203,7 @@ MonoBehaviour:
   _attacking: 0
   EnemyAnimator: {fileID: 567051122250754727}
   rbdEnemy: {fileID: 567051122250754729}
-  characterRB: {fileID: 1720518532293778352, guid: dff78fa7740d96c4aaf3dd710c6b4c77,
-    type: 3}
+  elVector: {x: 0, y: 0}
 --- !u!50 &567051122250754729
 Rigidbody2D:
   serializedVersion: 4
@@ -270,6 +270,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
+--- !u!210 &4743569536710755286
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567051122250754732}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &567051122341878579
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,6 +33,8 @@ public class MovementPlayer : MonoBehaviour
     }
 
     private RunDirections currentIdle = RunDirections.IdleS;
+    //TODO: 
+   // private SpriteRenderer characterRenderer;
 
     void Awake()
     {
@@ -40,6 +42,7 @@ public class MovementPlayer : MonoBehaviour
         animator = GetComponent<Animator>();
         playerTransform = GetComponent<Transform>();
         directionMovement = GetComponentInChildren<DirectionMovement>();
+       // characterRenderer = GetComponent<SpriteRenderer>(); 
     }
 
     void FixedUpdate()

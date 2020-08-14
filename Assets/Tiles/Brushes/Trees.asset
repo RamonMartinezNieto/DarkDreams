@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: FenceColumn
+  m_Script: {fileID: 11500000, guid: fdc5e1eccedb29e4894bbfab99032590, type: 3}
+  m_Name: Trees
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: bc087ddafef34b847b288561af42b96c, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -35,6 +35,7 @@ MonoBehaviour:
   m_Size: {x: 1, y: 1, z: 1}
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
-  m_Anchor: {x: 1.8, y: 1.3, z: 0}
-  m_Prefab: {fileID: 5997460307389954849, guid: 412f1cc02a464234e96eaed72971fac9,
-    type: 3}
+  m_Anchor: {x: 2, y: 2, z: 0}
+  m_Prefabs:
+  - {fileID: 2050648684559888756, guid: fe58162b9fb43bd4d80a477b16cfe8c4, type: 3}
+  m_PerlinScale: 0.5

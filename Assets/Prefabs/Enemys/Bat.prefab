@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &444449152159676940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5512872450547585863}
+  - component: {fileID: 3627635804111941982}
+  m_Layer: 0
+  m_Name: GrounDetect
+  m_TagString: GroundEnemyDetector
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5512872450547585863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444449152159676940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9214639414491804373}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &3627635804111941982
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444449152159676940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.21178329}
+  m_Size: {x: 0.5, y: 0.5764334}
+  m_Direction: 0
 --- !u!1 &9214639414491804370
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,9 +60,10 @@ GameObject:
   - component: {fileID: 9214639414491804371}
   - component: {fileID: 9214639414491804360}
   - component: {fileID: 9214639414491804374}
-  - component: {fileID: 9214639414491804375}
   - component: {fileID: 9214639414491804361}
   - component: {fileID: 9214639414491804362}
+  - component: {fileID: 5983054739095041354}
+  - component: {fileID: 8849811146615746407}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -35,6 +83,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 3789897628412473535}
+  - {fileID: 5512872450547585863}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -124,7 +173,7 @@ MonoBehaviour:
   _attacking: 0
   EnemyAnimator: {fileID: 9214639414491804371}
   rbdEnemy: {fileID: 9214639414491804374}
-  characterRB: {fileID: 0}
+  elVector: {x: 0, y: 0}
 --- !u!50 &9214639414491804374
 Rigidbody2D:
   serializedVersion: 4
@@ -146,22 +195,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &9214639414491804375
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9214639414491804370}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.022530753, y: 0.0856175}
-  m_Size: {x: 0.6248144, y: 0.87876475}
-  m_Direction: 1
 --- !u!58 &9214639414491804361
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -191,6 +224,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformCharacter: {fileID: 9214639414491804373}
+--- !u!210 &5983054739095041354
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9214639414491804370}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!70 &8849811146615746407
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9214639414491804370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0073035555, y: 0.14499992}
+  m_Size: {x: 0.6577587, y: 0.75999993}
+  m_Direction: 0
 --- !u!1001 &9214639414227737341
 PrefabInstance:
   m_ObjectHideFlags: 0

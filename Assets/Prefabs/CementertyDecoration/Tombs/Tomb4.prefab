@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1147637345303015307}
   - component: {fileID: 6688291842889179273}
   - component: {fileID: 6869916048962886185}
+  - component: {fileID: -6804029733748436914}
   m_Layer: 0
   m_Name: Tomb4
   m_TagString: Untagged
@@ -104,3 +105,14 @@ EdgeCollider2D:
   - {x: -0.0018844604, y: -0.0025372505}
   - {x: 0.23313856, y: 0.11727071}
   - {x: 0.0026259422, y: 0.21422243}
+--- !u!210 &-6804029733748436914
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9128063520406247338}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

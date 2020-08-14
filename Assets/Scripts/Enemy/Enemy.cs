@@ -34,10 +34,13 @@ abstract public class Enemy : MonoBehaviour
 
     public Rigidbody2D rbdEnemy;
 
-
-    public Rigidbody2D characterRB;
+    //public Rigidbody2D characterRB;
 
     public string directionToAttack { get; private set; }
+
+    //Variables to controller when the enemy needs change their position.
+    private float currentTime;
+    private float stayTime;
 
     private Vector2 inputVector;
     private Vector2 randomFinalPosition;
@@ -46,6 +49,10 @@ abstract public class Enemy : MonoBehaviour
 
     public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
     {
+        //TODO: test 
+        currentTime = Time.time;
+        stayTime = Random.Range(4f, 8f);  
+        
         //Health indique only the bar 
         Health = 100;
 
@@ -60,11 +67,14 @@ abstract public class Enemy : MonoBehaviour
         this.currentPos = rbdEnemy.position;
         this.randomFinalPosition = RandomVector(-1.0f, 1.0f) + currentPos;
         this.VisionRangeRadius = visionRange;
+        
         PlayerDetection = false;
 
         this.gameObject.GetComponent<CircleCollider2D>().radius = VisionRangeRadius;
                
     }
+
+   
 
     public void TakeDamage(int damage)
     {
@@ -102,7 +112,8 @@ abstract public class Enemy : MonoBehaviour
         {
             currentPos = rbdEnemy.position;
             Vector2 movement = inputVector * Speed;
-            Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
+            Vector2 newPos = currentPos + (movement * (Speed + .3F)) * Time.fixedDeltaTime;
+            
 
             rbdEnemy.MovePosition(newPos);
 
@@ -131,15 +142,19 @@ abstract public class Enemy : MonoBehaviour
         }
     }
 
+    public Vector2 elVector;
     private void ChangeDirection()
     {
-        inputVector = RandomVector(-1.0f, 1.0f);
+        //TODO: aquí hay un problema
+        inputVector = RandomVector(-1.5f, 1.5f);
+        elVector = inputVector; 
+
         currentPos = rbdEnemy.position;
 
-        var x = 0f;
-        var y = 0f;
+        float x;
+        float y;
 
-        if (randomFinalPosition.x < 0)
+        if (inputVector.x < 0)
         {
             x = Mathf.Abs(randomFinalPosition.x);
         }
@@ -163,14 +178,13 @@ abstract public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag.Equals("LimitsGround"))
+        //Ignore collisions between enemies 
+        if (other.gameObject.CompareTag("Enemy"))  { 
+            Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other.collider);
+        }
+        else 
         {
             ChangeDirection();
-        }
-
-        //Ignore collisions between enemies 
-        if (other.gameObject.tag.Equals("Enemy")) {
-            Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other.collider);
         }
     }
 
@@ -246,7 +260,7 @@ abstract public class Enemy : MonoBehaviour
 
         RaycastHit2D ray = Physics2D.Raycast(currentPos, playerPos);
 
-        //RODO: Remove DrawLine
+        //TODO: Remove DrawLine
         Debug.DrawLine(currentPos, playerPos, Color.blue);
 
         return ray; 
@@ -263,6 +277,12 @@ abstract public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Thsi if is to force change the direction of the enemy
+        if ((currentTime + stayTime ) < Time.time && !Attacking && !PlayerDetection) 
+        {
+            currentTime = Time.time;
+            InMovement = false;
+        } 
         if (!PlayerDetection && !Attacking)
         {
             // TODO: Solo entra una puñetera vez
@@ -288,9 +308,13 @@ abstract public class Enemy : MonoBehaviour
                 //Attacking = true;// TODO: skeleton archer ? 
 
                 //Change position of the attack, this change te direction look the enemy
-                Ray ray = new Ray(transform.position, (other.GetComponent<Transform>().position - transform.position));
+                Ray ray = new Ray(transform.position, (other.transform.position - transform.position));
+                
                 setDirectionToAttack(ray.direction);
-               
+
+                Debug.DrawRay(transform.position, ray.direction, Color.yellow);
+                Debug.DrawLine(transform.position, ray.direction, Color.green);
+
                 Attack(directionToAttack);
             } else {
                 Attacking = false; // TODO: skeleton archer ? 
@@ -305,7 +329,17 @@ abstract public class Enemy : MonoBehaviour
         {
             PlayerDetection = true;
         }
-    }
+
+        if (other.gameObject.CompareTag("GroundPlayerDetector") ||
+            other.gameObject.CompareTag("GroundEnemyDetector")) 
+        {
+            Collider2D[] colList = transform.GetComponentsInChildren<Collider2D>();
+            foreach (Collider2D col in colList)
+            {
+                if (col.CompareTag("GroundEnemyDetector")) Physics2D.IgnoreCollision(col, other);
+            }
+        }
+        }
 
     private void OnTriggerExit2D(Collider2D other)
     {
