@@ -30,8 +30,6 @@ abstract public class Enemy : MonoBehaviour
 
     private CircleCollider2D colEnemyVision; 
 
-    //public Rigidbody2D characterRB;
-
     public string directionToAttack { get; private set; }
 
     //Variables to controller when the enemy needs change their position.
@@ -102,13 +100,20 @@ abstract public class Enemy : MonoBehaviour
         //Translate position of the enemy to simulate destroying this.
         DropObject.InstantiateCachableObject(gameObject.transform.position);
 
-        rbdEnemy.transform.Translate(new Vector3(-250f, -250f, -150f));
+        transform.position = new Vector3(-252f, -247f, -150f);
+
+        EnemyRecovery er = FindObjectOfType<EnemyRecovery>();
+        er.SaveEnemy(this);
+
+        //TODO: leave this, I need use it to create enemies
+        //er.RecoverSkeletonArcher(0f,0f);
     }
+
 
     //Movement in a place, when don't get vision with the player
     public void StaticMovement()
     {
-        if (/*InMovement &&*/ !PlayerDetection)
+        if (!PlayerDetection)
         {
             currentPos = rbdEnemy.position;
             Vector2 movement = inputVector * Speed;
@@ -344,5 +349,18 @@ abstract public class Enemy : MonoBehaviour
             PlayerDetection = true;
         }
 
+    }
+
+
+    //Function Relocate to move enemy to new point
+    public void Relocate(float x, float y)
+    {
+        //Restart Health and HealthBar
+        Health = 100;
+        float currentHealth = Health / 100f;
+        healthBar.SetSize(currentHealth);
+        healthBar.SetColor(new Color(0.07740552f, 0.6698113f, 0f));
+
+        transform.position = new Vector3(x, y, 0f);
     }
 }

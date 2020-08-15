@@ -78,7 +78,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4721182844046068097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6885366, y: -1.3835373, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 791948134040547508}
@@ -208,7 +208,6 @@ MonoBehaviour:
   _attacking: 0
   EnemyAnimator: {fileID: 4721182844046068102}
   rbdEnemy: {fileID: 4721182844046068100}
-  elVector: {x: 0, y: 0}
   arrowType: {fileID: 7496484745882739380, guid: 5eae6c38d69e56b4eafbe313e0313092,
     type: 3}
 --- !u!70 &4721182844046068098
