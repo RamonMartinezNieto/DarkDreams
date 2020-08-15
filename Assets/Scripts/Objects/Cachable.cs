@@ -35,13 +35,7 @@ public abstract class Cachable : MonoBehaviour
     //This method call by DropObject
     public void SetPosition(Vector3 cachablerPosition) 
     {
-        //TODO: I don't know why the position don't set correctly.
-
-        //Debug.Log("Position to set: " + cachablerPosition);
-
-        gameObject.transform.position = cachablerPosition;
-
-        //Debug.Log("Current position: " + gameObject.transform.position);
+        transform.position = cachablerPosition;
     }
 
 

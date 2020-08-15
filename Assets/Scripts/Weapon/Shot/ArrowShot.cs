@@ -62,21 +62,17 @@ public class ArrowShot : Shot
                 {
                     player.restHealth(damage);
                 }
-
                 DestroyShotAnimation();
                 Destroy(shootContainer);
-
             }
-            else if (
-            !other.gameObject.CompareTag("Enemy") &&
-            !other.gameObject.CompareTag("GroundEnemyDetector")
-            )
+            else if (!other.gameObject.CompareTag("Enemy") &&
+            !other.gameObject.CompareTag("GroundEnemyDetector"))
             {
-                if (!other.isTrigger)
-                {
+                 if (!other.isTrigger)
+                 {
                     DestroyShotAnimation();
                     Destroy(shootContainer);
-                }
+                 }
             }
     }
 

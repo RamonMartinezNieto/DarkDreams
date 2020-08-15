@@ -19,30 +19,18 @@ public class MovementPlayer : MonoBehaviour
 
     public GameObject crossHair;
 
-    //Animator para reproducir la animación que corresponda, están numeradas
     private Animator animator;
-    //Guardo la última dirección para pasar a las posicioines idle
 
-    private DirectionMovement directionMovement;
-
-    private RunDirections _currentRun;
-    public RunDirections CurrentRun
-    {
-        get { return _currentRun; }
-        set { this._currentRun = value; }
-    }
+    public RunDirections CurrentRun { get; set; }
 
     private RunDirections currentIdle = RunDirections.IdleS;
-    //TODO: 
-   // private SpriteRenderer characterRenderer;
+
 
     void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerTransform = GetComponent<Transform>();
-        directionMovement = GetComponentInChildren<DirectionMovement>();
-       // characterRenderer = GetComponent<SpriteRenderer>(); 
     }
 
     void FixedUpdate()

@@ -28,10 +28,9 @@ public class EnemyBat : Enemy
             else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) < DistanceToAttack && !Attacking)
             {
                 Ray ray = new Ray(transform.position, (other.GetComponent<Transform>().position - transform.position));
-                setDirectionToAttack(ray.direction);
+                SetDirectionToAttack(ray.direction);
 
-                Attack(directionToAttack);
-               
+                Attack(other, directionToAttack);
             }
             else
             {

@@ -12,33 +12,34 @@ public class PrincipalWeapon : Weapons
     {
         weaponTransform = GetComponent<Transform>();
 
-
-        updateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
-        updateWiewPivotWeapon(gameObject, character);
+        UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
+        UpdateWiewPivotWeapon(gameObject, character);
 
         weaponTransform.position = WeaponPosition;
 
         canShoot = true;
-
     }
 
 
     void Update()
     {
-        updateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
-        updateWiewPivotWeapon(gameObject, character);
+        UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
+        UpdateWiewPivotWeapon(gameObject, character);
 
         weaponTransform.position = WeaponPosition;
 
-        debugRayCast(weaponTransform);
+        //TODO: Only to debug
+        DebugRayCast(weaponTransform);
 
-
-        /* Continuos Button Pressed
-                if (Input.GetMouseButton(0) && canShoot)
-                {
-
-                }
+        
+        //TODO: ¿Implemented this? Continuos Button Pressed
+        /*
+         * if (Input.GetMouseButton(0) && canShoot)
+        {
+            Shoting(bulletType1);
+        }
         */
+        
 
         if (Input.GetButtonDown("Fire1"))
         {

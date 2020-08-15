@@ -16,42 +16,43 @@ abstract public class Shot : MonoBehaviour, IShooting
 
     public virtual void MovingShot()
     {
-        this.gameObject.GetComponent<Rigidbody2D>().velocity = transform.right * shotVelocity;
+        GetComponent<Rigidbody2D>().velocity = transform.right * shotVelocity;
     }
 
     public void DestroyShotAnimation()
     {
-        //Debug.Log("DestroyAnimation in Shot");
         Destroy(gameObject);
     }
 
    
     void OnTriggerEnter2D(Collider2D other)
     {
-            if (other.gameObject.CompareTag("Enemy") && other as CapsuleCollider2D)
+        if ((other.gameObject.CompareTag("Enemy") && other as CapsuleCollider2D)
+             || (other.gameObject.CompareTag("GroundEnemyDetector")))
+        {
+            //When Shot hit the enemy
+            Enemy enemy = other.GetComponent<Enemy>();
+            if (enemy == null)
             {
-               //When Shot hit the enemy
-               Enemy enemy = other.GetComponent<Enemy>();
-               
-                if (enemy != null)
-                {
-                    enemy.TakeDamage(damage);
-                }
+                enemy = other.GetComponentInParent<Enemy>();
+            }
 
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+
+            DestroyShotAnimation();
+            Destroy(shootContainer);
+        }
+        else if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("GroundPlayerDetector"))
+        {
+            if (!other.isTrigger)
+            {
                 DestroyShotAnimation();
                 Destroy(shootContainer);
-        }
-            else if (
-            !other.gameObject.CompareTag("Player") &&
-            !other.gameObject.CompareTag("GroundPlayerDetector")
-            )
-            {
-                 if (!other.isTrigger)
-                 {
-                    DestroyShotAnimation();
-                    Destroy(shootContainer);
-                 }
             }
+        }
     }
 
     

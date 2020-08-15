@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 abstract public class Weapons : MonoBehaviour
@@ -41,7 +42,18 @@ abstract public class Weapons : MonoBehaviour
     protected bool IsFrontPosition
     {
         get { return _isFrontPosition; }
-        set { _isFrontPosition = value; }
+        set { 
+            _isFrontPosition = value;
+            //Change order depens is in bakc or front
+            if (!_isFrontPosition)
+            {
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
+            }
+            else 
+            {
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            }
+        }
     }
 
     [System.NonSerialized()]
@@ -104,106 +116,65 @@ abstract public class Weapons : MonoBehaviour
         set { _specificBulletDistance = value; }
     }
 
-
-
-
-
     //Methods to places weapon. 
-    protected virtual void updateWeaponPosition(Transform characterTransform, GameObject weaponObject, GameObject character, Transform transformWeaponContainer)
+    protected virtual void UpdateWeaponPosition(Transform characterTransform, GameObject weaponObject, GameObject character, Transform transformWeaponContainer)
     {
-        Vector3 mousePos = Input.mousePosition;
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 force = Vector2.ClampMagnitude(new Vector2((mousePos.x - transform.position.x), (mousePos.y - transform.position.y)), baseDistanceBullet);
+        //I don't know why I put this here... O.o ?
+        //Vector3 mousePos = Input.mousePosition;
+        //mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Vector3 force = Vector2.ClampMagnitude(new Vector2((mousePos.x - transform.position.x), (mousePos.y - transform.position.y)), baseDistanceBullet);
 
         RunDirections rd = character.GetComponent<MovementPlayer>().CurrentRun;
-        float zPosition = -1.0f;
 
-
-        // TODO: Need to refactor this part
         if (rd.Equals(RunDirections.RunE) || rd.Equals(RunDirections.RunSE))
         {
-            CorrectionXWeaponPosition = 0.19f;
-            CorrectionYWeaponPosition = 0.15f;
-            zPosition = -1.0f;
-            IsFrontPosition = true;
-            IsRunRight = true;
-            weaponObject.GetComponent<SpriteRenderer>().flipX = false;
+            SetWeaponVariables(0.19f, 0.15f, -1.0f, true, true, false);
         }
         else if (rd.Equals(RunDirections.RunW) || rd.Equals(RunDirections.RunSW))
         {
-            CorrectionXWeaponPosition = -0.19f;
-            CorrectionYWeaponPosition = 0.15f;
-            zPosition = -1.0f;
-            IsFrontPosition = true;
-            IsRunRight = false;
-            weaponObject.GetComponent<SpriteRenderer>().flipX = true;
-
+            SetWeaponVariables(-0.19f, 0.15f, -1.0f, false, true, true);
         }
         else if (rd.Equals(RunDirections.RunNE))
         {
-            CorrectionXWeaponPosition = 0.19f;
-            CorrectionYWeaponPosition = 0.190f;
-            zPosition = 0.10f;
-            IsFrontPosition = false;
-            IsRunRight = true;
-            weaponObject.GetComponent<SpriteRenderer>().flipX = false;
-
+            SetWeaponVariables(0.19f, 0.190f, 0.10f, true, false, false);
         }
         else if (rd.Equals(RunDirections.RunNW))
         {
-            CorrectionXWeaponPosition = -0.19f;
-            CorrectionYWeaponPosition = 0.190f;
-            zPosition = 0.10f;
-            IsFrontPosition = false;
-            IsRunRight = false;
-            weaponObject.GetComponent<SpriteRenderer>().flipX = true;
+            SetWeaponVariables(-0.19f, 0.190f, 0.10f, false, false, true);
         }
         else if (rd.Equals(RunDirections.RunS))
         {
-            CorrectionXWeaponPosition = 0.100f;
-            CorrectionYWeaponPosition = 0.160f;
-            IsFrontPosition = true;
-            IsRunRight = true;
-            zPosition = -1.0f;
-
-
-            weaponObject.GetComponent<SpriteRenderer>().flipX = false;
+            SetWeaponVariables(0.100f, 0.160f, -1.0f, true, true, false);
         }
         else if (rd.Equals(RunDirections.RunN))
         {
+            SetWeaponVariables(0.100f, 0.160f, -1.0f, false, false, false);
         }
-        
 
-        WeaponPosition = new Vector3(characterTransform.position.x + CorrectionXWeaponPosition, characterTransform.position.y + CorrectionYWeaponPosition, zPosition);
+
+        WeaponPosition = new Vector3(characterTransform.position.x + CorrectionXWeaponPosition, characterTransform.position.y + CorrectionYWeaponPosition, CorrectionZWeaponPosition);
 
     }
 
-    // TODO ********************************
-    //Need  to apply this method 
-    private void setWeaponVariables(float weaponXPos, float weaponYPos, float WeaponsZPos, bool run, bool front, bool flip, GameObject weapon)
+    private void SetWeaponVariables(float weaponXPos, float weaponYPos, float WeaponsZPos, bool runRigth, bool isFront, bool flip)
     {
         CorrectionXWeaponPosition = weaponXPos;
         CorrectionYWeaponPosition = weaponYPos;
         CorrectionZWeaponPosition = WeaponsZPos;
-        IsRunRight = run;
-        IsFrontPosition = front;
+        IsRunRight = runRigth;
+        IsFrontPosition = isFront;
         weapon.GetComponent<SpriteRenderer>().flipX = flip;
     }
 
-
-
-    protected virtual void updateWiewPivotWeapon(GameObject weaponObject, GameObject character)
+    protected virtual void UpdateWiewPivotWeapon(GameObject weaponObject, GameObject character)
     {
-
         Transform weaponTransform = weaponObject.GetComponent<Transform>();
-        Transform transformCharacter = character.GetComponent<Transform>();
 
         SpriteRenderer spriteRendererWeapon = weaponTransform.GetComponent<SpriteRenderer>();
 
         Vector3 mousePos = CrossHair.getMousePosition();
 
         Vector2 direction = new Vector2(mousePos.x - weaponTransform.position.x, mousePos.y - weaponTransform.position.y);
-
 
         if (IsRunRight)
         {
@@ -221,7 +192,7 @@ abstract public class Weapons : MonoBehaviour
             if (weaponTransform.rotation.z <= 0.7f && weaponTransform.rotation.z >= -0.7f)
             {
                 spriteRendererWeapon.flipY = false;
-                spriteRendererWeapon.flipX = true;
+                spriteRendererWeapon.flipX = false;
             }
             else
             {
@@ -249,10 +220,9 @@ abstract public class Weapons : MonoBehaviour
 
 
 
-    //Only to debug
-    protected void debugRayCast(Transform weapon)
+    //TODO: Only to debug
+    protected void DebugRayCast(Transform weapon)
     {
-
         if (Input.mousePosition.x > 0.0f)
         {
             Vector3 mousePos = Input.mousePosition;
@@ -263,7 +233,6 @@ abstract public class Weapons : MonoBehaviour
             Debug.DrawRay(weapon.position, force, Color.red);
 
         }
-
-
     }
+
 }

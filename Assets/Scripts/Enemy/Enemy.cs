@@ -7,8 +7,8 @@ abstract public class Enemy : MonoBehaviour
 {
     protected string[] ATTACKS = new string[4] { "SkAttackSE", "SkAttackSW", "SkAttackNW", "SkAttackNE" };
 
-    //TODO: Health is very bad in bat, because it only have 50 of health, need to convert 100% an rest % not int
     public int Health { get; set; }
+
     private int initialHelath; 
 
     public bool PlayerDetection { get; set; }
@@ -24,7 +24,7 @@ abstract public class Enemy : MonoBehaviour
     protected float DistanceToAttack;
 
     //private bool _inMovement = true;
-    public bool InMovement { get; set; }
+   // public bool InMovement { get; set; }
 
     public bool _attacking = false;
     
@@ -33,6 +33,8 @@ abstract public class Enemy : MonoBehaviour
     public Animator EnemyAnimator;
 
     public Rigidbody2D rbdEnemy;
+
+    private CircleCollider2D colEnemyVision; 
 
     //public Rigidbody2D characterRB;
 
@@ -49,7 +51,8 @@ abstract public class Enemy : MonoBehaviour
 
     public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
     {
-        //TODO: test 
+        //Use these variables to calculate when the enemy needs change the position, 
+        //This avoid  that enemy stay in the same place when the random vector is so close (because velocity affect at the enemy).
         currentTime = Time.time;
         stayTime = Random.Range(4f, 8f);  
         
@@ -69,13 +72,16 @@ abstract public class Enemy : MonoBehaviour
         this.VisionRangeRadius = visionRange;
         
         PlayerDetection = false;
+        Attacking = false;
 
-        this.gameObject.GetComponent<CircleCollider2D>().radius = VisionRangeRadius;
-               
+        colEnemyVision = GetComponentInChildren<CircleCollider2D>();
+
+        //this.gameObject.GetComponentIn<CircleCollider2D>().radius = VisionRangeRadius;
+        colEnemyVision.radius = VisionRangeRadius; 
     }
 
    
-
+    //Decrease damage of the enemy. Convert health to 100% and decrease % damage.
     public void TakeDamage(int damage)
     {
         //Rest % of the health
@@ -97,7 +103,7 @@ abstract public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        //TODO reproduce animation, how? Y_Y
+        //TODO: reproduce animation, how? Y_Y
         //PlayAnimation("SkeletonDie");
         //Translate position of the enemy to simulate destroying this.
         DropObject.InstantiateCachableObject(gameObject.transform.position);
@@ -106,26 +112,31 @@ abstract public class Enemy : MonoBehaviour
     }
 
     //Movement in a place, when don't get vision with the player
-    public void StaticMovement(bool attacking)
+    public void StaticMovement()
     {
-        if (InMovement && !PlayerDetection)
+        if (/*InMovement &&*/ !PlayerDetection)
         {
             currentPos = rbdEnemy.position;
             Vector2 movement = inputVector * Speed;
             Vector2 newPos = currentPos + (movement * (Speed + .3F)) * Time.fixedDeltaTime;
-            
 
             rbdEnemy.MovePosition(newPos);
 
+            // Debug.Log(currentPos.x.ToString("F1").Equals(randomFinalPosition.x.ToString("F1")));
+
             //Chekc if the enemy moves X and Y random vector
-            if (currentPos.x.ToString("F1").Equals(randomFinalPosition.x.ToString("F1"))
-            || currentPos.y.ToString("F1").Equals(randomFinalPosition.y.ToString("F1")))
+            /*    if (currentPos.x.ToString("F1").Equals(randomFinalPosition.x.ToString("F1"))
+                || currentPos.y.ToString("F1").Equals(randomFinalPosition.y.ToString("F1")))
+                {
+                    InMovement = false;
+                }*/
+            if (!Attacking)
             {
-                InMovement = false;
+                PlayAnimation(GetComponent<DirectionMovement>().CurrentDir.ToString());
             }
 
         }
-        else
+      /*  else
         {
             //New direction to move
             inputVector = RandomVector(-1.0f, 1.0f);
@@ -133,27 +144,22 @@ abstract public class Enemy : MonoBehaviour
             randomFinalPosition = RandomVector(-2.0f, 2.0f) + currentPos;
 
             InMovement = true;
-        }
+        }*/
 
         //If the enemy is not attacking to the player
-        if (!attacking)
-        {
-            PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
-        }
+
     }
 
     public Vector2 elVector;
-    private void ChangeDirection()
+    private void ChangeDirection(bool onColision = false)
     {
-        //TODO: aquí hay un problema
         inputVector = RandomVector(-1.5f, 1.5f);
-        elVector = inputVector; 
 
         currentPos = rbdEnemy.position;
 
         float x;
         float y;
-
+        
         if (inputVector.x < 0)
         {
             x = Mathf.Abs(randomFinalPosition.x);
@@ -188,13 +194,16 @@ abstract public class Enemy : MonoBehaviour
         }
     }
 
-    public void PlayAnimation(string playAnim) =>  EnemyAnimator.Play(playAnim);
+    public void PlayAnimation(string playAnim)
+    {
+        //Debug.Log("Play animation: " + playAnim);
+        EnemyAnimator.Play(playAnim);
+    }
 
     private Vector2 RandomVector(float min, float max)
     {
         return new Vector2(Random.Range(min, max), Random.Range(min, max));
     }
-
 
     //Movement when get vision with the player
     public void MovementToPlayer(Vector2 playerPos)
@@ -217,16 +226,17 @@ abstract public class Enemy : MonoBehaviour
 
 
     //The animation have the method of the atack. Check the animation to know when the attack is launched.
-     public void Attack(string animationAttack = "SkAttackSE")
+     public void Attack(Collider2D other, string animationAttack = "SkAttackSE")
      {
         if (!Attacking)
         {
+            Debug.Log("launch attack"); 
             PlayAnimation(animationAttack);
             
             Attacking = true;
         }
-        
-     }
+
+    }
 
     //Apply this method to animation attack, in the middle of the animation ocurrs this method.
     // To distance attacks is different, the atack is from shoot enemy attacks and not when the animation ocurrs. 
@@ -260,20 +270,18 @@ abstract public class Enemy : MonoBehaviour
 
         RaycastHit2D ray = Physics2D.Raycast(currentPos, playerPos);
 
-        //TODO: Remove DrawLine
-        Debug.DrawLine(currentPos, playerPos, Color.blue);
+        //Debug.DrawLine(currentPos, playerPos, Color.blue);
 
         return ray; 
     }
 
-    protected void setDirectionToAttack(Vector3 algo) 
+    protected void SetDirectionToAttack(Vector3 algo) 
     {
         if (algo.x > .0f && algo.y > .0f)      { directionToAttack = ATTACKS[3]; }
         else if (algo.x > .0f && algo.y < .0f) { directionToAttack = ATTACKS[0]; }
         else if (algo.x < .0f && algo.y < .0f) { directionToAttack = ATTACKS[1]; }
         else if (algo.x < .0f && algo.y > .0f) { directionToAttack = ATTACKS[2]; }
     }
-    
 
     void FixedUpdate()
     {
@@ -281,74 +289,95 @@ abstract public class Enemy : MonoBehaviour
         if ((currentTime + stayTime ) < Time.time && !Attacking && !PlayerDetection) 
         {
             currentTime = Time.time;
-            InMovement = false;
+
+            ChangeDirection();
+            //InMovement = false;
+
+            //Call StaticMovement when update the time
+            //StaticMovement();
         } 
         if (!PlayerDetection && !Attacking)
         {
-            // TODO: Solo entra una puñetera vez
-            StaticMovement(Attacking);
+            // TODO: Solo entra una tera vez
+            //Debug.Log("call static Movement");
+             StaticMovement();
+        }
+
+
+        //Check when the player exit out of the enemy range
+        EnemyVision vis = GetComponentInChildren<EnemyVision>();
+        if (!vis.Vision && (Attacking || PlayerDetection))
+        {
+            Attacking = false;
+            PlayerDetection = false;
         }
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        //TODO: repair attack movement
         //When the player stay in the trigger Collider of the 
-        if (other.gameObject.tag.Equals("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) > DistanceToAttack - .03f)
+            if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) >= DistanceToAttack - .03f)
             {
-//TODO:  I don't know if t his is the bes solution of my bug. Check it.
+                //I don't know if t his is the bes solution of my bug. Check it.
                 Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other);
                 MovementToPlayer(other.GetComponent<Transform>().position);
                 
-                //Attacking = false; 
+                Attacking = false; 
             } 
             else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) < DistanceToAttack && !Attacking)
             {
-                //Attacking = true;// TODO: skeleton archer ? 
+                //Attacking = true;
 
                 //Change position of the attack, this change te direction look the enemy
                 Ray ray = new Ray(transform.position, (other.transform.position - transform.position));
                 
-                setDirectionToAttack(ray.direction);
+                SetDirectionToAttack(ray.direction);
 
+                //TODO: quit this
                 Debug.DrawRay(transform.position, ray.direction, Color.yellow);
                 Debug.DrawLine(transform.position, ray.direction, Color.green);
 
-                Attack(directionToAttack);
-            } else {
-                Attacking = false; // TODO: skeleton archer ? 
+                Debug.Log("attack from OnTrigger");
+                Attack(other, directionToAttack);
             }
-           
+           /* else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) > DistanceToAttack)
+            {
+                Attacking = false;
+                Debug.Log("attack false");
+            }*/
+
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    /*
+     * Important: colList used to checkc when the player enter in the circleCollider2D. 
+     * Enemies only have a CircleCollider2D, is not the better solution, need to search
+     * other solution.
+     */
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.gameObject.tag.Equals("Player"))
-        {
-            PlayerDetection = true;
-        }
+        Collider2D[] colList = GetComponentsInChildren<Collider2D>();
+        
 
         if (other.gameObject.CompareTag("GroundPlayerDetector") ||
             other.gameObject.CompareTag("GroundEnemyDetector")) 
         {
-            Collider2D[] colList = transform.GetComponentsInChildren<Collider2D>();
             foreach (Collider2D col in colList)
             {
                 if (col.CompareTag("GroundEnemyDetector")) Physics2D.IgnoreCollision(col, other);
             }
         }
+
+        EnemyVision vis = GetComponentInChildren<EnemyVision>();
+        if (vis.Vision)
+        {
+            PlayerDetection = true;
         }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        //When the player exit of the trigger Collider of the 
-        if (other.gameObject.tag.Equals("Player"))
-        {
-            InMovement = false;
-            Attacking = false;
-            PlayerDetection = false;
-        }
     }
+
+  
 }

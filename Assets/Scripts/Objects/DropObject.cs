@@ -5,7 +5,7 @@ using UnityEngine;
 public class DropObject : MonoBehaviour
 {
 
-    static GameObject[] cachableObjects = new GameObject[10];
+    private static readonly GameObject[] cachableObjects = new GameObject[10];
 
     public GameObject bullet;
     public GameObject shield;
@@ -30,8 +30,8 @@ public class DropObject : MonoBehaviour
         
         if (cachableObjects[element] != null)
         {
-            Instantiate(cachableObjects[element]);
-            cachableObjects[element].GetComponent<Cachable>().SetPosition(enemyPosition);
+            GameObject cachable = Instantiate(cachableObjects[element]);
+            cachable.GetComponent<Cachable>().SetPosition(enemyPosition); 
         } 
     }
 }
