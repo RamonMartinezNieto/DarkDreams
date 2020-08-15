@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
-using UnityEngine;
+﻿using UnityEngine;
 
 abstract public class Enemy : MonoBehaviour
 {
@@ -22,9 +19,6 @@ abstract public class Enemy : MonoBehaviour
     public int Damage { get; set; }
 
     protected float DistanceToAttack;
-
-    //private bool _inMovement = true;
-   // public bool InMovement { get; set; }
 
     public bool _attacking = false;
     
@@ -122,36 +116,15 @@ abstract public class Enemy : MonoBehaviour
 
             rbdEnemy.MovePosition(newPos);
 
-            // Debug.Log(currentPos.x.ToString("F1").Equals(randomFinalPosition.x.ToString("F1")));
-
-            //Chekc if the enemy moves X and Y random vector
-            /*    if (currentPos.x.ToString("F1").Equals(randomFinalPosition.x.ToString("F1"))
-                || currentPos.y.ToString("F1").Equals(randomFinalPosition.y.ToString("F1")))
-                {
-                    InMovement = false;
-                }*/
             if (!Attacking)
             {
                 PlayAnimation(GetComponent<DirectionMovement>().CurrentDir.ToString());
             }
 
         }
-      /*  else
-        {
-            //New direction to move
-            inputVector = RandomVector(-1.0f, 1.0f);
-            currentPos = rbdEnemy.position;
-            randomFinalPosition = RandomVector(-2.0f, 2.0f) + currentPos;
-
-            InMovement = true;
-        }*/
-
-        //If the enemy is not attacking to the player
-
     }
 
-    public Vector2 elVector;
-    private void ChangeDirection(bool onColision = false)
+    private void ChangeDirection()
     {
         inputVector = RandomVector(-1.5f, 1.5f);
 
@@ -179,7 +152,6 @@ abstract public class Enemy : MonoBehaviour
         }
 
         randomFinalPosition = new Vector2(x, y) + currentPos;
-
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -196,7 +168,6 @@ abstract public class Enemy : MonoBehaviour
 
     public void PlayAnimation(string playAnim)
     {
-        //Debug.Log("Play animation: " + playAnim);
         EnemyAnimator.Play(playAnim);
     }
 
@@ -224,18 +195,14 @@ abstract public class Enemy : MonoBehaviour
 
     }
 
-
     //The animation have the method of the atack. Check the animation to know when the attack is launched.
-     public void Attack(Collider2D other, string animationAttack = "SkAttackSE")
+     public void Attack()
      {
         if (!Attacking)
         {
-            Debug.Log("launch attack"); 
-            PlayAnimation(animationAttack);
-            
+            PlayAnimation(directionToAttack);
             Attacking = true;
         }
-
     }
 
     //Apply this method to animation attack, in the middle of the animation ocurrs this method.
@@ -277,10 +244,23 @@ abstract public class Enemy : MonoBehaviour
 
     protected void SetDirectionToAttack(Vector3 algo) 
     {
-        if (algo.x > .0f && algo.y > .0f)      { directionToAttack = ATTACKS[3]; }
-        else if (algo.x > .0f && algo.y < .0f) { directionToAttack = ATTACKS[0]; }
-        else if (algo.x < .0f && algo.y < .0f) { directionToAttack = ATTACKS[1]; }
-        else if (algo.x < .0f && algo.y > .0f) { directionToAttack = ATTACKS[2]; }
+        var dirInt = 0; 
+
+        if (algo.x > .0f && algo.y > .0f)      { dirInt = 3; }
+        else if (algo.x > .0f && algo.y < .0f) { dirInt = 0; }
+        else if (algo.x < .0f && algo.y < .0f) { dirInt = 1; }
+        else if (algo.x < .0f && algo.y > .0f) { dirInt = 2; }
+
+        directionToAttack = ATTACKS[dirInt];
+        EnemyAnimator.SetInteger("directionAttack", dirInt);
+    }
+
+    //Method to set direction attack from Animation
+    public void SetDirectionAttack() 
+    {
+        Vector3 playerTransform = GameObject.Find("Player").GetComponent<Transform>().position;
+        Ray ray = new Ray(transform.position, playerTransform - transform.position);
+        SetDirectionToAttack(ray.direction);
     }
 
     void FixedUpdate()
@@ -291,15 +271,10 @@ abstract public class Enemy : MonoBehaviour
             currentTime = Time.time;
 
             ChangeDirection();
-            //InMovement = false;
 
-            //Call StaticMovement when update the time
-            //StaticMovement();
         } 
         if (!PlayerDetection && !Attacking)
         {
-            // TODO: Solo entra una tera vez
-            //Debug.Log("call static Movement");
              StaticMovement();
         }
 
@@ -315,7 +290,6 @@ abstract public class Enemy : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        //TODO: repair attack movement
         //When the player stay in the trigger Collider of the 
         if (other.gameObject.CompareTag("Player"))
         {
@@ -329,26 +303,19 @@ abstract public class Enemy : MonoBehaviour
             } 
             else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) < DistanceToAttack && !Attacking)
             {
-                //Attacking = true;
-
                 //Change position of the attack, this change te direction look the enemy
                 Ray ray = new Ray(transform.position, (other.transform.position - transform.position));
-                
+
                 SetDirectionToAttack(ray.direction);
 
                 //TODO: quit this
                 Debug.DrawRay(transform.position, ray.direction, Color.yellow);
                 Debug.DrawLine(transform.position, ray.direction, Color.green);
 
-                Debug.Log("attack from OnTrigger");
-                Attack(other, directionToAttack);
+        
+                Attack();
+         
             }
-           /* else if (RayToPlayerDistance(other.GetComponent<Rigidbody2D>()) > DistanceToAttack)
-            {
-                Attacking = false;
-                Debug.Log("attack false");
-            }*/
-
         }
     }
 
@@ -378,6 +345,4 @@ abstract public class Enemy : MonoBehaviour
         }
 
     }
-
-  
 }

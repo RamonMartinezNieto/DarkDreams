@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemySkeletonArcher : Enemy
 {
@@ -18,6 +16,4 @@ public class EnemySkeletonArcher : Enemy
     //Intantiate arrow, the arrow have the logich of the damage. 
     public override void FineAttack() => Instantiate(arrowType, gameObject.transform.position, Quaternion.identity); 
     
-    
-
 }

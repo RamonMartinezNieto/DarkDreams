@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
 /* Stats of the Skeleton: 
  * Health = 100;
  * Speed = 0.5f;

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyBat : Enemy
 {
@@ -9,6 +7,7 @@ public class EnemyBat : Enemy
         //Health, speed, vision, damage, distanceToAttack
         EnemyConstructor(35, 0.7f, 2.5f, 5, .4f);
         
+        //Change ArrayAttacks
         ATTACKS[0] = "BatAttackE";
         ATTACKS[1] = "BatAttackW";
         ATTACKS[2] = "BatAttackW";
@@ -30,7 +29,7 @@ public class EnemyBat : Enemy
                 Ray ray = new Ray(transform.position, (other.GetComponent<Transform>().position - transform.position));
                 SetDirectionToAttack(ray.direction);
 
-                Attack(other, directionToAttack);
+                Attack();
             }
             else
             {
@@ -38,6 +37,4 @@ public class EnemyBat : Enemy
             }
         }
     }
-
-
 }

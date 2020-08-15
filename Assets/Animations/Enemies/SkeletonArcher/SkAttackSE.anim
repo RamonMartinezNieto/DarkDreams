@@ -187,3 +187,11 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1
+    functionName: SetDirectionAttack
+    data: 
+    objectReferenceParameter: {fileID: 1720518532293778353, guid: dff78fa7740d96c4aaf3dd710c6b4c77,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
