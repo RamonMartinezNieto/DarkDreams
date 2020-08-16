@@ -186,7 +186,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -697763020151794088, guid: 1f616b2190bad254886b061ea7e86c39,
+  m_Sprite: {fileID: 6071340597707120143, guid: 5a7325521c2f22a4ab7b89104ba4add1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -233,7 +233,6 @@ MonoBehaviour:
   _attacking: 0
   EnemyAnimator: {fileID: 9214639414491804371}
   rbdEnemy: {fileID: 9214639414491804374}
-  elVector: {x: 0, y: 0}
 --- !u!50 &9214639414491804374
 Rigidbody2D:
   serializedVersion: 4

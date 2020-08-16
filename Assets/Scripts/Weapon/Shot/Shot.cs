@@ -61,11 +61,11 @@ abstract public class Shot : MonoBehaviour, IShooting
     //Set arrow angle,  be carefoul, the angle that changes is the angle of the arrow container 
     public virtual void SetShotAngle(Vector3 objectiveTransform, float variationOfY = .0f)
     {
-        objectiveTransform.y += .2f;
+        objectiveTransform.y += variationOfY;
 
         Quaternion _loookRotation = Quaternion.LookRotation((objectiveTransform - transform.position).normalized);
         _loookRotation.x = 0.0f; _loookRotation.y = 0.0f;
-        
+
         shootContainer.GetComponent<Transform>().rotation = _loookRotation;
     }
 }

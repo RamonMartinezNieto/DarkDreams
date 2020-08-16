@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 
 public class ArrowShot : Shot
 {
@@ -12,8 +7,6 @@ public class ArrowShot : Shot
 
     private Transform playerTransform;
 
-
-    
     void Awake()
     {
         //damage = GameObject.Find("SkeletonArcher").GetComponent<EnemySkeletonArcher>().Damage;
@@ -23,24 +16,17 @@ public class ArrowShot : Shot
 
     }
 
-    private void Update()
-    {
-        //********************************************
-        //NEED TO CHANGE THIS!!!!!!!!!!!!!!!!!!!!!
-        //********************************************
-            
-        if (transform.position.x < 0)
-        {
-            gameObject.GetComponent<SpriteRenderer>().flipY = true;
-        }
-    }
-
     void Start()
     {
         MovingShot(ArrowDirection(playerTransform));
 
         //SetArrowAngle(playerTransform);
-        SetShotAngle(playerTransform.position, .2f); 
+        SetShotAngle(playerTransform.position, .2f);
+
+        if (shootContainer.transform.position.x > playerTransform.position.x)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipY = true;
+        }
     }
 
     //sobrecharging method (orginal en Shot)

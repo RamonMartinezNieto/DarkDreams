@@ -1,205 +1,202 @@
 fileFormatVersion: 2
-guid: 76f70c91bfa676c4e8abfea4f9f729f3
+guid: e6ca578a31f743b448828c306e9d5446
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2475782083999449242
-    second: Weak_Skel_Soldier_noBG_0
+      213: 1002433209931433648
+    second: SkeletonOutlined_0
   - first:
-      213: 7186975070404997269
-    second: Weak_Skel_Soldier_noBG_1
+      213: -6102214111807922550
+    second: SkeletonOutlined_1
   - first:
-      213: -2621554560553859839
-    second: Weak_Skel_Soldier_noBG_2
+      213: 6474126290400198512
+    second: SkeletonOutlined_2
   - first:
-      213: -8322657352367600755
-    second: Weak_Skel_Soldier_noBG_3
+      213: 8166178147090997332
+    second: SkeletonOutlined_3
   - first:
-      213: 1177550665828857837
-    second: Weak_Skel_Soldier_noBG_4
+      213: 6277040384677218986
+    second: SkeletonOutlined_4
   - first:
-      213: -789642193208299552
-    second: Weak_Skel_Soldier_noBG_5
+      213: 1680771720139586655
+    second: SkeletonOutlined_5
   - first:
-      213: -6939655993847459180
-    second: Weak_Skel_Soldier_noBG_6
+      213: 8643200192570338807
+    second: SkeletonOutlined_6
   - first:
-      213: 4147679207963579737
-    second: Weak_Skel_Soldier_noBG_7
+      213: -8814238657191665957
+    second: SkeletonOutlined_7
   - first:
-      213: 7748294880372529031
-    second: Weak_Skel_Soldier_noBG_8
+      213: 5217773495830480143
+    second: SkeletonOutlined_8
   - first:
-      213: 2631700159770567453
-    second: Weak_Skel_Soldier_noBG_9
+      213: 1606866359324582568
+    second: SkeletonOutlined_9
   - first:
-      213: 8787874296455104767
-    second: Weak_Skel_Soldier_noBG_10
+      213: 8884406475074778806
+    second: SkeletonOutlined_10
   - first:
-      213: 2917424136780507446
-    second: Weak_Skel_Soldier_noBG_11
+      213: 2205754737831420708
+    second: SkeletonOutlined_11
   - first:
-      213: 1592979344998451048
-    second: Weak_Skel_Soldier_noBG_12
+      213: -3382088043870991594
+    second: SkeletonOutlined_12
   - first:
-      213: -4558819268415321365
-    second: Weak_Skel_Soldier_noBG_13
+      213: 1591331249937935104
+    second: SkeletonOutlined_13
   - first:
-      213: -4210582737609712542
-    second: Weak_Skel_Soldier_noBG_14
+      213: 2695847736297893927
+    second: SkeletonOutlined_14
   - first:
-      213: -1494178476957212139
-    second: Weak_Skel_Soldier_noBG_15
+      213: -5754201294495607119
+    second: SkeletonOutlined_15
   - first:
-      213: -2459870504268256304
-    second: Weak_Skel_Soldier_noBG_16
+      213: -6714422193264678056
+    second: SkeletonOutlined_16
   - first:
-      213: 8014330436289657640
-    second: Weak_Skel_Soldier_noBG_17
+      213: -7550313071857574256
+    second: SkeletonOutlined_17
   - first:
-      213: -5190294358087435718
-    second: Weak_Skel_Soldier_noBG_18
+      213: 4053505782137529304
+    second: SkeletonOutlined_18
   - first:
-      213: 4154418383317342572
-    second: Weak_Skel_Soldier_noBG_19
+      213: -7535870652367386949
+    second: SkeletonOutlined_19
   - first:
-      213: -40029243167768846
-    second: Weak_Skel_Soldier_noBG_20
+      213: 9120412087252513093
+    second: SkeletonOutlined_20
   - first:
-      213: 2295098239082449752
-    second: Weak_Skel_Soldier_noBG_21
+      213: -4624532800641536393
+    second: SkeletonOutlined_21
   - first:
-      213: 3016573060452092130
-    second: Weak_Skel_Soldier_noBG_22
+      213: -6728786676265364869
+    second: SkeletonOutlined_22
   - first:
-      213: -3630957132813574277
-    second: Weak_Skel_Soldier_noBG_23
+      213: -8203015700950181827
+    second: SkeletonOutlined_23
   - first:
-      213: 866116639164972468
-    second: Weak_Skel_Soldier_noBG_24
+      213: -1040338209715265822
+    second: SkeletonOutlined_24
   - first:
-      213: -4019836832308643176
-    second: Weak_Skel_Soldier_noBG_25
+      213: 4061877191531711229
+    second: SkeletonOutlined_25
   - first:
-      213: -8280965307209292931
-    second: Weak_Skel_Soldier_noBG_26
+      213: -8709326543278490017
+    second: SkeletonOutlined_26
   - first:
-      213: -5804369938267355595
-    second: Weak_Skel_Soldier_noBG_27
+      213: -1569399230889871097
+    second: SkeletonOutlined_27
   - first:
-      213: 8925614890297476564
-    second: Weak_Skel_Soldier_noBG_28
+      213: 5468436290653991618
+    second: SkeletonOutlined_28
   - first:
-      213: 2866065502515444428
-    second: Weak_Skel_Soldier_noBG_29
+      213: -6595766454437482346
+    second: SkeletonOutlined_29
   - first:
-      213: -4248361036871702239
-    second: Weak_Skel_Soldier_noBG_30
+      213: -2230220695666567598
+    second: SkeletonOutlined_30
   - first:
-      213: 6002707515745333303
-    second: Weak_Skel_Soldier_noBG_31
+      213: 1886505009737370679
+    second: SkeletonOutlined_31
   - first:
-      213: 3395470634099948877
-    second: Weak_Skel_Soldier_noBG_32
+      213: -7977746604882591083
+    second: SkeletonOutlined_32
   - first:
-      213: -2646967888047228563
-    second: Weak_Skel_Soldier_noBG_33
+      213: -2929623461133189323
+    second: SkeletonOutlined_33
   - first:
-      213: -7285378455498153113
-    second: Weak_Skel_Soldier_noBG_34
+      213: 2820913650741382406
+    second: SkeletonOutlined_34
   - first:
-      213: 716279863906095684
-    second: Weak_Skel_Soldier_noBG_35
+      213: -4570126655213946679
+    second: SkeletonOutlined_35
   - first:
-      213: 7652997031468731629
-    second: Weak_Skel_Soldier_noBG_36
+      213: 14549287804643838
+    second: SkeletonOutlined_36
   - first:
-      213: 1199801807732658563
-    second: Weak_Skel_Soldier_noBG_37
+      213: -2190099443284715260
+    second: SkeletonOutlined_37
   - first:
-      213: -1533387878227568140
-    second: Weak_Skel_Soldier_noBG_38
+      213: -4041577529380011891
+    second: SkeletonOutlined_38
   - first:
-      213: -5619207477784896107
-    second: Weak_Skel_Soldier_noBG_39
+      213: -485136328342432969
+    second: SkeletonOutlined_39
   - first:
-      213: -8347168851221338451
-    second: Weak_Skel_Soldier_noBG_40
+      213: 5965510577149764765
+    second: SkeletonOutlined_40
   - first:
-      213: 3033532314417783636
-    second: Weak_Skel_Soldier_noBG_41
+      213: -1388323780943143033
+    second: SkeletonOutlined_41
   - first:
-      213: -6635503022009740147
-    second: Weak_Skel_Soldier_noBG_42
+      213: -7030964677150100200
+    second: SkeletonOutlined_42
   - first:
-      213: -7184464331246474893
-    second: Weak_Skel_Soldier_noBG_43
+      213: -6493028445728758783
+    second: SkeletonOutlined_43
   - first:
-      213: -22842974772962845
-    second: Weak_Skel_Soldier_noBG_44
+      213: -9002106593620372545
+    second: SkeletonOutlined_44
   - first:
-      213: 5526202785933917200
-    second: Weak_Skel_Soldier_noBG_45
+      213: -8902558630243580860
+    second: SkeletonOutlined_45
   - first:
-      213: 7600244666222724571
-    second: Weak_Skel_Soldier_noBG_46
+      213: -1581942431701346453
+    second: SkeletonOutlined_46
   - first:
-      213: 3966646200362502189
-    second: Weak_Skel_Soldier_noBG_47
+      213: -506536268793399477
+    second: SkeletonOutlined_47
   - first:
-      213: 8567825134138651262
-    second: Weak_Skel_Soldier_noBG_48
+      213: -3084041433676339903
+    second: SkeletonOutlined_48
   - first:
-      213: 2581379889942997534
-    second: Weak_Skel_Soldier_noBG_49
+      213: 8871271319329168181
+    second: SkeletonOutlined_49
   - first:
-      213: 4617944672213738166
-    second: Weak_Skel_Soldier_noBG_50
+      213: 2092782853097583177
+    second: SkeletonOutlined_50
   - first:
-      213: 556847357492792275
-    second: Weak_Skel_Soldier_noBG_51
+      213: 2900078631560955825
+    second: SkeletonOutlined_51
   - first:
-      213: -6956504498189684427
-    second: Weak_Skel_Soldier_noBG_52
+      213: 7521417900962771235
+    second: SkeletonOutlined_52
   - first:
-      213: 1148410291486428460
-    second: Weak_Skel_Soldier_noBG_53
+      213: -1475382036639628394
+    second: SkeletonOutlined_53
   - first:
-      213: 6696783692515576780
-    second: Weak_Skel_Soldier_noBG_54
+      213: -8522109907302430662
+    second: SkeletonOutlined_54
   - first:
-      213: 6737784419485885357
-    second: Weak_Skel_Soldier_noBG_55
+      213: -1724213219166442636
+    second: SkeletonOutlined_55
   - first:
-      213: -1643611581837670660
-    second: Weak_Skel_Soldier_noBG_56
+      213: -986121955640602051
+    second: SkeletonOutlined_56
   - first:
-      213: -3665975015072821744
-    second: Weak_Skel_Soldier_noBG_57
+      213: 5098915546639152912
+    second: SkeletonOutlined_57
   - first:
-      213: 6167015501079060970
-    second: Weak_Skel_Soldier_noBG_58
+      213: 7630155478060313292
+    second: SkeletonOutlined_58
   - first:
-      213: -2097766055869996667
-    second: Weak_Skel_Soldier_noBG_59
+      213: -5515346228839145701
+    second: SkeletonOutlined_59
   - first:
-      213: -5572938561017539295
-    second: Weak_Skel_Soldier_noBG_60
+      213: 5021703589000718963
+    second: SkeletonOutlined_60
   - first:
-      213: -4718700717909570949
-    second: Weak_Skel_Soldier_noBG_61
+      213: -1483409372036862242
+    second: SkeletonOutlined_61
   - first:
-      213: 419853121412905254
-    second: Weak_Skel_Soldier_noBG_62
+      213: 7859938509363873821
+    second: SkeletonOutlined_62
   - first:
-      213: 6019680917781525287
-    second: Weak_Skel_Soldier_noBG_63
+      213: 6470089661156460442
+    second: SkeletonOutlined_63
   - first:
-      213: 1725459809657919906
-    second: Weak_Skel_Soldier_noBG_64
-  - first:
-      213: -3553643929808563752
-    second: Weak_Skel_Soldier_noBG_65
+      213: -4810766396722334293
+    second: SkeletonOutlined_64
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -229,7 +226,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -284,1177 +281,1156 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_0
+      name: SkeletonOutlined_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 780
+        x: 35
+        y: 779
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6840d71bb59ed00800000000000000
+      internalID: 1002433209931433648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 778
         width: 58
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a90401a20bebb5220800000000000000
-      internalID: 2475782083999449242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_1
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 779
-        width: 56
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 590f3119fb34db360800000000000000
-      internalID: 7186975070404997269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_2
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 779
-        width: 57
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 105c1ea440e5e9bd0800000000000000
-      internalID: -2621554560553859839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_3
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 779
-        width: 56
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8b06dcbb3bff7c80800000000000000
-      internalID: -8322657352367600755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_4
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 779
-        width: 51
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de7f0c57710875010800000000000000
-      internalID: 1177550665828857837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_5
-      rect:
-        serializedVersion: 2
-        x: 689
-        y: 778
-        width: 52
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0efa826eb90aa05f0800000000000000
-      internalID: -789642193208299552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_6
-      rect:
-        serializedVersion: 2
-        x: 817
-        y: 778
-        width: 55
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 492df4734a361bf90800000000000000
-      internalID: -6939655993847459180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_7
-      rect:
-        serializedVersion: 2
-        x: 946
-        y: 779
-        width: 57
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95551f8a3448f8930800000000000000
-      internalID: 4147679207963579737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_10
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 629
-        width: 55
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff80efacc1dc4f970800000000000000
-      internalID: 8787874296455104767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_11
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 628
-        width: 65
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 639e3f39bc5cc7820800000000000000
-      internalID: 2917424136780507446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_12
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 629
-        width: 71
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 867ca2936466b1610800000000000000
-      internalID: 1592979344998451048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_13
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 629
-        width: 76
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bea06ee6702dbb0c0800000000000000
-      internalID: -4558819268415321365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_14
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 629
-        width: 64
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26c916b0f410195c0800000000000000
-      internalID: -4210582737609712542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_15
-      rect:
-        serializedVersion: 2
-        x: 684
-        y: 630
-        width: 62
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5126ee9779c934be0800000000000000
-      internalID: -1494178476957212139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_16
-      rect:
-        serializedVersion: 2
-        x: 817
-        y: 629
-        width: 56
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0db21af2fc8ccddd0800000000000000
-      internalID: -2459870504268256304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_17
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 628
-        width: 59
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82b75afe11f983f60800000000000000
-      internalID: 8014330436289657640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_19
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 479
-        width: 71
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c699bf1328577a930800000000000000
-      internalID: 4154418383317342572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_20
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 478
-        width: 69
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fe7b5c8d99c17ff0800000000000000
-      internalID: -40029243167768846
+      spriteID: a8e1052a894905ba0800000000000000
+      internalID: -6102214111807922550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_21
+      name: SkeletonOutlined_2
       rect:
         serializedVersion: 2
-        x: 290
-        y: 479
-        width: 70
-        height: 81
+        x: 295
+        y: 778
+        width: 59
+        height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85b422140b3d9df10800000000000000
-      internalID: 2295098239082449752
+      spriteID: 07f325a4f87b8d950800000000000000
+      internalID: 6474126290400198512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_22
+      name: SkeletonOutlined_3
       rect:
         serializedVersion: 2
-        x: 428
-        y: 479
+        x: 426
+        y: 778
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450aaed22c7145170800000000000000
+      internalID: 8166178147090997332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 778
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa877109f68c1750800000000000000
+      internalID: 6277040384677218986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 777
         width: 54
-        height: 80
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8824b47350dd920800000000000000
-      internalID: 3016573060452092130
+      spriteID: f5c317f69fc435710800000000000000
+      internalID: 1680771720139586655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_23
-      rect:
-        serializedVersion: 2
-        x: 556
-        y: 481
-        width: 58
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7fd9ffa9bf3c9dc0800000000000000
-      internalID: -3630957132813574277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_24
-      rect:
-        serializedVersion: 2
-        x: 686
-        y: 481
-        width: 58
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bdbb739e70150c00800000000000000
-      internalID: 866116639164972468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_25
+      name: SkeletonOutlined_6
       rect:
         serializedVersion: 2
         x: 816
-        y: 481
-        width: 58
-        height: 77
+        y: 777
+        width: 57
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89a3633f2bba638c0800000000000000
-      internalID: -4019836832308643176
+      spriteID: 7fd2eb018c0d2f770800000000000000
+      internalID: 8643200192570338807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_26
+      name: SkeletonOutlined_7
       rect:
         serializedVersion: 2
-        x: 946
-        y: 481
-        width: 58
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d73e4727de9141d80800000000000000
-      internalID: -8280965307209292931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_29
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 328
-        width: 77
+        x: 945
+        y: 778
+        width: 59
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca3f64b36f46c720800000000000000
-      internalID: 2866065502515444428
+      spriteID: bde139024a88da580800000000000000
+      internalID: -8814238657191665957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_30
+      name: SkeletonOutlined_10
       rect:
         serializedVersion: 2
-        x: 159
-        y: 329
-        width: 71
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 129e6af452aca05c0800000000000000
-      internalID: -4248361036871702239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_31
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 329
-        width: 81
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 730719e8ea6ed4350800000000000000
-      internalID: 6002707515745333303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_32
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 328
-        width: 51
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4d3cce3d822f1f20800000000000000
-      internalID: 3395470634099948877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_33
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 328
-        width: 89
+        x: 36
+        y: 628
+        width: 57
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d693415eab4144bd0800000000000000
-      internalID: -2646967888047228563
+      spriteID: 6b633031e90cb4b70800000000000000
+      internalID: 8884406475074778806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_34
+      name: SkeletonOutlined_11
       rect:
         serializedVersion: 2
-        x: 676
-        y: 328
+        x: 161
+        y: 627
+        width: 67
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423a31a5f3a6c9e10800000000000000
+      internalID: 2205754737831420708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 628
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b49f9d7d86011d0800000000000000
+      internalID: -3382088043870991594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 628
         width: 78
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 763afb1f4e225ea90800000000000000
-      internalID: -7285378455498153113
+      spriteID: 00b6780375b851610800000000000000
+      internalID: 1591331249937935104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_35
+      name: SkeletonOutlined_14
       rect:
         serializedVersion: 2
-        x: 807
-        y: 328
-        width: 75
+        x: 552
+        y: 628
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720b392ab33996520800000000000000
+      internalID: 2695847736297893927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_15
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 629
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b61f73e868f420b0800000000000000
+      internalID: -5754201294495607119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_16
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 628
+        width: 58
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44253efbdbcb0f900800000000000000
-      internalID: 716279863906095684
+      spriteID: 85ba57af69491d2a0800000000000000
+      internalID: -6714422193264678056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_36
+      name: SkeletonOutlined_17
       rect:
         serializedVersion: 2
-        x: 938
+        x: 944
+        y: 627
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ed0f0b346e73790800000000000000
+      internalID: -7550313071857574256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 478
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6c95481953b6790800000000000000
+      internalID: -7535870652367386949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 477
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5417dd9a876329e70800000000000000
+      internalID: 9120412087252513093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_21
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 478
+        width: 72
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e6e9d6beb52dfb0800000000000000
+      internalID: -4624532800641536393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_22
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 478
+        width: 56
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7252d72b2c8e92a0800000000000000
+      internalID: -6728786676265364869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_23
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 480
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3899e17ea8092e80800000000000000
+      internalID: -8203015700950181827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_24
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 480
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eed7a309e9ff81f0800000000000000
+      internalID: -1040338209715265822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_25
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 480
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa4282f8cfae5830800000000000000
+      internalID: 4061877191531711229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_26
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 480
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e310327a1422780800000000000000
+      internalID: -8709326543278490017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_29
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 327
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690f0d50b512774a0800000000000000
+      internalID: -6595766454437482346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_30
+      rect:
+        serializedVersion: 2
+        x: 158
         y: 328
         width: 73
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dec00d7b048e43a60800000000000000
-      internalID: 7652997031468731629
+      spriteID: 256d110f71aac01e0800000000000000
+      internalID: -2230220695666567598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_38
+      name: SkeletonOutlined_31
       rect:
         serializedVersion: 2
-        x: 35
-        y: 180
-        width: 60
-        height: 79
+        x: 283
+        y: 328
+        width: 83
+        height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f91b5759df48bae0800000000000000
-      internalID: -1533387878227568140
+      spriteID: 73c046caf463e2a10800000000000000
+      internalID: 1886505009737370679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_39
+      name: SkeletonOutlined_32
       rect:
         serializedVersion: 2
-        x: 166
-        y: 178
-        width: 58
-        height: 82
+        x: 428
+        y: 327
+        width: 53
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59d996f12909402b0800000000000000
-      internalID: -5619207477784896107
+      spriteID: 59205e31bb9594190800000000000000
+      internalID: -7977746604882591083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_40
+      name: SkeletonOutlined_33
       rect:
         serializedVersion: 2
-        x: 297
-        y: 178
-        width: 56
-        height: 82
+        x: 539
+        y: 327
+        width: 91
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da62fbea726e82c80800000000000000
-      internalID: -8347168851221338451
+      spriteID: 53f7181ebf2e757d0800000000000000
+      internalID: -2929623461133189323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_41
+      name: SkeletonOutlined_34
       rect:
         serializedVersion: 2
-        x: 427
-        y: 178
-        width: 56
-        height: 82
+        x: 675
+        y: 327
+        width: 80
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4536a8f4195491a20800000000000000
-      internalID: 3033532314417783636
+      spriteID: 60d8d7ef406e52720800000000000000
+      internalID: 2820913650741382406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_42
+      name: SkeletonOutlined_35
       rect:
         serializedVersion: 2
-        x: 554
-        y: 178
+        x: 806
+        y: 327
+        width: 77
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8bd694506a390c0800000000000000
+      internalID: -4570126655213946679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_36
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 327
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9a45b0080b33000800000000000000
+      internalID: 14549287804643838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_38
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 179
         width: 62
-        height: 82
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d84141b6825f9e3a0800000000000000
-      internalID: -6635503022009740147
+      spriteID: d808a1576ae69e7c0800000000000000
+      internalID: -4041577529380011891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_43
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 182
-        width: 46
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 379e69271c7ab4c90800000000000000
-      internalID: -7184464331246474893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_44
-      rect:
-        serializedVersion: 2
-        x: 821
-        y: 182
-        width: 47
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e95b0b7f68deaff0800000000000000
-      internalID: -22842974772962845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_45
-      rect:
-        serializedVersion: 2
-        x: 952
-        y: 182
-        width: 46
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01c7d5c972401bc40800000000000000
-      internalID: 5526202785933917200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_47
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 41
-        width: 99
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d28824af3bb5c0730800000000000000
-      internalID: 3966646200362502189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_48
+      name: SkeletonOutlined_39
       rect:
         serializedVersion: 2
         x: 165
-        y: 44
-        width: 83
-        height: 51
+        y: 177
+        width: 60
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e727ff1b09707e670800000000000000
-      internalID: 8567825134138651262
+      spriteID: 733138964137449f0800000000000000
+      internalID: -485136328342432969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_49
+      name: SkeletonOutlined_40
       rect:
         serializedVersion: 2
-        x: 230
-        y: 63
-        width: 44
-        height: 27
+        x: 296
+        y: 177
+        width: 58
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1aa36a4557e2d320800000000000000
-      internalID: 2581379889942997534
+      spriteID: d94e8d66340c9c250800000000000000
+      internalID: 5965510577149764765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_50
+      name: SkeletonOutlined_41
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 177
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f18ab70eeabbce0800000000000000
+      internalID: -1388323780943143033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_42
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 177
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8153626b0eefc6e90800000000000000
+      internalID: -7030964677150100200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_43
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 181
+        width: 48
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104a4d7b70124e5a0800000000000000
+      internalID: -6493028445728758783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_44
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 181
+        width: 49
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb35e019fb7121380800000000000000
+      internalID: -9002106593620372545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_45
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 181
+        width: 48
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4444e34f712c37480800000000000000
+      internalID: -8902558630243580860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_47
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 40
+        width: 101
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47b7b082fb68f8f0800000000000000
+      internalID: -506536268793399477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_48
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 43
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145a221f7a84335d0800000000000000
+      internalID: -3084041433676339903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_49
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 81
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bd9be43461d1b70800000000000000
+      internalID: 8871271319329168181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_50
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 77
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942f8e6baee0b0d10800000000000000
+      internalID: 2092782853097583177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_51
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 78
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b744ee66262f3820800000000000000
+      internalID: 2900078631560955825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_52
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 77
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32176221bb1716860800000000000000
+      internalID: 7521417900962771235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_53
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 76
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6934a16cad3668be0800000000000000
+      internalID: -1475382036639628394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_54
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 80
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38c66ef0326bb980800000000000000
+      internalID: -8522109907302430662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_57
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 47
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b429acacf2c640800000000000000
+      internalID: 5098915546639152912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_59
       rect:
         serializedVersion: 2
         x: 422
-        y: 82
-        width: 22
+        y: 20
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f90c093dd8573b0800000000000000
+      internalID: -5515346228839145701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_60
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 17
+        width: 44
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b225b3663c361040800000000000000
-      internalID: 4617944672213738166
+      spriteID: 37a21bddecca0b540800000000000000
+      internalID: 5021703589000718963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_51
+      name: SkeletonOutlined_61
       rect:
         serializedVersion: 2
-        x: 492
-        y: 78
-        width: 13
-        height: 20
+        x: 550
+        y: 8
+        width: 20
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3db0979a8b15ab700800000000000000
-      internalID: 556847357492792275
+      spriteID: edee14b190fd96be0800000000000000
+      internalID: -1483409372036862242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_52
+      name: SkeletonOutlined_62
       rect:
         serializedVersion: 2
-        x: 555
-        y: 79
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5313ffa1408857f90800000000000000
-      internalID: -6956504498189684427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_53
-      rect:
-        serializedVersion: 2
-        x: 611
-        y: 78
-        width: 33
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2d83785319ffef00800000000000000
-      internalID: 1148410291486428460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_54
-      rect:
-        serializedVersion: 2
-        x: 685
-        y: 77
-        width: 30
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccb050a8941cfec50800000000000000
-      internalID: 6696783692515576780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_55
-      rect:
-        serializedVersion: 2
-        x: 762
-        y: 81
-        width: 22
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da32e903b3b618d50800000000000000
-      internalID: 6737784419485885357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_59
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 48
-        width: 42
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5812ff9f2ec33e2e0800000000000000
-      internalID: -2097766055869996667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_60
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 21
-        width: 24
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 125197bc7e1f8a2b0800000000000000
-      internalID: -5572938561017539295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_61
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 18
-        width: 42
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7a8e93a2bec38eb0800000000000000
-      internalID: -4718700717909570949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_62
-      rect:
-        serializedVersion: 2
-        x: 551
-        y: 9
-        width: 18
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 629b7af703e93d500800000000000000
-      internalID: 419853121412905254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_63
-      rect:
-        serializedVersion: 2
-        x: 617
-        y: 12
-        width: 22
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 723b09da6e33a8350800000000000000
-      internalID: 6019680917781525287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_64
-      rect:
-        serializedVersion: 2
-        x: 680
-        y: 12
-        width: 28
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a99fd41e8012f710800000000000000
-      internalID: 1725459809657919906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weak_Skel_Soldier_noBG_65
-      rect:
-        serializedVersion: 2
-        x: 749
+        x: 616
         y: 11
         width: 24
-        height: 29
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d199818cabeeaec0800000000000000
-      internalID: -3553643929808563752
+      spriteID: d180c073e6c141d60800000000000000
+      internalID: 7859938509363873821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_63
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 11
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97882e44406ac950800000000000000
+      internalID: 6470089661156460442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOutlined_64
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 10
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5baf16379bc3db0800000000000000
+      internalID: -4810766396722334293
       vertices: []
       indices: 
       edges: []

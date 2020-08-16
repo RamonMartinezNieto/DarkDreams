@@ -156,7 +156,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2475782083999449242, guid: 76f70c91bfa676c4e8abfea4f9f729f3,
+  m_Sprite: {fileID: 1002433209931433648, guid: e6ca578a31f743b448828c306e9d5446,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -178,7 +178,7 @@ Animator:
   m_GameObject: {fileID: 567051122250754732}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5dd865808a4cab94e906165a5877ac59, type: 2}
+  m_Controller: {fileID: 9100000, guid: 268d89de375a5714e92fb887a28b177e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
   _attacking: 0
   EnemyAnimator: {fileID: 567051122250754727}
   rbdEnemy: {fileID: 567051122250754729}
-  elVector: {x: 0, y: 0}
+  playingAnim: 
 --- !u!50 &567051122250754729
 Rigidbody2D:
   serializedVersion: 4

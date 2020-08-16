@@ -1,0 +1,1435 @@
+fileFormatVersion: 2
+guid: 9cbe5e4d40a3f5c4592b7975955dd99a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -257481629095427491
+    second: SkeletonArcherOutliner_0
+  - first:
+      213: -7809389120615006546
+    second: SkeletonArcherOutliner_1
+  - first:
+      213: -6536807414259603257
+    second: SkeletonArcherOutliner_2
+  - first:
+      213: 5481879660843539239
+    second: SkeletonArcherOutliner_3
+  - first:
+      213: -250629540541867034
+    second: SkeletonArcherOutliner_4
+  - first:
+      213: -7332573854866585945
+    second: SkeletonArcherOutliner_5
+  - first:
+      213: 2630558891800796281
+    second: SkeletonArcherOutliner_6
+  - first:
+      213: -7408818435730020013
+    second: SkeletonArcherOutliner_7
+  - first:
+      213: -1452417852724039522
+    second: SkeletonArcherOutliner_8
+  - first:
+      213: -1792622635648204408
+    second: SkeletonArcherOutliner_9
+  - first:
+      213: -5630777088185433438
+    second: SkeletonArcherOutliner_10
+  - first:
+      213: -311492758986763323
+    second: SkeletonArcherOutliner_11
+  - first:
+      213: -7756675737265333948
+    second: SkeletonArcherOutliner_12
+  - first:
+      213: 404875411053896078
+    second: SkeletonArcherOutliner_13
+  - first:
+      213: 4302307490356696827
+    second: SkeletonArcherOutliner_14
+  - first:
+      213: 7398003148714963820
+    second: SkeletonArcherOutliner_15
+  - first:
+      213: 8157912774004669063
+    second: SkeletonArcherOutliner_16
+  - first:
+      213: -7716439675918784464
+    second: SkeletonArcherOutliner_17
+  - first:
+      213: 5563428495058714817
+    second: SkeletonArcherOutliner_18
+  - first:
+      213: 2941800196302600253
+    second: SkeletonArcherOutliner_19
+  - first:
+      213: 2079511706907147616
+    second: SkeletonArcherOutliner_20
+  - first:
+      213: -5767548816256664052
+    second: SkeletonArcherOutliner_21
+  - first:
+      213: 1539156864656084298
+    second: SkeletonArcherOutliner_22
+  - first:
+      213: 7598130970851338965
+    second: SkeletonArcherOutliner_23
+  - first:
+      213: 3781647826786676811
+    second: SkeletonArcherOutliner_24
+  - first:
+      213: -795697497374034376
+    second: SkeletonArcherOutliner_25
+  - first:
+      213: -3029524209121464936
+    second: SkeletonArcherOutliner_26
+  - first:
+      213: -2725674729740797173
+    second: SkeletonArcherOutliner_27
+  - first:
+      213: -7907245876898341326
+    second: SkeletonArcherOutliner_28
+  - first:
+      213: 7292692937369698068
+    second: SkeletonArcherOutliner_29
+  - first:
+      213: 6380852074250327953
+    second: SkeletonArcherOutliner_30
+  - first:
+      213: 4294526457082840400
+    second: SkeletonArcherOutliner_31
+  - first:
+      213: -1528290604758672999
+    second: SkeletonArcherOutliner_32
+  - first:
+      213: -1957679041939102087
+    second: SkeletonArcherOutliner_33
+  - first:
+      213: -1249406060031947599
+    second: SkeletonArcherOutliner_34
+  - first:
+      213: -8602858343953465412
+    second: SkeletonArcherOutliner_35
+  - first:
+      213: 122712070582809522
+    second: SkeletonArcherOutliner_36
+  - first:
+      213: -8390893238547031083
+    second: SkeletonArcherOutliner_37
+  - first:
+      213: 6188374706058304960
+    second: SkeletonArcherOutliner_38
+  - first:
+      213: -5118687996533982437
+    second: SkeletonArcherOutliner_39
+  - first:
+      213: -7858702010240953354
+    second: SkeletonArcherOutliner_40
+  - first:
+      213: 7044164537165466254
+    second: SkeletonArcherOutliner_41
+  - first:
+      213: 5613250685164924145
+    second: SkeletonArcherOutliner_42
+  - first:
+      213: -6031766224469240300
+    second: SkeletonArcherOutliner_43
+  - first:
+      213: 7030207717551082674
+    second: SkeletonArcherOutliner_44
+  - first:
+      213: 2246935937254611316
+    second: SkeletonArcherOutliner_45
+  - first:
+      213: -1005128416771253915
+    second: SkeletonArcherOutliner_46
+  - first:
+      213: 4957581550224247464
+    second: SkeletonArcherOutliner_47
+  - first:
+      213: -7936190335141015497
+    second: SkeletonArcherOutliner_48
+  - first:
+      213: -6303711325079573567
+    second: SkeletonArcherOutliner_49
+  - first:
+      213: -8533290038169536949
+    second: SkeletonArcherOutliner_50
+  - first:
+      213: 5750462799963360864
+    second: SkeletonArcherOutliner_51
+  - first:
+      213: 919467626530864660
+    second: SkeletonArcherOutliner_52
+  - first:
+      213: 8359932664186950934
+    second: SkeletonArcherOutliner_53
+  - first:
+      213: -4196885738373505927
+    second: SkeletonArcherOutliner_54
+  - first:
+      213: 5475465619282451051
+    second: SkeletonArcherOutliner_55
+  - first:
+      213: -5744476566025508669
+    second: SkeletonArcherOutliner_56
+  - first:
+      213: 2303690556894102163
+    second: SkeletonArcherOutliner_57
+  - first:
+      213: -523888159696912718
+    second: SkeletonArcherOutliner_58
+  - first:
+      213: -3158035607724456897
+    second: SkeletonArcherOutliner_59
+  - first:
+      213: -2169896105656863464
+    second: SkeletonArcherOutliner_60
+  - first:
+      213: 5882253276164759390
+    second: SkeletonArcherOutliner_61
+  - first:
+      213: 2578457764193335861
+    second: SkeletonArcherOutliner_62
+  - first:
+      213: -3090757900243896074
+    second: SkeletonArcherOutliner_63
+  - first:
+      213: -2540982087962502001
+    second: SkeletonArcherOutliner_64
+  - first:
+      213: 33989964686270945
+    second: SkeletonArcherOutliner_65
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 747
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52049192dd3d6cf0800000000000000
+      internalID: -257481629095427491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 747
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae31f088f97f9390800000000000000
+      internalID: -7809389120615006546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 747
+        width: 58
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8aaeb4a489845a0800000000000000
+      internalID: -6536807414259603257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 747
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b940ed18c831c40800000000000000
+      internalID: 5481879660843539239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_4
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 747
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb58c1c2c5958cf0800000000000000
+      internalID: -250629540541867034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 747
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a64c5bbde67d3a90800000000000000
+      internalID: -7332573854866585945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 617
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90b2fe78a9f7dbe0800000000000000
+      internalID: -1452417852724039522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 617
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8814dd9e5335f17e0800000000000000
+      internalID: -1792622635648204408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_10
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 618
+        width: 67
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a28c4942167bd1b0800000000000000
+      internalID: -5630777088185433438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 617
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3dc7e6cfa5dabf0800000000000000
+      internalID: -311492758986763323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_12
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 617
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449986a7380ca5490800000000000000
+      internalID: -7756675737265333948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_13
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 617
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81682e8a086e9500800000000000000
+      internalID: 404875411053896078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 499
+        width: 43
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a7b2b027ab63170800000000000000
+      internalID: 8157912774004669063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_17
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 499
+        width: 42
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038612a8ff2b9e490800000000000000
+      internalID: -7716439675918784464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_18
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 501
+        width: 44
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0c24d6db4453d40800000000000000
+      internalID: 5563428495058714817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 503
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d387ac431bf53d820800000000000000
+      internalID: 2941800196302600253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_20
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 502
+        width: 38
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d777431e8ebdc10800000000000000
+      internalID: 2079511706907147616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_21
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 499
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0efb4ec8ec85ffa0800000000000000
+      internalID: -5767548816256664052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_22
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 498
+        width: 47
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d0e6b730f2c5510800000000000000
+      internalID: 1539156864656084298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_23
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 499
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daec728cdbf17960800000000000000
+      internalID: 7598130970851338965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_25
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 356
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8367a58875d15f4f0800000000000000
+      internalID: -795697497374034376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_26
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 357
+        width: 61
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d6edc68c7f4f5d0800000000000000
+      internalID: -3029524209121464936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_27
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 350
+        width: 65
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b7a8846457c2ad0800000000000000
+      internalID: -2725674729740797173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_28
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 343
+        width: 77
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e5dc3f4c1d34290800000000000000
+      internalID: -7907245876898341326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_29
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 346
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fbbe39699d43560800000000000000
+      internalID: 7292692937369698068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_30
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 352
+        width: 71
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197510287275d8850800000000000000
+      internalID: 6380852074250327953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_31
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 352
+        width: 71
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05580f03f09399b30800000000000000
+      internalID: 4294526457082840400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_32
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 354
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999dacdcacb6acae0800000000000000
+      internalID: -1528290604758672999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_35
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 225
+        width: 65
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbff5a38ae18c9880800000000000000
+      internalID: -8602858343953465412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_36
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 222
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3bdb06af5f3b100800000000000000
+      internalID: 122712070582809522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_37
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 217
+        width: 58
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db5d207e0f8d8b80800000000000000
+      internalID: -8390893238547031083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_38
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 213
+        width: 74
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd1e9bf10681e550800000000000000
+      internalID: 6188374706058304960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_39
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 216
+        width: 65
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b398a1364c6f8b0800000000000000
+      internalID: -5118687996533982437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_40
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 217
+        width: 59
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f390fba82840f290800000000000000
+      internalID: -7858702010240953354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_41
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 217
+        width: 59
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ac6213356e1c160800000000000000
+      internalID: 7044164537165466254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_42
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 226
+        width: 66
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc297402c546ed40800000000000000
+      internalID: 5613250685164924145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_44
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 89
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc87d5eba0509160800000000000000
+      internalID: 7030207717551082674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_45
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 83
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479de158458be2f10800000000000000
+      internalID: 2246935937254611316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_46
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 101
+        width: 107
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569d2b4c7011d02f0800000000000000
+      internalID: -1005128416771253915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_47
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 89
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa852e472edcc440800000000000000
+      internalID: 4957581550224247464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_48
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 87
+        width: 55
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730180c10fcfcd190800000000000000
+      internalID: -7936190335141015497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_49
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 100
+        width: 93
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb6606c2f7b488a0800000000000000
+      internalID: -6303711325079573567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_50
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 147
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46768debe9a39980800000000000000
+      internalID: -8533290038169536949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_54
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 12
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c185138aaa1c5c0800000000000000
+      internalID: -4196885738373505927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_55
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 20
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ad13178f2ccfb40800000000000000
+      internalID: 5475465619282451051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_56
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 23
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c86e7daff48740b0800000000000000
+      internalID: -5744476566025508669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_57
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 19
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39248142b5a58ff10800000000000000
+      internalID: 2303690556894102163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_58
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 16
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be7b339e76cab8f0800000000000000
+      internalID: -523888159696912718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_59
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 13
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f348c85c8576c24d0800000000000000
+      internalID: -3158035607724456897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_60
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 16
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815b1de0dfaf2e1e0800000000000000
+      internalID: -2169896105656863464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_61
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 13
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f9dac6036f1a150800000000000000
+      internalID: 5882253276164759390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_62
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 18
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a771fdca588c320800000000000000
+      internalID: 2578457764193335861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_63
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 16
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8fa35b01c6b15d0800000000000000
+      internalID: -3090757900243896074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherOutliner_6
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 587
+        width: 8
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c1882ff5f918420800000000000000
+      internalID: 2630558891800796281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

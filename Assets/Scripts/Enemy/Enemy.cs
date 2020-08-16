@@ -171,6 +171,7 @@ abstract public class Enemy : MonoBehaviour
         }
     }
 
+
     public void PlayAnimation(string playAnim)
     {
         EnemyAnimator.Play(playAnim);

@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4442288038858874251}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.976, y: -1.069, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8918354749006627075, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+  m_Sprite: {fileID: 2630558891800796281, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,18 +98,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0025158823}
+  m_Offset: {x: 0, y: -0.3021559}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06, y: 0.59}
+    pivot: {x: 0.5, y: 1}
+    oldSize: {x: 0.08, y: 0.61}
     newSize: {x: 0.06, y: 0.59}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.06, y: 0.6016688}
+  m_Size: {x: 0.06, y: 0.6154133}
   m_EdgeRadius: 0
 --- !u!50 &4442288038858874244
 Rigidbody2D:
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootContainer: {fileID: 0}
   shotVelocity: 2.5
+  damage: 5

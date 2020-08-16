@@ -30,7 +30,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.0333333
+        time: 1.1333333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -48,28 +48,31 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1577225726011778556, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+      value: {fileID: -8602858343953465412, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
-    - time: 0.16666667
-      value: {fileID: 612299123013542038, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+    - time: 0.15
+      value: {fileID: 122712070582809522, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
     - time: 0.28333333
-      value: {fileID: 699200762606286361, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+      value: {fileID: -8390893238547031083, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
-    - time: 0.45
-      value: {fileID: -7439390323037570453, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+    - time: 0.43333334
+      value: {fileID: 6188374706058304960, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
     - time: 0.56666666
-      value: {fileID: -711599308252423912, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+      value: {fileID: -5118687996533982437, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
-    - time: 0.73333335
-      value: {fileID: -3646892056817553640, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+    - time: 0.71666664
+      value: {fileID: -7858702010240953354, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
     - time: 0.85
-      value: {fileID: 1656884545889203709, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+      value: {fileID: 7044164537165466254, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
-    - time: 1.0166667
-      value: {fileID: -3356882853311253969, guid: 3dc4f167a72c4bc41b0d6af520f86aa6,
+    - time: 1
+      value: {fileID: 5613250685164924145, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
+        type: 3}
+    - time: 1.1166667
+      value: {fileID: 5613250685164924145, guid: 9cbe5e4d40a3f5c4592b7975955dd99a,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -97,20 +100,21 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1577225726011778556, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
-    - {fileID: 612299123013542038, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
-    - {fileID: 699200762606286361, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
-    - {fileID: -7439390323037570453, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
-    - {fileID: -711599308252423912, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
-    - {fileID: -3646892056817553640, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
-    - {fileID: 1656884545889203709, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
-    - {fileID: -3356882853311253969, guid: 3dc4f167a72c4bc41b0d6af520f86aa6, type: 3}
+    - {fileID: -8602858343953465412, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: 122712070582809522, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: -8390893238547031083, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: 6188374706058304960, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: -5118687996533982437, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: -7858702010240953354, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: 7044164537165466254, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: 5613250685164924145, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
+    - {fileID: 5613250685164924145, guid: 9cbe5e4d40a3f5c4592b7975955dd99a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0333333
+    m_StopTime: 1.1333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -139,7 +143,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.0333333
+        time: 1.1333333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -165,7 +169,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.0166667
+  - time: 1.0833334
     functionName: SetDirectionAttack
     data: 
     objectReferenceParameter: {fileID: 1720518532293778353, guid: dff78fa7740d96c4aaf3dd710c6b4c77,
