@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class EnemyRecovery : MonoBehaviour
 {
-
     private static List<Enemy> enemiesDied = new List<Enemy>();
 
     [SerializeField]
@@ -20,28 +19,16 @@ public class EnemyRecovery : MonoBehaviour
     private GameObject EnemySkeletonArcher;
 
 
-    public void SaveEnemy(Enemy enemy)
-    {
-        enemiesDied.Add(enemy);
-    }
+    public void SaveEnemy(Enemy enemy) => enemiesDied.Add(enemy);
+    
+    public void RecoverSkeleton(float x, float y) => RelocateOrInstantiate<EnemySkeleton>("EnemySkeleton",x,y);
+    
+    public void RecoverSkeletonArcher(float x, float y) => RelocateOrInstantiate<EnemySkeletonArcher>("EnemySkeletonArcher",x,y);
+    
+    public void RecoverBat(float x, float y) => RelocateOrInstantiate<EnemyBat>("EnemyBat",x,y);
+    
 
-
-    public void RecoverSkeleton(float x, float y) 
-    {
-        checkAndRelocateOrInstantiateEnemy<EnemySkeleton>("EnemySkeleton",x,y);
-    }
-
-    public void RecoverSkeletonArcher(float x, float y)
-    {
-        checkAndRelocateOrInstantiateEnemy<EnemySkeletonArcher>("EnemySkeletonArcher",x,y);
-    }
-
-    public void RecoverBat(float x, float y)
-    {
-        checkAndRelocateOrInstantiateEnemy<EnemyBat>("EnemyBat",x,y);
-    }
-
-    private void checkAndRelocateOrInstantiateEnemy<T>(string enemyType, float x, float y) 
+    private void RelocateOrInstantiate<T>(string enemyType, float x, float y) 
     {
         int index = GetEnemy<T>();
 
@@ -63,6 +50,7 @@ public class EnemyRecovery : MonoBehaviour
         else {
             Enemy e = enemiesDied[index];
             e.Relocate(x,y);
+            e.activeEnemey();
             enemiesDied.RemoveAt(index);
         }
     }
@@ -70,12 +58,8 @@ public class EnemyRecovery : MonoBehaviour
     private int GetEnemy<T>() 
     {
         for(int i = 0; i < enemiesDied.Count; i++)
-        {
-            if (enemiesDied[i].GetType() == typeof(T))
-            {
-                return i; 
-            }
-        }
+            if (enemiesDied[i].GetType() == typeof(T)) return i;
+        
         return -1; 
     }
 }

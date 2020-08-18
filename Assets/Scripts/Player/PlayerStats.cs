@@ -71,9 +71,9 @@ public class PlayerStats : MonoBehaviour
 
     public void restArmor(float armorDecrease) => CurrentArmor -= armorDecrease; 
     
-    public void sumArmor(float armorIncrease) => CurrentArmor += armorIncrease; 
+    public void sumArmor(float armorIncrease) => CurrentArmor += armorIncrease;
 
-    private void PlayerDie() =>   GameObject.FindGameObjectWithTag("Player").SetActive(false);
+    private void PlayerDie() => gameObject.SetActive(false); 
     
    
 }

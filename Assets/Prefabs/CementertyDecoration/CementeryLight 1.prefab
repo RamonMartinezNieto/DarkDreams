@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2356086943542582767}
   - component: {fileID: 2356086943542582764}
-  - component: {fileID: 7745290475203361791}
   - component: {fileID: 4856237205349422035}
   m_Layer: 0
   m_Name: CementeryLight 1
@@ -85,17 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!210 &7745290475203361791
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2356086943542582765}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!58 &4856237205349422035
 CircleCollider2D:
   m_ObjectHideFlags: 0

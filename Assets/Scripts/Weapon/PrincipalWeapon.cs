@@ -11,7 +11,7 @@ public class PrincipalWeapon : Weapons
     void Start()
     {
         weaponTransform = GetComponent<Transform>();
-
+        
         UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
         UpdateWiewPivotWeapon(gameObject, character);
 

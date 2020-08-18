@@ -87,6 +87,7 @@ MonoBehaviour:
   shootContainer: {fileID: 0}
   shotVelocity: 5.5
   damage: 20
+  timeDuration: 4
 --- !u!1 &4230242921528360928
 GameObject:
   m_ObjectHideFlags: 0

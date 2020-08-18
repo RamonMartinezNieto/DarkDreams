@@ -101,7 +101,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.3021559}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 1}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.08, y: 0.61}
     newSize: {x: 0.06, y: 0.59}
     adaptiveTilingThreshold: 0.5
@@ -147,3 +147,4 @@ MonoBehaviour:
   shootContainer: {fileID: 0}
   shotVelocity: 2.5
   damage: 5
+  timeDuration: 3

@@ -3,54 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
-public class ZoneOne : MonoBehaviour
+public class ZoneOne : Zone
 {
-    private EnemyRecovery er;
-
     public ParticleSystem fogZoneOne;
 
-    void Start()
+    private void Awake()
     {
-        er = FindObjectOfType<EnemyRecovery>();
+        createEnemies = 60;
 
+        //Set rectangle position to drop enemies
+        xRange1 = -.2f;
+        xRange2 = 5.3f;
+        yRange1 = -1.28f;
+        yRange2 = -5.5f;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            for (int i = 0; i < 15; i++)
-            {
-                float x = Random.Range(-0.2f, 5.3f);
-                float y = Random.Range(-1.28f, -5.5f);
-
-                if (i < 5)
-                {
-                    er.RecoverSkeletonArcher(x, y);
-                }
-                else if (i >= 5 && i < 10)
-                {
-                    er.RecoverSkeleton(x, y);
-                }
-                else
-                {
-                    er.RecoverBat(x, y);
-                }
-            }
-
-            dispearfog();
-
-            gameObject.SetActive(false);
-        }
-    }
-
-    public void dispearfog()
-    {
-        AnimationCurve curve = new AnimationCurve(new Keyframe(1f, 1f), new Keyframe(0.8f, 0.8f), new Keyframe(0.2f, 0.2f));
-        var szOlt = fogZoneOne.sizeOverLifetime;
-        szOlt.size = new ParticleSystem.MinMaxCurve(2f, curve);
-
-        var main = fogZoneOne.main;
-        main.loop = false;
+        dispearfog(fogZoneOne);
     }
 }

@@ -48,6 +48,4 @@ public abstract class Cachable : MonoBehaviour
 
         circleBar.fillAmount = ((restTime * 100) / timeToDispear) / 100f;
     }
-    
-
 }

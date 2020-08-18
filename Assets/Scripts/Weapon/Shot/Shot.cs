@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 abstract public class Shot : MonoBehaviour, IShooting
 {
@@ -14,11 +15,22 @@ abstract public class Shot : MonoBehaviour, IShooting
     [Tooltip("Weapon damage.")]
     public int damage = 5;
 
+    [Tooltip("Time duration of the shoot.")]
+    public float timeDuration = 2;
+
+    private void Update()
+    {
+        if (Time.time >= timeDuration) DestroyShotAnimation();
+        
+    }
+
     public virtual void MovingShot()
     {
+        timeDuration += Time.time;
         GetComponent<Rigidbody2D>().velocity = transform.right * shotVelocity;
     }
 
+    //TODO: include animation
     public void DestroyShotAnimation()
     {
         Destroy(gameObject);
@@ -30,6 +42,7 @@ abstract public class Shot : MonoBehaviour, IShooting
         if ((other.gameObject.CompareTag("Enemy") && other as CapsuleCollider2D)
              || (other.gameObject.CompareTag("GroundEnemyDetector")))
         {
+            //TODO: Depende de como le de entra dos veces
             //When Shot hit the enemy
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy == null)
@@ -54,8 +67,6 @@ abstract public class Shot : MonoBehaviour, IShooting
             }
         }
     }
-
-    
 
 
     //Set arrow angle,  be carefoul, the angle that changes is the angle of the arrow container 

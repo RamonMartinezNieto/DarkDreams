@@ -5,7 +5,7 @@ public class EnemyBat : Enemy
     void Awake()
     {
         //Health, speed, vision, damage, distanceToAttack
-        EnemyConstructor(35, 0.7f, 2.5f, 5, .4f);
+        EnemyConstructor(35, 0.7f, 3.5f, 5, .4f);
         
         //Change ArrayAttacks
         ATTACKS[0] = "BatAttackE";
@@ -13,7 +13,7 @@ public class EnemyBat : Enemy
         ATTACKS[2] = "BatAttackW";
         ATTACKS[3] = "BatAttackE";
     }
-
+    /*
     private void OnTriggerStay2D(Collider2D other)
     {
         //When the player stay in the trigger Collider of the 
@@ -36,5 +36,5 @@ public class EnemyBat : Enemy
                 Attacking = false;
             }
         }
-    }
+    }*/
 }

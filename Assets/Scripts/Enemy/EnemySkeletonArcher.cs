@@ -8,7 +8,7 @@ public class EnemySkeletonArcher : Enemy
     void Awake()
     {
         //Health, speed, vision (rad), damage, distanceToAttack
-        EnemyConstructor(65, 0.5f, 3.5f, 10, 2.5f);
+        EnemyConstructor(65, 0.5f, 4.5f, 10, 2.5f);
     }
 
 

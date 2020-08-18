@@ -7,30 +7,40 @@ public class ArrowShot : Shot
 
     private Transform playerTransform;
 
+    private GameObject player;
+
     void Awake()
     {
         //damage = GameObject.Find("SkeletonArcher").GetComponent<EnemySkeletonArcher>().Damage;
-        playerTransform = GameObject.Find("Player").GetComponent<Rigidbody2D>().transform;
+        player = GameObject.Find("Player");
+
+        if (player == null) Destroy(this);
+        else playerTransform = player.GetComponent<Rigidbody2D>().transform;
         
+
        // _shotDamage = damage;
 
     }
 
     void Start()
     {
-        MovingShot(ArrowDirection(playerTransform));
-
-        //SetArrowAngle(playerTransform);
-        SetShotAngle(playerTransform.position, .2f);
-
-        if (shootContainer.transform.position.x > playerTransform.position.x)
+        if (player != null)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            MovingShot(ArrowDirection(playerTransform));
+
+            //SetArrowAngle(playerTransform);
+            SetShotAngle(playerTransform.position, .2f);
+
+            if (shootContainer.transform.position.x > playerTransform.position.x)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            }
         }
     }
 
     //sobrecharging method (orginal en Shot)
     public void MovingShot(Vector3 direction) {
+        timeDuration += Time.time;
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * shotVelocity;  
     }
 

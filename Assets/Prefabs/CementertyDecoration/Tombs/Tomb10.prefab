@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2041586854680077217}
   - component: {fileID: 5754565207674038778}
   - component: {fileID: 8482762805756799977}
-  - component: {fileID: 2256114367710687038}
   m_Layer: 0
   m_Name: Tomb10
   m_TagString: Untagged
@@ -105,14 +104,3 @@ EdgeCollider2D:
   - {x: 0.06344563, y: -0.010101318}
   - {x: 0.11379278, y: 0.017543793}
   - {x: -0.047473073, y: 0.12116432}
---- !u!210 &2256114367710687038
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6884991823978973834}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0

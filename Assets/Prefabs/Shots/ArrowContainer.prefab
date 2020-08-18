@@ -178,3 +178,4 @@ MonoBehaviour:
   shootContainer: {fileID: 7496484745882739380}
   shotVelocity: 2.5
   damage: 5
+  timeDuration: 3

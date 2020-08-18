@@ -15,11 +15,11 @@ public class DropObject : MonoBehaviour
     {
         cachableObjects[0] = bullet;
         cachableObjects[1] = bullet;
-        cachableObjects[2] = bullet;
+        cachableObjects[2] = null;
         cachableObjects[3] = shield;
-        cachableObjects[4] = shield;
+        cachableObjects[4] = null;
         cachableObjects[5] = heart;
-        cachableObjects[6] = heart;
+        cachableObjects[6] = null;
         cachableObjects[7] = null;
         cachableObjects[8] = null;
         cachableObjects[9] = null;
