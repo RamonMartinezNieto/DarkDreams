@@ -29,6 +29,7 @@ public abstract class Cachable : MonoBehaviour
 
     private IEnumerator DispearCatchable() {
         yield return new WaitForSecondsRealtime(timeToDispear);
+
         Destroy(gameObject);
     }
 
@@ -48,4 +49,5 @@ public abstract class Cachable : MonoBehaviour
 
         circleBar.fillAmount = ((restTime * 100) / timeToDispear) / 100f;
     }
+
 }

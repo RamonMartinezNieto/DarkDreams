@@ -9,10 +9,14 @@ public class DropObject : MonoBehaviour
 
     public GameObject bullet;
     public GameObject shield;
-    public GameObject heart; 
+    public GameObject heart;
+
+    static Transform parent; 
 
     void Awake()
     {
+        parent = transform; 
+
         cachableObjects[0] = bullet;
         cachableObjects[1] = bullet;
         cachableObjects[2] = null;
@@ -30,7 +34,7 @@ public class DropObject : MonoBehaviour
         
         if (cachableObjects[element] != null)
         {
-            GameObject cachable = Instantiate(cachableObjects[element]);
+            GameObject cachable = Instantiate(cachableObjects[element], parent);
             cachable.GetComponent<Cachable>().SetPosition(enemyPosition); 
         } 
     }

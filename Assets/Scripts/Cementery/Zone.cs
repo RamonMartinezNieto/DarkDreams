@@ -34,15 +34,15 @@ public abstract class Zone : MonoBehaviour
 
                 if (i < r)
                 {
-                    er.RecoverSkeletonArcher(x, y);
+                    er.RecoveryEnemy<EnemySkeleton>(x, y);
                 }
                 else if (i >= r2)
                 {
-                    er.RecoverSkeleton(x, y);
+                    er.RecoveryEnemy<EnemySkeletonArcher>(x, y);
                 }
                 else
                 {
-                    er.RecoverBat(x, y);
+                    er.RecoveryEnemy<EnemyBat>(x, y);
                 }
             }
             gameObject.SetActive(false);

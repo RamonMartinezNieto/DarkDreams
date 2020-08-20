@@ -44,7 +44,7 @@ abstract public class Enemy : MonoBehaviour
     private float extraVelocity = .08f;
 
     //TODO: review this, I don't know if this method is more efficien than translate position
-    public void activeEnemey() 
+    public void ActiveEnemey() 
     {
         gameObject.SetActive(true);
     }
@@ -80,7 +80,7 @@ abstract public class Enemy : MonoBehaviour
         var groundPlayerDetect = GameObject.Find("ColliderDetect").GetComponent<CapsuleCollider2D>();
         var groundEnemyDetect = transform.Find("GroundDetect").GetComponent<CapsuleCollider2D>();
         Physics2D.IgnoreCollision(groundEnemyDetect, groundPlayerDetect);
-        
+
     }
 
     void FixedUpdate()
@@ -124,7 +124,6 @@ abstract public class Enemy : MonoBehaviour
 
         transform.position = new Vector3(-252f, -247f, -150f);
 
-        Debug.Log("set active false");
         gameObject.SetActive(false); 
 
         EnemyRecovery er = FindObjectOfType<EnemyRecovery>();
@@ -386,26 +385,18 @@ abstract public class Enemy : MonoBehaviour
                 if (col.CompareTag("GroundEnemyDetector")) Physics2D.IgnoreCollision(col, other);
             }
         }
-
-        /*
-        EnemyVision vis = GetComponentInChildren<EnemyVision>();
-        if (vis.Vision)
-        {
-            PlayerDetection = true;
-        }
-        */
     }
 
 
     //Function Relocate to move enemy to new point
-    public void Relocate(float x, float y)
+    public virtual void Relocate(float x, float y) => transform.position = new Vector3(x, y, 0f);
+    
+    public void RestartHealth() 
     {
         //Restart Health and HealthBar
         Health = 100;
         float currentHealth = Health / 100f;
         healthBar.SetSize(currentHealth);
         healthBar.SetColor(new Color(0.07740552f, 0.6698113f, 0f));
-
-        transform.position = new Vector3(x, y, 0f);
     }
 }

@@ -119,7 +119,7 @@ abstract public class Weapons : MonoBehaviour
     //Methods to places weapon. 
     protected virtual void UpdateWeaponPosition(Transform characterTransform, GameObject weaponObject, GameObject character, Transform transformWeaponContainer)
     {
-        //I don't know why I put this here... O.o ?
+        //TODO: I don't know why I put this here... O.o ?
         //Vector3 mousePos = Input.mousePosition;
         //mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //Vector3 force = Vector2.ClampMagnitude(new Vector2((mousePos.x - transform.position.x), (mousePos.y - transform.position.y)), baseDistanceBullet);

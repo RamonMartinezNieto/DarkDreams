@@ -18,7 +18,6 @@ public class CachableBullet : Cachable
             if (UIBullets.CurrentBullets < 5)
             {
                 gameObject.SetActive(false);
-
                 secondaryShootsUI.enableBullet(UIBullets.CurrentBullets);
             }
         }

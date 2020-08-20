@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Dynamic;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,48 +7,24 @@ public class EnemyRecovery : MonoBehaviour
 {
     private static List<Enemy> enemiesDied = new List<Enemy>();
 
-    [SerializeField]
-    private GameObject prefabSkeleton;
-
-    [SerializeField]
-    private GameObject EnemyBat;
-
-    [SerializeField]
-    private GameObject EnemySkeletonArcher;
-
-
     public void SaveEnemy(Enemy enemy) => enemiesDied.Add(enemy);
-    
-    public void RecoverSkeleton(float x, float y) => RelocateOrInstantiate<EnemySkeleton>("EnemySkeleton",x,y);
-    
-    public void RecoverSkeletonArcher(float x, float y) => RelocateOrInstantiate<EnemySkeletonArcher>("EnemySkeletonArcher",x,y);
-    
-    public void RecoverBat(float x, float y) => RelocateOrInstantiate<EnemyBat>("EnemyBat",x,y);
-    
 
-    private void RelocateOrInstantiate<T>(string enemyType, float x, float y) 
+    public void RecoveryEnemy<T>(float x, float y) where T : Enemy
     {
         int index = GetEnemy<T>();
 
         if (index == -1)
         {
-            if (enemyType.Equals("EnemySkeleton"))
-            {
-                Instantiate(prefabSkeleton, new Vector3(x, y, 0f), Quaternion.identity);
-            }
-            else if (enemyType.Equals("EnemySkeletonArcher"))
-            {
-                Instantiate(EnemySkeletonArcher, new Vector3(x, y, 0f), Quaternion.identity);
-            }
-            else if (enemyType.Equals("EnemyBat"))
-            {
-                Instantiate(EnemyBat, new Vector3(x, y, 0f), Quaternion.identity);
-            }
+            string pathPrefab = $"Prefabs/Enemys/{typeof(T)}";
+            GameObject enemy = Instantiate(Resources.Load(pathPrefab, typeof(GameObject)), gameObject.transform) as GameObject;
+            enemy.GetComponent<Enemy>().Relocate(x, y);
+
         }
         else {
             Enemy e = enemiesDied[index];
             e.Relocate(x,y);
-            e.activeEnemey();
+            e.RestartHealth();
+            e.ActiveEnemey();
             enemiesDied.RemoveAt(index);
         }
     }
