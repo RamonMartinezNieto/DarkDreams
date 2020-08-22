@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 803022129
+    locked: 0
   - name: Fences
     uniqueID: 2956294199
     locked: 0
@@ -53,7 +56,7 @@ TagManager:
   - name: Ground
     uniqueID: 3051148091
     locked: 0
-  - name: BlackMenu
+  - name: UIBackground
     uniqueID: 999436895
     locked: 0
   - name: Plants

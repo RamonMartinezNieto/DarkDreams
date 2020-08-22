@@ -101,7 +101,7 @@ MonoBehaviour:
   transformWeapon: {fileID: 3721840348773780809}
   bulletType1: {fileID: 2802035933494917721, guid: c3c1385cc9e25d543b41561e47402394,
     type: 3}
-  bulletType2: {fileID: 2802035933494917721, guid: 33b11a3a158bfb74387d31b949cbfff1,
+  bulletType2: {fileID: 2802035933494917721, guid: ae2e4a7a13cd02442ad100fe85c524fc,
     type: 3}
   weapon: {fileID: 3721840348773780808}
   IsMenuWeapon: 0

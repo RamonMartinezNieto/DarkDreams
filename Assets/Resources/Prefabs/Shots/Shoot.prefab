@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootContainer: {fileID: 0}
   shotVelocity: 2
-  damage: 50
+  damage: 10
   timeDuration: 1.5
 --- !u!198 &2676171059001825500
 ParticleSystem:

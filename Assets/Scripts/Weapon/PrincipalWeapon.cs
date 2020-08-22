@@ -12,14 +12,13 @@ public class PrincipalWeapon : Weapons
     {
         weaponTransform = GetComponent<Transform>();
 
-        
-        UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
-        
-        UpdateWiewPivotWeapon(gameObject, character);
-        
-        weaponTransform.position = WeaponPosition;
-        
+        if (!IsMenuWeapon)
+        {
+            UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
+            weaponTransform.position = WeaponPosition;
+        }
 
+        UpdateWiewPivotWeapon(gameObject, character);
 
         canShoot = true;
     }
@@ -27,15 +26,20 @@ public class PrincipalWeapon : Weapons
 
     void Update()
     {
-        UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
+
+        if (!IsMenuWeapon)
+        {
+            UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
+            weaponTransform.position = WeaponPosition;
+
+        }
+
         UpdateWiewPivotWeapon(gameObject, character);
 
-        weaponTransform.position = WeaponPosition;
-
         //TODO: Only to debug
-        DebugRayCast(weaponTransform);
+        //DebugRayCast(weaponTransform);
 
-        
+
         //TODO: ¿Implemented this? Continuos Button Pressed
         /*
          * if (Input.GetMouseButton(0) && canShoot)
@@ -43,7 +47,7 @@ public class PrincipalWeapon : Weapons
             Shoting(bulletType1);
         }
         */
-        
+
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -52,11 +56,13 @@ public class PrincipalWeapon : Weapons
         }
         else if (Input.GetButtonDown("Fire2") && canShoot && (UIBullets.CurrentBullets > 0))
         {
-            Shoting(bulletType2);
+            if (!IsMenuWeapon)
+            {
+                Shoting(bulletType2);
+            }
         }
 
     }
-
 
     public void SetActiveWeapon()
     {

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class EnemyRecovery : MonoBehaviour
 {
+
+    //TODO: I can make this class abstract to implement same clas with other type (Enemy / Cachable) and no repeat the same code?
+
     private static List<Enemy> enemiesDied = new List<Enemy>();
 
     public void SaveEnemy(Enemy enemy) => enemiesDied.Add(enemy);
@@ -18,7 +21,6 @@ public class EnemyRecovery : MonoBehaviour
             string pathPrefab = $"Prefabs/Enemys/{typeof(T)}";
             GameObject enemy = Instantiate(Resources.Load(pathPrefab, typeof(GameObject)), gameObject.transform) as GameObject;
             enemy.GetComponent<Enemy>().Relocate(x, y);
-
         }
         else {
             Enemy e = enemiesDied[index];
