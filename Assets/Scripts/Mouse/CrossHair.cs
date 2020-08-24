@@ -5,12 +5,10 @@ using UnityEngine;
 public class CrossHair : MonoBehaviour
 {
 
+
     public Transform crosshairTransform;
 
-    private void Start()
-    {
-        Cursor.visible = false;
-    }
+    private void Start() => Cursor.visible = false; 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -38,12 +36,10 @@ public class CrossHair : MonoBehaviour
         corsshariTransform.position = getMousePosition();
     }
 
-
     public static Vector3 getMousePosition()
     {
         return Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
     }
-
 
     //Return number of the direction from object position
     // 0: S // 1 : SE // 2:E // 3:NE // 4:N // 5: NW // 6:W // 7:SW 
@@ -64,7 +60,6 @@ public class CrossHair : MonoBehaviour
         } 
 
         float stepCount = angle / step;
-
                 
         return Mathf.FloorToInt(stepCount);
     }
@@ -80,15 +75,11 @@ public class CrossHair : MonoBehaviour
             crossHairDir.x = crosshairTransform.position.x + 0.1f; 
         }
 
-
         if(crosshairTransform.position.y < 0 ){
             crossHairDir.y = crosshairTransform.position.y - 0.1f; 
         } else {
             crossHairDir.y = crosshairTransform.position.y + 0.1f; 
         }
-
         return crossHairDir;
     }
-
 }
-

@@ -303,6 +303,7 @@ abstract public class Enemy : MonoBehaviour
 
     public void PlayerDetectionMovement() 
     {
+        
         Vector3 pos = player.GetComponent<Transform>().position;
         double distance = System.Math.Round(Vector2.Distance(transform.position, pos),2);
 

@@ -8,7 +8,6 @@ public class DirectionMovement : MonoBehaviour
 
     int lastDirection;
 
-
     [Tooltip("Transform of the object that you need the direction.")]
     public Transform transformCharacter;
 
@@ -30,8 +29,6 @@ public class DirectionMovement : MonoBehaviour
     }
 
 
-
-
     void Awake()
     {
 
@@ -43,8 +40,6 @@ public class DirectionMovement : MonoBehaviour
         newPos = new Vector2(transformCharacter.position.x, transformCharacter.position.y);
 
     }
-
-
 
     void FixedUpdate()
     {
@@ -60,7 +55,6 @@ public class DirectionMovement : MonoBehaviour
             
         }
     }
-
 
     //Check current directión, current dirrection uses to check last dir too. 
     private void checkDirection(Vector2 currentPos, Vector2 newPos)
@@ -114,10 +108,5 @@ public class DirectionMovement : MonoBehaviour
             _lastIdle = RunDirections.IdleSW;
 
         }
-
     }
-
-
-
-
 }

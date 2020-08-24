@@ -7,23 +7,25 @@ using UnityEngine;
 public class MovementPlayer : MonoBehaviour
 {
 
-    private Rigidbody2D rbody;
+    protected Rigidbody2D rbody;
 
     [Tooltip("Velocity, only change to test diferents speeds")]
     public float speed = 2f;
 
     [Tooltip("Make true if the player is in the menu.")]
-    public bool IsMenuPlayer; 
+    public bool IsMenuPlayer;
+
+    public RunDirections positionPlayerMenu; 
 
     public Transform playerTransform;
 
     public GameObject crossHair;
 
-    private Animator animator;
+    protected Animator animator;
 
     public RunDirections CurrentRun { get; set; }
 
-    private RunDirections currentIdle = RunDirections.IdleS;
+    protected RunDirections currentIdle = RunDirections.IdleS;
 
 
     void Awake()
@@ -35,19 +37,7 @@ public class MovementPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (IsMenuPlayer)
-        {
-            staticPositionOnMenu();
-        }
-        else {
-            movement();
-        }
-    }
-
-    private void staticPositionOnMenu() 
-    {
-        currentIdle = RunDirections.IdleW;
-        animator.Play(currentIdle.ToString());
+        if (!IsMenuPlayer) movement();
         
     }
 
