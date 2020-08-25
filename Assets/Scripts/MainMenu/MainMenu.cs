@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public Animator [] buttonsAnimator; 
+    public Animator [] buttonsAnimator;
+
+    private void Start()
+    {
+        //New instance to work to change options
+       // HandlerOptions ho = HandlerOptions.Instance; 
+
+    }
 
     public void StartGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 
@@ -20,7 +27,6 @@ public class MainMenu : MonoBehaviour
     {
         foreach (Animator a in buttonsAnimator)
         {
-
             //Note: Before of the launch triggert set state of the button. If not set bool it causes error
             a.SetBool("buttonActive", false);
             a.SetTrigger("start");

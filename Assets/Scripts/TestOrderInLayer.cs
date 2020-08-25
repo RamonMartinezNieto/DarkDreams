@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Obsolete("Instead this class you can use sorting in layer component")]
 public class TestOrderInLayer : MonoBehaviour
 {
 
