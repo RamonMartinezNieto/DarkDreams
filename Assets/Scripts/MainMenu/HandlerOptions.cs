@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class HandlerOptions : MonoBehaviour
 {
+    public static HandlerOptions Instance = null;
 
     public Toggle musicToggle;
     public Slider musicVolumenSlider;
@@ -20,6 +21,8 @@ public class HandlerOptions : MonoBehaviour
 
     public TMP_InputField userNameInputField;
 
+    public TMP_Text labelNameOptions;
+
     //Settings
     private string _userName;
     private float _musicVolumen;
@@ -27,37 +30,38 @@ public class HandlerOptions : MonoBehaviour
     private string _crossHair;
     private bool _musicOn;
 
-
-    private void Start()
+    void Awake()
     {
-        //First time, to create PlayerPrefs
-        if (PlayerPrefs.GetInt("FIRSTIMEOPENING", 1) == 1)
+        singletonInstance();
+    }
+
+
+    private void singletonInstance()
+    {
+        //Singleton instance
+        if (Instance == null)
         {
-            MusicOn = true;
-            musicToggle.isOn = MusicOn;
-
-            musicVolumenSlider.value = MusicVolumen = 1f;
-
-            LanguageInt = languageDropDown.value = 2;
-
-            CrossHairString = crossHairToggleGroup.ActiveToggles().FirstOrDefault().name;
-
-            //TODO: Need to get UserName with a extra square box 
-            userNameInputField.text = UserName; 
-
-            PlayerPrefs.SetInt("FIRSTIMEOPENING", 0);
+            Instance = this;
         }
-        else
+        else if (Instance != this)
         {
-            musicToggle.isOn = MusicOn;
-            musicVolumenSlider.value = MusicVolumen;
-            languageDropDown.value = LanguageInt;
-
-            crossHairToggleGroup.allowSwitchOff = true;
-            GetCurrentCrossHairToggle().isOn = true;
-            
-            userNameInputField.text = UserName;
+            Destroy(gameObject);
         }
+
+        //Dont destroy on load to persevere this object in all scenes
+        //DontDestroyOnLoad(gameObject);
+    }
+
+    public void ChargePanel()
+    {
+        musicToggle.isOn = MusicOn;
+        musicVolumenSlider.value = MusicVolumen;
+        languageDropDown.value = LanguageInt;
+
+        crossHairToggleGroup.allowSwitchOff = true;
+        GetCurrentCrossHairToggle().isOn = true;
+
+        userNameInputField.text = UserName;
     }
 
     public bool MusicOn
@@ -78,6 +82,7 @@ public class HandlerOptions : MonoBehaviour
             if (value) musicOnString = "on";
             else musicOnString = "off";
 
+            SoundManager.Instance.MuteAllSounds(!_musicOn);
             PlayerPrefs.SetString("musicOn", musicOnString);
         }
     }
@@ -92,6 +97,7 @@ public class HandlerOptions : MonoBehaviour
         set
         {
             _musicVolumen = value;
+            SoundManager.Instance.ChangeVolumen(_musicVolumen);
             PlayerPrefs.SetFloat("musicVolumen", value);
         }
     }
@@ -147,7 +153,7 @@ public class HandlerOptions : MonoBehaviour
         }
     }
 
-    //Need to add this method in a toggle to change String in PlayerPrefs
+    //TODO: WTF? Need to add this method in a toggle to change String in PlayerPrefs
     public void SetCrossHairActive() 
     {
         IEnumerable<Toggle> listTog = crossHairToggleGroup.ActiveToggles();
@@ -189,6 +195,7 @@ public class HandlerOptions : MonoBehaviour
     public void ChangeUserName() 
     {
         //Todo: need confirmation Box 
-        UserName = userNameInputField.text; 
+        UserName = userNameInputField.text;
     }
+
 }

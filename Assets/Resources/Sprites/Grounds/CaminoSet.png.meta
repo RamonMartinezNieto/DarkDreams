@@ -1,0 +1,1399 @@
+fileFormatVersion: 2
+guid: 6be659719039a6b479abc62d81f43429
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7413589006931110220
+    second: CaminoSet_0
+  - first:
+      213: 1305958133646270919
+    second: CaminoSet_1
+  - first:
+      213: 1844316316947772264
+    second: CaminoSet_2
+  - first:
+      213: 2149359521980199007
+    second: CaminoSet_3
+  - first:
+      213: 2675626585808740672
+    second: CaminoSet_4
+  - first:
+      213: -6644729508359996920
+    second: CaminoSet_5
+  - first:
+      213: 8077145207104093437
+    second: CaminoSet_6
+  - first:
+      213: 7679897238119173866
+    second: CaminoSet_7
+  - first:
+      213: 4840430861495892810
+    second: CaminoSet_8
+  - first:
+      213: -6402058960427218773
+    second: CaminoSet_9
+  - first:
+      213: -4417078046043008560
+    second: CaminoSet_10
+  - first:
+      213: -308251957676914893
+    second: CaminoSet_11
+  - first:
+      213: -4934924744139012492
+    second: CaminoSet_12
+  - first:
+      213: 4621565578370944431
+    second: CaminoSet_13
+  - first:
+      213: 8799578781860866923
+    second: CaminoSet_14
+  - first:
+      213: 6707109123241183236
+    second: CaminoSet_15
+  - first:
+      213: 760048251364026404
+    second: CaminoSet_16
+  - first:
+      213: 3756589653603623827
+    second: CaminoSet_17
+  - first:
+      213: -7129520040056460206
+    second: CaminoSet_18
+  - first:
+      213: 3158702103928571054
+    second: CaminoSet_19
+  - first:
+      213: -2562548970769299043
+    second: CaminoSet_20
+  - first:
+      213: 8528298676232079243
+    second: CaminoSet_21
+  - first:
+      213: 1116958671414165227
+    second: CaminoSet_22
+  - first:
+      213: -1391397908711259714
+    second: CaminoSet_23
+  - first:
+      213: -8190948069283904123
+    second: CaminoSet_24
+  - first:
+      213: 6273762708174288340
+    second: CaminoSet_25
+  - first:
+      213: -3677301225353721496
+    second: CaminoSet_26
+  - first:
+      213: 8002500288221193391
+    second: CaminoSet_27
+  - first:
+      213: -300716347659510264
+    second: CaminoSet_28
+  - first:
+      213: 4175916202494429263
+    second: CaminoSet_29
+  - first:
+      213: -1988611669083167878
+    second: CaminoSet_30
+  - first:
+      213: -3521386008083222514
+    second: CaminoSet_31
+  - first:
+      213: -3289965668241686142
+    second: CaminoSet_32
+  - first:
+      213: -7863433253354093492
+    second: CaminoSet_33
+  - first:
+      213: 2352703671458484587
+    second: CaminoSet_34
+  - first:
+      213: -3005622982464696388
+    second: CaminoSet_35
+  - first:
+      213: -581935374392587982
+    second: CaminoSet_36
+  - first:
+      213: -2684268651394613688
+    second: CaminoSet_37
+  - first:
+      213: 6429258316809593535
+    second: CaminoSet_38
+  - first:
+      213: -9127886503527982620
+    second: CaminoSet_39
+  - first:
+      213: 6103101637583674793
+    second: CaminoSet_40
+  - first:
+      213: -5438568067957983000
+    second: CaminoSet_41
+  - first:
+      213: 7989727510605214320
+    second: CaminoSet_42
+  - first:
+      213: -7322856651492063254
+    second: CaminoSet_43
+  - first:
+      213: -2713548605461631161
+    second: CaminoSet_44
+  - first:
+      213: 5906231664797961345
+    second: CaminoSet_45
+  - first:
+      213: -5766504959310256254
+    second: CaminoSet_46
+  - first:
+      213: -3394103462223056129
+    second: CaminoSet_47
+  - first:
+      213: -3099476545192934948
+    second: CaminoSet_0
+  - first:
+      213: -2133364422465897063
+    second: CaminoSet_1
+  - first:
+      213: 907373523187580474
+    second: CaminoSet_2
+  - first:
+      213: -2792846976569025787
+    second: CaminoSet_3
+  - first:
+      213: 57349244172965268
+    second: CaminoSet_4
+  - first:
+      213: -3116794987952383998
+    second: CaminoSet_5
+  - first:
+      213: -8364330438232685811
+    second: CaminoSet_6
+  - first:
+      213: 4810836952953951381
+    second: CaminoSet_7
+  - first:
+      213: 5517811359853547936
+    second: CaminoSet_8
+  - first:
+      213: 969736232062712960
+    second: CaminoSet_9
+  - first:
+      213: 1194031482236186143
+    second: CaminoSet_10
+  - first:
+      213: -9208953689615691018
+    second: CaminoSet_11
+  - first:
+      213: -2296999626050436837
+    second: CaminoSet_12
+  - first:
+      213: -7525913933750110481
+    second: CaminoSet_13
+  - first:
+      213: 8878961811524578310
+    second: CaminoSet_14
+  - first:
+      213: -9033767586151162634
+    second: CaminoSet_15
+  - first:
+      213: 7114237886180761391
+    second: CaminoSet_16
+  - first:
+      213: -1209720789629117100
+    second: CaminoSet_17
+  - first:
+      213: -1315401391661789922
+    second: CaminoSet_18
+  - first:
+      213: 6899162373056414349
+    second: CaminoSet_19
+  - first:
+      213: 6316894102056051762
+    second: CaminoSet_20
+  - first:
+      213: -1796489868030636650
+    second: CaminoSet_21
+  - first:
+      213: 8241668527540854946
+    second: CaminoSet_22
+  - first:
+      213: -484813484843692330
+    second: CaminoSet_23
+  - first:
+      213: -6148606771877657702
+    second: CaminoSet_24
+  - first:
+      213: 7791425142133290481
+    second: CaminoSet_25
+  - first:
+      213: 6707050818343394705
+    second: CaminoSet_26
+  - first:
+      213: 2699728905632463334
+    second: CaminoSet_27
+  - first:
+      213: -1525740962133509073
+    second: CaminoSet_28
+  - first:
+      213: 2330665697620930412
+    second: CaminoSet_29
+  - first:
+      213: -6881229003431219111
+    second: CaminoSet_30
+  - first:
+      213: 4100356773941166524
+    second: CaminoSet_31
+  - first:
+      213: 3822951076423154216
+    second: CaminoSet_32
+  - first:
+      213: 221495290308055094
+    second: CaminoSet_33
+  - first:
+      213: 5687948321694269654
+    second: CaminoSet_34
+  - first:
+      213: 6520234854236580911
+    second: CaminoSet_35
+  - first:
+      213: 3770947304512599891
+    second: CaminoSet_36
+  - first:
+      213: -1316423900593955906
+    second: CaminoSet_37
+  - first:
+      213: -4710533645702437005
+    second: CaminoSet_38
+  - first:
+      213: -2852615109383447393
+    second: CaminoSet_39
+  - first:
+      213: 7407066120425970683
+    second: CaminoSet_40
+  - first:
+      213: 3867488781107101021
+    second: CaminoSet_41
+  - first:
+      213: 6339922795260558813
+    second: CaminoSet_42
+  - first:
+      213: 6140366762052116470
+    second: CaminoSet_43
+  - first:
+      213: 3051273330517028971
+    second: CaminoSet_44
+  - first:
+      213: 5198791039553376370
+    second: CaminoSet_45
+  - first:
+      213: -1619372840731141752
+    second: CaminoSet_46
+  - first:
+      213: 4082439082413430496
+    second: CaminoSet_47
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 125
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaminoSet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1ce1ef0827cf4d0800000000000000
+      internalID: -3099476545192934948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 924
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99db67e5c54c462e0800000000000000
+      internalID: -2133364422465897063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 924
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eb0307963a79c00800000000000000
+      internalID: 907373523187580474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_3
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 924
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b5491d870dd39d0800000000000000
+      internalID: -2792846976569025787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 924
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495111f65debbc000800000000000000
+      internalID: 57349244172965268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_5
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 924
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2085161d87beeb4d0800000000000000
+      internalID: -3116794987952383998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03472558cdebeb80800000000000000
+      internalID: -8364330438232685811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 792
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594942548b683c240800000000000000
+      internalID: 4810836952953951381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 792
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a19fa97234339c40800000000000000
+      internalID: 5517811359853547936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 792
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c7ce517f1357d00800000000000000
+      internalID: 969736232062712960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_10
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 792
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e225d8e4d029010800000000000000
+      internalID: 1194031482236186143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_11
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 792
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f21f611969333080800000000000000
+      internalID: -9208953689615691018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b110f08920b6f10e0800000000000000
+      internalID: -2296999626050436837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 660
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe679a8b6259e8790800000000000000
+      internalID: -7525913933750110481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 660
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c6e2e89b8683b70800000000000000
+      internalID: 8878961811524578310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_15
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 660
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc950c4e3c91a280800000000000000
+      internalID: -9033767586151162634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_16
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 660
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f1e652aa9dab260800000000000000
+      internalID: 7114237886180761391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_17
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 660
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d50c8e955363fe0800000000000000
+      internalID: -1209720789629117100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dc1f05761cebde0800000000000000
+      internalID: -1315401391661789922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_19
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 528
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82c4cdff9fbebf50800000000000000
+      internalID: 6899162373056414349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234afcca7bd1aa750800000000000000
+      internalID: 6316894102056051762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_21
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 528
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d0275bbf59117e0800000000000000
+      internalID: -1796489868030636650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_22
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0e69c0cd9406270800000000000000
+      internalID: 8241668527540854946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_23
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 528
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de829544b89549f0800000000000000
+      internalID: -484813484843692330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93cbaab7b2cbaaa0800000000000000
+      internalID: -6148606771877657702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_25
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 396
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5f6e2d2e3b02c60800000000000000
+      internalID: 7791425142133290481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_26
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 396
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19dd9dd0f2b341d50800000000000000
+      internalID: 6707050818343394705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_27
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 396
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9b31ac22d577520800000000000000
+      internalID: 2699728905632463334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_28
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 396
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cf4ccbdaa73dae0800000000000000
+      internalID: -1525740962133509073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_29
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 396
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f22e48a10385020800000000000000
+      internalID: 2330665697620930412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950fd500ea6f080a0800000000000000
+      internalID: -6881229003431219111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_31
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 264
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb14123e2c467e830800000000000000
+      internalID: 4100356773941166524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_32
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a36e7cfb9dd0530800000000000000
+      internalID: 3822951076423154216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_33
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 264
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630db320bc8e21300800000000000000
+      internalID: 221495290308055094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_34
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 264
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0cd5fccd6afee40800000000000000
+      internalID: 5687948321694269654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_35
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 264
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c64e2ed078c7a50800000000000000
+      internalID: 6520234854236580911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357b0381898155430800000000000000
+      internalID: 3770947304512599891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_37
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb5347ef6f1bbde0800000000000000
+      internalID: -1316423900593955906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_38
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 132
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37761615b92d0aeb0800000000000000
+      internalID: -4710533645702437005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_39
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 132
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c994cfba97968d0800000000000000
+      internalID: -2852615109383447393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_40
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 132
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb12d7646f2bc660800000000000000
+      internalID: 7407066120425970683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_41
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 132
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d72ba3e841ca530800000000000000
+      internalID: 3867488781107101021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd38e2213eebf750800000000000000
+      internalID: 6339922795260558813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_43
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff5bba7907f63550800000000000000
+      internalID: 6140366762052116470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_44
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6037128dec485a20800000000000000
+      internalID: 3051273330517028971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_45
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2701016f7e0d52840800000000000000
+      internalID: 5198791039553376370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_46
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8891e4d2bf4d689e0800000000000000
+      internalID: -1619372840731141752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminoSet_47
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e69c6c37bcb7a830800000000000000
+      internalID: 4082439082413430496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

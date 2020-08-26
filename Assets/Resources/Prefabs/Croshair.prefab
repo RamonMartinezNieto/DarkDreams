@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8750946457794642086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.92, y: 1.09, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshairTransform: {fileID: 8750946457794642084}
+  crossHairBlue: {fileID: 21300000, guid: 4ad35baf425fc774880d56ad8a429934, type: 3}
+  crossHairRed: {fileID: 21300000, guid: b932eeaa54204074dbebf98284fbdf94, type: 3}
+  crossHairWhite: {fileID: 21300000, guid: 43348608042e7ed4480e121e91e13212, type: 3}
 --- !u!58 &6386174673811483661
 CircleCollider2D:
   m_ObjectHideFlags: 0

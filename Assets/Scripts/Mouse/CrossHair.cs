@@ -5,10 +5,45 @@ using UnityEngine;
 public class CrossHair : MonoBehaviour
 {
 
-
     public Transform crosshairTransform;
 
-    private void Start() => Cursor.visible = false; 
+    public Sprite crossHairBlue;
+    public Sprite crossHairRed;
+    public Sprite crossHairWhite;
+
+    private SpriteRenderer crossHairSpriteRender;
+
+    private void Awake()
+    {
+        crossHairSpriteRender = GetComponent<SpriteRenderer>();
+    }
+
+    private void Start()
+    {
+        ChangeCrossHair();
+        Cursor.visible = false;
+    }
+
+    public void ChangeCrossHair() 
+    {
+        string crossHair = PlayerPrefs.GetString("crossHair");
+
+        switch (crossHair) 
+        {
+            case "blue":
+                crossHairSpriteRender.sprite = crossHairBlue;        
+                break;
+            case "red":
+                crossHairSpriteRender.sprite = crossHairRed;
+                break;
+            case "white":
+                crossHairSpriteRender.sprite = crossHairWhite;
+                break;
+            default:
+                crossHairSpriteRender.sprite = crossHairWhite;
+                break;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
