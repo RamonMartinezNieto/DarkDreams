@@ -1,26 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class ArrowShot : Shot
 {
-    
+
     //private int damage;
-
-    private Transform playerTransform;
-
-    private GameObject player;
-
-    void Awake()
-    {
-        //damage = GameObject.Find("SkeletonArcher").GetComponent<EnemySkeletonArcher>().Damage;
-        player = GameObject.Find("Player");
-
-        if (player == null) Destroy(this);
-        else playerTransform = player.GetComponent<Rigidbody2D>().transform;
-        
-
-       // _shotDamage = damage;
-
-    }
 
     void Start()
     {
@@ -39,9 +23,10 @@ public class ArrowShot : Shot
     }
 
     //sobrecharging method (orginal en Shot)
-    public void MovingShot(Vector3 direction) {
+    public void MovingShot(Vector3 direction)
+    {
         timeDuration += Time.time;
-        this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * shotVelocity;  
+        this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * shotVelocity;
     }
 
 
@@ -50,26 +35,24 @@ public class ArrowShot : Shot
     {
 
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("GroundPlayerDetector"))
-            {
+        {
             //When Shot hit the Player
             PlayerStats player = FindObjectOfType<PlayerStats>();
 
-                if (player != null)
-                {
-                    player.restHealth(damage);
-                }
-                DestroyShotAnimation();
-                Destroy(shootContainer);
-            }
-            else if (!other.gameObject.CompareTag("Enemy") &&
-            !other.gameObject.CompareTag("GroundEnemyDetector"))
+            if (player != null)
             {
-                 if (!other.isTrigger)
-                 {
-                    DestroyShotAnimation();
-                    Destroy(shootContainer);
-                 }
+                player.restHealth(damage);
             }
+            StartCoroutine(DestroyShotAnimation());
+        }
+        else if (!other.gameObject.CompareTag("Enemy") &&
+        !other.gameObject.CompareTag("GroundEnemyDetector"))
+        {
+            if (!other.isTrigger)
+            {
+                StartCoroutine(DestroyShotAnimation());
+            }
+        }
     }
 
 
@@ -80,25 +63,31 @@ public class ArrowShot : Shot
 
         if (playerTransform.position.x < 0)
         {
-            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x); 
+            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x);
         }
         else
         {
-            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x); 
+            arrowDir.x = (playerTransform.position.x - gameObject.transform.position.x);
         }
 
 
         if (playerTransform.position.y < 0)
         {
-            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y + 0.2f); 
+            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y + 0.2f);
         }
         else
         {
-            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y + 0.2f); 
+            arrowDir.y = (playerTransform.position.y - gameObject.transform.position.y + 0.2f);
         }
 
         return arrowDir;
     }
 
+    public override IEnumerator DestroyShotAnimation()
+    {
+        yield return new WaitForSeconds(0);
+        Destroy(gameObject);
+        Destroy(shootContainer);
+    }
 
 }

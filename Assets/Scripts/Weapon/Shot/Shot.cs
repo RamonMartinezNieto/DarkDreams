@@ -18,10 +18,30 @@ abstract public class Shot : MonoBehaviour, IShooting
     [Tooltip("Time duration of the shoot.")]
     public float timeDuration = 2;
 
+    private Animator animShot;
+    protected Rigidbody2D shootRigi;
+    protected ParticleSystem particleSystemShot;
+
+    //Nedded to arrowShot
+    protected Transform playerTransform;
+    protected GameObject player;
+
+    private void Awake()
+    {
+        shootRigi = GetComponent<Rigidbody2D>();
+        animShot = GetComponent<Animator>();
+        particleSystemShot = GetComponent<ParticleSystem>();
+
+        //damage = GameObject.Find("SkeletonArcher").GetComponent<EnemySkeletonArcher>().Damage;
+        player = GameObject.Find("Player");
+        if (player == null) Destroy(this);
+        else playerTransform = player.GetComponent<Rigidbody2D>().transform;
+        // _shotDamage = damage;
+    }
+
     private void Update()
     {
-        if (Time.time >= timeDuration) DestroyShotAnimation();
-        
+        if (Time.time >= timeDuration) StartCoroutine(DestroyShotAnimation());
     }
 
     public virtual void MovingShot()
@@ -31,12 +51,21 @@ abstract public class Shot : MonoBehaviour, IShooting
     }
 
     //TODO: include animation
-    public void DestroyShotAnimation()
+    public virtual IEnumerator DestroyShotAnimation()
     {
+
+        shootRigi.velocity = Vector2.zero;
+        animShot.SetBool("endShot", true);
+        particleSystemShot.Stop();
+
+        yield return new WaitForSeconds(1);
+
+        Debug.Log("destroy");
         Destroy(gameObject);
+        Destroy(shootContainer);
     }
 
-   
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if ((other.gameObject.CompareTag("Enemy") && other as CapsuleCollider2D)
@@ -55,15 +84,13 @@ abstract public class Shot : MonoBehaviour, IShooting
                 enemy.TakeDamage(damage);
             }
 
-            DestroyShotAnimation();
-            Destroy(shootContainer);
+            StartCoroutine(DestroyShotAnimation());
         }
         else if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("GroundPlayerDetector"))
         {
             if (!other.isTrigger)
             {
-                DestroyShotAnimation();
-                Destroy(shootContainer);
+                StartCoroutine(DestroyShotAnimation());
             }
         }
     }

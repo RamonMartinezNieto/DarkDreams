@@ -101,7 +101,7 @@ Animator:
   m_GameObject: {fileID: 1720518532293778356}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 836bd35b2fd1deb469c97ce4d6452084, type: 2}
+  m_Controller: {fileID: 9100000, guid: 23dc6d79efcff04458246294e06756f4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -174,6 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.8
   IsMenuPlayer: 0
+  positionPlayerMenu: 0
   playerTransform: {fileID: 1720518532293778353}
   crossHair: {fileID: 0}
 --- !u!114 &1720518532293778348

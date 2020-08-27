@@ -126,29 +126,37 @@ abstract public class Weapons : MonoBehaviour
 
         RunDirections rd = character.GetComponent<MovementPlayer>().CurrentRun;
 
-        if (rd.Equals(RunDirections.RunE) || rd.Equals(RunDirections.RunSE))
+        if (rd.Equals(RunDirections.RunE))
         {
-            SetWeaponVariables(0.17f, -0.06f, -1.0f, true, true, false);
+            SetWeaponVariables(0.15f, -0.1f, -1.0f, true, true, false);
         }
-        else if (rd.Equals(RunDirections.RunW) || rd.Equals(RunDirections.RunSW))
+        if (rd.Equals(RunDirections.RunSE))
         {
-            SetWeaponVariables(-0.17f, -0.06f, -1.0f, false, true, true);
+            SetWeaponVariables(0.15f, -0.15f, -1.0f, true, true, false);
+        }
+        else if (rd.Equals(RunDirections.RunW))
+        {
+            SetWeaponVariables(-0.15f, -0.1f, -1.0f, false, true, true);
+        }
+        else if (rd.Equals(RunDirections.RunSW))
+        {
+            SetWeaponVariables(-0.15f, -0.15f, -1.0f, false, true, true);
         }
         else if (rd.Equals(RunDirections.RunNE))
         {
-            SetWeaponVariables(0.17f, -0.02f, 0.10f, true, false, false);
+            SetWeaponVariables(0.13f, -0.055f, 0.10f, true, false, false);
         }
         else if (rd.Equals(RunDirections.RunNW))
         {
-            SetWeaponVariables(-0.17f, -0.02f, 0.10f, false, false, true);
+            SetWeaponVariables(-0.13f, -0.055f, 0.10f, false, false, true);
         }
         else if (rd.Equals(RunDirections.RunS))
         {
-            SetWeaponVariables(0.12f, -0.05f, -1.0f, true, true, false);
+            SetWeaponVariables(0.10f, -0.12f, -1.0f, true, true, false);
         }
         else if (rd.Equals(RunDirections.RunN))
         {
-            SetWeaponVariables(0.12f, -0.05f, -1.0f, false, false, false);
+            SetWeaponVariables(0.12f, -0.070f, -1.0f, false, false, false);
         }
 
 

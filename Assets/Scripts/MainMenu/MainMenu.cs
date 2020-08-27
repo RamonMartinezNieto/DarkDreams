@@ -20,11 +20,6 @@ public class MainMenu : MonoBehaviour
     public TMP_Text labelName;
     public TMP_Text labelNameOptions;
 
-    public GameObject BackGround;
-    private float currentPosX;
-    private Vector3 endPosBack;
-    private bool movementBack; 
-
     private void Start()
     {
         //TODO: PlayerPrefs.DeleteAll();
@@ -35,35 +30,7 @@ public class MainMenu : MonoBehaviour
         SoundManager.Instance.PlayMusic("menuMusic");
         SoundManager.Instance.LoopMusic(true);
 
-        Debug.Log(BackGround.transform.position);
-        endPosBack = BackGround.transform.position + new Vector3(-1f,0,0);
-        Debug.Log(endPosBack);
-        movementBack = true; 
     }
-
-    private void Update()
-    {
-        currentPosX = BackGround.transform.position.x;
-        
-        if (movementBack) {
-            BackGround.transform.Translate(new Vector3(-.2f, 0, 0) * Time.deltaTime, Camera.main.transform);
-            Debug.Log(endPosBack.x);
-            if (currentPosX <= endPosBack.x)
-            {
-                movementBack = false;
-                endPosBack *= -1;
-            }
-
-        }
-        else if (!movementBack) {
-            BackGround.transform.Translate(new Vector3(.2f, 0, 0) * Time.deltaTime, Camera.main.transform);
-            if (currentPosX >= endPosBack.x)
-            {
-                movementBack = true;
-                endPosBack *= 1;
-            }
-        }
-     }
 
     public void ShowNameMenu() 
     {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : PlayerConf
 {
 	//Struct to simulate a Dictionary on Inspector in Unity
 	[Serializable]
@@ -35,12 +35,12 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-		HandlerOptions ho = HandlerOptions.Instance;
+		//HandlerOptions ho = HandlerOptions.Instance;
 
-		currentVolumen = ho.MusicVolumen;
+		currentVolumen = MusicVolumen;
 
 		//Look !, music ON = true is mute = false, be careful
-		muteAllSounds = !ho.MusicOn;
+		muteAllSounds = !MusicOn;
 		
 		setInitialParameters();
 	}

@@ -8,9 +8,9 @@ public class ShotPrincipalWeapon : Shot
     //Need to set velocity, damage and destroy animation
     void Start()
     {
-     
-
         MovingShot();
+        SoundManager.Instance.PlayEffect("shootPrincipal");
+        
     }
 
 }

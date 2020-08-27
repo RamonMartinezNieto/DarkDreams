@@ -43,6 +43,13 @@ abstract public class Enemy : MonoBehaviour
 
     private float extraVelocity = .08f;
 
+    private GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
     //TODO: review this, I don't know if this method is more efficien than translate position
     public void ActiveEnemey() 
     {
@@ -128,6 +135,9 @@ abstract public class Enemy : MonoBehaviour
 
         EnemyRecovery er = FindObjectOfType<EnemyRecovery>();
         er.SaveEnemy(this);
+
+        //TODO: Need calculate score
+        gameManager.UpScore(100); 
 
         //TODO: leave this, I need use it to create enemies
         //er.RecoverSkeletonArcher(0f,0f);

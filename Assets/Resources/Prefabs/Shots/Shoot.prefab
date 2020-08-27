@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2676171059001825500}
   - component: {fileID: 4501336988278119960}
   - component: {fileID: 4709643770385092225}
+  - component: {fileID: 8352762956654653341}
   m_Layer: 0
   m_Name: Shoot
   m_TagString: Untagged
@@ -4872,4 +4873,23 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
+--- !u!95 &8352762956654653341
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2802035933494917721}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5b6da6665216764e9783e735e0e4065, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

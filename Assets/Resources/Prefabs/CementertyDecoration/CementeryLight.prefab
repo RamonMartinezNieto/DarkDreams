@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1527038861723149769}
   - component: {fileID: 1527038861723149770}
-  - component: {fileID: 2360617961743542171}
+  - component: {fileID: 8659587223431442758}
+  - component: {fileID: 7209910257077628831}
   m_Layer: 0
   m_Name: CementeryLight
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527038861723149771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 2.775, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 1527038862978971611}
   m_Father: {fileID: 0}
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1680828003333021260, guid: dcae2a9754a826e49aac533ba56cf2a6,
+  m_Sprite: {fileID: -5153350731151283439, guid: 8ccc5f4867baf6343910eec4daf05c32,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -84,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &2360617961743542171
-CircleCollider2D:
+--- !u!70 &8659587223431442758
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,9 +98,20 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15, y: 0.06963444}
-  serializedVersion: 2
-  m_Radius: 0.06963444
+  m_Offset: {x: 0.27, y: -0.44}
+  m_Size: {x: 0.16, y: 0.37}
+  m_Direction: 0
+--- !u!210 &7209910257077628831
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527038861723149771}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1527038862978971620
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527038862978971620}
   m_LocalRotation: {x: -0, y: -0, z: -0.9999396, w: -0.010995304}
-  m_LocalPosition: {x: -0.146, y: 0.472, z: 0}
+  m_LocalPosition: {x: -0.308, y: -0.003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1527038861723149769}
@@ -146,7 +158,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.434
-  m_Color: {r: 1, g: 0.97222495, b: 0.7877358, a: 1}
+  m_Color: {r: 1, g: 0.7490196, b: 0.34901962, a: 1}
   m_Intensity: 0.5
   m_LightVolumeOpacity: 0.118
   m_ApplyToSortingLayers: 000000003bd3dcb551a8a75b

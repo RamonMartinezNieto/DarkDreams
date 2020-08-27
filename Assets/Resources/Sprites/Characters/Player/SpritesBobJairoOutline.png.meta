@@ -1,0 +1,1720 @@
+fileFormatVersion: 2
+guid: f1f22973a10d55f4086847ceab8d0e5c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2435853691450590273
+    second: SpritesBobJairoOutline_0
+  - first:
+      213: 2876170190463860214
+    second: SpritesBobJairoOutline_1
+  - first:
+      213: 5122002243592963744
+    second: SpritesBobJairoOutline_2
+  - first:
+      213: 5298348054353744534
+    second: SpritesBobJairoOutline_3
+  - first:
+      213: -4277085609112382326
+    second: SpritesBobJairoOutline_4
+  - first:
+      213: 1128217105957387519
+    second: SpritesBobJairoOutline_5
+  - first:
+      213: -6712203373215186116
+    second: SpritesBobJairoOutline_6
+  - first:
+      213: -9136244019487030476
+    second: SpritesBobJairoOutline_7
+  - first:
+      213: -6317336029045460080
+    second: SpritesBobJairoOutline_8
+  - first:
+      213: -6194060841960612919
+    second: SpritesBobJairoOutline_9
+  - first:
+      213: 8510138111308484246
+    second: SpritesBobJairoOutline_10
+  - first:
+      213: 6721557603848069300
+    second: SpritesBobJairoOutline_11
+  - first:
+      213: 6092389145706291103
+    second: SpritesBobJairoOutline_12
+  - first:
+      213: -3041889680116504826
+    second: SpritesBobJairoOutline_13
+  - first:
+      213: -6335307277986659987
+    second: SpritesBobJairoOutline_14
+  - first:
+      213: -7398049915705285625
+    second: SpritesBobJairoOutline_15
+  - first:
+      213: 5384843127506817671
+    second: SpritesBobJairoOutline_16
+  - first:
+      213: 3058391193326151185
+    second: SpritesBobJairoOutline_17
+  - first:
+      213: 2955054500726368403
+    second: SpritesBobJairoOutline_18
+  - first:
+      213: 3118446154026584706
+    second: SpritesBobJairoOutline_19
+  - first:
+      213: 7457818271184444433
+    second: SpritesBobJairoOutline_20
+  - first:
+      213: 2045731230823353811
+    second: SpritesBobJairoOutline_21
+  - first:
+      213: -8685236373137538374
+    second: SpritesBobJairoOutline_22
+  - first:
+      213: -6864643212200877596
+    second: SpritesBobJairoOutline_23
+  - first:
+      213: 215337143846469356
+    second: SpritesBobJairoOutline_24
+  - first:
+      213: -1533161568297871935
+    second: SpritesBobJairoOutline_25
+  - first:
+      213: -7142952399928659042
+    second: SpritesBobJairoOutline_26
+  - first:
+      213: -5305637649446797539
+    second: SpritesBobJairoOutline_27
+  - first:
+      213: -2806271180644408884
+    second: SpritesBobJairoOutline_28
+  - first:
+      213: 8160921851534050358
+    second: SpritesBobJairoOutline_29
+  - first:
+      213: -3300573898272101319
+    second: SpritesBobJairoOutline_30
+  - first:
+      213: 4414936611585198903
+    second: SpritesBobJairoOutline_31
+  - first:
+      213: 8352735155528754232
+    second: SpritesBobJairoOutline_32
+  - first:
+      213: -4208448911625977428
+    second: SpritesBobJairoOutline_33
+  - first:
+      213: -4305000733423786835
+    second: SpritesBobJairoOutline_34
+  - first:
+      213: -2459553855739611022
+    second: SpritesBobJairoOutline_35
+  - first:
+      213: 3839326076755565805
+    second: SpritesBobJairoOutline_36
+  - first:
+      213: -2081924277246344574
+    second: SpritesBobJairoOutline_37
+  - first:
+      213: 2498191728417590907
+    second: SpritesBobJairoOutline_38
+  - first:
+      213: -9209692074081082313
+    second: SpritesBobJairoOutline_39
+  - first:
+      213: -5725815811753574067
+    second: SpritesBobJairoOutline_40
+  - first:
+      213: -8869881043793478435
+    second: SpritesBobJairoOutline_41
+  - first:
+      213: 8604699965710189390
+    second: SpritesBobJairoOutline_42
+  - first:
+      213: 2415382753484868633
+    second: SpritesBobJairoOutline_43
+  - first:
+      213: 7370065821544852136
+    second: SpritesBobJairoOutline_44
+  - first:
+      213: -8456277660752101760
+    second: SpritesBobJairoOutline_45
+  - first:
+      213: -4634924837097121508
+    second: SpritesBobJairoOutline_46
+  - first:
+      213: 5629283909713655051
+    second: SpritesBobJairoOutline_47
+  - first:
+      213: 8203121458597752385
+    second: SpritesBobJairoOutline_48
+  - first:
+      213: 5178436682197242851
+    second: SpritesBobJairoOutline_49
+  - first:
+      213: 1888546922774415318
+    second: SpritesBobJairoOutline_50
+  - first:
+      213: 2882452307886484860
+    second: SpritesBobJairoOutline_51
+  - first:
+      213: -6309020596201992287
+    second: SpritesBobJairoOutline_52
+  - first:
+      213: 2277577478416438526
+    second: SpritesBobJairoOutline_53
+  - first:
+      213: -7780496630387369200
+    second: SpritesBobJairoOutline_54
+  - first:
+      213: 133667718653975193
+    second: SpritesBobJairoOutline_55
+  - first:
+      213: -4495755448966055585
+    second: SpritesBobJairoOutline_56
+  - first:
+      213: -6905593443019370083
+    second: SpritesBobJairoOutline_57
+  - first:
+      213: -5757623091156729698
+    second: SpritesBobJairoOutline_58
+  - first:
+      213: -6124508640038458421
+    second: SpritesBobJairoOutline_0
+  - first:
+      213: 3854912205729870583
+    second: SpritesBobJairoOutline_1
+  - first:
+      213: -2672038642173100602
+    second: SpritesBobJairoOutline_2
+  - first:
+      213: 651631096945902111
+    second: SpritesBobJairoOutline_3
+  - first:
+      213: 1538665868518813633
+    second: SpritesBobJairoOutline_4
+  - first:
+      213: 2124358692509494343
+    second: SpritesBobJairoOutline_5
+  - first:
+      213: 7917450839349186100
+    second: SpritesBobJairoOutline_6
+  - first:
+      213: 1856828972200810224
+    second: SpritesBobJairoOutline_7
+  - first:
+      213: 5574162980387165138
+    second: SpritesBobJairoOutline_8
+  - first:
+      213: -2930268282962289764
+    second: SpritesBobJairoOutline_9
+  - first:
+      213: -7309263257124281742
+    second: SpritesBobJairoOutline_10
+  - first:
+      213: -5108428959278706485
+    second: SpritesBobJairoOutline_11
+  - first:
+      213: 6371055301984727660
+    second: SpritesBobJairoOutline_12
+  - first:
+      213: -3809987268073987058
+    second: SpritesBobJairoOutline_13
+  - first:
+      213: -1020240124443564837
+    second: SpritesBobJairoOutline_14
+  - first:
+      213: -4198180763464423449
+    second: SpritesBobJairoOutline_15
+  - first:
+      213: -137605915150219436
+    second: SpritesBobJairoOutline_16
+  - first:
+      213: 3000485835093481207
+    second: SpritesBobJairoOutline_17
+  - first:
+      213: 1828234882345201597
+    second: SpritesBobJairoOutline_18
+  - first:
+      213: 4257935373512928556
+    second: SpritesBobJairoOutline_19
+  - first:
+      213: -1504258719990056303
+    second: SpritesBobJairoOutline_20
+  - first:
+      213: 6171534907683535224
+    second: SpritesBobJairoOutline_21
+  - first:
+      213: 5857175418507782563
+    second: SpritesBobJairoOutline_22
+  - first:
+      213: -1459114876181899762
+    second: SpritesBobJairoOutline_23
+  - first:
+      213: 6998263207655045896
+    second: SpritesBobJairoOutline_24
+  - first:
+      213: 7017604532091593861
+    second: SpritesBobJairoOutline_26
+  - first:
+      213: 4681347486301086708
+    second: SpritesBobJairoOutline_27
+  - first:
+      213: 8102626907415101507
+    second: SpritesBobJairoOutline_28
+  - first:
+      213: 1717004976304303637
+    second: SpritesBobJairoOutline_29
+  - first:
+      213: 7086615264713755664
+    second: SpritesBobJairoOutline_30
+  - first:
+      213: 6418204672988020895
+    second: SpritesBobJairoOutline_31
+  - first:
+      213: 2173715870367598379
+    second: SpritesBobJairoOutline_32
+  - first:
+      213: -2389292419960762193
+    second: SpritesBobJairoOutline_33
+  - first:
+      213: -8853516268556318822
+    second: SpritesBobJairoOutline_34
+  - first:
+      213: 7108649926213631446
+    second: SpritesBobJairoOutline_35
+  - first:
+      213: 8964636632638073050
+    second: SpritesBobJairoOutline_36
+  - first:
+      213: -1942290320539431500
+    second: SpritesBobJairoOutline_37
+  - first:
+      213: -1681356731280834480
+    second: SpritesBobJairoOutline_38
+  - first:
+      213: -395078750945730258
+    second: SpritesBobJairoOutline_39
+  - first:
+      213: 8662252513809931490
+    second: SpritesBobJairoOutline_40
+  - first:
+      213: 980255409641114986
+    second: SpritesBobJairoOutline_41
+  - first:
+      213: 4111524534555288389
+    second: SpritesBobJairoOutline_42
+  - first:
+      213: -7092587053902135379
+    second: SpritesBobJairoOutline_43
+  - first:
+      213: 8260817293075066333
+    second: SpritesBobJairoOutline_44
+  - first:
+      213: 1915212941702085468
+    second: SpritesBobJairoOutline_45
+  - first:
+      213: 2663229237654594880
+    second: SpritesBobJairoOutline_46
+  - first:
+      213: -8706441821846676920
+    second: SpritesBobJairoOutline_47
+  - first:
+      213: 1455028348301981761
+    second: SpritesBobJairoOutline_48
+  - first:
+      213: -2142723280524101910
+    second: SpritesBobJairoOutline_49
+  - first:
+      213: 1961574330414270789
+    second: SpritesBobJairoOutline_50
+  - first:
+      213: -3051018391478112866
+    second: SpritesBobJairoOutline_51
+  - first:
+      213: -1144100885898165711
+    second: SpritesBobJairoOutline_52
+  - first:
+      213: 2029035008787935684
+    second: SpritesBobJairoOutline_53
+  - first:
+      213: -2666976880260785271
+    second: SpritesBobJairoOutline_54
+  - first:
+      213: 4676938647531845047
+    second: SpritesBobJairoOutline_55
+  - first:
+      213: 7921593472627495886
+    second: SpritesBobJairoOutline_56
+  - first:
+      213: 3301418608209172722
+    second: SpritesBobJairoOutline_57
+  - first:
+      213: 9107094502302011669
+    second: SpritesBobJairoOutline_25
+  - first:
+      213: 1882001444908910536
+    second: SpritesBobJairoOutline_58
+  - first:
+      213: -7395490482478047665
+    second: SpritesBobJairoOutline_59
+  - first:
+      213: 2710784054964329614
+    second: SpritesBobJairoOutline_60
+  - first:
+      213: -8029225046699229032
+    second: SpritesBobJairoOutline_61
+  - first:
+      213: 3446888110800577868
+    second: SpritesBobJairoOutline_62
+  - first:
+      213: 3503471624084108969
+    second: SpritesBobJairoOutline_63
+  - first:
+      213: 3614629048688368445
+    second: SpritesBobJairoOutline_64
+  - first:
+      213: -6408687315574296996
+    second: SpritesBobJairoOutline_65
+  - first:
+      213: 3554194157008395120
+    second: SpritesBobJairoOutline_66
+  - first:
+      213: 6362400230416737254
+    second: SpritesBobJairoOutline_67
+  - first:
+      213: -8694284465324419993
+    second: SpritesBobJairoOutline_68
+  - first:
+      213: 1486969900569633108
+    second: SpritesBobJairoOutline_69
+  - first:
+      213: -2592745839832963261
+    second: SpritesBobJairoOutline_70
+  - first:
+      213: -2008855303445763784
+    second: SpritesBobJairoOutline_71
+  - first:
+      213: 5905774735797124171
+    second: SpritesBobJairoOutline_72
+  - first:
+      213: -3767042273092846965
+    second: SpritesBobJairoOutline_73
+  - first:
+      213: -1692722307435853280
+    second: SpritesBobJairoOutline_74
+  - first:
+      213: 1078857679986259133
+    second: SpritesBobJairoOutline_75
+  - first:
+      213: -5259260135864352510
+    second: SpritesBobJairoOutline_76
+  - first:
+      213: 8496165247754340972
+    second: SpritesBobJairoOutline_77
+  - first:
+      213: -5712121504426676004
+    second: SpritesBobJairoOutline_78
+  - first:
+      213: -7019844686861947121
+    second: SpritesBobJairoOutline_79
+  - first:
+      213: 5545077989358836574
+    second: SpritesBobJairoOutline_80
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb62b647df510ba0800000000000000
+      internalID: -6124508640038458421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2b8d61a366f7530800000000000000
+      internalID: 3854912205729870583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdb72313030bead0800000000000000
+      internalID: -2672038642173100602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f120f0ab70f0b0900800000000000000
+      internalID: 651631096945902111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfe41984707a5510800000000000000
+      internalID: 1538665868518813633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74caa8ab9fc3b7d10800000000000000
+      internalID: 2124358692509494343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ec606079f60ed60800000000000000
+      internalID: 7917450839349186100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_7
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6dea0cc18c4c910800000000000000
+      internalID: 1856828972200810224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 176
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d31c1e82b76b5d40800000000000000
+      internalID: 5574162980387165138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 151
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b507995889557d0800000000000000
+      internalID: -2930268282962289764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 151
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272ea453bc7409a90800000000000000
+      internalID: -7309263257124281742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 151
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0dfd95de63b19b0800000000000000
+      internalID: -5108428959278706485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 151
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c623b27ba098a6850800000000000000
+      internalID: 6371055301984727660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 151
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0460bf04c4302bc0800000000000000
+      internalID: -3809987268073987058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 151
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4e0f4230167d1f0800000000000000
+      internalID: -1020240124443564837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 126
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e723daa6d01db5c0800000000000000
+      internalID: -4198180763464423449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 126
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4578a743620271ef0800000000000000
+      internalID: -137605915150219436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 126
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6965248fdd3a920800000000000000
+      internalID: 3000485835093481207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 126
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfe92860f13f5910800000000000000
+      internalID: 1828234882345201597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 126
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2deec6a9a9371b30800000000000000
+      internalID: 4257935373512928556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 101
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a75b00aaccf1be0800000000000000
+      internalID: -1504258719990056303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 101
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8797663ec42b5a550800000000000000
+      internalID: 6171534907683535224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 101
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a96e4fa20ed84150800000000000000
+      internalID: 5857175418507782563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_23
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 101
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0690b630ce20cbe0800000000000000
+      internalID: -1459114876181899762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 101
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bf6f81f43de1160800000000000000
+      internalID: 6998263207655045896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 76
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584ad7d142a836160800000000000000
+      internalID: 7017604532091593861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_27
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 76
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3e4276cbc77f040800000000000000
+      internalID: 4681347486301086708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_28
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 76
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340cff32e30527070800000000000000
+      internalID: 8102626907415101507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_29
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 76
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e223acde604d710800000000000000
+      internalID: 1717004976304303637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_30
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 76
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ccf196907b85260800000000000000
+      internalID: 7086615264713755664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 76
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90043d152b021950800000000000000
+      internalID: 6418204672988020895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_32
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 76
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27c3e731179a2e10800000000000000
+      internalID: 2173715870367598379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_33
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 76
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa094bbf33787ded0800000000000000
+      internalID: -2389292419960762193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 51
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a970f879cddf12580800000000000000
+      internalID: -8853516268556318822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_35
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 51
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddf194d17ff6a260800000000000000
+      internalID: 7108649926213631446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_36
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 51
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8a8dc4589c86c70800000000000000
+      internalID: 8964636632638073050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_37
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 51
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd41918e399b05e0800000000000000
+      internalID: -1942290320539431500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_38
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 51
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0504b4b06fe9aa8e0800000000000000
+      internalID: -1681356731280834480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 51
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21239f18f5648af0800000000000000
+      internalID: -395078750945730258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_40
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 51
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec106844c0863870800000000000000
+      internalID: 8662252513809931490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_41
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 51
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d40d8f9119a9d00800000000000000
+      internalID: 980255409641114986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543a877c7c11f0930800000000000000
+      internalID: 4111524534555288389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_43
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daff0a117a1129d90800000000000000
+      internalID: -7092587053902135379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_44
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddda4247f8154a270800000000000000
+      internalID: 8260817293075066333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_45
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b3263f504349a10800000000000000
+      internalID: 1915212941702085468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_46
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04526d991e0b5f420800000000000000
+      internalID: 2663229237654594880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a593faa418c2780800000000000000
+      internalID: -8706441821846676920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_48
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148b9aed29c413410800000000000000
+      internalID: 1455028348301981761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_49
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 26
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6b66c67848342e0800000000000000
+      internalID: -2142723280524101910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5490edce579e83b10800000000000000
+      internalID: 1961574330414270789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_51
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d63cc10fa98a5d0800000000000000
+      internalID: -3051018391478112866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_52
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13284d45e465f10f0800000000000000
+      internalID: -1144100885898165711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_53
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1f2a71794982c10800000000000000
+      internalID: 2029035008787935684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_54
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b50eb58aefcfad0800000000000000
+      internalID: -2666976880260785271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_55
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b57e62abe2d7e040800000000000000
+      internalID: 4676938647531845047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_56
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3d30ffa472fed60800000000000000
+      internalID: 7921593472627495886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesBobJairoOutline_57
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f81c258bbef0dd20800000000000000
+      internalID: 3301418608209172722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
