@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 8ccc5f4867baf6343910eec4daf05c32
+guid: a47b2b1dce1195b4fb3a870020e55d16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5153350731151283439
-    second: Untitled 08-26-2020 03-21-24_0
+      213: 3538710840085915060
+    second: street light_0
   - first:
-      213: 6584354475071620082
-    second: Untitled 08-26-2020 03-21-24_1
+      213: 4069928126777490400
+    second: street light_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -92,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled 08-26-2020 03-21-24_0
+      name: street light_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 71
-        height: 127
+        x: 10
+        y: 1
+        width: 62
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,20 +106,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11b6aba40de9b78b0800000000000000
-      internalID: -5153350731151283439
+      spriteID: 4b5252a92c60c1130800000000000000
+      internalID: 3538710840085915060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled 08-26-2020 03-21-24_1
+      name: street light_1
       rect:
         serializedVersion: 2
         x: 184
-        y: 0
-        width: 71
-        height: 127
+        y: 1
+        width: 62
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f3c5e97283506b50800000000000000
-      internalID: 6584354475071620082
+      spriteID: 0eb71f1611a4b7830800000000000000
+      internalID: 4069928126777490400
       vertices: []
       indices: 
       edges: []

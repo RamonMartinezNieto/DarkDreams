@@ -178,6 +178,10 @@ MonoBehaviour:
   musicEffects:
   - name: click
     audioClip: {fileID: 8300000, guid: b20ed1a5d1584ca429317d8566554279, type: 3}
+  - name: shootPrincipal
+    audioClip: {fileID: 8300000, guid: 3cb6d2a3a936c2f4c80da6ede58e65db, type: 3}
+  - name: shootSecondary
+    audioClip: {fileID: 8300000, guid: fcd5d0ca480d5d24cb4549486769ba05, type: 3}
   EffectsSource: {fileID: 9128055653372732468}
   MusicSource: {fileID: 9128055655041245973}
 --- !u!1 &9128055655041245974

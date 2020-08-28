@@ -70,8 +70,6 @@ public class SoundManager : PlayerConf
 		MusicSource.mute = muteAllSounds;
 	}
 
-
-
 	public void PlayEffect(string clip)
 	{
 		EffectsSource.clip = getClip(clip, musicEffects);

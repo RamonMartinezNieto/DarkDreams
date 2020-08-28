@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class ShotPrincipalWeapon : Shot
 {
+    public bool IsMenuPrincipalShoot;
 
     //Need to set velocity, damage and destroy animation
     void Start()
     {
         MovingShot();
-        SoundManager.Instance.PlayEffect("shootPrincipal");
-        
+
+        if (!IsMenuPrincipalShoot)
+        {
+            SoundManager.Instance.PlayEffect("shootPrincipal");
+        }
     }
 
 }

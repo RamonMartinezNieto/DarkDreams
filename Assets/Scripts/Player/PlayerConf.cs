@@ -10,7 +10,7 @@ public abstract class PlayerConf : MonoBehaviour
     private int _language;
     private string _crossHair;
     private bool _musicOn;
-    //private int _score; 
+    private int _score; 
 
     public bool MusicOn
     {
@@ -116,7 +116,7 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
-/*
+
     public int Score
     {
         get
@@ -130,5 +130,5 @@ public abstract class PlayerConf : MonoBehaviour
             PlayerPrefs.SetInt("score", value);
         }
     }
-*/
+
 }

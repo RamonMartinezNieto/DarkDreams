@@ -53,16 +53,27 @@ abstract public class Shot : MonoBehaviour, IShooting
     //TODO: include animation
     public virtual IEnumerator DestroyShotAnimation()
     {
-
+        
         shootRigi.velocity = Vector2.zero;
         animShot.SetBool("endShot", true);
         particleSystemShot.Stop();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(GetAnimDuration(animShot, "ShotImpact"));
 
-        Debug.Log("destroy");
         Destroy(gameObject);
         Destroy(shootContainer);
+    }
+
+    protected float GetAnimDuration(Animator anim, string nameAnim) 
+    {
+        float animDur = .5f; 
+
+        foreach (AnimationClip ac in anim.runtimeAnimatorController.animationClips) 
+        {
+            if (ac.name.Equals(nameAnim)) animDur = ac.length; 
+        }
+
+        return animDur;
     }
 
 

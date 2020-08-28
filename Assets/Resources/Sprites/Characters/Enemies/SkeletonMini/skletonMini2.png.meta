@@ -1,0 +1,1537 @@
+fileFormatVersion: 2
+guid: 9924dd2400600e04892df50538df6bc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5132374729938646290
+    second: skletonMini2_0
+  - first:
+      213: -6397388335184441182
+    second: skletonMini2_1
+  - first:
+      213: 5827831505611345926
+    second: skletonMini2_2
+  - first:
+      213: 7851502860669991251
+    second: skletonMini2_3
+  - first:
+      213: -3377451578629465087
+    second: skletonMini2_4
+  - first:
+      213: -5423299736168499455
+    second: skletonMini2_5
+  - first:
+      213: -1069106185705410915
+    second: skletonMini2_6
+  - first:
+      213: -6025965422117623507
+    second: skletonMini2_7
+  - first:
+      213: 4826024349886409623
+    second: skletonMini2_8
+  - first:
+      213: 53723148377558768
+    second: skletonMini2_9
+  - first:
+      213: -2376358912073961326
+    second: skletonMini2_10
+  - first:
+      213: -29240366265860691
+    second: skletonMini2_11
+  - first:
+      213: -4363554474832292703
+    second: skletonMini2_12
+  - first:
+      213: -9211373856026455091
+    second: skletonMini2_13
+  - first:
+      213: -8132866353837624397
+    second: skletonMini2_14
+  - first:
+      213: 8211057233928539414
+    second: skletonMini2_15
+  - first:
+      213: 3759891233714695081
+    second: skletonMini2_16
+  - first:
+      213: -1245767636501594336
+    second: skletonMini2_17
+  - first:
+      213: 703934091957998518
+    second: skletonMini2_18
+  - first:
+      213: -8457933927445529446
+    second: skletonMini2_19
+  - first:
+      213: -5489020757172861749
+    second: skletonMini2_20
+  - first:
+      213: -5914798178369752723
+    second: skletonMini2_21
+  - first:
+      213: -2007250594231107806
+    second: skletonMini2_22
+  - first:
+      213: -2184232113020377869
+    second: skletonMini2_23
+  - first:
+      213: -8808177141770912086
+    second: skletonMini2_24
+  - first:
+      213: -2689085460240892774
+    second: skletonMini2_25
+  - first:
+      213: 617022617192498896
+    second: skletonMini2_26
+  - first:
+      213: 9173850836972229068
+    second: skletonMini2_27
+  - first:
+      213: 8319013474045169748
+    second: skletonMini2_28
+  - first:
+      213: 7938567861049071109
+    second: skletonMini2_29
+  - first:
+      213: 1702942695504420317
+    second: skletonMini2_30
+  - first:
+      213: -7853936081712977802
+    second: skletonMini2_31
+  - first:
+      213: 3800182251038844459
+    second: skletonMini2_32
+  - first:
+      213: -931822631905210625
+    second: skletonMini2_33
+  - first:
+      213: -204314996445876614
+    second: skletonMini2_34
+  - first:
+      213: 2663899210475253166
+    second: skletonMini2_35
+  - first:
+      213: -1156896588265533995
+    second: skletonMini2_36
+  - first:
+      213: 4654839896840886938
+    second: skletonMini2_37
+  - first:
+      213: -3758815506076501938
+    second: skletonMini2_38
+  - first:
+      213: 7413659096306732988
+    second: skletonMini2_39
+  - first:
+      213: -9152949950922001388
+    second: skletonMini2_40
+  - first:
+      213: -6687025442082177169
+    second: skletonMini2_41
+  - first:
+      213: -8972687151883624588
+    second: skletonMini2_42
+  - first:
+      213: -392468352735180614
+    second: skletonMini2_43
+  - first:
+      213: -681230568090111605
+    second: skletonMini2_44
+  - first:
+      213: -4227175534979628396
+    second: skletonMini2_45
+  - first:
+      213: -4564303611220240579
+    second: skletonMini2_46
+  - first:
+      213: -3392302577753995357
+    second: skletonMini2_47
+  - first:
+      213: 1384547749164296999
+    second: skletonMini2_48
+  - first:
+      213: 3451121155247700359
+    second: skletonMini2_49
+  - first:
+      213: 5827986230521124249
+    second: skletonMini2_50
+  - first:
+      213: 2367708207643020869
+    second: skletonMini2_51
+  - first:
+      213: 1176366722519472575
+    second: skletonMini2_52
+  - first:
+      213: 6070973220126460211
+    second: skletonMini2_53
+  - first:
+      213: -4390135911233917782
+    second: skletonMini2_54
+  - first:
+      213: 8421427374271191453
+    second: skletonMini2_55
+  - first:
+      213: -1308481822317697398
+    second: skletonMini2_56
+  - first:
+      213: 4620595322649302741
+    second: skletonMini2_57
+  - first:
+      213: -2437235045674058895
+    second: skletonMini2_58
+  - first:
+      213: -4256462787839243931
+    second: skletonMini2_59
+  - first:
+      213: 2731679796302952815
+    second: skletonMini2_60
+  - first:
+      213: 7981592313588255257
+    second: skletonMini2_61
+  - first:
+      213: -7993207235003437982
+    second: skletonMini2_62
+  - first:
+      213: 4113621999868959962
+    second: skletonMini2_63
+  - first:
+      213: -634960397480775180
+    second: skletonMini2_64
+  - first:
+      213: -7534864827983048202
+    second: skletonMini2_65
+  - first:
+      213: -8909263757282741769
+    second: skletonMini2_66
+  - first:
+      213: 4466071441104839669
+    second: skletonMini2_67
+  - first:
+      213: -6658147659050223363
+    second: skletonMini2_68
+  - first:
+      213: 6271595807692669734
+    second: skletonMini2_69
+  - first:
+      213: -5854064741672500281
+    second: skletonMini2_70
+  - first:
+      213: 2820009101658870028
+    second: skletonMini2_71
+  - first:
+      213: 5486517955621841138
+    second: skletonMini2_72
+  - first:
+      213: 3018735150510375136
+    second: skletonMini2_73
+  - first:
+      213: 4611626917720672013
+    second: skletonMini2_74
+  - first:
+      213: 2656172374778608320
+    second: skletonMini2_75
+  - first:
+      213: 5696296881420399501
+    second: skletonMini2_76
+  - first:
+      213: -7316614527740470715
+    second: skletonMini2_77
+  - first:
+      213: 6762070861408530894
+    second: skletonMini2_78
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skletonMini2_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeac0d7206426c8b0800000000000000
+      internalID: -5132374729938646290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a09a173439e737a0800000000000000
+      internalID: -6397388335184441182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6005bce80ed90e050800000000000000
+      internalID: 5827831505611345926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359b233b04426fc60800000000000000
+      internalID: 7851502860669991251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c55b90fa1e021d0800000000000000
+      internalID: -3377451578629465087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107f433bf919cb4b0800000000000000
+      internalID: -5423299736168499455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e2bd5a695c921f0800000000000000
+      internalID: -1069106185705410915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_7
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2964e120687f5ca0800000000000000
+      internalID: -6025965422117623507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_8
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 352
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b6d5ca39b79f240800000000000000
+      internalID: 4826024349886409623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe82473becdeb000800000000000000
+      internalID: 53723148377558768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2907ff2f82a750fd0800000000000000
+      internalID: -2376358912073961326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_11
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadfe93ba0e189ff0800000000000000
+      internalID: -29240366265860691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_12
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a41e81035a8173c0800000000000000
+      internalID: -4363554474832292703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3193a2840aa2080800000000000000
+      internalID: -9211373856026455091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b338c51421422f80800000000000000
+      internalID: -8132866353837624397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_15
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d46badc0983f170800000000000000
+      internalID: 8211057233928539414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_16
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab6ba30821dd2430800000000000000
+      internalID: 3759891233714695081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_17
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 302
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ff4a95fe426bee0800000000000000
+      internalID: -1245767636501594336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b39178b350e4c900800000000000000
+      internalID: 703934091957998518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_19
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c72e0b7e16f9a80800000000000000
+      internalID: -8457933927445529446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc447f314b413d3b0800000000000000
+      internalID: -5489020757172861749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61b42c056a6aeda0800000000000000
+      internalID: -5914798178369752723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_22
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fb9ab2830d424e0800000000000000
+      internalID: -2007250594231107806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f46b6c377c00b1e0800000000000000
+      internalID: -2184232113020377869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_24
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae770aae8113c580800000000000000
+      internalID: -8808177141770912086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_25
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c7ca375037eaad0800000000000000
+      internalID: -2689085460240892774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_26
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 252
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6042c1dca109800800000000000000
+      internalID: 617022617192498896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc156282bb0105f70800000000000000
+      internalID: 9173850836972229068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_28
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450962abda2137370800000000000000
+      internalID: 8319013474045169748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5069927c8657b2e60800000000000000
+      internalID: 7938567861049071109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_30
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd1366eb5112a710800000000000000
+      internalID: 1702942695504420317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_31
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678efd0eeb6310390800000000000000
+      internalID: -7853936081712977802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b262ae28f95fcb430800000000000000
+      internalID: 3800182251038844459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_33
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffece97d0408113f0800000000000000
+      internalID: -931822631905210625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_34
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7eee8ed7902a2df0800000000000000
+      internalID: -204314996445876614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_35
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead22ddc73218f420800000000000000
+      internalID: 2663899210475253166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a54894930599040800000000000000
+      internalID: 4654839896840886938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_38
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e487418563106dbc0800000000000000
+      internalID: -3758815506076501938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_39
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfc4393bab92e660800000000000000
+      internalID: 7413659096306732988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_40
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4147d5893803af080800000000000000
+      internalID: -9152949950922001388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_41
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f31b03ac9e233a0800000000000000
+      internalID: -6687025442082177169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fd34f139c9a7380800000000000000
+      internalID: -8972687151883624588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_43
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab803a1dc1cad8af0800000000000000
+      internalID: -392468352735180614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_44
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 102
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81f9da5868cb86f0800000000000000
+      internalID: -681230568090111605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_45
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 52
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492415a5f3e0655c0800000000000000
+      internalID: -4227175534979628396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_46
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 52
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d375f2e5c0658a0c0800000000000000
+      internalID: -4564303611220240579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_47
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 52
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7c45a57ce1ce0d0800000000000000
+      internalID: -3392302577753995357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_48
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 52
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b218b97d6e63310800000000000000
+      internalID: 1384547749164296999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_49
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 52
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789ff57e768d4ef20800000000000000
+      internalID: 3451121155247700359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 52
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9955412499a21e050800000000000000
+      internalID: 5827986230521124249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_51
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ec658f11acbd020800000000000000
+      internalID: 2367708207643020869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_52
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 2
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb91d5d2d4b435010800000000000000
+      internalID: 1176366722519472575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_54
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac673f06aa1313c0800000000000000
+      internalID: -4390135911233917782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_55
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d995f29049beed470800000000000000
+      internalID: 8421427374271191453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_56
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86a2b917b657dde0800000000000000
+      internalID: -1308481822317697398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_57
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6d75907f6af1040800000000000000
+      internalID: 4620595322649302741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skletonMini2_59
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 2
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5694c2b65a10ee4c0800000000000000
+      internalID: -4256462787839243931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,23 +13,23 @@ public class ShotSecondarylWeapon1 : Shot
 
     public bool IsMenuSecondatyShoot;
 
-
     public ParticleSystem prueba; 
 
     //Need to set velocity, damage and destroy animation
     void Start()
     {
-        explosionParticles = transform.Find("Explosion").GetComponentsInChildren<ParticleSystem>();
         bulletRender = transform.Find("Bullet").GetComponent<SpriteRenderer>();
-       
-        StopExplosion();
 
         if (!IsMenuSecondatyShoot)
         {
+            explosionParticles = transform.Find("Explosion").GetComponentsInChildren<ParticleSystem>();
+            StopExplosion();
+
             secondaryShootsUI = GameObject.Find("SecondaryShootsUI").GetComponent<UIBullets>();
             restBullet();
+
+            SoundManager.Instance.PlayEffect("shootSecondary");
         }
-        SoundManager.Instance.PlayEffect("shootSecondary");
         MovingShot();
     }
 
@@ -53,24 +53,28 @@ public class ShotSecondarylWeapon1 : Shot
     
     public void StartExplosion()
     {
-        foreach (ParticleSystem p in explosionParticles)
-            p.Play();
+        if (!IsMenuSecondatyShoot)
+        {
+            foreach (ParticleSystem p in explosionParticles)
+                p.Play();
+        }
     }
 
     private void StopExplosion() 
     {
-        foreach (ParticleSystem ps in explosionParticles)
+        if (!IsMenuSecondatyShoot)
+        {
+            foreach (ParticleSystem ps in explosionParticles)
             ps.Stop();
+        }
     }
+    
 
     private void StopLaunch() 
     {
-        Debug.Log("Stop launch");
-
         // particleSystemShot = gameObject.GetComponent<ParticleSystem>();
         prueba.Stop();
         prueba.Clear();
-        
         
     }
 

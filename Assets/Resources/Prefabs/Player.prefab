@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8330718119819123489, guid: 030daaf0c85f36c4d8d7f0eff7045fec,
+  m_Sprite: {fileID: -2435853691450590273, guid: f1f22973a10d55f4086847ceab8d0e5c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -318,6 +318,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrincipalWeapon37
       objectReference: {fileID: 0}
+    - target: {fileID: 3721840348773780810, guid: b81b72da928bba44f812026c89d41a51,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721840348773780811, guid: b81b72da928bba44f812026c89d41a51,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1720518532293778356}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b81b72da928bba44f812026c89d41a51, type: 3}
 --- !u!4 &4810060817787341807 stripped

@@ -225,6 +225,7 @@ abstract public class Enemy : MonoBehaviour
 
         if (!Attacking)
         {
+            Debug.Log(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
             PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
         }
     }
@@ -326,8 +327,8 @@ abstract public class Enemy : MonoBehaviour
             SetDirectionToAttack(ray.direction);
 
             //TODO: quit this
-            //Debug.DrawRay(transform.position, ray.direction, Color.yellow);
-            //Debug.DrawLine(transform.position, ray.direction, Color.green);
+            Debug.DrawRay(transform.position, ray.direction, Color.yellow);
+            Debug.DrawLine(transform.position, ray.direction, Color.green);
 
             Attack();
         }

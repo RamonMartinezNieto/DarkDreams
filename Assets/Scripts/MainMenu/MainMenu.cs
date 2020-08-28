@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        //TODO: PlayerPrefs.DeleteAll();
+        //TODO:  PlayerPrefs.DeleteAll();
 
         ShowNameMenu();
         
@@ -95,4 +95,5 @@ public class MainMenu : MonoBehaviour
             a.SetTrigger("start");
         }
     }
+
 }
