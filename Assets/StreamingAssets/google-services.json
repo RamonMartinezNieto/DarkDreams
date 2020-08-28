@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "917836118904",
+    "firebase_url": "https://darkdreams888888.firebaseio.com",
+    "project_id": "darkdreams888888",
+    "storage_bucket": "darkdreams888888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917836118904:android:1fd552e27bb7e0cb0b668d",
+        "android_client_info": {
+          "package_name": "com.rmn.darkdreams888888"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917836118904-9hb0cbp8uuiu7ebostunkhtnh63ckst8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaiVkEHe3sPthbj6bAEdio8GMR6UsW-u8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917836118904-9hb0cbp8uuiu7ebostunkhtnh63ckst8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

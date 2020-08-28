@@ -4,35 +4,26 @@ using UnityEngine;
 
 public class ListController : MonoBehaviour
 {
-
+    public FirebaseConnection firebaseConn; 
     public GameObject PreffabListItemUser;
     public GameObject ContentPanel;
 
     List<UserScore> listUsers = new List<UserScore>();
 
-    private void Start()
+    private void Update()
     {
-        listUsers.Add(new UserScore("gggggggggggggggg", 80000000));
-        listUsers.Add(new UserScore("ramon", 555));
-        listUsers.Add(new UserScore("ramon", 555));
-        listUsers.Add(new UserScore("ramon", 555));
-        listUsers.Add(new UserScore("gggggggggggggggg", 80000000));
-        listUsers.Add(new UserScore("ramon", 555));
-        listUsers.Add(new UserScore("ramon", 555));
-        listUsers.Add(new UserScore("ramon", 555));
-        listUsers.Add(new UserScore("ram", 555));
-        listUsers.Add(new UserScore("gggggggggggggggg", 80000000));
-
-
-        showHighScores();
+        if (FirebaseConnection.finish)
+        {
+            listUsers = firebaseConn.GetListUsers();
+            ChargeHighScores();
+            FirebaseConnection.finish = false; 
+        }
     }
 
-
-    private void showHighScores() 
+    public void ChargeHighScores() 
     {
         foreach (UserScore u in listUsers)
         {
-            Debug.Log(u.name);
             GameObject newUser = Instantiate(PreffabListItemUser, ContentPanel.transform) as GameObject;
             ListItemController lit = newUser.GetComponent<ListItemController>();
             lit.name.text = u.name;
