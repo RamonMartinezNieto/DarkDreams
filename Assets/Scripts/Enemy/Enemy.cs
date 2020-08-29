@@ -43,13 +43,7 @@ abstract public class Enemy : MonoBehaviour
 
     private float extraVelocity = .08f;
 
-    private GameManager gameManager;
-
-    private void Start()
-    {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    }
-
+    
     //TODO: review this, I don't know if this method is more efficien than translate position
     public void ActiveEnemey() 
     {
@@ -92,6 +86,7 @@ abstract public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
+        
         //Thsi if is to force change the direction of the enemy
         if ((currentTime + stayTime) < Time.time && !Attacking && !PlayerDetection)
         {
@@ -137,7 +132,7 @@ abstract public class Enemy : MonoBehaviour
         er.SaveEnemy(this);
 
         //TODO: Need calculate score
-        gameManager.UpScore(100); 
+        GameManager.Instance.UpScore(100); 
 
         //TODO: leave this, I need use it to create enemies
         //er.RecoverSkeletonArcher(0f,0f);
@@ -225,7 +220,6 @@ abstract public class Enemy : MonoBehaviour
 
         if (!Attacking)
         {
-            Debug.Log(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
             PlayAnimation(gameObject.GetComponent<DirectionMovement>().CurrentDir.ToString());
         }
     }
@@ -327,8 +321,8 @@ abstract public class Enemy : MonoBehaviour
             SetDirectionToAttack(ray.direction);
 
             //TODO: quit this
-            Debug.DrawRay(transform.position, ray.direction, Color.yellow);
-            Debug.DrawLine(transform.position, ray.direction, Color.green);
+            //Debug.DrawRay(transform.position, ray.direction, Color.yellow);
+            //Debug.DrawLine(transform.position, ray.direction, Color.green);
 
             Attack();
         }

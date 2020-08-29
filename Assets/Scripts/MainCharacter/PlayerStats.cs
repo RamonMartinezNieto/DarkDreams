@@ -31,7 +31,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private float _currentArmor = .8f; 
+    private float _currentArmor = .5f; 
     public float CurrentArmor
     {
         get
@@ -73,7 +73,6 @@ public class PlayerStats : MonoBehaviour
     
     public void sumArmor(float armorIncrease) => CurrentArmor += armorIncrease;
 
-    private void PlayerDie() => gameObject.SetActive(false); 
+    private void PlayerDie() =>  gameObject.SetActive(false); 
     
-   
 }

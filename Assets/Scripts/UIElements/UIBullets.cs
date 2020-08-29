@@ -13,6 +13,11 @@ public class UIBullets : MonoBehaviour
 
     public RawImage[] canvasBullets;
 
+    private void Start()
+    {
+        CurrentBullets = 5; 
+    }
+
     public void disableBullet(int index) 
     {
         canvasBullets[index].texture = disableBulletTexture.texture;

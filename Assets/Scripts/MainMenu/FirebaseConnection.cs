@@ -9,6 +9,8 @@ using UnityEngine;
 
 public class FirebaseConnection : MonoBehaviour
 {
+    public static FirebaseConnection Instance = null;
+
     //Use this bool to know when the list is already
     public static bool finish;
 
@@ -16,6 +18,21 @@ public class FirebaseConnection : MonoBehaviour
     private FirebaseDatabase instance;
    
     private List<UserScore> usersList = new List<UserScore>();
+
+    void Awake()
+    {
+        //Singleton instance
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
 
     public List<UserScore> GetListUsers()
     {
@@ -35,11 +52,15 @@ public class FirebaseConnection : MonoBehaviour
         //Catch reference
         dataReference = FirebaseDatabase.DefaultInstance.RootReference;
 
-        StartCoroutine(GetFirstTenUsers());
+//        StartCoroutine(GetFirstTenUsers());
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private IEnumerator GetFirstTenUsers()
     {
+        usersList.Clear(); 
+
         //Instance to get users
         instance = FirebaseDatabase.DefaultInstance;
 

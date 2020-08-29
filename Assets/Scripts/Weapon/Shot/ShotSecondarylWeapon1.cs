@@ -18,6 +18,7 @@ public class ShotSecondarylWeapon1 : Shot
     //Need to set velocity, damage and destroy animation
     void Start()
     {
+
         bulletRender = transform.Find("Bullet").GetComponent<SpriteRenderer>();
 
         if (!IsMenuSecondatyShoot)

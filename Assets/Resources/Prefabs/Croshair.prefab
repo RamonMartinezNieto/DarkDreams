@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8750946457794642084}
+  - component: {fileID: 8370085383323372514}
   - component: {fileID: 8750946457794642087}
   - component: {fileID: 8750946457794642085}
   - component: {fileID: 6386174673811483661}
@@ -19,7 +19,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8750946457794642084
+--- !u!4 &8370085383323372514
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8750946457794642086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.92, y: 1.09, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 500
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 21300000, guid: 43348608042e7ed4480e121e91e13212, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42be2d1360b080439f181c0a5539c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crosshairTransform: {fileID: 8750946457794642084}
+  crosshairTransform: {fileID: 8370085383323372514}
   crossHairBlue: {fileID: 21300000, guid: 4ad35baf425fc774880d56ad8a429934, type: 3}
   crossHairRed: {fileID: 21300000, guid: b932eeaa54204074dbebf98284fbdf94, type: 3}
   crossHairWhite: {fileID: 21300000, guid: 43348608042e7ed4480e121e91e13212, type: 3}
