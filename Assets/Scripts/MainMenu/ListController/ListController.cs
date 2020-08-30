@@ -22,12 +22,13 @@ public class ListController : MonoBehaviour
 
     public void ChargeHighScores() 
     {
-        foreach (UserScore u in listUsers)
+        for (int i = 0; i < listUsers.Count; i++)
         {
-            GameObject newUser = Instantiate(PreffabListItemUser, ContentPanel.transform) as GameObject;
-            ListItemController lit = newUser.GetComponent<ListItemController>();
-            lit.name.text = u.name;
-            lit.score.text = u.score.ToString();
+                UserScore u = listUsers[i];
+                GameObject newUser = Instantiate(PreffabListItemUser, ContentPanel.transform) as GameObject;
+                ListItemController lit = newUser.GetComponent<ListItemController>();
+                lit.name.text = u.name;
+                lit.score.text = u.score.ToString();
         }
     }
 }

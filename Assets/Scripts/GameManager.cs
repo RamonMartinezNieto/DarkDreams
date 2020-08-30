@@ -18,6 +18,8 @@ public class GameManager : PlayerConf
 
     private bool writeBD = true;  
 
+
+
     private int _currentScore;
     public int CurrentScore {
         get { 
@@ -42,6 +44,8 @@ public class GameManager : PlayerConf
 
     private void Start()
     {
+        EnemyGenerator.Instance.GenerateEnemies(40); 
+
         writeBD = true;
         labelName.text = UserName;
         //labelName.text = "Test Change";
@@ -52,9 +56,10 @@ public class GameManager : PlayerConf
     {
         if (playerStats.CurrentHealt <= 0 && writeBD) 
         {
-        //    FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore); 
-            //Write Score in laderBoard
             CanvasGamerOver.SetActive(true);
+
+            //Write Score, only one time, be carefull with the writeBD variable
+            if (CurrentScore > 0) FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore);
             writeBD = false; 
         }
     }
@@ -64,7 +69,4 @@ public class GameManager : PlayerConf
         //Todo: Score
         CurrentScore += upScor;
     }
-
-
-
 }

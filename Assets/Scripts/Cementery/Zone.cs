@@ -5,7 +5,6 @@ using UnityEngine;
 public abstract class Zone : MonoBehaviour
 {
     private EnemyRecovery er;
-
     protected int createEnemies { get; set;  } = 45;
 
     protected float xRange1 { get; set; }

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://darkdreams888888.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">917836118904</string>
+  <string name="google_storage_bucket" translatable="false">darkdreams888888.appspot.com</string>
+  <string name="project_id" translatable="false">darkdreams888888</string>
+  <string name="google_api_key" translatable="false">AIzaSyCaiVkEHe3sPthbj6bAEdio8GMR6UsW-u8</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCaiVkEHe3sPthbj6bAEdio8GMR6UsW-u8</string>
+  <string name="google_app_id" translatable="false">1:917836118904:android:1fd552e27bb7e0cb0b668d</string>
+  <string name="default_web_client_id" translatable="false">917836118904-9hb0cbp8uuiu7ebostunkhtnh63ckst8.apps.googleusercontent.com</string>
+</resources>

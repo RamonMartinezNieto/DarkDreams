@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class EnemyRecovery : MonoBehaviour
 {
-
     //TODO: I can make this class abstract to implement same clas with other type (Enemy / Cachable) and no repeat the same code?
     private List<Enemy> enemiesDied = new List<Enemy>();
+
+    //TODO: ¿??¿?¿
+    private List<Enemy> enemiesAlive = new List<Enemy>();
 
     public void SaveEnemy(Enemy enemy) => enemiesDied.Add(enemy);
 
