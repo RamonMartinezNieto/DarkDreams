@@ -55,6 +55,7 @@ public class PlayerStats : MonoBehaviour
 
     public void restHealth(int damage)
     {
+        //TODO: 
         //Check if t he player have armor to absorve damage
         float restHealt = armorBar.GetDamageRestArmorEffect(damage); 
         CurrentHealt -= (int) restHealt; 
