@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class GameManager : PlayerConf
 {
@@ -15,13 +11,14 @@ public class GameManager : PlayerConf
     public TMP_Text labelTimer; 
 
     public GameObject CanvasGamerOver; 
-
     public PlayerStats playerStats;
+
+    private TimeController timeController; 
 
     private bool writeBD = true;
 
-    private int seconds = 0;
-    private int minutes = 0;
+    //In minutes
+    private int timeToShowNewEnemies = 1; 
 
     private int _currentScore;
     public int CurrentScore {
@@ -43,21 +40,27 @@ public class GameManager : PlayerConf
         else if(Instance != this) {
             Destroy(this);
         }
+
+        timeController = new TimeController(); 
     }
 
     private void Start()
     {
-        EnemyGenerator.Instance.GenerateEnemies(40); 
+        EnemyGenerator.Instance.GenerateEnemies(40,3);
 
         writeBD = true;
         labelName.text = UserName;
-        //labelName.text = "Test Change";
         labelScore.text = "0000";
     }
 
     private void FixedUpdate()
     {
-        labelTimer.text = timerController();
+        if (playerStats.CurrentHealt >= 0f)
+        {
+            timeController.updateTime();
+
+            labelTimer.text = timeController.getFormatTimer();
+        }
     }
 
     private void Update()
@@ -66,9 +69,19 @@ public class GameManager : PlayerConf
         {
             CanvasGamerOver.SetActive(true);
 
+            timeController.restartTimer();
+
             //Write Score, only one time, be carefull with the writeBD variable
             if (CurrentScore > 0) FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore);
             writeBD = false; 
+        }
+
+        //Generate more enemies
+        if (timeController.minutes >= timeToShowNewEnemies) 
+        {
+            //generate new enemies and update timeToShowNewEnemies
+            EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(10,100), UnityEngine.Random.Range(3, 20));
+            timeToShowNewEnemies++;
         }
     }
 
@@ -76,22 +89,5 @@ public class GameManager : PlayerConf
     {
         //Todo: Score
         CurrentScore += upScor;
-    }
-
-    private string timerController() 
-    {
-        int currentTimer = Convert.ToInt32(Time.time);
-
-        if (seconds == 60)
-        {
-            seconds = 0;
-            minutes++;
-        }
-        else 
-        {
-            seconds = currentTimer - (minutes*60);
-        }
-
-        return minutes + ":" + seconds; 
     }
 }
