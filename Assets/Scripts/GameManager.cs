@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class GameManager : PlayerConf
@@ -11,14 +12,16 @@ public class GameManager : PlayerConf
 
     public TMP_Text labelName;
     public TMP_Text labelScore;
+    public TMP_Text labelTimer; 
 
     public GameObject CanvasGamerOver; 
 
     public PlayerStats playerStats;
 
-    private bool writeBD = true;  
+    private bool writeBD = true;
 
-
+    private int seconds = 0;
+    private int minutes = 0;
 
     private int _currentScore;
     public int CurrentScore {
@@ -52,6 +55,11 @@ public class GameManager : PlayerConf
         labelScore.text = "0000";
     }
 
+    private void FixedUpdate()
+    {
+        labelTimer.text = timerController();
+    }
+
     private void Update()
     {
         if (playerStats.CurrentHealt <= 0 && writeBD) 
@@ -68,5 +76,22 @@ public class GameManager : PlayerConf
     {
         //Todo: Score
         CurrentScore += upScor;
+    }
+
+    private string timerController() 
+    {
+        int currentTimer = Convert.ToInt32(Time.time);
+
+        if (seconds == 60)
+        {
+            seconds = 0;
+            minutes++;
+        }
+        else 
+        {
+            seconds = currentTimer - (minutes*60);
+        }
+
+        return minutes + ":" + seconds; 
     }
 }
