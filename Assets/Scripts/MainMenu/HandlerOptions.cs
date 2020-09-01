@@ -45,16 +45,22 @@ public class HandlerOptions : PlayerConf
         //DontDestroyOnLoad(gameObject);
     }
 
+    private void Start()
+    {
+        ChargePanel();
+    }
+
     public void ChargePanel()
     {
         musicToggle.isOn = MusicOn;
         musicVolumenSlider.value = MusicVolumen;
-        languageDropDown.value = LanguageInt;
+
+        if (languageDropDown != null) languageDropDown.value = LanguageInt;
 
         crossHairToggleGroup.allowSwitchOff = true;
         GetCurrentCrossHairToggle().isOn = true;
 
-        userNameInputField.text = UserName;
+        if(userNameInputField != null) userNameInputField.text = UserName;
     }
 
 
