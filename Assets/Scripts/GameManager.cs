@@ -8,7 +8,9 @@ public class GameManager : PlayerConf
 
     public TMP_Text labelName;
     public TMP_Text labelScore;
-    public TMP_Text labelTimer; 
+    public TMP_Text labelTimer;
+
+    public RectTransform barsTransform; 
 
     public GameObject CanvasGamerOver; 
     public PlayerStats playerStats;
@@ -41,16 +43,20 @@ public class GameManager : PlayerConf
             Destroy(this);
         }
 
-        timeController = new TimeController(); 
+        timeController = new TimeController();
     }
 
     private void Start()
     {
-        EnemyGenerator.Instance.GenerateEnemies(40,3);
+      //  EnemyGenerator.Instance.GenerateEnemies(40,3);
 
         writeBD = true;
         labelName.text = UserName;
         labelScore.text = "0000";
+
+        //Set initial sizeBars
+        Vector2 screenSize = new Vector2(Screen.width, Screen.height);
+        SetSizeBars((int)screenSize.x, (int)screenSize.y);
     }
 
     private void FixedUpdate()
@@ -65,6 +71,8 @@ public class GameManager : PlayerConf
 
     private void Update()
     {
+        WindowManager.Instance.ScreenSizeChangeEvent += Instance_ScreenSizeChangeEvent;
+
         if (playerStats.CurrentHealt <= 0 && writeBD) 
         {
             CanvasGamerOver.SetActive(true);
@@ -90,4 +98,35 @@ public class GameManager : PlayerConf
         //Todo: Score
         CurrentScore += upScor;
     }
+
+    //Event Handler when ScreenSize change 
+    private void Instance_ScreenSizeChangeEvent(int Width, int Height)
+    {
+        SetSizeBars(Width, Height);
+    }
+
+    private void SetSizeBars(int Width, int Height) 
+    {
+        Vector3 newScale = new Vector3(1f, 1f, 0);
+        float posY = -110f;
+
+        if (Width < 480 || Height < 640)
+        {
+            newScale = new Vector3(.5f, .5f, 0);
+            posY = -80f;
+        }
+        else if (Width < 600 || Height < 800)
+        {
+            newScale = new Vector3(.75f, .75f, 0);
+            posY = -90f;
+        }
+        else
+        {
+            newScale = new Vector3(1f, 1f, 0);
+        }
+
+        barsTransform.anchoredPosition = new Vector2(0f, posY);
+        barsTransform.localScale = newScale;
+    }
+
 }

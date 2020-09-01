@@ -15,7 +15,7 @@ public class TimeController
             seconds++;
             currentTimer = 0; 
         }
-        if (seconds == 5) 
+        if (seconds == 60) 
         {
             minutes++;
             seconds = 0;

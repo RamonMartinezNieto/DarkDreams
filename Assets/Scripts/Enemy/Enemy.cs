@@ -78,9 +78,12 @@ abstract public class Enemy : MonoBehaviour
         player = GameObject.Find("Player");
 
         //TODO: Ignore physics between diferent ground detection
-        var groundPlayerDetect = GameObject.Find("ColliderDetect").GetComponent<CapsuleCollider2D>();
-        var groundEnemyDetect = transform.Find("GroundDetect").GetComponent<CapsuleCollider2D>();
-        Physics2D.IgnoreCollision(groundEnemyDetect, groundPlayerDetect);
+        if (player != null)
+        {
+            var groundPlayerDetect = GameObject.Find("ColliderDetect").GetComponent<CapsuleCollider2D>();
+            var groundEnemyDetect = transform.Find("GroundDetect").GetComponent<CapsuleCollider2D>();
+            Physics2D.IgnoreCollision(groundEnemyDetect, groundPlayerDetect);
+        }
 
     }
 
@@ -100,7 +103,10 @@ abstract public class Enemy : MonoBehaviour
             StaticMovement();
         }
 
-        PlayerDetectionMovement();
+        if (player != null)
+        {
+            PlayerDetectionMovement();
+        }
     }
 
     //Decrease damage of the enemy. Convert health to 100% and decrease % damage.
