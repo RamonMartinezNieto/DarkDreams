@@ -4985,8 +4985,8 @@ MonoBehaviour:
   shotVelocity: 5.5
   damage: 20
   timeDuration: 4
-  IsMenuSecondatyShoot: 0
-  prueba: {fileID: 481421103625357177}
+  IsMenuSecondaryShoot: 0
+  particleSystemSecondaryShoot: {fileID: 481421103625357177}
 --- !u!95 &3302013759913033669
 Animator:
   serializedVersion: 3

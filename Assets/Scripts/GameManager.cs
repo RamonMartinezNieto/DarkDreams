@@ -49,7 +49,7 @@ public class GameManager : PlayerConf
 
     private void Start()
     {
-      //  EnemyGenerator.Instance.GenerateEnemies(40,3);
+        EnemyGenerator.Instance.GenerateEnemies(25,3);
         writeBD = true;
         labelName.text = UserName;
         labelScore.text = "0000";
@@ -81,9 +81,17 @@ public class GameManager : PlayerConf
         //Generate more enemies
         if (timeController.minutes >= timeToShowNewEnemies) 
         {
+            var minutes = timeController.minutes;
             //generate new enemies and update timeToShowNewEnemies
-            EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(10,100), UnityEngine.Random.Range(3, 20));
+            EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5* minutes, 25 * minutes), UnityEngine.Random.Range(1*minutes, 3* minutes));
             timeToShowNewEnemies++;
+        }
+        
+        if (EnemyRecovery.Instance.GetEnemiesAlive() <= 2) 
+        {
+            Debug.Log(EnemyRecovery.Instance.GetEnemiesAlive());
+            var minutes = timeController.minutes;
+            EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(2 * minutes, 10 * minutes), 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) 

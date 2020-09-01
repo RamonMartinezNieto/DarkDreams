@@ -22,6 +22,7 @@ public class SoundManager : PlayerConf
 
 	public AudioSource EffectsSource;
 	public AudioSource MusicSource;
+	public AudioSource SecondaryShotSource; 
 
 	public static SoundManager Instance = null;
 	
@@ -65,7 +66,9 @@ public class SoundManager : PlayerConf
 	{
 		EffectsSource.volume = currentVolumen;
 		MusicSource.volume = currentVolumen;
+		SecondaryShotSource.volume = currentVolumen;
 
+		SecondaryShotSource.mute = muteAllSounds;
 		EffectsSource.mute = muteAllSounds;
 		MusicSource.mute = muteAllSounds;
 	}
@@ -74,6 +77,12 @@ public class SoundManager : PlayerConf
 	{
 		EffectsSource.clip = getClip(clip, musicEffects);
 		EffectsSource.Play();
+	}	
+	
+	public void PlaySecondaryEffect(string clip)
+	{
+		SecondaryShotSource.clip = getClip(clip, musicEffects);
+		SecondaryShotSource.Play();
 	}
 
 	public void PlayMusic(string clip)
@@ -95,18 +104,21 @@ public class SoundManager : PlayerConf
 
 	public void StopMusic() => MusicSource.Stop();
 	public void StopEffect() => EffectsSource.Stop();
+	public void StopSecondaryEffect() => SecondaryShotSource.Stop();
 	public void LoopMusic(bool looping) => MusicSource.loop = looping;
 	public void ChangeVolumen(float vol)
 	{
 		currentVolumen = vol;
 		EffectsSource.volume = currentVolumen;
 		MusicSource.volume = currentVolumen;
+		SecondaryShotSource.volume = currentVolumen;
 	}
 
 	public void MuteAllSounds(bool mute) 
 	{
 		EffectsSource.mute = mute;
 		MusicSource.mute = mute;
+		SecondaryShotSource.mute = mute;	
 	}
 
 }
