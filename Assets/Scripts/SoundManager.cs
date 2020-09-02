@@ -26,8 +26,9 @@ public class SoundManager : PlayerConf
 
 	public static SoundManager Instance = null;
 	
-	private float currentVolumen;
-	private bool muteAllSounds;
+	private float currentVolumenMusic;
+	private float currentVolumenEffects;
+
 
 	void Awake()
     {
@@ -36,13 +37,6 @@ public class SoundManager : PlayerConf
 
     private void Start()
     {
-		//HandlerOptions ho = HandlerOptions.Instance;
-
-		currentVolumen = MusicVolumen;
-
-		//Look !, music ON = true is mute = false, be careful
-		muteAllSounds = !MusicOn;
-		
 		setInitialParameters();
 	}
 
@@ -64,13 +58,13 @@ public class SoundManager : PlayerConf
 
 	private void setInitialParameters() 
 	{
-		EffectsSource.volume = currentVolumen;
-		MusicSource.volume = currentVolumen;
-		SecondaryShotSource.volume = currentVolumen;
+		MusicSource.volume = MusicVolumen;
+		EffectsSource.volume = MusicEffectVolumen;
+		SecondaryShotSource.volume = MusicEffectVolumen;
 
-		SecondaryShotSource.mute = muteAllSounds;
-		EffectsSource.mute = muteAllSounds;
-		MusicSource.mute = muteAllSounds;
+		SecondaryShotSource.mute = !MusicEffectOn;
+		EffectsSource.mute = !MusicEffectOn;
+		MusicSource.mute = !MusicOn;
 	}
 
 	public void PlayEffect(string clip)
@@ -106,19 +100,26 @@ public class SoundManager : PlayerConf
 	public void StopEffect() => EffectsSource.Stop();
 	public void StopSecondaryEffect() => SecondaryShotSource.Stop();
 	public void LoopMusic(bool looping) => MusicSource.loop = looping;
-	public void ChangeVolumen(float vol)
+	
+	public void ChangeVolumenMusic(float vol)
 	{
-		currentVolumen = vol;
-		EffectsSource.volume = currentVolumen;
-		MusicSource.volume = currentVolumen;
-		SecondaryShotSource.volume = currentVolumen;
+		MusicSource.volume = MusicVolumen;
+	}
+	public void ChangeVolumenEffects(float vol)
+	{
+		EffectsSource.volume = MusicEffectVolumen;
+		SecondaryShotSource.volume = MusicEffectVolumen;
 	}
 
-	public void MuteAllSounds(bool mute) 
+	public void MuteMusic(bool mute) 
+	{
+		MusicSource.mute = mute;
+	}
+
+	public void MuteEffectsSounds(bool mute) 
 	{
 		EffectsSource.mute = mute;
-		MusicSource.mute = mute;
-		SecondaryShotSource.mute = mute;	
+		SecondaryShotSource.mute = mute;
 	}
 
 }

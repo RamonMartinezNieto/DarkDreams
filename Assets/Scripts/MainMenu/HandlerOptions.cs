@@ -12,6 +12,10 @@ public class HandlerOptions : PlayerConf
 
     public Toggle musicToggle;
     public Slider musicVolumenSlider;
+
+    public Toggle musicEffectToggle;
+    public Slider musicEffectSlider; 
+
     public TMP_Dropdown languageDropDown;
 
     public ToggleGroup crossHairToggleGroup;
@@ -54,6 +58,9 @@ public class HandlerOptions : PlayerConf
     {
         musicToggle.isOn = MusicOn;
         musicVolumenSlider.value = MusicVolumen;
+
+        musicEffectToggle.isOn = MusicEffectOn ;
+        musicEffectSlider.value = MusicEffectVolumen; 
 
         if (languageDropDown != null) languageDropDown.value = LanguageInt;
 

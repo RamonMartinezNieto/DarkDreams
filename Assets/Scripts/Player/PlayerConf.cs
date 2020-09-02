@@ -7,9 +7,11 @@ public abstract class PlayerConf : MonoBehaviour
     //Settings
     private string _userName;
     private float _musicVolumen;
+    private bool _musicOn;
+    private float _musicEffectVolumen;
+    private bool _musicEffectOn;
     private int _language;
     private string _crossHair;
-    private bool _musicOn;
     private int _betterScore;
     private string _timeBetterScore;
 
@@ -31,7 +33,7 @@ public abstract class PlayerConf : MonoBehaviour
             if (value) musicOnString = "on";
             else musicOnString = "off";
 
-            SoundManager.Instance.MuteAllSounds(!_musicOn);
+            SoundManager.Instance.MuteMusic(!_musicOn);
             PlayerPrefs.SetString("musicOn", musicOnString);
         }
     }
@@ -46,11 +48,49 @@ public abstract class PlayerConf : MonoBehaviour
         set
         {
             _musicVolumen = value;
-            SoundManager.Instance.ChangeVolumen(_musicVolumen);
+            SoundManager.Instance.ChangeVolumenMusic(_musicVolumen);
             PlayerPrefs.SetFloat("musicVolumen", value);
         }
     }
+    public bool MusicEffectOn
+    {
+        get
+        {
+            string musicEffect = PlayerPrefs.GetString("musicEffectOn");
+            if (musicEffect.Equals("on")) _musicEffectOn = true;
+            else if (musicEffect.Equals("off")) _musicEffectOn = false;
 
+            return _musicEffectOn;
+        }
+        set
+        {
+            _musicEffectOn = value;
+
+            string musicEffectOnString;
+            if (value) musicEffectOnString = "on";
+            else musicEffectOnString = "off";
+
+
+            SoundManager.Instance.MuteEffectsSounds(!_musicEffectOn);
+
+            PlayerPrefs.SetString("musicEffectOn", musicEffectOnString);
+        }
+    }
+
+    public float MusicEffectVolumen
+    {
+        get
+        {
+            _musicEffectVolumen = PlayerPrefs.GetFloat("musicEffectVolumen");
+            return _musicEffectVolumen;
+        }
+        set
+        {
+            _musicEffectVolumen = value;
+            SoundManager.Instance.ChangeVolumenEffects(_musicEffectVolumen);
+            PlayerPrefs.SetFloat("musicEffectVolumen", value);
+        }
+    }
     public int LanguageInt
     {
         //0 - English, 1-Spanish, 2-Catalan

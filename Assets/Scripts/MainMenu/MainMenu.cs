@@ -45,7 +45,9 @@ public class MainMenu : MonoBehaviour
             //Set first parameters
             HandlerOptions ho = HandlerOptions.Instance;
             ho.MusicOn = true;
-            ho.MusicVolumen = 0.5f;
+            ho.MusicVolumen = 0.4f;
+            ho.MusicEffectOn = true;
+            ho.MusicEffectVolumen = 0.2f;
             ho.LanguageInt = 2;
             ho.CrossHairString = "white";
 
