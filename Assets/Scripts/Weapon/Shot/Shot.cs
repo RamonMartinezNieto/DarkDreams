@@ -37,6 +37,8 @@ abstract public class Shot : MonoBehaviour, IShooting
         if (player == null) Destroy(this);
         else playerTransform = player.GetComponent<Rigidbody2D>().transform;
         // _shotDamage = damage;
+        
+        
     }
 
     private void Update()

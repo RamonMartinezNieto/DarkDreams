@@ -27,7 +27,6 @@ public class EnemyRecovery : MonoBehaviour
         if (enemiesAlive.Contains(enemy)) 
         {
             enemiesAlive.Remove(enemy);
-            Debug.Log(enemiesAlive.Count);
         }
     }
 

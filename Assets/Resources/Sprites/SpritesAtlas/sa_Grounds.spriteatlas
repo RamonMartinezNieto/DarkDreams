@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sa_Grounds
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 0f60c944762e51447b881accfbab1e73, type: 3}
+    totalSpriteSurfaceArea: 809676
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1305958133646270919, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 7413589006931110220, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 2149359521980199007, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 1844316316947772264, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -6644729508359996920, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 2675626585808740672, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 7679897238119173866, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -7129520040056460206, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 8077145207104093437, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 3158702103928571054, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -4417078046043008560, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -308251957676914893, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -4934924744139012492, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 4621565578370944431, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 8799578781860866923, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 6429258316809593535, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 6707109123241183236, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -9127886503527982620, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 760048251364026404, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -581935374392587982, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 3756589653603623827, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -2684268651394613688, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 2352703671458484587, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -3005622982464696388, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -3289965668241686142, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -7863433253354093492, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -1988611669083167878, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -3521386008083222514, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 8528298676232079243, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -2562548970769299043, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -1391397908711259714, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 1116958671414165227, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 6273762708174288340, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -8190948069283904123, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 8002500288221193391, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -3394103462223056129, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -3677301225353721496, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -5766504959310256254, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 4175916202494429263, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 5906231664797961345, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -300716347659510264, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -2713548605461631161, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -7322856651492063254, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 7989727510605214320, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -5438568067957983000, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 6103101637583674793, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: -6402058960427218773, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 4840430861495892810, guid: 6be659719039a6b479abc62d81f43429, type: 3}
+  - {fileID: 21300000, guid: ef6e4332b18cefd48a60b1c3912a556a, type: 3}
+  - {fileID: 21300000, guid: c7703e1a3c3b3374998e957a3e32e57b, type: 3}
+  - {fileID: 21300000, guid: 848eb60c048e10542ac90b64709d9d0f, type: 3}
+  - {fileID: 21300000, guid: 789c042d42b34a043801164b7517e1c3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - CaminoSet_1
+  - CaminoSet_0
+  - CaminoSet_3
+  - CaminoSet_2
+  - CaminoSet_5
+  - CaminoSet_4
+  - CaminoSet_7
+  - CaminoSet_18
+  - CaminoSet_6
+  - CaminoSet_19
+  - CaminoSet_10
+  - CaminoSet_11
+  - CaminoSet_12
+  - CaminoSet_13
+  - CaminoSet_14
+  - CaminoSet_38
+  - CaminoSet_15
+  - CaminoSet_39
+  - CaminoSet_16
+  - CaminoSet_36
+  - CaminoSet_17
+  - CaminoSet_37
+  - CaminoSet_34
+  - CaminoSet_35
+  - CaminoSet_32
+  - CaminoSet_33
+  - CaminoSet_30
+  - CaminoSet_31
+  - CaminoSet_21
+  - CaminoSet_20
+  - CaminoSet_23
+  - CaminoSet_22
+  - CaminoSet_25
+  - CaminoSet_24
+  - CaminoSet_27
+  - CaminoSet_47
+  - CaminoSet_26
+  - CaminoSet_46
+  - CaminoSet_29
+  - CaminoSet_45
+  - CaminoSet_28
+  - CaminoSet_44
+  - CaminoSet_43
+  - CaminoSet_42
+  - CaminoSet_41
+  - CaminoSet_40
+  - CaminoSet_9
+  - CaminoSet_8
+  - blocks_62
+  - blocks_96
+  - landscapeTiles_073
+  - blocks_63
+  m_Tag: sa_Grounds
+  m_IsVariant: 0

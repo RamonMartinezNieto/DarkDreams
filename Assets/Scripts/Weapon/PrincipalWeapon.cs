@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class PrincipalWeapon : Weapons
 {
-
-    private Transform weaponTransform;
-
+    public Transform transformWeaponContainer;
 
     void Start()
     {
-        weaponTransform = GetComponent<Transform>();
 
         if (!IsMenuWeapon)
         {
             UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
-            weaponTransform.position = WeaponPosition;
+            transformWeaponContainer.position = WeaponPosition;
         }
 
-        UpdateWiewPivotWeapon(gameObject, character);
+        UpdateWiewPivotWeapon(gameObject, character, transformWeaponContainer);
 
         canShoot = true;
     }
@@ -30,11 +27,11 @@ public class PrincipalWeapon : Weapons
         if (!IsMenuWeapon)
         {
             UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
-            weaponTransform.position = WeaponPosition;
 
+            transformWeaponContainer.position = WeaponPosition;
         }
 
-        UpdateWiewPivotWeapon(gameObject, character);
+        UpdateWiewPivotWeapon(gameObject, character, transformWeaponContainer);
 
         //TODO: Only to debug
         //DebugRayCast(weaponTransform);

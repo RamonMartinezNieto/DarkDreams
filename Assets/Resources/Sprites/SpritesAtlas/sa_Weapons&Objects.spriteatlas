@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sa_Weapons&Objects
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2050105098599019371, guid: 061ba2e40e925e4459f1c9933bab59f9, type: 3}
+    - {fileID: 2800000, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+    - {fileID: 2800000, guid: c8c6118f21aa9d44c9552e186c92e381, type: 3}
+    - {fileID: 21300000, guid: c8c6118f21aa9d44c9552e186c92e381, type: 3}
+    - {fileID: 2800000, guid: 78fb8e853b3c96f4ca9e38e92af69c59, type: 3}
+    - {fileID: 21300000, guid: 43348608042e7ed4480e121e91e13212, type: 3}
+    - {fileID: 102900000, guid: 5144ee40163ba1045b5de0ba5d39580a, type: 3}
+    totalSpriteSurfaceArea: 19494
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 668081a32cbb0ff4d95c02f009e077e7, type: 3}
+  - {fileID: 2050105098599019371, guid: 061ba2e40e925e4459f1c9933bab59f9, type: 3}
+  - {fileID: 21300000, guid: 8f120b450ad7826489c31fbae6bbb1cd, type: 3}
+  - {fileID: 21300000, guid: 78fb8e853b3c96f4ca9e38e92af69c59, type: 3}
+  - {fileID: -2330519403281856691, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: -49130668184793455, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: 4348620978117878488, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: -4796932125324312052, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: -5600206312213581617, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: 5986030973748356752, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: -3690502768834906923, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: 3815954189206336483, guid: 578ad49712b6b544695bc8d6d22dfa42, type: 3}
+  - {fileID: 21300000, guid: 43348608042e7ed4480e121e91e13212, type: 3}
+  - {fileID: 21300000, guid: 34790d783726cc04fa33db8b6c36610c, type: 3}
+  - {fileID: 21300000, guid: b932eeaa54204074dbebf98284fbdf94, type: 3}
+  - {fileID: 21300000, guid: 62fa41cd3c8d6b44f99288e5be1d86e1, type: 3}
+  - {fileID: 21300000, guid: 10f554be09a805a49b6365d5053e0501, type: 3}
+  - {fileID: 21300000, guid: c8c6118f21aa9d44c9552e186c92e381, type: 3}
+  - {fileID: 21300000, guid: 4ad35baf425fc774880d56ad8a429934, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - crosshair_outline_large
+  - weaponSprites_37
+  - crosshair_white_small
+  - shoot
+  - Explosion_5
+  - Explosion_4
+  - Explosion_7
+  - Explosion_6
+  - Explosion_1
+  - Explosion_0
+  - Explosion_3
+  - Explosion_2
+  - crosshair_outline_small
+  - crosshair_blue_large
+  - crosshair_red_small
+  - crosshair_white_large
+  - crosshair_red_large
+  - icon_bullet_gold_short
+  - crosshair_blue_small
+  m_Tag: sa_Weapons&Objects
+  m_IsVariant: 0

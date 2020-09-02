@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: sa_Cementery_Decoration
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: -7119731290535935118, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
+    - {fileID: 2792709173374557173, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
+    - {fileID: 102900000, guid: ebc15dd21c757c7418232d32207f54e1, type: 3}
+    - {fileID: 3538710840085915060, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
+    - {fileID: 4069928126777490400, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
+    - {fileID: 2800000, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+    - {fileID: 102900000, guid: e40508eb39fc09a428e48045300453b5, type: 3}
+    totalSpriteSurfaceArea: 458656
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 08027840c3bab254b8b6b5c96a7096f7, type: 3}
+  - {fileID: 2792709173374557173, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
+  - {fileID: -7119731290535935118, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
+  - {fileID: 21300000, guid: 31f48f84c220e374c927f3c1ce839360, type: 3}
+  - {fileID: -4323036626744076191, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -6410063312981719467, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -527700246343194004, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 8127440318407045090, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 2778808175696448004, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 2162212725784711374, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -8278596067754918514, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 3993844050393819441, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 4171111075119502663, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 1085937454874024587, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 7201337582307874371, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 8814161485547881963, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -3777319717400924579, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 2076522953018428370, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 8106165758236782409, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -7641854468382394676, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 4969861441323139418, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 4594136114028039487, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -7659597739608635741, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 7255906971761250389, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -3444741403106057978, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 5098165864051811824, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 7458278287595052310, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 4796613162134244230, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -9156148694535851736, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 2771147315811452930, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 617101519233657161, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 1680828003333021260, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 7809426279619495609, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -8505579772849943217, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -2350442403580086330, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 495732783017520205, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -4167930269717424837, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -3123785024859612778, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -6911510589485980406, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 2618265673513576071, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -4238651677115006870, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: 8899588508384660807, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
+  - {fileID: -2051518363294093114, guid: 2bf42ada11977444abb13bae57db3d21, type: 3}
+  - {fileID: -2150890082336612299, guid: 2bf42ada11977444abb13bae57db3d21, type: 3}
+  - {fileID: 2075519481220685982, guid: 2bf42ada11977444abb13bae57db3d21, type: 3}
+  - {fileID: 21300000, guid: aaffe50bc6fd0494a95cff26eb2d538f, type: 3}
+  - {fileID: 21300000, guid: 99df004cb7ef4974ca1ffa8fea73c155, type: 3}
+  - {fileID: -6691336452561324513, guid: c473f7ccb19f9e44bba5b74a64dc1396, type: 3}
+  - {fileID: 315560213906253320, guid: c473f7ccb19f9e44bba5b74a64dc1396, type: 3}
+  - {fileID: 4069928126777490400, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
+  - {fileID: 3538710840085915060, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
+  - {fileID: 21300000, guid: 5b38cbce02d9fb142af00d2073c42fff, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - TreePine(TreeTrunk2)
+  - Fence_0Degree 1_1
+  - Fence_0Degree 1_0
+  - TreePine(TreeTrunk1)
+  - cementerySpritesWithoutShadows_32
+  - cementerySpritesWithoutShadows_33
+  - cementerySpritesWithoutShadows_30
+  - cementerySpritesWithoutShadows_31
+  - cementerySpritesWithoutShadows_25
+  - cementerySpritesWithoutShadows_36
+  - cementerySpritesWithoutShadows_24
+  - cementerySpritesWithoutShadows_37
+  - cementerySpritesWithoutShadows_27
+  - cementerySpritesWithoutShadows_34
+  - cementerySpritesWithoutShadows_26
+  - cementerySpritesWithoutShadows_35
+  - cementerySpritesWithoutShadows_21
+  - cementerySpritesWithoutShadows_20
+  - cementerySpritesWithoutShadows_23
+  - cementerySpritesWithoutShadows_22
+  - cementerySpritesWithoutShadows_29
+  - cementerySpritesWithoutShadows_28
+  - cementerySpritesWithoutShadows_18
+  - cementerySpritesWithoutShadows_19
+  - cementerySpritesWithoutShadows_5
+  - cementerySpritesWithoutShadows_14
+  - cementerySpritesWithoutShadows_4
+  - cementerySpritesWithoutShadows_15
+  - cementerySpritesWithoutShadows_7
+  - cementerySpritesWithoutShadows_16
+  - cementerySpritesWithoutShadows_6
+  - cementerySpritesWithoutShadows_17
+  - cementerySpritesWithoutShadows_1
+  - cementerySpritesWithoutShadows_10
+  - cementerySpritesWithoutShadows_0
+  - cementerySpritesWithoutShadows_11
+  - cementerySpritesWithoutShadows_3
+  - cementerySpritesWithoutShadows_12
+  - cementerySpritesWithoutShadows_2
+  - cementerySpritesWithoutShadows_13
+  - cementerySpritesWithoutShadows_9
+  - cementerySpritesWithoutShadows_8
+  - FenceTest_2
+  - FenceTest_1
+  - FenceTest_0
+  - TreePine(TreeTop)
+  - treeJA
+  - FenceTest2_1
+  - FenceTest2_0
+  - street light_1
+  - street light_0
+  - treeJA_Outline
+  m_Tag: sa_Cementery_Decoration
+  m_IsVariant: 0

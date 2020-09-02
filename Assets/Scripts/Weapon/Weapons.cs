@@ -15,7 +15,7 @@ abstract public class Weapons : MonoBehaviour
     public GameObject bulletType2;
 
     [Tooltip("Weapon Sprite Renderer to calculate the corrections to check correct initial bullet position")]
-    public SpriteRenderer weapon;
+    public SpriteRenderer weaponSpriteRender;
 
     [Tooltip("Check bool when the weapoin is present in the menu")]
     public bool IsMenuWeapon;
@@ -116,6 +116,8 @@ abstract public class Weapons : MonoBehaviour
         set { _specificBulletDistance = value; }
     }
 
+
+
     //Methods to places weapon. 
     protected virtual void UpdateWeaponPosition(Transform characterTransform, GameObject weaponObject, GameObject character, Transform transformWeaponContainer)
     {
@@ -171,10 +173,10 @@ abstract public class Weapons : MonoBehaviour
         CorrectionZWeaponPosition = WeaponsZPos;
         IsRunRight = runRigth;
         IsFrontPosition = isFront;
-        weapon.GetComponent<SpriteRenderer>().flipX = flip;
+        weaponSpriteRender.flipX = flip;
     }
 
-    protected virtual void UpdateWiewPivotWeapon(GameObject weaponObject, GameObject character)
+    protected virtual void UpdateWiewPivotWeapon(GameObject weaponObject, GameObject character, Transform weaponContainerTransform )
     {
         Transform weaponTransform = weaponObject.GetComponent<Transform>();
 
@@ -182,7 +184,8 @@ abstract public class Weapons : MonoBehaviour
 
         Vector3 mousePos = CrossHair.getMousePosition();
 
-        Vector2 direction = new Vector2(mousePos.x - weaponTransform.position.x, mousePos.y - weaponTransform.position.y);
+        Vector2 direction = new Vector2(mousePos.x - weaponContainerTransform.position.x, mousePos.y - weaponContainerTransform.position.y);
+
 
         if (IsRunRight)
         {
@@ -209,7 +212,7 @@ abstract public class Weapons : MonoBehaviour
             }
         }
 
-        weaponTransform.right = direction;
+        weaponContainerTransform.right = direction;
     }
 
     public void Shoting(GameObject bulletType)
@@ -219,6 +222,7 @@ abstract public class Weapons : MonoBehaviour
         //TODO: here is a position of the shoot, need move to ShotPrincipalWeapon, and correct the position
         Vector3 firePosition = transformWeapon.position;
         firePosition.z = -2f;
+
         GameObject newShot = Instantiate(bulletType, firePosition, transformWeapon.rotation);
 
         canShoot = true; 
