@@ -9,6 +9,7 @@ public class ListController : MonoBehaviour
     public GameObject ContentPanel;
 
     List<UserScore> listUsers = new List<UserScore>();
+    List<GameObject> listItemController = new List<GameObject>();
 
     private void Update()
     {
@@ -24,11 +25,22 @@ public class ListController : MonoBehaviour
     {
         for (int i = 0; i < listUsers.Count; i++)
         {
-                UserScore u = listUsers[i];
-                GameObject newUser = Instantiate(PreffabListItemUser, ContentPanel.transform) as GameObject;
-                ListItemController lit = newUser.GetComponent<ListItemController>();
-                lit.name.text = u.name;
-                lit.score.text = u.score.ToString();
+            UserScore u = listUsers[i];
+            GameObject newUser = Instantiate(PreffabListItemUser, ContentPanel.transform) as GameObject;
+            ListItemController lit = newUser.GetComponent<ListItemController>();
+            lit.name.text = u.name;
+            lit.score.text = u.score.ToString();
+            lit.time.text = u.time;
+
+            listItemController.Add(newUser);
+        }
+    }
+
+    public void clearList() 
+    {
+        foreach (GameObject go in listItemController) 
+        {
+            Destroy(go);
         }
     }
 }

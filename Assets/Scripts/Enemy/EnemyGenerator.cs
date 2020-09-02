@@ -8,6 +8,8 @@ using UnityEngine.Tilemaps;
 public class EnemyGenerator : MonoBehaviour
 {
     public static EnemyGenerator Instance;
+    
+    public Tilemap tileMap;
 
     private EnemyRecovery er;
 
@@ -17,7 +19,8 @@ public class EnemyGenerator : MonoBehaviour
     private Vector2 doorFourPosition;
     private Vector2 centerPosition;
 
-    public Tilemap tileMap;
+    private float timeBetweenEnemies = .3f;
+
 
     private void Awake()
     {
@@ -80,23 +83,23 @@ public class EnemyGenerator : MonoBehaviour
         for (int a = 0; a < quant; a++)
         {
             er.RecoveryEnemy<T>(doorOnePosition.x, doorOnePosition.y);
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(timeBetweenEnemies);
         }
 
         for (int b = 0; b < quant; b++)
         {
             er.RecoveryEnemy<T>(doorTwoPosition.x, doorTwoPosition.y);
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(timeBetweenEnemies);
         }
         for (int c = 0; c < quant; c++)
         {
             er.RecoveryEnemy<T>(doorThreePosition.x, doorThreePosition.y);
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(timeBetweenEnemies);
         }
         for (int z = 0; z < quant; z++)
         {
             er.RecoveryEnemy<T>(doorFourPosition.x, doorFourPosition.y);
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(timeBetweenEnemies);
         }
     }
 
@@ -108,14 +111,13 @@ public class EnemyGenerator : MonoBehaviour
         for (int h = 0; h < quantity; h++)
         {
             var a = tileMap.GetCellCenterWorld(new Vector3Int(
-                    Random.Range(tileMap.cellBounds.xMin, tileMap.cellBounds.xMax),
-                    Random.Range(tileMap.cellBounds.yMin, tileMap.cellBounds.yMax),
+                    Random.Range(tileMap.cellBounds.xMin+1, tileMap.cellBounds.xMax-1),
+                    Random.Range(tileMap.cellBounds.yMin+1, tileMap.cellBounds.yMax-1),
                         0));
             er.RecoveryEnemy<T>(a.x, a.y);
             total++;
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(timeBetweenEnemies);
         }
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(timeBetweenEnemies);
     }
 }
-     

@@ -22,7 +22,12 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        //TODO:  PlayerPrefs.DeleteAll();
+        if (Pause.GameIsPaused) 
+        {
+            Time.timeScale = 1.0f;
+        }
+
+        //TODO:  TO TEST: PlayerPrefs.DeleteAll();
 
         ShowNameMenu();
         

@@ -42,9 +42,9 @@ public class FirebaseConnection : MonoBehaviour
         return sortedList;
     }
 
-    public void WriteNewScore(string user, int score) => PostUser(new UserScore(user,score));
+    public void WriteNewScore(string user, int score, string time) => PostUser(new UserScore(user,score,time));
 
-    public void UpdateListLaderBoardBackground() => StartCoroutine(GetFirstTenUsersDesktop()); //StartCoroutine(GetFirstTenUsersMobile());
+    public void UpdateListLaderBoardBackground() => StartCoroutine(GetFirstTenUsersDesktop());  //StartCoroutine(GetFirstTenUsersMobile());
 
     void Start()
     {
@@ -52,8 +52,8 @@ public class FirebaseConnection : MonoBehaviour
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://pruebasapirest-13c28.firebaseio.com/");
         //Catch reference
         dataReference = FirebaseDatabase.DefaultInstance.RootReference;
-
-//        StartCoroutine(GetFirstTenUsers());
+        //Fill array
+        StartCoroutine(GetFirstTenUsersDesktop());
     }
 
 
@@ -78,7 +78,7 @@ public class FirebaseConnection : MonoBehaviour
                 DataSnapshot snapshot = task.Result;
                 foreach (DataSnapshot user in snapshot.Children)
                 {
-                    usersList.Add(new UserScore(user.Child("name").Value.ToString(), Convert.ToInt32(user.Child("score").Value)));
+                    usersList.Add(new UserScore(user.Child("name").Value.ToString(), Convert.ToInt32(user.Child("score").Value), user.Child("time").Value.ToString()));
                 }
                 finish = true;
             }
@@ -88,6 +88,8 @@ public class FirebaseConnection : MonoBehaviour
 
     private IEnumerator GetFirstTenUsersDesktop() 
     {
+        usersList.Clear();
+
         string uri = $"https://pruebasapirest-13c28.firebaseio.com/users.json?orderBy=\"score\"";
 
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
@@ -109,11 +111,13 @@ public class FirebaseConnection : MonoBehaviour
 
                 foreach (string s in spliJson)
                 {
+                    
                     if (s.StartsWith("\"name\""))
                     {
                         string[] userName = s.Split(',');
                         string name = "";
                         string score = "";
+                        string time = "";
 
                         foreach (string u in userName)
                         {
@@ -129,9 +133,14 @@ public class FirebaseConnection : MonoBehaviour
                                 u.CopyTo(8, score2, 0, u.Length - 8);
                                 score = new string(score2);
                             }
+                            else if (u.StartsWith("\"time\""))
+                            {
+                                char[] time2 = new char[5];
+                                u.CopyTo(8, time2, 0, u.Length - 9);
+                                time = new string(time2);
+                            }
                         }
-
-                        usersList.Add(new UserScore(name, Convert.ToInt32(score)));
+                        usersList.Add(new UserScore(name, Convert.ToInt32(score), time));
                     }
                 }
             }
@@ -141,10 +150,10 @@ public class FirebaseConnection : MonoBehaviour
 
     //Only use this when export to Mobile 
     // in other way use GetFirstTenUsersDesktop(); 
-    private IEnumerator writeNewScore(string name, int score)
+    private IEnumerator writeNewScore(string name, int score, string time)
     {
         string key = dataReference.Child("users").Push().Key;
-        UserScore user = new UserScore(name, score);
+        UserScore user = new UserScore(name, score,time);
         Dictionary<string, object> entryValues = user.ToDictionary();
 
         Dictionary<string, object> childUpdates = new Dictionary<string, object>();

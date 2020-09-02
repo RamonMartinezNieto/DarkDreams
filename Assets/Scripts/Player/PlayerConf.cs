@@ -10,7 +10,8 @@ public abstract class PlayerConf : MonoBehaviour
     private int _language;
     private string _crossHair;
     private bool _musicOn;
-    private int _score; 
+    private int _betterScore;
+    private string _timeBetterScore;
 
     public bool MusicOn
     {
@@ -117,18 +118,43 @@ public abstract class PlayerConf : MonoBehaviour
     }
 
 
-    public int Score
+    private int BetterScore
     {
         get
         {
-            _score = PlayerPrefs.GetInt("score");
-            return _score;
+            _betterScore = PlayerPrefs.GetInt("betterScore");
+            return _betterScore;
         }
         set
         {
-            _score = value;
-            PlayerPrefs.SetInt("score", value);
+            _betterScore = value;
+            PlayerPrefs.SetInt("betterScore", value);
         }
+    }
+
+    private string TimeBetterScore 
+    {
+        get
+        {
+            _timeBetterScore = PlayerPrefs.GetString("timeBetterScore");
+            return _timeBetterScore;
+        }
+        set
+        {
+            _timeBetterScore = value;
+            PlayerPrefs.SetString("timeBetterScore", value);
+        }
+    }
+
+
+    protected void SaveScoreAndTime(int currentScore, string currentTime) 
+    {
+        //Only save score with time when the score is better than the last score
+        if (currentScore > BetterScore) 
+        {
+            BetterScore = currentScore;
+            TimeBetterScore = currentTime;
+        } 
     }
 
 }

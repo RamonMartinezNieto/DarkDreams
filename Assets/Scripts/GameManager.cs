@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -67,36 +68,46 @@ public class GameManager : PlayerConf
 
     private void Update()
     {
-        if (playerStats.CurrentHealt <= 0 && writeBD) 
+        if (!CanvasGamerOver.activeSelf)
         {
-            CanvasGamerOver.SetActive(true);
+            if (playerStats.CurrentHealt <= 0 && writeBD)
+            {
+                CanvasGamerOver.SetActive(true);
+                SaveScoreAndTime(CurrentScore, timeController.getFormatTimer());
+                
+                //Write Score, only one time, be carefull with the writeBD variable
+                
+                List<UserScore> tenBestScores = FirebaseConnection.Instance.GetListUsers();
 
-            timeController.restartTimer();
+                if (tenBestScores[tenBestScores.Count-1].score < CurrentScore)
+                {
+                    FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                }
 
-            //Write Score, only one time, be carefull with the writeBD variable
-            if (CurrentScore > 0) FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore);
-            writeBD = false; 
-        }
+                timeController.restartTimer();
+                writeBD = false;
+            }
 
-        //Generate more enemies
-        if (timeController.minutes >= timeToShowNewEnemies) 
-        {
-            var minutes = timeController.minutes;
-            //generate new enemies and update timeToShowNewEnemies
-            EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5* minutes, 25 * minutes), UnityEngine.Random.Range(1*minutes, 3* minutes));
-            timeToShowNewEnemies++;
-        }
-        
-        if (EnemyRecovery.Instance.GetEnemiesAlive() <= 2) 
-        {
-            Debug.Log(EnemyRecovery.Instance.GetEnemiesAlive());
-            var minutes = timeController.minutes;
-            EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(2 * minutes, 10 * minutes), 0);
-        }
+            //Generate more enemies
+            if (timeController.minutes >= timeToShowNewEnemies)
+            {
+                var minutes = timeController.minutes;
+                //generate new enemies and update timeToShowNewEnemies
+                EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5 * minutes, 25 * minutes), UnityEngine.Random.Range(1 * minutes, 3 * minutes));
+                timeToShowNewEnemies++;
+            }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) 
-        {
-            CanvasMenuEsc.SetActive(true);
+            if (EnemyRecovery.Instance.GetEnemiesAlive() <= 2)
+            {
+                Debug.Log(EnemyRecovery.Instance.GetEnemiesAlive());
+                var minutes = timeController.minutes;
+                EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(2 * minutes, 10 * minutes), 0);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                CanvasMenuEsc.SetActive(true);
+            }
         }
     }
 
@@ -105,4 +116,8 @@ public class GameManager : PlayerConf
         //Todo: Score
         CurrentScore += upScor;
     }
+
+    
+
+    public string GetCurrentTime() { return labelTimer.text; }
 }
