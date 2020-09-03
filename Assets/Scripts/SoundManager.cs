@@ -26,10 +26,6 @@ public class SoundManager : PlayerConf
 
 	public static SoundManager Instance = null;
 	
-	private float currentVolumenMusic;
-	private float currentVolumenEffects;
-
-
 	void Awake()
     {
 		singletonInstance();

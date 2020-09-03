@@ -54,6 +54,8 @@ public class GameManager : PlayerConf
         writeBD = true;
         labelName.text = UserName;
         labelScore.text = "0000";
+
+        SoundManager.Instance.PlayMusic("game1");
     }
 
     private void FixedUpdate()
@@ -97,7 +99,6 @@ public class GameManager : PlayerConf
 
             //Only generate enemies if there are less 100
             if(EnemyRecovery.Instance.GetEnemiesAlive() < 100) {
-                Debug.Log(EnemyRecovery.Instance.GetEnemiesAlive());
                 //Generate more enemies
                 if (timeController.minutes >= timeToShowNewEnemies)
                 {

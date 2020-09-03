@@ -19,9 +19,10 @@ public class PlayerStats : MonoBehaviour
         }
         private set
         {
-            currentHealt = value; 
+            //currentHealt = value; 
+            currentHealt = 100;
 
-            if(currentHealt >= 100){
+            if (currentHealt >= 100){
                 currentHealt = 100; 
             } else if(currentHealt <= 0){
                 PlayerDie();
