@@ -79,29 +79,39 @@ public class GameManager : PlayerConf
                 
                 List<UserScore> tenBestScores = FirebaseConnection.Instance.GetListUsers();
 
-                if (tenBestScores[tenBestScores.Count-1].score < CurrentScore)
+                try
                 {
-                    FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                    if (tenBestScores[tenBestScores.Count - 1].score < CurrentScore)
+                    {
+                        FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                    }
+                }
+                catch (Exception ex) 
+                {
+                    Debug.LogError("DataBase don't run currently");
                 }
 
                 timeController.restartTimer();
                 writeBD = false;
             }
 
-            //Generate more enemies
-            if (timeController.minutes >= timeToShowNewEnemies)
-            {
-                var minutes = timeController.minutes;
-                //generate new enemies and update timeToShowNewEnemies
-                EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5 * minutes, 25 * minutes), UnityEngine.Random.Range(1 * minutes, 3 * minutes));
-                timeToShowNewEnemies++;
-            }
-
-            if (EnemyRecovery.Instance.GetEnemiesAlive() <= 2)
-            {
+            //Only generate enemies if there are less 100
+            if(EnemyRecovery.Instance.GetEnemiesAlive() < 100) {
                 Debug.Log(EnemyRecovery.Instance.GetEnemiesAlive());
-                var minutes = timeController.minutes;
-                EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(2 * minutes, 10 * minutes), 0);
+                //Generate more enemies
+                if (timeController.minutes >= timeToShowNewEnemies)
+                {
+                    var minutes = timeController.minutes;
+                    //generate new enemies and update timeToShowNewEnemies
+                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5 * minutes, 25 * minutes), UnityEngine.Random.Range(1 * minutes, 3 * minutes));
+                    timeToShowNewEnemies++;
+                }
+
+                if (EnemyRecovery.Instance.GetEnemiesAlive() <= 5)
+                {
+                    var minutes = timeController.minutes;
+                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(2 * minutes, 10 * minutes), 0);
+                }
             }
 
             if (Input.GetKeyDown(KeyCode.Escape))
