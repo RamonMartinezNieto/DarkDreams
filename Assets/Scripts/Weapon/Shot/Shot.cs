@@ -18,7 +18,7 @@ abstract public class Shot : MonoBehaviour, IShooting
     [Tooltip("Time duration of the shoot.")]
     public float timeDuration = 2;
 
-    private Animator animShot;
+    protected Animator animShot;
     protected Rigidbody2D shootRigi;
     protected ParticleSystem particleSystemShot;
 
@@ -26,10 +26,15 @@ abstract public class Shot : MonoBehaviour, IShooting
     protected Transform playerTransform;
     protected GameObject player;
 
+    protected CircleCollider2D colliderShot;
+    protected bool IsActive = true;
+
     private void Awake()
     {
         shootRigi = GetComponent<Rigidbody2D>();
         animShot = GetComponent<Animator>();
+        colliderShot = GetComponent<CircleCollider2D>();
+
         particleSystemShot = GetComponent<ParticleSystem>();
 
         //damage = GameObject.Find("SkeletonArcher").GetComponent<EnemySkeletonArcher>().Damage;
@@ -60,6 +65,8 @@ abstract public class Shot : MonoBehaviour, IShooting
         animShot.SetBool("endShot", true);
         particleSystemShot.Stop();
 
+        colliderShot.enabled = false; 
+
         yield return new WaitForSeconds(GetAnimDuration(animShot, "ShotImpact"));
 
         Destroy(gameObject);
@@ -81,33 +88,38 @@ abstract public class Shot : MonoBehaviour, IShooting
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.gameObject.CompareTag("Enemy") && other as CapsuleCollider2D)
-             || (other.gameObject.CompareTag("GroundEnemyDetector")))
+        if (IsActive)
         {
-            //TODO: Depende de como le de entra dos veces
-            //When Shot hit the enemy
-            Enemy enemy = other.GetComponent<Enemy>();
-            if (enemy == null)
+            if ((other.gameObject.CompareTag("Enemy") && other as CapsuleCollider2D)
+                 || (other.gameObject.CompareTag("GroundEnemyDetector")))
             {
-                enemy = other.GetComponentInParent<Enemy>();
-            }
+                //TODO: Depende de como le de entra dos veces
+                //When Shot hit the enemy
+                Enemy enemy = other.GetComponent<Enemy>();
+                if (enemy == null)
+                {
+                    enemy = other.GetComponentInParent<Enemy>();
+                }
 
-            if (enemy != null)
-            {
-                enemy.TakeDamage(damage);
-            }
+                if (enemy != null)
+                {
+                    Debug.Log("damage!");
+                    enemy.TakeDamage(damage);
+                    IsActive = false;
+                }
 
-            StartCoroutine(DestroyShotAnimation());
-        }
-        else if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("GroundPlayerDetector"))
-        {
-            if (!other.isTrigger)
-            {
                 StartCoroutine(DestroyShotAnimation());
             }
+            else if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("GroundPlayerDetector"))
+            {
+                if (!other.isTrigger)
+                {
+                    StartCoroutine(DestroyShotAnimation());
+                }
+            }
+            
         }
     }
-
 
     //Set arrow angle,  be carefoul, the angle that changes is the angle of the arrow container 
     public virtual void SetShotAngle(Vector3 objectiveTransform, float variationOfY = .0f)

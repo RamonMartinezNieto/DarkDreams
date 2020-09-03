@@ -13,12 +13,13 @@ public class ShotSecondarylWeapon1 : Shot
 
     public bool IsMenuSecondaryShoot;
 
-    public ParticleSystem particleSystemSecondaryShoot; 
+    public ParticleSystem particleSystemSecondaryShoot;
+
+    public float radiusExplosion = 1.50f;
 
     //Need to set velocity, damage and destroy animation
     void Start()
     {
-
         bulletRender = transform.Find("Bullet").GetComponent<SpriteRenderer>();
 
         if (!IsMenuSecondaryShoot)
@@ -38,14 +39,17 @@ public class ShotSecondarylWeapon1 : Shot
 
     public override IEnumerator DestroyShotAnimation()
     {
+        
         shootRigi.velocity = Vector2.zero;
+        colliderShot.enabled = false;
+        IsActive = false; 
 
         StopLaunch();
 
         StartExplosion();
-        bulletRender.sprite = null; 
+        bulletRender.sprite = null;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(particleSystemSecondaryShoot.main.duration);
 
         Destroy(gameObject);
         Destroy(shootContainer);
@@ -77,4 +81,40 @@ public class ShotSecondarylWeapon1 : Shot
         particleSystemSecondaryShoot.Clear();
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (IsActive) { 
+                Vector2 posCenter = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 0.35f);
+                Collider2D [] colls = Physics2D.OverlapCircleAll(
+                    posCenter,
+                    radiusExplosion, 
+                    1  << LayerMask.NameToLayer("Default"),
+                    minDepth:0,
+                    maxDepth:0 
+                    );
+
+                foreach(Collider2D col in colls) 
+                {
+                    if (col.CompareTag("Enemy"))
+                    { 
+                        Enemy enemy = col.GetComponent<Enemy>();
+                        if (enemy != null)
+                        {
+                            enemy.TakeDamage(damage);
+                        }
+                    }
+                }
+
+                StartCoroutine(DestroyShotAnimation());
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        //TODO: TEST 
+        Gizmos.color = Color.blue;
+        Vector3 posCenter = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.35f,0);
+
+        Gizmos.DrawSphere(posCenter, radiusExplosion);
+    }
 }

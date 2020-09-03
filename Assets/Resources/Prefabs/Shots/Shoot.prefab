@@ -141,6 +141,7 @@ MonoBehaviour:
   shotVelocity: 2
   damage: 10
   timeDuration: 1.5
+  IsMenuPrincipalShoot: 0
 --- !u!198 &2676171059001825500
 ParticleSystem:
   m_ObjectHideFlags: 0
