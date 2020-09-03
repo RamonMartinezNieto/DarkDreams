@@ -49,7 +49,7 @@ public class ShotSecondarylWeapon1 : Shot
         StartExplosion();
         bulletRender.sprite = null;
 
-        yield return new WaitForSeconds(particleSystemSecondaryShoot.main.duration);
+        yield return new WaitForSeconds(0.85f);
 
         Destroy(gameObject);
         Destroy(shootContainer);
@@ -83,8 +83,19 @@ public class ShotSecondarylWeapon1 : Shot
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsActive) { 
-                Vector2 posCenter = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 0.35f);
+
+        if (IsActive 
+            && !other.CompareTag("Player")
+            && !other.CompareTag("GroundPlayerDetector") 
+            && !other.CompareTag("CrossHair") 
+            && !other.CompareTag("Cachable")
+            && !other.name.Equals("Arrow")
+            ) 
+        {
+            Debug.Log(other.name);
+            Debug.Log(other.tag);
+
+            Vector2 posCenter = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 0.35f);
                 Collider2D [] colls = Physics2D.OverlapCircleAll(
                     posCenter,
                     radiusExplosion, 

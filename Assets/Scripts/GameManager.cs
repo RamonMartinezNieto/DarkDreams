@@ -83,7 +83,18 @@ public class GameManager : PlayerConf
 
                 try
                 {
-                    if (tenBestScores[tenBestScores.Count - 1].score < CurrentScore)
+                    if (tenBestScores.Count != 0)
+                    {
+                        if (tenBestScores.Count < 10) 
+                        {
+                            FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                        }
+                        else if (tenBestScores[tenBestScores.Count -1].score < CurrentScore)
+                        {
+                            FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                        }
+                    }
+                    else 
                     {
                         FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
                     }
@@ -104,14 +115,14 @@ public class GameManager : PlayerConf
                 {
                     var minutes = timeController.minutes;
                     //generate new enemies and update timeToShowNewEnemies
-                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5 * minutes, 25 * minutes), UnityEngine.Random.Range(1 * minutes, 3 * minutes));
+                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5 * minutes, 20 * minutes), UnityEngine.Random.Range(1 * minutes, 3 * minutes));
                     timeToShowNewEnemies++;
                 }
 
                 if (EnemyRecovery.Instance.GetEnemiesAlive() <= 5)
                 {
                     var minutes = timeController.minutes;
-                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(2 * minutes, 10 * minutes), 0);
+                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(3 * minutes, 10 * minutes), 0);
                 }
             }
 
@@ -129,6 +140,5 @@ public class GameManager : PlayerConf
     }
 
     
-
     public string GetCurrentTime() { return labelTimer.text; }
 }

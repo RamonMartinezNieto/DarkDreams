@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-abstract public class Shot : MonoBehaviour, IShooting
+abstract public class Shot : MonoBehaviour
 {
 
     public GameObject shootContainer;
@@ -103,8 +103,8 @@ abstract public class Shot : MonoBehaviour, IShooting
 
                 if (enemy != null)
                 {
-                    Debug.Log("damage!");
                     enemy.TakeDamage(damage);
+                    //Desactive this shot if hit a enemy
                     IsActive = false;
                 }
 

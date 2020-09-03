@@ -49,7 +49,4 @@ public class NameControl : MonoBehaviour
         TextError.text = "16 characters maxium.";
         TextError.color = originalColor; 
     }
-
-    
-            
 }

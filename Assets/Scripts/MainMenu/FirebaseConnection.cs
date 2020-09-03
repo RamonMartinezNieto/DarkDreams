@@ -42,7 +42,9 @@ public class FirebaseConnection : MonoBehaviour
         return sortedList;
     }
 
-    public void WriteNewScore(string user, int score, string time) => PostUser(new UserScore(user,score,time));
+    public void WriteNewScore(string user, int score, string time) => PostUserScore(new UserScore(user,score,time));
+
+    public void WriteNewUser(string user) => PostUser(new User(user));
 
     public void UpdateListLaderBoardBackground() => StartCoroutine(GetFirstTenUsersDesktop());  //StartCoroutine(GetFirstTenUsersMobile());
 
@@ -67,10 +69,10 @@ public class FirebaseConnection : MonoBehaviour
         instance = FirebaseDatabase.DefaultInstance;
 
         //Get References to add users
-        dataReference.Child("users");
+        dataReference.Child("UsersScore");
 
         //Query 10 people whit the better score
-        instance.GetReference("users").OrderByChild("score").LimitToLast(10).GetValueAsync().ContinueWith(task =>
+        instance.GetReference("UsersScore").OrderByChild("score").LimitToLast(10).GetValueAsync().ContinueWith(task =>
         {
             if (task.IsFaulted) Debug.LogError("Error to get users");
             else if (task.IsCompleted)
@@ -90,7 +92,7 @@ public class FirebaseConnection : MonoBehaviour
     {
         usersList.Clear();
 
-        string uri = $"https://pruebasapirest-13c28.firebaseio.com/users.json?orderBy=\"score\"";
+        string uri = $"https://pruebasapirest-13c28.firebaseio.com/UsersScore.json?orderBy=\"score\"";
 
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
@@ -152,20 +154,26 @@ public class FirebaseConnection : MonoBehaviour
     // in other way use GetFirstTenUsersDesktop(); 
     private IEnumerator writeNewScore(string name, int score, string time)
     {
-        string key = dataReference.Child("users").Push().Key;
+        string key = dataReference.Child("UsersScore").Push().Key;
         UserScore user = new UserScore(name, score,time);
         Dictionary<string, object> entryValues = user.ToDictionary();
 
         Dictionary<string, object> childUpdates = new Dictionary<string, object>();
-        childUpdates["/users/" + key] = entryValues;
+        childUpdates["/UsersScore/" + key] = entryValues;
 
         dataReference.UpdateChildrenAsync(childUpdates);
 
         yield return null;
     }
 
-    public void PostUser(UserScore user)
+
+    private void PostUserScore(UserScore user)
     {
-        RestClient.Post<UserScore>($"https://pruebasapirest-13c28.firebaseio.com/users.json", user);
+        RestClient.Post<UserScore>($"https://pruebasapirest-13c28.firebaseio.com/UsersScore.json", user);
+    }
+
+    private void PostUser(User user)
+    {
+        RestClient.Post<User>($"https://pruebasapirest-13c28.firebaseio.com/NewUsers.json", user);
     }
 }

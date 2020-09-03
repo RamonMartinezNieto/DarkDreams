@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 6150514252183669451}
   m_Layer: 5
   m_Name: CircleBarTimer
-  m_TagString: Untagged
+  m_TagString: Cachable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

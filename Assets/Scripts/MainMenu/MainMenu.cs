@@ -73,6 +73,7 @@ public class MainMenu : MonoBehaviour
     {
         //PlayerPrefs.SetString("userName", firstUserName.text); 
         HandlerOptions.Instance.UserName = firstUserName.text;
+        FirebaseConnection.Instance.WriteNewUser(firstUserName.text); 
     }
 
     public void StartGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
@@ -80,8 +81,6 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
-        // TODO: Quit this when compile game. 
-        Debug.Log("Exit the game.");
     }
 
     public void DisableButtons() 

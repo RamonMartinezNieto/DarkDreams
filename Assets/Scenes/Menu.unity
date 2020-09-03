@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -805,6 +805,7 @@ MonoBehaviour:
   timeDuration: 2
   IsMenuSecondaryShoot: 0
   particleSystemSecondaryShoot: {fileID: 0}
+  radiusExplosion: 1.5
 --- !u!199 &77792035
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -13901,6 +13902,7 @@ MonoBehaviour:
   timeDuration: 2
   IsMenuSecondaryShoot: 0
   particleSystemSecondaryShoot: {fileID: 0}
+  radiusExplosion: 1.5
 --- !u!199 &414456268
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -20309,6 +20311,7 @@ MonoBehaviour:
   timeDuration: 2
   IsMenuSecondaryShoot: 0
   particleSystemSecondaryShoot: {fileID: 0}
+  radiusExplosion: 1.5
 --- !u!199 &474302548
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -61995,6 +61998,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5710266040190256868, guid: 48ac945a7d8aae34a8c31c9326e2df08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710266040190256868, guid: 48ac945a7d8aae34a8c31c9326e2df08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710266040190256868, guid: 48ac945a7d8aae34a8c31c9326e2df08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1628913953}
     - target: {fileID: 5710266040190256869, guid: 48ac945a7d8aae34a8c31c9326e2df08,
         type: 3}
       propertyPath: m_Color.r
@@ -70879,6 +70897,7 @@ MonoBehaviour:
   timeDuration: 2
   IsMenuSecondaryShoot: 0
   particleSystemSecondaryShoot: {fileID: 0}
+  radiusExplosion: 1.5
 --- !u!199 &1898178002
 ParticleSystemRenderer:
   serializedVersion: 6

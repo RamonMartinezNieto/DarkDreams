@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UIBullets : MonoBehaviour
 {
+    //Todo change set to private
     public static int CurrentBullets { get; private set; } = 5; 
 
     public Sprite disableBulletTexture;

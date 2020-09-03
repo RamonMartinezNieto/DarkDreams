@@ -172,7 +172,7 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
-    private string TimeBetterScore 
+    private string TimeBetterScore
     {
         get
         {
