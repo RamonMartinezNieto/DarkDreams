@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: e3d8b6ab1cfc67c4fbb6c88578d07065, type: 3}
-    totalSpriteSurfaceArea: 1074535
+    totalSpriteSurfaceArea: 1229151
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -45,6 +45,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 60b015a4c362cfb4696b2bf2b29ae49b, type: 3}
   - {fileID: 9083969447635318612, guid: a5ba67d4fe135ab4b9a5c43e16dd25f5, type: 3}
   - {fileID: 21300000, guid: 3653e446f2ff64742ac18fe4ea013213, type: 3}
+  - {fileID: 21300000, guid: 7d0f4f87145be974ca82c813f7e94508, type: 3}
   - {fileID: 21300000, guid: bb4ae3682c4c6194bb33d5fa5739f82f, type: 3}
   - {fileID: 21300000, guid: 52879cfac34b9d94382bbade2262cb1c, type: 3}
   - {fileID: 21300000, guid: 58523febd3c2d0947b5bcf3f00332515, type: 3}
@@ -68,6 +69,7 @@ SpriteAtlas:
   - mousePulseRight
   - moon_0
   - Keycap
+  - ImageOptionsPanelAlfa
   - mouseEdit
   - barBlue_horizontalRight
   - barBlue_horizontalLeft

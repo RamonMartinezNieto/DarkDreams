@@ -24,6 +24,9 @@ public class ControlsAnimation : MonoBehaviour
 
     public GameObject panelControl;
 
+    public GameObject escView;
+    public SpriteRenderer keyESC; 
+
     /**** Variables to mouse events ***/
     public SpriteRenderer mouse;
     public GameObject principalWeapon; 
@@ -37,6 +40,8 @@ public class ControlsAnimation : MonoBehaviour
         StartCoroutine(RunInControl(playerW, keyW, RunDirections.RunN, RunDirections.IdleN, timeRun));
         
         StartCoroutine(MouseControl());
+
+        StartCoroutine(EscViewControl());
     }
 
     public void ResetAllKey() 
@@ -50,6 +55,9 @@ public class ControlsAnimation : MonoBehaviour
         keyA.color = KeyCapNoPulsed;
         keyS.color = KeyCapNoPulsed;
         keyD.color = KeyCapNoPulsed;
+
+        keyESC.color = KeyCapNoPulsed;
+        escView.transform.localScale = new Vector3(.0f, .0f);
     }
 
     /**
@@ -117,6 +125,29 @@ public class ControlsAnimation : MonoBehaviour
         mouse.sprite = s;
         
         StartCoroutine(MouseControl());
+    }
+
+    private IEnumerator EscViewControl() 
+    {
+        keyESC.color = KeyCapPulsed;
+        for (int i = 0; i < 24; i++) 
+        {
+            escView.transform.localScale += new Vector3(0.005f,0.005f);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        keyESC.color = KeyCapNoPulsed;
+        for (int a = 0; a < 24; a++)
+        {
+            escView.transform.localScale -= new Vector3(0.005f, 0.005f);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        yield return new WaitForSeconds(0.4f);
+
+        StartCoroutine(EscViewControl());
     }
 
     private int knowWhatIsNext(RunDirections run) 
