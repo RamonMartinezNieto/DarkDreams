@@ -12,6 +12,7 @@ TagManager:
   - GroundPlayerDetector
   - CrossHair
   - Cachable
+  - Shot
   layers:
   - Default
   - TransparentFX

@@ -90,6 +90,7 @@ public class ShotSecondarylWeapon1 : Shot
             && !other.CompareTag("CrossHair") 
             && !other.CompareTag("Cachable")
             && !other.name.Equals("Arrow")
+            && !other.CompareTag("Shot")
             ) 
         {
             Debug.Log(other.name);

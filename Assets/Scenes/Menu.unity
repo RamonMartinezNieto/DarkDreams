@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &22814826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6825,7 +6825,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 3.617
+  m_padding: 0
   m_canvasRenderer: {fileID: 229649910}
   m_TextComponent: {fileID: 1097952224}
   m_materialReferenceIndex: 1
@@ -7605,7 +7605,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7787,7 +7787,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 8.5625
+  m_padding: 0
   m_canvasRenderer: {fileID: 281754424}
   m_TextComponent: {fileID: 926829975}
   m_materialReferenceIndex: 1
@@ -8564,7 +8564,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music Effects
+  m_text: SFX Effects
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1607acbe28f18943a4846bcb57f82f6, type: 2}
   m_sharedMaterial: {fileID: 2304681396257378864, guid: c1607acbe28f18943a4846bcb57f82f6,
@@ -8634,7 +8634,7 @@ MonoBehaviour:
   m_margin: {x: 0.0132853985, y: 0.067866325, z: 0.2060008, w: 0.22109818}
   m_textInfo:
     textComponent: {fileID: 386618202}
-    characterCount: 13
+    characterCount: 11
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -13674,7 +13674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Special thanks to Marina Amer, she has supported me for over 10 years and
-    during the change in my working life.
+    during the change in my career.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1607acbe28f18943a4846bcb57f82f6, type: 2}
   m_sharedMaterial: {fileID: 2304681396257378864, guid: c1607acbe28f18943a4846bcb57f82f6,
@@ -13720,7 +13720,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 62
+  m_firstOverflowCharacterIndex: 61
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -18695,7 +18695,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25686,7 +25686,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Insert Name:'
+  m_text: Insert Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9e36ab08d27b764abd81c5187f75fb2, type: 2}
   m_sharedMaterial: {fileID: 7310387810891816516, guid: b9e36ab08d27b764abd81c5187f75fb2,
@@ -25732,7 +25732,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -25756,7 +25756,7 @@ MonoBehaviour:
   m_margin: {x: 0.0132853985, y: 0.067866325, z: 0.2060008, w: 0.020181693}
   m_textInfo:
     textComponent: {fileID: 529959682}
-    characterCount: 12
+    characterCount: 11
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -25957,7 +25957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '3-16 Characters.  '
+  m_text: 3-16 Characters
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1607acbe28f18943a4846bcb57f82f6, type: 2}
   m_sharedMaterial: {fileID: 2304681396257378864, guid: c1607acbe28f18943a4846bcb57f82f6,
@@ -26027,9 +26027,9 @@ MonoBehaviour:
   m_margin: {x: 0.0132853985, y: 0.067866325, z: 0.2060008, w: 2.3147416}
   m_textInfo:
     textComponent: {fileID: 547321948}
-    characterCount: 18
+    characterCount: 15
     spriteCount: 0
-    spaceCount: 3
+    spaceCount: 1
     wordCount: 2
     linkCount: 0
     lineCount: 1
@@ -26138,7 +26138,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 8.5625
+  m_padding: 0
   m_canvasRenderer: {fileID: 548670030}
   m_TextComponent: {fileID: 1206513593}
   m_materialReferenceIndex: 1
@@ -26367,7 +26367,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -27323,7 +27323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.19, y: 0.586}
+  m_AnchoredPosition: {x: 1.23, y: 0.586}
   m_SizeDelta: {x: 4.6, y: -1.6308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697470619
@@ -27344,7 +27344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '16 characters maxium.  '
+  m_text: Max. 16 characters
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1607acbe28f18943a4846bcb57f82f6, type: 2}
   m_sharedMaterial: {fileID: 2304681396257378864, guid: c1607acbe28f18943a4846bcb57f82f6,
@@ -27414,9 +27414,9 @@ MonoBehaviour:
   m_margin: {x: 0.0132853985, y: 0.067866325, z: 0.2060008, w: 2.3147416}
   m_textInfo:
     textComponent: {fileID: 697470619}
-    characterCount: 23
+    characterCount: 18
     spriteCount: 0
-    spaceCount: 4
+    spaceCount: 2
     wordCount: 3
     linkCount: 0
     lineCount: 1
@@ -36290,7 +36290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1050032813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41824,7 +41824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Support assistant: \n     Eli"
+  m_text: "Art Consultant: \n     Eli"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1607acbe28f18943a4846bcb57f82f6, type: 2}
   m_sharedMaterial: {fileID: 2304681396257378864, guid: c1607acbe28f18943a4846bcb57f82f6,
@@ -41870,7 +41870,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 20
+  m_firstOverflowCharacterIndex: 17
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -41894,7 +41894,7 @@ MonoBehaviour:
   m_margin: {x: 0.0132853985, y: 0.067866325, z: 0.2060008, w: 0.22109818}
   m_textInfo:
     textComponent: {fileID: 1097952224}
-    characterCount: 28
+    characterCount: 25
     spriteCount: 0
     spaceCount: 8
     wordCount: 3
@@ -48377,7 +48377,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 3.617
+  m_padding: 0
   m_canvasRenderer: {fileID: 1389130282}
   m_TextComponent: {fileID: 407406977}
   m_materialReferenceIndex: 1
@@ -55053,7 +55053,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -61335,7 +61335,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -82424,7 +82424,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -83347,10 +83347,10 @@ MonoBehaviour:
   m_margin: {x: 0.0132853985, y: 0.067866325, z: 0.2060008, w: 0.22109818}
   m_textInfo:
     textComponent: {fileID: 2061174297}
-    characterCount: 13
+    characterCount: 11
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -83718,7 +83718,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0

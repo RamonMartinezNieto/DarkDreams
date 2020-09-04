@@ -1,15 +1,21 @@
 ﻿
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIHealthBar : UIBar
 {
     public Slider HealthBar;
+    public TMP_Text textHelath; 
 
     private void Start()
     {
         SetSize(HealthBar, playerStats.CurrentHealt / 100f);
+        SetValueInt(HealthBar.value);
     }
+
+    public override void SetValueInt(float value) => textHelath.text = Convert.ToInt32((value * 100)).ToString();
 
     public override void ChangeColor(float sizeNorm)
     {
@@ -29,7 +35,7 @@ public class UIHealthBar : UIBar
             SetColor("HStartBar", green);
             SetColor("HBackground", darkGreen);
         }
-        else if (sizeNorm <= 0.3f)
+        else if (sizeNorm <= 0.3f && sizeNorm > .0f)
         {
             SetColor("HEndBar", darkRed);
             SetColor("HStartBar", red);

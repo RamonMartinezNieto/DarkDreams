@@ -1,17 +1,45 @@
 ﻿
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
+using System;
 
 public class UIArmorBar : UIBar
 {
     public Slider ArmorBar;
-    
+    public TMP_Text textArmor;
+
     public static readonly float DAMAGE_REDUCE = 80;
 
     void Start()
     {       
         SetSize(ArmorBar, playerStats.CurrentArmor);
+        SetValueInt(ArmorBar.value);
+    }
+
+    public override void SetValueInt(float value) => textArmor.text = Convert.ToInt32((value * 100)).ToString();
+
+    public override void ChangeColor(float sizeNorm)
+    {
+        //Original colors to armor 
+        Color blue = new Color(1f, 1f, 1f, 1f);
+        Color darkBlue = new Color(0.5f, 0.5f, 0.5f, 1f);
+
+        if (sizeNorm >= 1.0f)
+        {
+            SetColor("AEndBar", blue);
+            SetColor("AStartBar", blue);
+        }
+        else if (sizeNorm <= 0.0f)
+        {
+            SetColor("AEndBar", darkBlue);
+            SetColor("AStartBar", darkBlue);
+        }
+        else
+        {
+            SetColor("AEndBar", darkBlue);
+            SetColor("AStartBar", blue);
+        }
     }
 
     //Armor bar get 80% of the enemy  damage

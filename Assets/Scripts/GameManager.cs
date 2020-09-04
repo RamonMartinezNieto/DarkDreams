@@ -75,59 +75,19 @@ public class GameManager : PlayerConf
         {
             if (playerStats.CurrentHealt <= 0 && writeBD)
             {
-                CanvasGamerOver.SetActive(true);
-                SaveScoreAndTime(CurrentScore, timeController.getFormatTimer());
-                
-                //Write Score, only one time, be carefull with the writeBD variable
-                
-                List<UserScore> tenBestScores = FirebaseConnection.Instance.GetListUsers();
+                IsNewScore = false;
 
-                try
-                {
-                    if (tenBestScores.Count != 0)
-                    {
-                        if (tenBestScores.Count < 10) 
-                        {
-                            FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
-                        }
-                        else if (tenBestScores[tenBestScores.Count -1].score < CurrentScore)
-                        {
-                            FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
-                        }
-                        IsNewScore = true;
-                    }
-                    else 
-                    {
-                        FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
-                        IsNewScore = true; 
-                    }
-                }
-                catch (Exception ex) 
-                {
-                    Debug.LogError("DataBase don't run currently");
-                }
+                CanvasGamerOver.SetActive(true);
+                
+                SaveScoreAndTime(CurrentScore, timeController.getFormatTimer());
+
+                WriteScoreInBBDD();
 
                 timeController.restartTimer();
                 writeBD = false;
             }
 
-            //Only generate enemies if there are less 100
-            if(EnemyRecovery.Instance.GetEnemiesAlive() < 100) {
-                //Generate more enemies
-                if (timeController.minutes >= timeToShowNewEnemies)
-                {
-                    var minutes = timeController.minutes;
-                    //generate new enemies and update timeToShowNewEnemies
-                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5 * minutes, 20 * minutes), UnityEngine.Random.Range(1 * minutes, 3 * minutes));
-                    timeToShowNewEnemies++;
-                }
-
-                if (EnemyRecovery.Instance.GetEnemiesAlive() <= 5)
-                {
-                    var minutes = timeController.minutes;
-                    EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(3 * minutes, 10 * minutes), 0);
-                }
-            }
+            GenerateEnemies();
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -136,12 +96,59 @@ public class GameManager : PlayerConf
         }
     }
 
+    private void GenerateEnemies() 
+    {
+        //Only generate enemies if there are less 100
+        if (EnemyRecovery.Instance.GetEnemiesAlive() < 100)
+        {
+            //Generate more enemies
+            if (timeController.minutes >= timeToShowNewEnemies)
+            {
+                var minutes = timeController.minutes;
+                //generate new enemies and update timeToShowNewEnemies
+                EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(5 * minutes, 20 * minutes), UnityEngine.Random.Range(1 * minutes, 3 * minutes));
+                timeToShowNewEnemies++;
+            }
+        }
+    }
+
+
+    private void WriteScoreInBBDD() 
+    {
+        List<UserScore> tenBestScores = FirebaseConnection.Instance.GetListUsers();
+
+        try
+        {
+            if (tenBestScores.Count != 0)
+            {
+                //Write Score, only one time, be carefull with the writeBD variable
+                if (tenBestScores.Count < 10)
+                {
+                    FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                }
+                else if (tenBestScores[tenBestScores.Count - 1].score < CurrentScore)
+                {
+                    FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                }
+                IsNewScore = true;
+            }
+            else
+            {
+                FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                IsNewScore = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("DataBase don't run currently");
+        }
+    }
+
     public void UpScore(int upScor)
     {
         //Todo: Score
         CurrentScore += upScor;
     }
-
     
     public string GetCurrentTime() { return labelTimer.text; }
 }
