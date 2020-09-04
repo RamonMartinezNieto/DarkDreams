@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class GameManager : PlayerConf
 {
-    public static GameManager Instance = null; 
+    public static GameManager Instance = null;
+    public static bool IsNewScore { get; private set; } = false; 
 
     public TMP_Text labelName;
     public TMP_Text labelScore;
@@ -93,10 +94,12 @@ public class GameManager : PlayerConf
                         {
                             FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
                         }
+                        IsNewScore = true;
                     }
                     else 
                     {
                         FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                        IsNewScore = true; 
                     }
                 }
                 catch (Exception ex) 
