@@ -217,15 +217,11 @@ abstract public class Weapons : MonoBehaviour
 
     public void Shoting(GameObject bulletType)
     {
-        canShoot = false; 
-        
         //TODO: here is a position of the shoot, need move to ShotPrincipalWeapon, and correct the position
         Vector3 firePosition = transformWeapon.position;
         firePosition.z = -2f;
 
         GameObject newShot = Instantiate(bulletType, firePosition, transformWeapon.rotation);
-
-        canShoot = true; 
     }
 
 

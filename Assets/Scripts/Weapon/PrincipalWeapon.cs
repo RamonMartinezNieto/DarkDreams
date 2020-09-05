@@ -6,6 +6,9 @@ public class PrincipalWeapon : Weapons
 {
     public Transform transformWeaponContainer;
 
+    private float timeDelayShot = 0.15f;
+    private float timePassBewtweenShots;
+
     void Start()
     {
 
@@ -37,26 +40,40 @@ public class PrincipalWeapon : Weapons
         //DebugRayCast(weaponTransform);
 
 
-        //TODO: ¿Implemented this? Continuos Button Pressed
-        /*
-         * if (Input.GetMouseButton(0) && canShoot)
-        {
-            Shoting(bulletType1);
-        }
-        */
-
+        //Check if CanShot is true
+        CanShootTiming();
 
         if (!Pause.GameIsPaused)
         {
+            //Hold on fire
+            if (Input.GetMouseButton(0) && canShoot)
+                Shoting(bulletType1);
+            
             if (Input.GetButtonDown("Fire1"))
                 Shoting(bulletType1);
-            else if (Input.GetButtonDown("Fire2") && canShoot && (UIBullets.CurrentBullets > 0))
+
+            else if (Input.GetButtonDown("Fire2") && (UIBullets.CurrentBullets > 0))
             {
                 if (!IsMenuWeapon)
                     Shoting(bulletType2);
             }
         }
 
+    }
+
+    private void CanShootTiming() 
+    {
+        timePassBewtweenShots += Time.deltaTime;
+        
+        if (timePassBewtweenShots >= timeDelayShot)
+        {
+            canShoot = true;
+            timePassBewtweenShots = 0;
+        }
+        else 
+        {
+            canShoot = false;
+        }
     }
 
     public void SetActiveWeapon()

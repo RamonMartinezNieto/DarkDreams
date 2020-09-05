@@ -65,7 +65,8 @@ public class PlayerStats : MonoBehaviour
         float restHealt = armorBar.GetDamageRestArmorEffect(damage); 
         CurrentHealt -= (int) restHealt;
 
-        StartCoroutine(effectDamage());
+        if(CurrentHealt > 0)
+            StartCoroutine(effectDamage());
 
         float Health = CurrentHealt / 100f;
     }
