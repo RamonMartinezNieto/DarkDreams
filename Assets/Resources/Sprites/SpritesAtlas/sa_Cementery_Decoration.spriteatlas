@@ -37,14 +37,12 @@ SpriteAtlas:
     - {fileID: 4069928126777490400, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
     - {fileID: 2800000, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
     - {fileID: 102900000, guid: e40508eb39fc09a428e48045300453b5, type: 3}
-    totalSpriteSurfaceArea: 458656
+    totalSpriteSurfaceArea: 459849
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 08027840c3bab254b8b6b5c96a7096f7, type: 3}
   - {fileID: 2792709173374557173, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
   - {fileID: -7119731290535935118, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
-  - {fileID: 21300000, guid: 31f48f84c220e374c927f3c1ce839360, type: 3}
   - {fileID: -4323036626744076191, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
   - {fileID: -6410063312981719467, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
   - {fileID: -527700246343194004, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
@@ -86,7 +84,7 @@ SpriteAtlas:
   - {fileID: -2051518363294093114, guid: 2bf42ada11977444abb13bae57db3d21, type: 3}
   - {fileID: -2150890082336612299, guid: 2bf42ada11977444abb13bae57db3d21, type: 3}
   - {fileID: 2075519481220685982, guid: 2bf42ada11977444abb13bae57db3d21, type: 3}
-  - {fileID: 21300000, guid: aaffe50bc6fd0494a95cff26eb2d538f, type: 3}
+  - {fileID: 21300000, guid: c816c3ebbcc37944f8e3cf0b1643bbaf, type: 3}
   - {fileID: 21300000, guid: 99df004cb7ef4974ca1ffa8fea73c155, type: 3}
   - {fileID: -6691336452561324513, guid: c473f7ccb19f9e44bba5b74a64dc1396, type: 3}
   - {fileID: 315560213906253320, guid: c473f7ccb19f9e44bba5b74a64dc1396, type: 3}
@@ -94,10 +92,8 @@ SpriteAtlas:
   - {fileID: 3538710840085915060, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
   - {fileID: 21300000, guid: 5b38cbce02d9fb142af00d2073c42fff, type: 3}
   m_PackedSpriteNamesToIndex:
-  - TreePine(TreeTrunk2)
   - Fence_0Degree 1_1
   - Fence_0Degree 1_0
-  - TreePine(TreeTrunk1)
   - cementerySpritesWithoutShadows_32
   - cementerySpritesWithoutShadows_33
   - cementerySpritesWithoutShadows_30
@@ -139,7 +135,7 @@ SpriteAtlas:
   - FenceTest_2
   - FenceTest_1
   - FenceTest_0
-  - TreePine(TreeTop)
+  - TreePine1
   - treeJA
   - FenceTest2_1
   - FenceTest2_0
