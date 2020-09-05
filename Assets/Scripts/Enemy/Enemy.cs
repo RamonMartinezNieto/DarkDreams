@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 
 abstract public class Enemy : MonoBehaviour
 {
@@ -40,6 +42,7 @@ abstract public class Enemy : MonoBehaviour
     private Vector2 currentPos;
 
     private GameObject player;
+    private SpriteRenderer enemyRenderer; 
 
     private float extraVelocity = .08f;
 
@@ -48,6 +51,7 @@ abstract public class Enemy : MonoBehaviour
     public void ActiveEnemey() 
     {
         gameObject.SetActive(true);
+        enemyRenderer.color = Color.white;
     }
 
     public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
@@ -55,7 +59,7 @@ abstract public class Enemy : MonoBehaviour
         //Use these variables to calculate when the enemy needs change the position, 
         //This avoid  that enemy stay in the same place when the random vector is so close (because velocity affect at the enemy).
         currentTime = Time.time;
-        stayTime = Random.Range(4f, 8f);  
+        stayTime = UnityEngine.Random.Range(4f, 8f);  
         
         //Health indique only the bar 
         Health = 100;
@@ -76,6 +80,7 @@ abstract public class Enemy : MonoBehaviour
         Attacking = false;
 
         player = GameObject.Find("Player");
+        enemyRenderer = GetComponent<SpriteRenderer>();
 
         //TODO: Ignore physics between diferent ground detection
         if (player != null)
@@ -90,6 +95,7 @@ abstract public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         
+
         //Thsi if is to force change the direction of the enemy
         if ((currentTime + stayTime) < Time.time && !Attacking && !PlayerDetection)
         {
@@ -112,6 +118,9 @@ abstract public class Enemy : MonoBehaviour
     //Decrease damage of the enemy. Convert health to 100% and decrease % damage.
     public void TakeDamage(int damage)
     {
+        if(gameObject.activeSelf)
+            StartCoroutine("effecEnemytDamage");
+
         //Rest % of the health
         Health -= 100 * damage / initialHelath;
         
@@ -121,6 +130,15 @@ abstract public class Enemy : MonoBehaviour
         if (currentHealth < .3f) healthBar.SetColor(Color.red);
         
         if (Health <= 0)  Die();
+    }
+
+    private IEnumerator effecEnemytDamage()
+    {
+        enemyRenderer.color = new Color(1f, .25f, 0f);
+
+        yield return new WaitForSeconds(0.1f);
+              
+        enemyRenderer.color = Color.white;
     }
 
     public void Die()
@@ -209,7 +227,7 @@ abstract public class Enemy : MonoBehaviour
 
     private Vector2 RandomVector(float min, float max)
     {
-        return new Vector2(Random.Range(min, max), Random.Range(min, max));
+        return new Vector2(UnityEngine.Random.Range(min, max), UnityEngine.Random.Range(min, max));
     }
 
     //Movement when get vision with the player

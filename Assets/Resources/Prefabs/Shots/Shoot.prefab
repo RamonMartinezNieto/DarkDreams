@@ -140,7 +140,7 @@ MonoBehaviour:
   shootContainer: {fileID: 0}
   shotVelocity: 3
   damage: 10
-  timeDuration: 1.5
+  timeDuration: 1
   IsMenuPrincipalShoot: 0
 --- !u!198 &2676171059001825500
 ParticleSystem:
