@@ -93,8 +93,6 @@ public class ShotSecondarylWeapon1 : Shot
             && !other.CompareTag("Shot")
             ) 
         {
-            Debug.Log(other.name);
-            Debug.Log(other.tag);
 
             Vector2 posCenter = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 0.35f);
                 Collider2D [] colls = Physics2D.OverlapCircleAll(

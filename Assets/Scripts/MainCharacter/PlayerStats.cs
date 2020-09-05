@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
@@ -9,6 +10,8 @@ public class PlayerStats : MonoBehaviour
 
     public Slider sliderHealtBar;
     public Slider sliderArmorBar;
+
+    public SpriteRenderer spriteRendererPlayer;
 
     private int currentHealt = 100;
     public int CurrentHealt
@@ -60,7 +63,9 @@ public class PlayerStats : MonoBehaviour
         //TODO: 
         //Check if t he player have armor to absorve damage
         float restHealt = armorBar.GetDamageRestArmorEffect(damage); 
-        CurrentHealt -= (int) restHealt; 
+        CurrentHealt -= (int) restHealt;
+
+        StartCoroutine(effectDamage());
 
         float Health = CurrentHealt / 100f;
     }
@@ -70,6 +75,15 @@ public class PlayerStats : MonoBehaviour
         CurrentHealt += health; 
 
         float Health = CurrentHealt / 100f;
+    }
+
+    private IEnumerator effectDamage() 
+    {
+        spriteRendererPlayer.color = new Color(1f,.5f,.5f);
+
+        yield return new WaitForSeconds(0.1f);
+
+        spriteRendererPlayer.color = Color.white;
     }
 
     public void restArmor(float armorDecrease) => CurrentArmor -= armorDecrease; 

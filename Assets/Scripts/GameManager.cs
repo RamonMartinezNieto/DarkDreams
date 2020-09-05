@@ -125,12 +125,14 @@ public class GameManager : PlayerConf
                 if (tenBestScores.Count < 10)
                 {
                     FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                    IsNewScore = true;
                 }
                 else if (tenBestScores[tenBestScores.Count - 1].score < CurrentScore)
                 {
                     FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
+                    IsNewScore = true;
                 }
-                IsNewScore = true;
+                
             }
             else
             {
