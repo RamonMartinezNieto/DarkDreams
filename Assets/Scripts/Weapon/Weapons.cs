@@ -23,6 +23,7 @@ abstract public class Weapons : MonoBehaviour
     public GameObject character;
 
     [HideInInspector] public bool canShoot;
+    [HideInInspector] public bool canShootManual;
 
     protected const int baseDamage = 10;
 

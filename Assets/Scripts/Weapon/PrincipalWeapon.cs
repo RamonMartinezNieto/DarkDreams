@@ -6,7 +6,7 @@ public class PrincipalWeapon : Weapons
 {
     public Transform transformWeaponContainer;
 
-    private float timeDelayShot = 0.15f;
+    private float timeDelayShot = 0.2f;
     private float timePassBewtweenShots;
 
     void Start()
@@ -63,6 +63,7 @@ public class PrincipalWeapon : Weapons
 
     private void CanShootTiming() 
     {
+        
         timePassBewtweenShots += Time.deltaTime;
         
         if (timePassBewtweenShots >= timeDelayShot)
