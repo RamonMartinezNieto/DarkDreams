@@ -13,6 +13,16 @@ public class CachableBullet : Cachable
     
     void OnTriggerEnter2D(Collider2D other)
     {
+        cachtBullet(other);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        cachtBullet(other);
+    }
+
+    private void cachtBullet(Collider2D other) 
+    {
         if (other.gameObject.tag.Equals("Player"))
         {
             if (UIBullets.CurrentBullets < 5)

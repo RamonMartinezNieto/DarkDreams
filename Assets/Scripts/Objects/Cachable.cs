@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public abstract class Cachable : MonoBehaviour
 {
-
     private Image circleBar;
 
     private float timeToDispear;
-    private float TotalTimeDuration; 
+    private float timePassed = 0f; 
 
     private void Start()
     {
@@ -17,7 +16,6 @@ public abstract class Cachable : MonoBehaviour
         circleBar.fillAmount = 1f;
 
         timeToDispear = Random.Range(2, 15);
-        TotalTimeDuration = Time.time + timeToDispear;
 
         StartCoroutine(DispearCatchable());
     }
@@ -28,7 +26,7 @@ public abstract class Cachable : MonoBehaviour
     }
 
     private IEnumerator DispearCatchable() {
-        yield return new WaitForSecondsRealtime(timeToDispear);
+        yield return new WaitForSeconds(timeToDispear);
 
         Destroy(gameObject);
     }
@@ -39,15 +37,12 @@ public abstract class Cachable : MonoBehaviour
         transform.position = cachablerPosition;
     }
 
-
     //Method that reduce circle bar timer.
     private void circleBarTimer()
     {
-        float gameTime = Time.time; 
+        timePassed += Time.deltaTime;
 
-        float restTime = TotalTimeDuration - gameTime;
-
-        circleBar.fillAmount = ((restTime * 100) / timeToDispear) / 100f;
+        circleBar.fillAmount = (((timeToDispear - timePassed) * 100) / timeToDispear) / 100;
     }
 
 }
