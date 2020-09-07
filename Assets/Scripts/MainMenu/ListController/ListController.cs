@@ -17,7 +17,7 @@ public class ListController : MonoBehaviour
         {
             listUsers = firebaseConn.GetListUsers();
             ChargeHighScores();
-            FirebaseConnection.finish = false; 
+            FirebaseConnection.finish = false;
         }
     }
 

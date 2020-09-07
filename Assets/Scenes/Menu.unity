@@ -237,6 +237,7 @@ MonoBehaviour:
   IsMenuWeapon: 1
   character: {fileID: 2008413493}
   canShoot: 0
+  canShootManual: 0
   transformWeaponContainer: {fileID: 0}
 --- !u!212 &29783550
 SpriteRenderer:
@@ -286,7 +287,7 @@ SpriteRenderer:
   m_Size: {x: 0.14, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &46468372
@@ -7984,7 +7985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306944748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.011734, y: -3.8580098, z: 0}
+  m_LocalPosition: {x: -8.35, y: -0.1, z: 0}
   m_LocalScale: {x: 3.271, y: 3.271, z: 3.271}
   m_Children: []
   m_Father: {fileID: 552527592}
@@ -8029,13 +8030,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7362320184128946716, guid: b17a4565aa4606049a362afc6ae750de,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: b17a4565aa4606049a362afc6ae750de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.21, y: 1.405}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -19434,7 +19434,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 136.24
   m_PointLightOuterAngle: 150.74
-  m_PointLightInnerRadius: 0
+  m_PointLightInnerRadius: 0.5
   m_PointLightOuterRadius: 4.3691726
   m_PointLightDistance: 3
   m_PointLightQuality: 1
@@ -26926,6 +26926,7 @@ MonoBehaviour:
   IsMenuWeapon: 1
   character: {fileID: 235392838}
   canShoot: 0
+  canShootManual: 0
   transformWeaponContainer: {fileID: 0}
 --- !u!212 &669148936
 SpriteRenderer:
@@ -26975,7 +26976,7 @@ SpriteRenderer:
   m_Size: {x: 0.14, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &674603171
@@ -27145,7 +27146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686318999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.79, y: -5.27, z: 0}
+  m_LocalPosition: {x: -11.128265, y: -1.5119901, z: 0}
   m_LocalScale: {x: 3.271, y: 3.271, z: 0}
   m_Children: []
   m_Father: {fileID: 552527592}
@@ -27190,13 +27191,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7362320184128946716, guid: b17a4565aa4606049a362afc6ae750de,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: b17a4565aa4606049a362afc6ae750de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.21, y: 1.405}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -27809,7 +27809,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 136.23
   m_PointLightOuterAngle: 180
-  m_PointLightInnerRadius: 0
+  m_PointLightInnerRadius: 0.2
   m_PointLightOuterRadius: 5.175665
   m_PointLightDistance: 3
   m_PointLightQuality: 1
@@ -49281,7 +49281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489982397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.54, y: -8.13, z: 0}
+  m_LocalPosition: {x: -16.87827, y: -4.37199, z: 0}
   m_LocalScale: {x: 3.271, y: 3.271, z: 3.271}
   m_Children: []
   m_Father: {fileID: 552527592}
@@ -49326,13 +49326,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7362320184128946716, guid: b17a4565aa4606049a362afc6ae750de,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: b17a4565aa4606049a362afc6ae750de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.21, y: 1.405}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -61779,7 +61778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756524591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.07, y: -9.38, z: 0}
+  m_LocalPosition: {x: -19.408268, y: -5.62199, z: 0}
   m_LocalScale: {x: 3.271, y: 3.271, z: 3.271}
   m_Children: []
   m_Father: {fileID: 552527592}
@@ -61824,13 +61823,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7362320184128946716, guid: b17a4565aa4606049a362afc6ae750de,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: b17a4565aa4606049a362afc6ae750de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.21, y: 1.405}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -81005,7 +81003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931804924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.65, y: -6.71, z: 0}
+  m_LocalPosition: {x: -13.988266, y: -2.9519901, z: 0}
   m_LocalScale: {x: 3.271, y: 3.271, z: 3.271}
   m_Children: []
   m_Father: {fileID: 552527592}
@@ -81050,13 +81048,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7362320184128946716, guid: b17a4565aa4606049a362afc6ae750de,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: b17a4565aa4606049a362afc6ae750de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.21, y: 1.405}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -81879,6 +81876,7 @@ MonoBehaviour:
   IsMenuWeapon: 1
   character: {fileID: 775395582}
   canShoot: 0
+  canShootManual: 0
   transformWeaponContainer: {fileID: 0}
 --- !u!212 &1994920509
 SpriteRenderer:
@@ -81928,7 +81926,7 @@ SpriteRenderer:
   m_Size: {x: 0.14, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &2008413493
@@ -83565,6 +83563,7 @@ MonoBehaviour:
   IsMenuWeapon: 1
   character: {fileID: 1068990733}
   canShoot: 0
+  canShootManual: 0
   transformWeaponContainer: {fileID: 0}
 --- !u!212 &2083607119
 SpriteRenderer:
@@ -83614,7 +83613,7 @@ SpriteRenderer:
   m_Size: {x: 0.14, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &2092716763

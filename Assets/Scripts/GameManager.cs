@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -6,11 +7,14 @@ using UnityEngine;
 public class GameManager : PlayerConf
 {
     public static GameManager Instance = null;
-    public static bool IsNewScore { get; private set; } = false; 
+    public bool IsNewScore { get; set; } = false; 
 
     public TMP_Text labelName;
     public TMP_Text labelScore;
     public TMP_Text labelTimer;
+
+    public TMP_Text roundLabel;
+    public Animator roundAnimator; 
 
     public RectTransform barsTransform; 
 
@@ -56,6 +60,8 @@ public class GameManager : PlayerConf
         labelName.text = UserName;
         labelScore.text = "0000";
 
+        StartCoroutine(ShowRound($"Wave {timeController.minutes+1}")); 
+
         SoundManager.Instance.PlayMusic("game1");
     }
 
@@ -73,21 +79,23 @@ public class GameManager : PlayerConf
     {
         if (!CanvasGamerOver.activeSelf)
         {
+            GenerateEnemies();
+
+            CallAnimationRoundTimer();
+
             if (playerStats.CurrentHealt <= 0 && writeBD)
             {
                 IsNewScore = false;
 
                 CanvasGamerOver.SetActive(true);
-                
+
                 SaveScoreAndTime(CurrentScore, timeController.getFormatTimer());
 
-                WriteScoreInBBDD();
+                FirebaseConnection.Instance.WriteScoreInBBDD(UserName, CurrentScore, timeController.getFormatTimer());
 
                 timeController.restartTimer();
                 writeBD = false;
             }
-
-            GenerateEnemies();
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -112,40 +120,6 @@ public class GameManager : PlayerConf
         }
     }
 
-
-    private void WriteScoreInBBDD() 
-    {
-        List<UserScore> tenBestScores = FirebaseConnection.Instance.GetListUsers();
-
-        try
-        {
-            if (tenBestScores.Count != 0)
-            {
-                //Write Score, only one time, be carefull with the writeBD variable
-                if (tenBestScores.Count < 10)
-                {
-                    FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
-                    IsNewScore = true;
-                }
-                else if (tenBestScores[tenBestScores.Count - 1].score < CurrentScore)
-                {
-                    FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
-                    IsNewScore = true;
-                }
-                
-            }
-            else
-            {
-                FirebaseConnection.Instance.WriteNewScore(UserName, CurrentScore, timeController.getFormatTimer());
-                IsNewScore = true;
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("DataBase don't run currently");
-        }
-    }
-
     public void UpScore(int upScor)
     {
         //Todo: Score
@@ -153,4 +127,32 @@ public class GameManager : PlayerConf
     }
     
     public string GetCurrentTime() { return labelTimer.text; }
+
+    private void CallAnimationRoundTimer() 
+    {
+        if (timeController.seconds == 48)
+        {
+            roundLabel.text = $"Wave {timeController.minutes + 1}";
+            roundAnimator.SetBool("visible", true);
+
+        }
+        else if (timeController.seconds >= 50 && timeController.seconds <= 60)
+        {
+            roundLabel.text = (60 - timeController.seconds).ToString();
+        }
+        else if (timeController.seconds == 0) 
+        {
+            roundAnimator.SetBool("visible", false);
+        }
+    }
+
+    private IEnumerator ShowRound(string text) 
+    {
+        roundLabel.text = text; 
+        roundAnimator.SetBool("visible",true);
+        yield return new WaitForSeconds(2f);
+        roundAnimator.SetBool("visible", false);
+    }
+
+
 }

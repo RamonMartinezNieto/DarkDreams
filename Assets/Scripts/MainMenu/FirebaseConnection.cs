@@ -20,8 +20,9 @@ public class FirebaseConnection : MonoBehaviour
     private FirebaseDatabase instance;
    
     private List<UserScore> usersList = new List<UserScore>();
+    private List<UserScore> sortedList = new List<UserScore>();
 
-    
+
     void Awake()
     {
         //Singleton instance
@@ -35,29 +36,112 @@ public class FirebaseConnection : MonoBehaviour
         }
     }
 
-    public List<UserScore> GetListUsers()
-    {
-        //New sorted list 
-        List<UserScore> sortedList = usersList.OrderByDescending(o => o.score).Take(10).ToList<UserScore>();
-        return sortedList;
-    }
-
-    public void WriteNewScore(string user, int score, string time) => PostUserScore(new UserScore(user,score,time));
-
-    public void WriteNewUser(string user) => PostUser(new User(user));
-
-    public void UpdateListLaderBoardBackground() => StartCoroutine(GetFirstTenUsersDesktop());  //StartCoroutine(GetFirstTenUsersMobile());
-
     void Start()
     {
         //Config Firabase Instance
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://pruebasapirest-13c28.firebaseio.com/");
         //Catch reference
         dataReference = FirebaseDatabase.DefaultInstance.RootReference;
+
         //Fill array
-        StartCoroutine(GetFirstTenUsersDesktop());
+        StartCoroutine(GetAllScoresUsersDesktop());
     }
 
+    public List<UserScore> GetListUsers()
+    {
+        return GetFirstTenUsers(usersList);
+    }
+
+    public void WriteScoreInBBDD(string user, int score, string time)
+    {
+        List<UserScore> tenBestScores = GetListUsers();
+
+        try
+        {
+            if (tenBestScores.Count != 0)
+            {
+                //Write Score, only one time, be carefull with the writeBD variable
+                if (tenBestScores.Count < 10)
+                {
+                    PostUserScore(new UserScore(user, score, time));
+                    GameManager.Instance.IsNewScore = true;
+                }
+                else if (tenBestScores[tenBestScores.Count - 1].score <= score)
+                {
+                    if (tenBestScores[tenBestScores.Count - 1].score < score)
+                    {
+                        PostUserScore(new UserScore(user, score, time));
+                        GameManager.Instance.IsNewScore = true;
+                    }
+                    else
+                    {
+                        //Check is which user have the best time
+                        int theBest = CheckTheBest(tenBestScores[tenBestScores.Count - 1].score, score, tenBestScores[tenBestScores.Count - 1].time, time.ToString());
+                        if (theBest == 2) 
+                        { 
+                            PostUserScore(new UserScore(user, score, time));
+                            GameManager.Instance.IsNewScore = true;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                PostUserScore(new UserScore(user, score, time));
+                GameManager.Instance.IsNewScore = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("DataBase don't run currently");
+        }
+    }
+
+    //1 best score is score1, 2 best score is score2
+    private int CheckTheBest(int score1, int score2, string time1, string time2) 
+    {
+        int valueWinner = -2;
+        if (score1 > score2) valueWinner = 1;
+        else if (score2 > score1) valueWinner = 2;
+        else if (score2 == score1) { 
+            int winner = CheckTime(time1, time2);
+            if (winner == 1) valueWinner = 1;
+            else if (winner == 2 || winner == -1) valueWinner = 2; 
+        }
+
+        return valueWinner;
+    }
+
+    //Method to check how user have the best time
+    //-1 same time, 1 time1 is the best, 2 time2 is the best
+    private int CheckTime(string time1, string time2)
+    {
+        int value = -2;
+
+        string [] firstTime = time1.Split(':');
+        string[] secondtTime = time2.Split(':');
+
+        //Check minutes
+        if (Convert.ToInt32(firstTime[0]) < Convert.ToInt32(secondtTime[0]))
+            value = 1; 
+        else if (Convert.ToInt32(firstTime[0]) > Convert.ToInt32(secondtTime[0]))
+            value = 2; 
+        //check seconds if both are in the same minute
+        else if (Convert.ToInt32(firstTime[0]) == Convert.ToInt32(secondtTime[0]))
+        {
+            if (Convert.ToInt32(firstTime[1]) < Convert.ToInt32(secondtTime[1]))
+                value = 1;
+            else if (Convert.ToInt32(firstTime[1]) > Convert.ToInt32(secondtTime[1]))
+                value = 2;
+            else
+                value = -1;
+        }
+        return value; 
+    }
+
+    public void WriteNewUser(string user) => PostUser(new User(user));
+
+    public void UpdateListLaderBoardBackground() => StartCoroutine(GetAllScoresUsersDesktop());  //StartCoroutine(GetFirstTenUsersMobile());
 
     //Only use this when export to Mobile 
     // in other way use GetFirstTenUsersDesktop(); 
@@ -88,7 +172,7 @@ public class FirebaseConnection : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator GetFirstTenUsersDesktop() 
+    private IEnumerator GetAllScoresUsersDesktop() 
     {
         usersList.Clear();
 
@@ -146,8 +230,74 @@ public class FirebaseConnection : MonoBehaviour
                     }
                 }
             }
+            sortedList = GetFirstTenUsers(usersList);
             finish = true;
         }
+    }
+
+
+    //Sort list comparing time of the final users if they have te same score
+    private List<UserScore> GetFirstTenUsers(List<UserScore> users)
+    {
+        //Sort initial list
+        List<UserScore> sortedList = users.OrderByDescending(o => o.score).ToList<UserScore>();
+        List<UserScore> scoresRepeat = new List<UserScore>();
+
+        UserScore userTen;
+
+        if (users.Count > 10) 
+        {
+            //user nº 10 to delete rest of the users in the original list
+            userTen = sortedList[9];
+
+            //Get all repeat users with the same score of the user nº 10
+            scoresRepeat = CheckMoreScoresInTheList(userTen.score, users);
+
+            //Delete all UsersScores with the same score and minus score
+            sortedList.RemoveAll(delegate (UserScore us)
+            {
+                return us.score <= userTen.score;
+            });
+
+
+            //Bubble Sort using CheckTiem to sort the secondary list
+            for (int i = 0; i < scoresRepeat.Count; i++ ) 
+            {
+                for (int a = 0; a < scoresRepeat.Count - 1; a++)
+                {
+                    float bestTime = CheckTime(scoresRepeat[a].time, scoresRepeat[a+1].time);
+                    if (bestTime == 2 || bestTime == -1)
+                    {
+                        UserScore temp = scoresRepeat[a];
+                        scoresRepeat[a] = scoresRepeat[a + 1];
+                        scoresRepeat[a + 1] = temp;
+                    }
+                }
+            }
+        }
+
+        //Add secondary list sorted in the original list
+        foreach (UserScore us in scoresRepeat) 
+        {
+            sortedList.Add(us);
+        }
+        
+        //Take only ten users of the orginal list
+        List<UserScore> finalTenBestUsers = sortedList.Take(10).ToList<UserScore>();
+
+        return finalTenBestUsers;
+    }
+
+    private List<UserScore> CheckMoreScoresInTheList(int score, List<UserScore> users)
+    {
+        List<UserScore> listWithTheSameScore = users.FindAll
+            (
+                delegate (UserScore us)
+                {
+                    return us.score == score;
+                }
+            );
+        return listWithTheSameScore; 
     }
 
     //Only use this when export to Mobile 

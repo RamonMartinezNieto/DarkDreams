@@ -20,7 +20,7 @@ public class MenusInGame : MonoBehaviour
         finalScore.text = GameManager.Instance.CurrentScore.ToString();
         finalTime.text = GameManager.Instance.GetCurrentTime();
 
-        ChangeTextScore(GameManager.IsNewScore);
+        ChangeTextScore(GameManager.Instance.IsNewScore);
     }
 
     public void ReStartGame() => SceneManager.LoadScene(1); 

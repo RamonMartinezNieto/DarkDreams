@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "350688672624",
+    "firebase_url": "https://pruebasapirest-13c28.firebaseio.com",
+    "project_id": "pruebasapirest-13c28",
+    "storage_bucket": "pruebasapirest-13c28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350688672624:android:64cf7d7fe460a9a31a6db5",
+        "android_client_info": {
+          "package_name": "com.rmn.foc.DarkDreams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350688672624-cmlhit63aiskr632c5r5ussm3gu9hscl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR1A8g-QTQ7C8AwE4PsIze9211eBFIpRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350688672624-cmlhit63aiskr632c5r5ussm3gu9hscl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

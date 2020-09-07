@@ -3,8 +3,9 @@
 public class TimeController
 {
     
-    private int seconds = 0;
+    public int seconds { get; private set; } = 0;
     public int minutes { get; private set; } = 0;
+
     public float currentTimer { get; private set; } = 0;
 
     public void updateTime()
