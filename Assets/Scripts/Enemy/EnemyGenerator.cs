@@ -110,14 +110,27 @@ public class EnemyGenerator : MonoBehaviour
 
         for (int h = 0; h < quantity; h++)
         {
-            var a = tileMap.GetCellCenterWorld(new Vector3Int(
-                    Random.Range(tileMap.cellBounds.xMin+1, tileMap.cellBounds.xMax-1),
-                    Random.Range(tileMap.cellBounds.yMin+1, tileMap.cellBounds.yMax-1),
-                        0));
+            Vector3 a = createRandomCoordenates();
+
+            while (ExclusionArea.checkCorrdinates(a.x, a.y))
+            {
+                a = createRandomCoordenates();
+            }
+            
             er.RecoveryEnemy<T>(a.x, a.y);
             total++;
             yield return new WaitForSeconds(timeBetweenEnemies);
         }
         yield return new WaitForSeconds(timeBetweenEnemies);
+    }
+
+    private Vector3 createRandomCoordenates()
+    {
+        var coordenates = tileMap.GetCellCenterWorld(new Vector3Int(
+                      Random.Range(tileMap.cellBounds.xMin + 1, tileMap.cellBounds.xMax - 1),
+                      Random.Range(tileMap.cellBounds.yMin + 1, tileMap.cellBounds.yMax - 1),
+                          0));
+
+        return coordenates; 
     }
 }

@@ -63,8 +63,10 @@ public class SoundManager : PlayerConf
 		MusicSource.mute = !MusicOn;
 	}
 
-	public void PlayEffect(string clip)
+	public void PlayEffect(string clip, float variationPitch = 0f, float variationVolumen = 0f)
 	{
+		EffectsSource.volume = MusicEffectVolumen - variationVolumen;
+		EffectsSource.pitch =  1f - variationPitch;
 		EffectsSource.clip = getClip(clip, musicEffects);
 		EffectsSource.Play();
 	}	

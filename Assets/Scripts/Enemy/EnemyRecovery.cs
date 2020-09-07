@@ -10,10 +10,21 @@ public class EnemyRecovery : MonoBehaviour
     //TODO: I can make this class abstract to implement same clas with other type (Enemy / Cachable) and no repeat the same code?
     private List<Enemy> enemiesDied = new List<Enemy>();
 
-    //TODO: ¿??¿?¿
     private List<Enemy> enemiesAlive = new List<Enemy>();
 
     public int GetEnemiesAlive() { return enemiesAlive.Count; }
+
+    /*
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) {
+            Debug.LogWarning(enemiesAlive.Count);
+        }
+    }
+
+    */
+
+
 
     private void Start()
     {
