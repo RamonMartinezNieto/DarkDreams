@@ -39,7 +39,7 @@ public class EnemyGenerator : MonoBehaviour
     {
         er = GetComponent<EnemyRecovery>();
 
-        doorOnePosition = new Vector2(10.78f, -2.7f);
+        doorOnePosition = new Vector2(9.61f, -3.27f);
         doorTwoPosition = new Vector2(-7f, -2.2f);
         doorThreePosition = new Vector2(-7f, 5f);
         doorFourPosition = new Vector2(6.8f, 4.6f);
@@ -106,21 +106,19 @@ public class EnemyGenerator : MonoBehaviour
     
     private IEnumerator createEnemieRandomPlace<T>(int quantity) where T : Enemy
     {
-        var total = 0; 
-
-        for (int h = 0; h < quantity; h++)
-        {
+         for (int h = 0; h < quantity; h++)
+         {
             Vector3 a = createRandomCoordenates();
 
-            while (ExclusionArea.checkCorrdinates(a.x, a.y))
+            while (ExclusionArea.CheckCoordinates(a.x, a.y))
             {
                 a = createRandomCoordenates();
             }
             
             er.RecoveryEnemy<T>(a.x, a.y);
-            total++;
+
             yield return new WaitForSeconds(timeBetweenEnemies);
-        }
+         }
         yield return new WaitForSeconds(timeBetweenEnemies);
     }
 

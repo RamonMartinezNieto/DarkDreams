@@ -22,10 +22,9 @@ public class PlayerStats : MonoBehaviour
         }
         private set
         {
-            //currentHealt = value; 
+            currentHealt = value; 
             
-            //MODE GOOD: 
-            currentHealt = 100;
+            //MODE GOOD: currentHealt = 100;
 
             if (currentHealt >= 100){
                 currentHealt = 100; 

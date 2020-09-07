@@ -101,6 +101,7 @@ public class GameManager : PlayerConf
             if (playerStats.CurrentHealt <= 0 && writeBD)
             {
                 IsNewScore = false;
+                timeToShowNewEnemies = 0;
 
                 CanvasGamerOver.SetActive(true);
 

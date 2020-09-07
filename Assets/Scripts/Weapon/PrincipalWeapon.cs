@@ -63,7 +63,6 @@ public class PrincipalWeapon : Weapons
 
     private void CanShootTiming() 
     {
-        
         timePassBewtweenShots += Time.deltaTime;
         
         if (timePassBewtweenShots >= timeDelayShot)
@@ -72,9 +71,7 @@ public class PrincipalWeapon : Weapons
             timePassBewtweenShots = 0;
         }
         else 
-        {
             canShoot = false;
-        }
     }
 
     public void SetActiveWeapon()

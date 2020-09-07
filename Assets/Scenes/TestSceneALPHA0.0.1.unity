@@ -1603,7 +1603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -96.999985, y: -257.99994}
+  m_AnchoredPosition: {x: -97, y: -257.99994}
   m_SizeDelta: {x: 10220, y: 8072}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208664281
@@ -18634,7 +18634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -76.00003, y: -43.650024}
+  m_AnchoredPosition: {x: -76.00006, y: -43.650024}
   m_SizeDelta: {x: 0.044922, y: 87.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &885322846
@@ -20727,6 +20727,8 @@ MonoBehaviour:
   labelName: {fileID: 503965444}
   labelScore: {fileID: 319817430}
   labelTimer: {fileID: 556155283}
+  roundLabel: {fileID: 0}
+  roundAnimator: {fileID: 0}
   barsTransform: {fileID: 1577031038}
   CanvasGamerOver: {fileID: 1362297182}
   CanvasMenuEsc: {fileID: 772761406}
@@ -28209,6 +28211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2017675235, guid: dff78fa7740d96c4aaf3dd710c6b4c77, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1720518532293778348, guid: dff78fa7740d96c4aaf3dd710c6b4c77,
         type: 3}
       propertyPath: healthBar
@@ -34011,7 +34017,7 @@ SpriteRenderer:
   m_Size: {x: 0.14, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!4 &3721840348464644481
