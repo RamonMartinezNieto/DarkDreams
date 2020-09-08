@@ -27,7 +27,7 @@ public class GameManager : PlayerConf
     private bool writeBD = true;
 
     private int randMin = 5;
-    private int randMax = 20; 
+    private int randMax = 25; 
 
     //In minutes
     private int timeToShowNewEnemies = 1; 
@@ -86,8 +86,8 @@ public class GameManager : PlayerConf
         {
             timeController.seconds++;
         }
-
         */
+        
 
 
         if (!CanvasGamerOver.activeSelf)
@@ -122,31 +122,30 @@ public class GameManager : PlayerConf
 
     private void GenerateEnemies() 
     {
-        //Only generate enemies if there are less 100
-//        if (EnemyRecovery.Instance.GetEnemiesAlive() < 200)
-//        {
             //Generate more enemies
-            if (timeController.minutes >= timeToShowNewEnemies)
-            {
-                var minutes = timeController.minutes;
-                //generate new enemies and update timeToShowNewEnemies
-                EnemyGenerator.Instance.GenerateEnemies(UnityEngine.Random.Range(randMin * minutes, randMax * minutes), 1 * minutes);
-                timeToShowNewEnemies = timeController.minutes + 1;
-            }
-//        }
-        
+        if (timeController.minutes >= timeToShowNewEnemies)
+        {
+            var minutes = timeController.minutes;
+            
+            var randomQuantity = UnityEngine.Random.Range(randMin * minutes, randMax * minutes);
+            //generate new enemies and update timeToShowNewEnemies
+            EnemyGenerator.Instance.GenerateEnemies(randomQuantity, 1 * minutes);
+
+            timeToShowNewEnemies = timeController.minutes + 1;
+        }
+
     }
 
     private void ControlRandMinAndMax() 
     {
-        if (timeController.minutes > 4) randMax = 18;
-        else if (timeController.minutes > 9) randMax = 16;
-        else if (timeController.minutes > 14) randMax = 14;
-        else if (timeController.minutes > 19) randMax = 12;
-        else if (timeController.minutes > 24) randMax = 10;
-        else if (timeController.minutes > 29) randMax = 8;
-        else if (timeController.minutes > 34) randMax = 6;
-        else randMax = 5;
+        if (timeController.minutes > 4) randMax = 23;
+        else if (timeController.minutes > 9) randMax = 21;
+        else if (timeController.minutes > 14) randMax = 19;
+        else if (timeController.minutes > 19) randMax = 16;
+        else if (timeController.minutes > 24) randMax = 14;
+        else if (timeController.minutes > 29) randMax = 12;
+        else if (timeController.minutes > 34) randMax = 10;
+        
     }
 
     public void UpScore(int upScor)

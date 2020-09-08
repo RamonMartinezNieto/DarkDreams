@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -228,7 +228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c582c814d828440b9681a13b5ee5b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberThisWeapon: 0
   transformWeapon: {fileID: 29783547}
+  transformWeaponContainer: {fileID: 0}
   bulletType1: {fileID: 2802035933494917721, guid: 595eb3ed41630434e92c9229597d711f,
     type: 3}
   bulletType2: {fileID: 2802035933494917721, guid: ae2e4a7a13cd02442ad100fe85c524fc,
@@ -238,7 +240,6 @@ MonoBehaviour:
   character: {fileID: 2008413493}
   canShoot: 0
   canShootManual: 0
-  transformWeaponContainer: {fileID: 0}
 --- !u!212 &29783550
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26367,7 +26368,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -26917,7 +26918,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c582c814d828440b9681a13b5ee5b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberThisWeapon: 0
   transformWeapon: {fileID: 669148933}
+  transformWeaponContainer: {fileID: 0}
   bulletType1: {fileID: 2802035933494917721, guid: 595eb3ed41630434e92c9229597d711f,
     type: 3}
   bulletType2: {fileID: 2802035933494917721, guid: ae2e4a7a13cd02442ad100fe85c524fc,
@@ -26927,7 +26930,6 @@ MonoBehaviour:
   character: {fileID: 235392838}
   canShoot: 0
   canShootManual: 0
-  transformWeaponContainer: {fileID: 0}
 --- !u!212 &669148936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81867,7 +81869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c582c814d828440b9681a13b5ee5b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberThisWeapon: 0
   transformWeapon: {fileID: 1994920506}
+  transformWeaponContainer: {fileID: 0}
   bulletType1: {fileID: 2802035933494917721, guid: 595eb3ed41630434e92c9229597d711f,
     type: 3}
   bulletType2: {fileID: 2802035933494917721, guid: ae2e4a7a13cd02442ad100fe85c524fc,
@@ -81877,7 +81881,6 @@ MonoBehaviour:
   character: {fileID: 775395582}
   canShoot: 0
   canShootManual: 0
-  transformWeaponContainer: {fileID: 0}
 --- !u!212 &1994920509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83554,7 +83557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c582c814d828440b9681a13b5ee5b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberThisWeapon: 0
   transformWeapon: {fileID: 2083607116}
+  transformWeaponContainer: {fileID: 0}
   bulletType1: {fileID: 2802035933494917721, guid: 595eb3ed41630434e92c9229597d711f,
     type: 3}
   bulletType2: {fileID: 2802035933494917721, guid: ae2e4a7a13cd02442ad100fe85c524fc,
@@ -83564,7 +83569,6 @@ MonoBehaviour:
   character: {fileID: 1068990733}
   canShoot: 0
   canShootManual: 0
-  transformWeaponContainer: {fileID: 0}
 --- !u!212 &2083607119
 SpriteRenderer:
   m_ObjectHideFlags: 0

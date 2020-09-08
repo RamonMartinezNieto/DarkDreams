@@ -60,7 +60,6 @@ abstract public class Shot : MonoBehaviour
     //TODO: include animation
     public virtual IEnumerator DestroyShotAnimation()
     {
-        
         shootRigi.velocity = Vector2.zero;
         animShot.SetBool("endShot", true);
         particleSystemShot.Stop();

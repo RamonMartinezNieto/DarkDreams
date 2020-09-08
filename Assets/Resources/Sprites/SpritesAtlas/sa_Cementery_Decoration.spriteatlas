@@ -37,10 +37,12 @@ SpriteAtlas:
     - {fileID: 4069928126777490400, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
     - {fileID: 2800000, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
     - {fileID: 102900000, guid: e40508eb39fc09a428e48045300453b5, type: 3}
-    totalSpriteSurfaceArea: 459849
+    totalSpriteSurfaceArea: 518585
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 7e1b2e310958e9b48a862b6757f7e971, type: 3}
+  - {fileID: 21300000, guid: a10ca7128c0e3c2439e502d4da6a5c64, type: 3}
   - {fileID: 2792709173374557173, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
   - {fileID: -7119731290535935118, guid: c54f7023e7945e5448d200f48b7d8fcb, type: 3}
   - {fileID: -4323036626744076191, guid: dcae2a9754a826e49aac533ba56cf2a6, type: 3}
@@ -92,6 +94,8 @@ SpriteAtlas:
   - {fileID: 3538710840085915060, guid: a47b2b1dce1195b4fb3a870020e55d16, type: 3}
   - {fileID: 21300000, guid: 5b38cbce02d9fb142af00d2073c42fff, type: 3}
   m_PackedSpriteNamesToIndex:
+  - pine-tree-isaiah658-bigger-preview
+  - treeDown
   - Fence_0Degree 1_1
   - Fence_0Degree 1_0
   - cementerySpritesWithoutShadows_32

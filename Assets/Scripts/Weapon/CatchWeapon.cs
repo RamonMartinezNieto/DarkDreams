@@ -4,12 +4,38 @@ using UnityEngine;
 
 public class CatchWeapon : MonoBehaviour
 {
-    public GameObject principalWeapon;
-
+    public GameObject weaponCatched;
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name.Equals("Player")){
-            principalWeapon.SetActive(true);
+
+            Weapons w = weaponCatched.GetComponentInChildren<Weapons>();
+            w.IsInPossesion = true;
+            Weapons.TotalWeapons++;
+            w.NumberThisWeapon = Weapons.TotalWeapons;
+            
+            if (StaticListWeapons.GetListAllWeapons().Count == 0)
+            {
+                weaponCatched.SetActive(true);
+                w.IsActive = true; 
+            
+            } else{
+
+                StaticListWeapons.GetListAllWeapons().ForEach(weapon =>
+                {
+                    if (weapon.NumberThisWeapon != w.NumberThisWeapon && !weapon.IsActive)
+                    {
+                        weaponCatched.SetActive(true);
+                        w.IsActive = false;
+                    }
+                    weaponCatched.SetActive(true);
+                }
+                );
+            }
+
+            StaticListWeapons.AddWeapon(w);
+            ControlWeapons.Instance.AddNewWeaponCatched(weaponCatched);
 
             gameObject.SetActive(false);
         }

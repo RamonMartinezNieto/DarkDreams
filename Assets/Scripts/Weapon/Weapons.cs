@@ -5,8 +5,30 @@ using UnityEngine;
 
 abstract public class Weapons : MonoBehaviour
 {
+    public bool IsInPossesion { get; set; } = false;
+
+    private bool _isActive;
+    public bool IsActive
+    {
+        get 
+        {
+            return _isActive; 
+        }
+        set 
+        {
+            this._isActive = value; 
+        }
+    }
+    //1 Principal Weapon, 2 ShotGun. TODO: Need change this variable with enumarator or other structure
+    public static int TotalWeapons { get; set; } = 0;
+
+    public int NumberThisWeapon = 0;
+
     [Tooltip("Transform with initial point from shot")]
     public Transform transformWeapon;
+
+    [Tooltip("Container of the weapon")]
+    public Transform transformWeaponContainer;
 
     [Tooltip("Specific bullet type infinite armor to shot")]
     public GameObject bulletType1;
@@ -117,6 +139,63 @@ abstract public class Weapons : MonoBehaviour
         set { _specificBulletDistance = value; }
     }
 
+    protected abstract float TimeDelayShot { get; set; }
+    protected float TimePassBewtweenShots { get; set; }
+
+    void Update()
+    {
+        
+        if (!IsMenuWeapon)
+        {
+            UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
+
+            transformWeaponContainer.position = WeaponPosition;
+        }
+
+        UpdateWiewPivotWeapon(gameObject, character, transformWeaponContainer);
+
+        //TODO: Only to debug
+        //DebugRayCast(weaponTransform);
+
+
+        //Check if CanShot is true
+        CanShootTiming();
+
+        if (!Pause.GameIsPaused)
+        {
+            //Hold on fire
+            if (Input.GetMouseButton(0) && canShoot)
+                Shoting(bulletType1);
+
+            if (Input.GetButtonDown("Fire1"))
+                Shoting(bulletType1);
+
+            else if (Input.GetButtonDown("Fire2") && (UIBullets.CurrentBullets > 0))
+            {
+                if (!IsMenuWeapon)
+                    Shoting(bulletType2);
+            }
+        }
+
+    }
+
+    private void CanShootTiming()
+    {
+        TimePassBewtweenShots += Time.deltaTime;
+
+        if (TimePassBewtweenShots >= TimeDelayShot)
+        {
+            canShoot = true;
+            TimePassBewtweenShots = 0;
+        }
+        else
+            canShoot = false;
+    }
+
+    public void SetActiveWeapon()
+    {
+        gameObject.SetActive(true);
+    }
 
 
     //Methods to places weapon. 
@@ -216,7 +295,7 @@ abstract public class Weapons : MonoBehaviour
         weaponContainerTransform.right = direction;
     }
 
-    public void Shoting(GameObject bulletType)
+    public virtual void Shoting(GameObject bulletType)
     {
         //TODO: here is a position of the shoot, need move to ShotPrincipalWeapon, and correct the position
         Vector3 firePosition = transformWeapon.position;

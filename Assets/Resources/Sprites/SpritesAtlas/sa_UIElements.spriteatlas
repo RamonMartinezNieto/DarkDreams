@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: e3d8b6ab1cfc67c4fbb6c88578d07065, type: 3}
-    totalSpriteSurfaceArea: 7449951
+    totalSpriteSurfaceArea: 7459951
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -41,6 +41,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2da96e02c69e5454db8c559d9b7ba98f, type: 3}
   - {fileID: 21300000, guid: 5d25d11270ee0444baa040e3a46a3673, type: 3}
   - {fileID: 21300000, guid: f761ceb230cf2c44da1c855449d4188d, type: 3}
+  - {fileID: 21300000, guid: ce022fd2b04a41b47a85e64c0cab9873, type: 3}
   - {fileID: 21300000, guid: d4b7c963ce3bc8e4a8c23ca79eb13f2a, type: 3}
   - {fileID: 21300000, guid: 47e5ee84c96997748a49061a7bec232f, type: 3}
   - {fileID: 21300000, guid: 60b015a4c362cfb4696b2bf2b29ae49b, type: 3}
@@ -68,6 +69,7 @@ SpriteAtlas:
   - TESTbuttonLong_grey
   - DyingEffect2
   - barGreen_horizontalRight
+  - glassPanel
   - TEST2buttonLong_grey
   - buttonLong_grey
   - mousePulseRight

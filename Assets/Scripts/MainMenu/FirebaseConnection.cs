@@ -93,7 +93,7 @@ public class FirebaseConnection : MonoBehaviour
         }
         catch (Exception ex)
         {
-            Debug.LogError("DataBase don't run currently");
+            Debug.LogError("DataBase don't run currently" + ex.Message);
         }
     }
 
