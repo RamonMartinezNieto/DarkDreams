@@ -8,7 +8,6 @@ public class PrincipalWeapon : Weapons
 
     void Start()
     {
-        Debug.Log(NumberThisWeapon);
 
         if (!IsMenuWeapon)
         {

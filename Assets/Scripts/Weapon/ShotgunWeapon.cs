@@ -23,7 +23,7 @@ public class ShotgunWeapon : Weapons
         Vector3 firePosition = transformWeapon.position;
         firePosition.z = -2f;
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 15; i++)
         {
             Instantiate(bulletType, firePosition, transformWeapon.rotation);
         }

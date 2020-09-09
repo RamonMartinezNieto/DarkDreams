@@ -160,7 +160,7 @@ abstract public class Weapons : MonoBehaviour
 
         //Check if CanShot is true
         CanShootTiming();
-
+        
         if (!Pause.GameIsPaused)
         {
             //Hold on fire
@@ -176,7 +176,7 @@ abstract public class Weapons : MonoBehaviour
                     Shoting(bulletType2);
             }
         }
-
+        
     }
 
     private void CanShootTiming()

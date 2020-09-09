@@ -12,7 +12,6 @@ public class ControlWeapons : MonoBehaviour
     public GameObject prefabSecondaryWeapons;
 
     public GameObject prefabContentPanel;
-
     
     List<WeaponListController> listWeaponController = new List<WeaponListController>();
 
@@ -31,61 +30,7 @@ public class ControlWeapons : MonoBehaviour
         }
     }
 
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) 
-        {
-            StaticListWeapons.GetListAllWeapons().ForEach(w => 
-            {
-                if (w.IsInPossesion)
-                {
-
-                    //Active Weapon nº1
-                    if (w.NumberThisWeapon == 1)
-                    {
-                        w.gameObject.SetActive(true);
-                        w.IsActive = true;
-                        UpdateActiveWeapon(w.NumberThisWeapon);
-                    }
-                    else
-                    {
-                        //Desactive all weapons
-                        w.IsActive = false;
-                        w.gameObject.SetActive(false);
-                    }
-                }
-            });
-
-            
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            StaticListWeapons.GetListAllWeapons().ForEach(w =>
-            {
-                if (w.IsInPossesion)
-                {
-                    if (w.NumberThisWeapon == 2)
-                    {
-                        Debug.Log("Arma nº 2 true???");
-                        w.gameObject.SetActive(true);
-                        w.IsActive = true;
-                        UpdateActiveWeapon(w.NumberThisWeapon);
-                        Debug.Log(w.name + " " + "true");
-                    }
-                    else 
-                    {
-                        Debug.Log(w.name + " " + "false");
-                        //Desactive all weapons
-                        w.IsActive = false;
-                        w.gameObject.SetActive(false);
-                    }
-                }
-            });
-            
-        }
-    }
+    public int TotalWeaponsInPossesion() { return listWeaponController.Count;  }
 
     private void ChangeWeaponInUse()
     {
@@ -102,7 +47,7 @@ public class ControlWeapons : MonoBehaviour
         });
     }
 
-    private void UpdateActiveWeapon(int number) 
+    public void UpdateActiveWeapon(int number) 
     {
         foreach (WeaponListController wlc in listWeaponController)
         {
@@ -148,15 +93,15 @@ public class ControlWeapons : MonoBehaviour
  
 
     //Return when weapon (gameObject) IsActive 
-    private GameObject WhereIsTheActiveWeapon() 
+    public int WhereIsTheActiveWeapon() 
     {
-        GameObject go = null;
+        int activeWeapon = 0;
         foreach (Weapons w in StaticListWeapons.GetListAllWeapons()) 
         {
-            if (w.GetComponent<Weapons>().IsActive) go = w.gameObject; 
+            if (w.GetComponent<Weapons>().IsActive) activeWeapon = w.NumberThisWeapon; 
         }
 
-        return go; 
+        return activeWeapon; 
     }
 
     //Return wich weapon (gameObject) is in possesion 

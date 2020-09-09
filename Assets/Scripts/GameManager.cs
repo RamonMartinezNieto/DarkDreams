@@ -30,7 +30,11 @@ public class GameManager : PlayerConf
     private int randMax = 25; 
 
     //In minutes
-    private int timeToShowNewEnemies = 1; 
+    private int timeToShowNewEnemies = 1;
+
+    private Vector2 mouseScroll;
+    private bool canScroll = true;
+    private float timePassBewtweenWheels;
 
     private int _currentScore;
     public int CurrentScore {
@@ -52,6 +56,8 @@ public class GameManager : PlayerConf
         else if(Instance != this) {
             Destroy(this);
         }
+
+        mouseScroll = new Vector2(0f, 0f);
 
         timeController = new TimeController();
     }
@@ -87,7 +93,6 @@ public class GameManager : PlayerConf
             timeController.seconds++;
         }
         */
-        
 
 
         if (!CanvasGamerOver.activeSelf)
@@ -118,6 +123,124 @@ public class GameManager : PlayerConf
                 CanvasMenuEsc.SetActive(true);
             }
         }
+
+        CanWheelTiming();
+
+        if (Input.mouseScrollDelta.y == 1.0f && canScroll) 
+        {
+            int totalWeapons = ControlWeapons.Instance.TotalWeaponsInPossesion();
+            int activeWeapon = ControlWeapons.Instance.WhereIsTheActiveWeapon();
+            int nextWeapon = 0;
+
+            if (totalWeapons == activeWeapon) nextWeapon = 1;
+            else nextWeapon = activeWeapon + 1;
+
+            if (totalWeapons != 1)
+            {
+                StaticListWeapons.GetListAllWeapons().ForEach(w =>
+                {
+                    if (w.IsActive)
+                    {
+                        nextWeapon = w.NumberThisWeapon + 1;
+
+                        w.IsActive = false;
+                        w.gameObject.SetActive(false);
+                    }
+
+                    if (w.NumberThisWeapon == nextWeapon)
+                    {
+                        w.gameObject.SetActive(true);
+                        w.IsActive = true;
+                        ControlWeapons.Instance.UpdateActiveWeapon(w.NumberThisWeapon);
+                    }
+                });
+            }
+        }
+
+        if (Input.mouseScrollDelta.y == -1.0f && canScroll)
+        {
+            int totalWeapons = ControlWeapons.Instance.TotalWeaponsInPossesion();
+            int activeWeapon = ControlWeapons.Instance.WhereIsTheActiveWeapon();
+            int nextWeapon = 0;
+
+            if (totalWeapons == activeWeapon) nextWeapon = activeWeapon - 1;
+            else nextWeapon = totalWeapons - 1;
+
+            if (nextWeapon == 0) nextWeapon = totalWeapons; 
+
+            if (totalWeapons != 1)
+            {
+                StaticListWeapons.GetListAllWeapons().ForEach(w =>
+                {
+                    if (w.IsActive)
+                    {
+                        nextWeapon = w.NumberThisWeapon - 1;
+                        if (nextWeapon == 0) nextWeapon = totalWeapons;
+
+                        w.IsActive = false;
+                        w.gameObject.SetActive(false);
+                    }
+
+                    if (w.NumberThisWeapon == nextWeapon)
+                    {
+                        w.gameObject.SetActive(true);
+                        w.IsActive = true;
+                        ControlWeapons.Instance.UpdateActiveWeapon(w.NumberThisWeapon);
+                    }
+                });
+            }
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            StaticListWeapons.GetListAllWeapons().ForEach(w =>
+            {
+                if (w.IsInPossesion)
+                {
+                    //Active Weapon nº1
+                    if (w.NumberThisWeapon == 1)
+                    {
+                        w.gameObject.SetActive(true);
+                        w.IsActive = true;
+                        ControlWeapons.Instance.UpdateActiveWeapon(w.NumberThisWeapon);
+                    }
+                    else
+                    {
+                        //Desactive all weapons
+                        w.IsActive = false;
+                        w.gameObject.SetActive(false);
+                    }
+                }
+            });
+
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            StaticListWeapons.GetListAllWeapons().ForEach(w =>
+            {
+                if (w.IsInPossesion)
+                {
+                    if (w.NumberThisWeapon == 2)
+                    {
+                        w.gameObject.SetActive(true);
+                        w.IsActive = true;
+                        ControlWeapons.Instance.UpdateActiveWeapon(w.NumberThisWeapon);
+                    }
+                    else
+                    {
+                        //Desactive all weapons
+                        w.IsActive = false;
+                        w.gameObject.SetActive(false);
+                    }
+                }
+            });
+
+        }
+
     }
 
     private void GenerateEnemies() 
@@ -181,6 +304,18 @@ public class GameManager : PlayerConf
         yield return new WaitForSeconds(2f);
         roundAnimator.SetBool("visible", false);
     }
+    
+    private void CanWheelTiming()
+    {
+        timePassBewtweenWheels += Time.deltaTime;
 
+        if (timePassBewtweenWheels >= 0.020f)
+        {
+            canScroll = true;
+            timePassBewtweenWheels = 0;
+        }
+        else
+            canScroll = false;
+    }
 
 }

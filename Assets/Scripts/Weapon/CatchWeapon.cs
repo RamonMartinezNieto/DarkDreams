@@ -26,10 +26,10 @@ public class CatchWeapon : MonoBehaviour
                 {
                     if (weapon.NumberThisWeapon != w.NumberThisWeapon && !weapon.IsActive)
                     {
-                        weaponCatched.SetActive(true);
+                        weaponCatched.SetActive(false);
                         w.IsActive = false;
                     }
-                    weaponCatched.SetActive(true);
+                    
                 }
                 );
             }
