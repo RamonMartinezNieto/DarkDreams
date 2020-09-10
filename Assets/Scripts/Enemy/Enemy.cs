@@ -46,7 +46,8 @@ abstract public class Enemy : MonoBehaviour
 
     private float extraVelocity = .08f;
 
-    
+    public bool IsAlive { get; private set; }
+
     //TODO: review this, I don't know if this method is more efficien than translate position
     public void ActiveEnemey() 
     {
@@ -75,7 +76,8 @@ abstract public class Enemy : MonoBehaviour
         this.currentPos = rbdEnemy.position;
         this.randomFinalPosition = RandomVector(-1.0f, 1.0f) + currentPos;
         this.VisionRange = visionRange;
-        
+
+        IsAlive = true; 
         PlayerDetection = false;
         Attacking = false;
 
@@ -143,23 +145,29 @@ abstract public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        //TODO: reproduce animation, how? Y_Y
-        //PlayAnimation("SkeletonDie");
-        //Translate position of the enemy to simulate destroying this.
-        DropObject.InstantiateCachableObject(gameObject.transform.position);
+        if (IsAlive)
+        {
+            //gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
 
-        transform.position = new Vector3(-252f, -247f, -150f);
+            //TODO: reproduce animation, how? Y_Y
+            //PlayAnimation("SkeletonDie");
+            //Translate position of the enemy to simulate destroying this.
+            DropObject.InstantiateCachableObject(gameObject.transform.position);
 
-        gameObject.SetActive(false); 
+            transform.position = new Vector3(-252f, -247f, -150f);
 
-        EnemyRecovery er = FindObjectOfType<EnemyRecovery>();
-        er.SaveEnemy(this);
+            gameObject.SetActive(false);
 
-        //TODO: Need calculate score
-        GameManager.Instance.UpScore(100); 
+            EnemyRecovery er = FindObjectOfType<EnemyRecovery>();
+            er.SaveEnemy(this);
 
-        //TODO: leave this, I need use it to create enemies
-        //er.RecoverSkeletonArcher(0f,0f);
+            //TODO: Need calculate score
+            GameManager.Instance.UpScore(100);
+
+            //TODO: leave this, I need use it to create enemies
+            //er.RecoverSkeletonArcher(0f,0f);
+        }
+        IsAlive = false; 
     }
 
 
@@ -328,8 +336,6 @@ abstract public class Enemy : MonoBehaviour
             SetDirectionToAttack(ray.direction);
     }
 
- 
-
     public void PlayerDetectionMovement() 
     {
         
@@ -405,7 +411,6 @@ abstract public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         Collider2D[] colList = GetComponentsInChildren<Collider2D>();
-        
 
         if (other.gameObject.CompareTag("GroundPlayerDetector") ||
             other.gameObject.CompareTag("GroundEnemyDetector")) 
@@ -424,6 +429,7 @@ abstract public class Enemy : MonoBehaviour
     public void RestartHealth() 
     {
         //Restart Health and HealthBar
+        IsAlive = true;
         Health = 100;
         float currentHealth = Health / 100f;
         healthBar.SetSize(currentHealth);

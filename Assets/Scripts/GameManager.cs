@@ -26,8 +26,8 @@ public class GameManager : PlayerConf
 
     private bool writeBD = true;
 
-    private int randMin = 5;
-    private int randMax = 25; 
+    private int randMin = 10;
+    private int randMax = 30; 
 
     //In minutes
     private int timeToShowNewEnemies = 1;
@@ -86,14 +86,14 @@ public class GameManager : PlayerConf
 
     private void Update()
     {
-        /*
 
+        /*
         if (Input.GetKeyDown(KeyCode.T))
         {
             timeController.seconds++;
         }
+        
         */
-
 
         if (!CanvasGamerOver.activeSelf)
         {
@@ -220,25 +220,27 @@ public class GameManager : PlayerConf
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            StaticListWeapons.GetListAllWeapons().ForEach(w =>
+            if (Weapons.TotalWeapons > 1)
             {
-                if (w.IsInPossesion)
+                StaticListWeapons.GetListAllWeapons().ForEach(w =>
                 {
-                    if (w.NumberThisWeapon == 2)
+                    if (w.IsInPossesion)
                     {
-                        w.gameObject.SetActive(true);
-                        w.IsActive = true;
-                        ControlWeapons.Instance.UpdateActiveWeapon(w.NumberThisWeapon);
-                    }
-                    else
-                    {
+                        if (w.NumberThisWeapon == 2)
+                        {
+                            w.gameObject.SetActive(true);
+                            w.IsActive = true;
+                            ControlWeapons.Instance.UpdateActiveWeapon(w.NumberThisWeapon);
+                        }
+                        else
+                        {
                         //Desactive all weapons
                         w.IsActive = false;
-                        w.gameObject.SetActive(false);
+                            w.gameObject.SetActive(false);
+                        }
                     }
-                }
-            });
-
+                });
+            }
         }
 
     }
@@ -252,7 +254,10 @@ public class GameManager : PlayerConf
             
             var randomQuantity = UnityEngine.Random.Range(randMin * minutes, randMax * minutes);
             //generate new enemies and update timeToShowNewEnemies
-            EnemyGenerator.Instance.GenerateEnemies(randomQuantity, 1 * minutes);
+            Debug.Log(randomQuantity);
+            Debug.Log(minutes);
+
+            EnemyGenerator.Instance.GenerateEnemies(randomQuantity, 2 * minutes);
 
             timeToShowNewEnemies = timeController.minutes + 1;
         }
@@ -261,14 +266,14 @@ public class GameManager : PlayerConf
 
     private void ControlRandMinAndMax() 
     {
-        if (timeController.minutes > 4) randMax = 23;
-        else if (timeController.minutes > 9) randMax = 21;
-        else if (timeController.minutes > 14) randMax = 19;
-        else if (timeController.minutes > 19) randMax = 16;
-        else if (timeController.minutes > 24) randMax = 14;
-        else if (timeController.minutes > 29) randMax = 12;
-        else if (timeController.minutes > 34) randMax = 10;
-        
+        if (timeController.minutes > 4) randMax -= 1;
+        else if (timeController.minutes > 9) randMax -= 1;
+        else if (timeController.minutes > 14) randMax -= 1;
+        else if (timeController.minutes > 19) randMax -= 1;
+        else if (timeController.minutes > 24) randMax -= 1;
+        else if (timeController.minutes > 29) randMax -= 1;
+        else if (timeController.minutes > 34) randMax -= 1;
+
     }
 
     public void UpScore(int upScor)

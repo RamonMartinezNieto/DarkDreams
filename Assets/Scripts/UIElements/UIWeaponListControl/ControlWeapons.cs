@@ -11,6 +11,9 @@ public class ControlWeapons : MonoBehaviour
     public GameObject prefabShowWeapons;
     public GameObject prefabSecondaryWeapons;
 
+    public GameObject UIBulletsSecondaryPrincipalWeapon;
+    public GameObject UIBulletsSecondaryShotGun;
+
     public GameObject prefabContentPanel;
     
     List<WeaponListController> listWeaponController = new List<WeaponListController>();
@@ -62,7 +65,6 @@ public class ControlWeapons : MonoBehaviour
                 wlc.GetComponent<RectTransform>().localScale = new Vector3(.8f, .8f, 1f);
                 wlc.GetComponent<RawImage>().color = new Color(.7f, .7f, .7f, .8f);
                 wlc.weaponTexture.color = new Color(.7f, .7f, .7f, .8f);
-                
             }
         }
     }
@@ -75,11 +77,14 @@ public class ControlWeapons : MonoBehaviour
         GameObject newWeaponUI;
         if (isTheFirst)
         {
-            newWeaponUI = Instantiate(prefabShowWeapons, prefabContentPanel.transform) as GameObject;
+            newWeaponUI = Instantiate(prefabShowWeapons, prefabContentPanel.transform);
+            
+           
             isTheFirst = false;
         }
         else {
-            newWeaponUI = Instantiate(prefabSecondaryWeapons, prefabContentPanel.transform) as GameObject;
+            newWeaponUI = Instantiate(prefabSecondaryWeapons, prefabContentPanel.transform);
+ 
         }
 
         WeaponListController wlc = newWeaponUI.GetComponent<WeaponListController>();
@@ -90,7 +95,7 @@ public class ControlWeapons : MonoBehaviour
         listWeaponController.Add(wlc);
     }
 
- 
+
 
     //Return when weapon (gameObject) IsActive 
     public int WhereIsTheActiveWeapon() 

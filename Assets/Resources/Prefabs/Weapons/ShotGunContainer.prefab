@@ -114,11 +114,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4b2473153118d4e9f8d1d1cea6160f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberThisWeapon: 0
   transformWeapon: {fileID: 1428049110644303776}
   transformWeaponContainer: {fileID: 6568117060577454626}
   bulletType1: {fileID: 2802035933494917721, guid: fba301a9511514e48a1b8fb43bc5a4ee,
     type: 3}
-  bulletType2: {fileID: 2802035933494917721, guid: fba301a9511514e48a1b8fb43bc5a4ee,
+  bulletType2: {fileID: 2802035933494917721, guid: 7a278c9e09138d0498b696c5d75b6c29,
     type: 3}
   weaponSpriteRender: {fileID: 1428049110644303777}
   IsMenuWeapon: 0
@@ -135,7 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6568117060577454626}
   m_Layer: 0
-  m_Name: ShutGunContainer
+  m_Name: ShotGunContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

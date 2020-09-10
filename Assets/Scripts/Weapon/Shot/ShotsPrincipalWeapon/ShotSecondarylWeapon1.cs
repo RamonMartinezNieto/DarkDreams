@@ -39,7 +39,6 @@ public class ShotSecondarylWeapon1 : Shot
 
     public override IEnumerator DestroyShotAnimation()
     {
-        
         shootRigi.velocity = Vector2.zero;
         colliderShot.enabled = false;
         IsActive = false; 
@@ -54,7 +53,6 @@ public class ShotSecondarylWeapon1 : Shot
         Destroy(gameObject);
         Destroy(shootContainer);
     }
-
     
     public void StartExplosion()
     {
@@ -74,7 +72,6 @@ public class ShotSecondarylWeapon1 : Shot
         }
     }
     
-
     private void StopLaunch() 
     {
         particleSystemSecondaryShoot.Stop();

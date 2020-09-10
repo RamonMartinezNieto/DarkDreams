@@ -142,44 +142,9 @@ abstract public class Weapons : MonoBehaviour
     protected abstract float TimeDelayShot { get; set; }
     protected float TimePassBewtweenShots { get; set; }
 
-    void Update()
-    {
-        
-        if (!IsMenuWeapon)
-        {
-            UpdateWeaponPosition(character.GetComponent<Transform>(), gameObject, character, transformWeapon);
+ 
 
-            transformWeaponContainer.position = WeaponPosition;
-        }
-
-        UpdateWiewPivotWeapon(gameObject, character, transformWeaponContainer);
-
-        //TODO: Only to debug
-        //DebugRayCast(weaponTransform);
-
-
-        //Check if CanShot is true
-        CanShootTiming();
-        
-        if (!Pause.GameIsPaused)
-        {
-            //Hold on fire
-            if (Input.GetMouseButton(0) && canShoot)
-                Shoting(bulletType1);
-
-            if (Input.GetButtonDown("Fire1"))
-                Shoting(bulletType1);
-
-            else if (Input.GetButtonDown("Fire2") && (UIBullets.CurrentBullets > 0))
-            {
-                if (!IsMenuWeapon)
-                    Shoting(bulletType2);
-            }
-        }
-        
-    }
-
-    private void CanShootTiming()
+    protected void CanShootTiming()
     {
         TimePassBewtweenShots += Time.deltaTime;
 

@@ -10,6 +10,7 @@ public class DropObject : MonoBehaviour
     public GameObject bullet;
     public GameObject shield;
     public GameObject heart;
+    public GameObject bulletSecondary; 
 
     static Transform parent; 
 
@@ -24,8 +25,8 @@ public class DropObject : MonoBehaviour
         cachableObjects[4] = null;
         cachableObjects[5] = heart;
         cachableObjects[6] = null;
-        cachableObjects[7] = null;
-        cachableObjects[8] = null;
+        cachableObjects[7] = bulletSecondary;
+        cachableObjects[8] = bulletSecondary;
         cachableObjects[9] = null;
     }
 

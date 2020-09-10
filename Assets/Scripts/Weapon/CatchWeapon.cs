@@ -18,23 +18,25 @@ public class CatchWeapon : MonoBehaviour
             if (StaticListWeapons.GetListAllWeapons().Count == 0)
             {
                 weaponCatched.SetActive(true);
-                w.IsActive = true; 
-            
+                w.IsActive = true;
+
             } else{
 
-                StaticListWeapons.GetListAllWeapons().ForEach(weapon =>
-                {
-                    if (weapon.NumberThisWeapon != w.NumberThisWeapon && !weapon.IsActive)
-                    {
+            //    StaticListWeapons.GetListAllWeapons().ForEach(weapon =>
+           //     {
+             //       if (weapon.NumberThisWeapon != w.NumberThisWeapon && !weapon.IsActive)
+            //        {
                         weaponCatched.SetActive(false);
                         w.IsActive = false;
-                    }
+                       
+            //        }
                     
-                }
-                );
+            //    }
+            //    );
             }
 
             StaticListWeapons.AddWeapon(w);
+           
             ControlWeapons.Instance.AddNewWeaponCatched(weaponCatched);
 
             gameObject.SetActive(false);

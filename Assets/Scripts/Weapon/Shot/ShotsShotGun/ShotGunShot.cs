@@ -8,14 +8,9 @@ public class ShotGunShot : Shot
 
     void Start()
     {
-    
-
-        //MovingShot();
-
         SoundManager.Instance.PlayEffect("shootPrincipal");
         
         MovingShot();
-
     }
 
     new public void MovingShot()

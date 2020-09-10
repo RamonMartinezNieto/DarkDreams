@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 4501336988278119960}
   - component: {fileID: 4709643770385092225}
   - component: {fileID: 8352762956654653341}
-  - component: {fileID: -4168151220681207221}
+  - component: {fileID: -5557249034759846932}
   m_Layer: 0
-  m_Name: BulletPellet
+  m_Name: BulletPelletSpecialShot
   m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4877,7 +4877,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-4168151220681207221
+--- !u!114 &-5557249034759846932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4886,10 +4886,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2802035933494917721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ca627588e5c3894c9bf1d58cf5e246c, type: 3}
+  m_Script: {fileID: 11500000, guid: 66b314b864284054c8342bcaddaeb3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shootContainer: {fileID: 2802035933494917721}
   shotVelocity: 6
-  damage: 4
-  timeDuration: 0.25
+  damage: 8
+  timeDuration: 0.35
