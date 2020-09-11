@@ -8,7 +8,7 @@ using UnityEngine.Tilemaps;
 public class EnemyGenerator : MonoBehaviour
 {
     public static EnemyGenerator Instance;
-    
+ //   public ExclusionArea exclusionArea; 
     public Tilemap tileMap;
 
     private EnemyRecovery er;
@@ -32,6 +32,8 @@ public class EnemyGenerator : MonoBehaviour
         {
             Destroy(this);
         }
+
+
     }
 
 
@@ -55,6 +57,7 @@ public class EnemyGenerator : MonoBehaviour
     //Note: forEachDoor is how many enemies respanw of every type forEachDoor = 3 = 12 enemies // 4 doors * 3 enemies.
     public void GenerateEnemies(int quantityTotal, int enemiesInDoors)
     {
+        
         int randomEnemies = quantityTotal - (enemiesInDoors * 3);  //3 types of enemies
         int r = Random.Range(4, randomEnemies);
         int r2 = Random.Range(r + 4, randomEnemies - 4);
@@ -109,8 +112,12 @@ public class EnemyGenerator : MonoBehaviour
          for (int h = 0; h < quantity; h++)
          {
             Vector3 a = createRandomCoordenates();
+            
+            
+            //TODOOOOOOOOO
 
-            while (ExclusionArea.CheckCoordinates(a.x, a.y))
+
+            while (StaticExclusionArea.CheckCoordinatesSprite(a.x, a.y))
             {
                 a = createRandomCoordenates();
             }

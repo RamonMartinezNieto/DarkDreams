@@ -32,7 +32,6 @@ public class GameManager : PlayerConf
     //In minutes
     private int timeToShowNewEnemies = 1;
 
-    private Vector2 mouseScroll;
     private bool canScroll = true;
     private float timePassBewtweenWheels;
 
@@ -56,8 +55,6 @@ public class GameManager : PlayerConf
         else if(Instance != this) {
             Destroy(this);
         }
-
-        mouseScroll = new Vector2(0f, 0f);
 
         timeController = new TimeController();
     }
@@ -93,7 +90,6 @@ public class GameManager : PlayerConf
             timeController.seconds++;
         }
         
-        
 
         if (!CanvasGamerOver.activeSelf)
         {
@@ -114,6 +110,10 @@ public class GameManager : PlayerConf
                 SaveScoreAndTime(CurrentScore, timeController.getFormatTimer());
 
                 FirebaseConnection.Instance.WriteScoreInBBDD(UserName, CurrentScore, timeController.getFormatTimer());
+
+                //Reset to control UI
+                StaticListWeapons.ResetListWeapons();
+                StaticExclusionArea.ResetListExclusionArea(); 
 
                 timeController.restartTimer();
                 writeBD = false;

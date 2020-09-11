@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6193589837818896543}
   - component: {fileID: 4552549993519243208}
   - component: {fileID: 2211636695360997972}
+  - component: {fileID: 260483814470255182}
   m_Layer: 0
   m_Name: tumasJairo_1
   m_TagString: Untagged
@@ -104,3 +105,15 @@ EdgeCollider2D:
   - {x: 0.036411963, y: -0.1813641}
   - {x: 0.11458369, y: -0.14083993}
   - {x: -0.04242019, y: -0.05565449}
+--- !u!114 &260483814470255182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927700364604565692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a818f93e91d7c54692157d3d8d38a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

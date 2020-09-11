@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2154623070398092167}
   - component: {fileID: 2176960269869814180}
   - component: {fileID: 8963744309878867285}
+  - component: {fileID: -9027052155129703282}
   m_Layer: 0
   m_Name: Tomb1
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5067386023392455292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,3 +105,15 @@ EdgeCollider2D:
   - {x: -0.23459578, y: 0.11533791}
   - {x: -0.0049643517, y: 0.22560704}
   - {x: 0.2315166, y: 0.1247462}
+--- !u!114 &-9027052155129703282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067386023392455292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a818f93e91d7c54692157d3d8d38a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

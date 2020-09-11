@@ -10,4 +10,9 @@ public static class StaticListWeapons
 
     public static List<Weapons> GetListAllWeapons() { return ListAllWeapons;  }
 
+    public static void ResetListWeapons() {
+        Weapons.TotalWeapons = 0;
+        ListAllWeapons.Clear(); 
+    }
+
 }

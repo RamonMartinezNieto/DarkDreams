@@ -21,18 +21,8 @@ public class CatchWeapon : MonoBehaviour
                 w.IsActive = true;
 
             } else{
-
-            //    StaticListWeapons.GetListAllWeapons().ForEach(weapon =>
-           //     {
-             //       if (weapon.NumberThisWeapon != w.NumberThisWeapon && !weapon.IsActive)
-            //        {
-                        weaponCatched.SetActive(false);
-                        w.IsActive = false;
-                       
-            //        }
-                    
-            //    }
-            //    );
+                 weaponCatched.SetActive(false);
+                 w.IsActive = false;
             }
 
             StaticListWeapons.AddWeapon(w);
