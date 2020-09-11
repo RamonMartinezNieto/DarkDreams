@@ -23,7 +23,7 @@ public class SecondaryShootShotgun : Shot
 
         secondaryShootsUI.disableBullet(UIBulletsShotGun.CurrentBullets - 1);
 
-        SoundManager.Instance.PlaySecondaryEffect("shootSecondary");
+        SoundManager.Instance.PlaySecondaryEffect("shootShotgunBigShot", 0.3f);
         
         MovingShot();
     }

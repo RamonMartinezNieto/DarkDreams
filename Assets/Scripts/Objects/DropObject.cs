@@ -19,14 +19,14 @@ public class DropObject : MonoBehaviour
         parent = transform; 
 
         cachableObjects[0] = bullet;
-        cachableObjects[1] = bullet;
+        cachableObjects[1] = null;
         cachableObjects[2] = null;
         cachableObjects[3] = shield;
         cachableObjects[4] = null;
         cachableObjects[5] = heart;
         cachableObjects[6] = null;
         cachableObjects[7] = bulletSecondary;
-        cachableObjects[8] = bulletSecondary;
+        cachableObjects[8] = null;
         cachableObjects[9] = null;
     }
 

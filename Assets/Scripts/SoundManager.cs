@@ -71,10 +71,12 @@ public class SoundManager : PlayerConf
 		EffectsSource.Play();
 	}	
 	
-	public void PlaySecondaryEffect(string clip)
+	public void PlaySecondaryEffect(string clip, float variationVolumen)
 	{
+		SecondaryShotSource.volume = MusicEffectVolumen + variationVolumen;
 		SecondaryShotSource.clip = getClip(clip, musicEffects);
 		SecondaryShotSource.Play();
+
 	}
 
 	public void PlayMusic(string clip)

@@ -31,7 +31,7 @@ public class MenusInGame : MonoBehaviour
     {
         if (newScore)
         {
-            textLabelScore.text = "New Socre!  ";
+            textLabelScore.text = "New Score!  ";
             ChangeColor(colorNewScore);
         }
         else

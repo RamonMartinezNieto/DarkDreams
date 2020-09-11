@@ -2,13 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ShotGunShot : Shot
 {
 
     void Start()
     {
-        SoundManager.Instance.PlayEffect("shootPrincipal");
+        //float variationPitch = Random.Range(-.1f, .2f);
+        float variationVol = Random.Range(.10f, .05f);
+
+        SoundManager.Instance.PlayEffect("shootShotgun", 0f, variationVol);
         
         MovingShot();
     }

@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class ShotGunShotSpecialSec : Shot
 {
-
     void Start()
     {
-        SoundManager.Instance.PlayEffect("shootPrincipal");
-
         MovingShot();
     }
 

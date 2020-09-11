@@ -30,7 +30,7 @@ public class ShotSecondarylWeapon1 : Shot
             secondaryShootsUI = GameObject.Find("SecondaryShootsUI").GetComponent<UIBullets>();
             restBullet();
 
-            SoundManager.Instance.PlaySecondaryEffect("shootSecondary");
+            SoundManager.Instance.PlaySecondaryEffect("shootSecondary",0f);
         }
         MovingShot();
     }

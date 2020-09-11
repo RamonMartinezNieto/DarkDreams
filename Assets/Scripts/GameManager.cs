@@ -69,7 +69,7 @@ public class GameManager : PlayerConf
         labelName.text = UserName;
         labelScore.text = "0000";
 
-        StartCoroutine(ShowRound($"Wave {timeController.minutes+1}")); 
+        StartCoroutine(ShowRound("Wave 0")); 
 
         SoundManager.Instance.PlayMusic("game1");
     }
@@ -87,13 +87,13 @@ public class GameManager : PlayerConf
     private void Update()
     {
 
-        /*
+        
         if (Input.GetKeyDown(KeyCode.T))
         {
             timeController.seconds++;
         }
         
-        */
+        
 
         if (!CanvasGamerOver.activeSelf)
         {
@@ -103,6 +103,7 @@ public class GameManager : PlayerConf
 
             CallAnimationRoundTimer();
 
+            //Player die
             if (playerStats.CurrentHealt <= 0 && writeBD)
             {
                 IsNewScore = false;
@@ -254,8 +255,6 @@ public class GameManager : PlayerConf
             
             var randomQuantity = UnityEngine.Random.Range(randMin * minutes, randMax * minutes);
             //generate new enemies and update timeToShowNewEnemies
-            Debug.Log(randomQuantity);
-            Debug.Log(minutes);
 
             EnemyGenerator.Instance.GenerateEnemies(randomQuantity, 2 * minutes);
 
