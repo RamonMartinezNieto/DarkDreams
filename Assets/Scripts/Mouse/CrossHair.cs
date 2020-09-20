@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CrossHair : MonoBehaviour
 {
-
+    public GameObject crossss;
     public Transform crosshairTransform;
 
     public Sprite crossHairBlue;
@@ -16,6 +16,11 @@ public class CrossHair : MonoBehaviour
     private void Awake()
     {
         crossHairSpriteRender = GetComponent<SpriteRenderer>();
+    }
+    void Update()
+    {
+        //detect mouse position
+        crossHairPosition(crosshairTransform);
     }
 
     private void Start()
@@ -60,15 +65,13 @@ public class CrossHair : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        //detect mouse position
-        crossHairPosition(crosshairTransform);
-    }
 
     private void crossHairPosition(Transform corsshariTransform)
     {
+        //crosshairTransform.localPosition = mice; 
+        
         corsshariTransform.position = getMousePosition();
+
     }
 
     public static Vector3 getMousePosition()

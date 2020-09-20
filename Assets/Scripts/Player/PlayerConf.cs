@@ -48,7 +48,7 @@ public abstract class PlayerConf : MonoBehaviour
         set
         {
             _musicVolumen = value;
-            SoundManager.Instance.ChangeVolumenMusic(_musicVolumen);
+            SoundManager.Instance.ChangeVolumenMusic();
             PlayerPrefs.SetFloat("musicVolumen", value);
         }
     }
@@ -87,7 +87,7 @@ public abstract class PlayerConf : MonoBehaviour
         set
         {
             _musicEffectVolumen = value;
-            SoundManager.Instance.ChangeVolumenEffects(_musicEffectVolumen);
+            SoundManager.Instance.ChangeVolumenEffects();
             PlayerPrefs.SetFloat("musicEffectVolumen", value);
         }
     }

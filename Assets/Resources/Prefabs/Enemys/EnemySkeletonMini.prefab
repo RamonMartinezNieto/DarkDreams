@@ -183,6 +183,7 @@ MonoBehaviour:
   _attacking: 0
   EnemyAnimator: {fileID: 5805963643077098188}
   rbdEnemy: {fileID: 567051122250754729}
+  player: {fileID: 0}
 --- !u!50 &567051122250754729
 Rigidbody2D:
   serializedVersion: 4

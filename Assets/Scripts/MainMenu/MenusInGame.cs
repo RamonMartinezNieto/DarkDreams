@@ -23,9 +23,15 @@ public class MenusInGame : MonoBehaviour
         ChangeTextScore(GameManager.Instance.IsNewScore);
     }
 
-    public void ReStartGame() => SceneManager.LoadScene(1); 
+    public void ReStartGame() => SceneManager.LoadScene(1);
 
-    public void GoToMenu() => SceneManager.LoadScene(0);
+    public void GoToMenu() {
+        //Reset to control UI
+        StaticListWeapons.ResetListWeapons();
+        StaticExclusionArea.ResetListExclusionArea();
+
+        SceneManager.LoadScene(0); 
+    }
 
     private void ChangeTextScore(bool newScore) 
     {

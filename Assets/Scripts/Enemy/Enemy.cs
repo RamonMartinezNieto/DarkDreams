@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 abstract public class Enemy : MonoBehaviour
 {
@@ -46,14 +47,10 @@ abstract public class Enemy : MonoBehaviour
 
     private float extraVelocity = .08f;
 
+    private NavMeshAgent agent;
+
     public bool IsAlive { get; private set; }
 
-    //TODO: review this, I don't know if this method is more efficien than translate position
-    public void ActiveEnemey() 
-    {
-        gameObject.SetActive(true);
-        enemyRenderer.color = Color.white;
-    }
 
     public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
     {
@@ -84,11 +81,21 @@ abstract public class Enemy : MonoBehaviour
         player = GameObject.Find("Player");
         enemyRenderer = GetComponent<SpriteRenderer>();
 
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        
+
+        agent.speed = Speed + 1f;
+
+
         //TODO: Ignore physics between diferent ground detection
+        //Because a incompresible motive, sometimes this dont run 
         if (player != null)
         {
             var groundPlayerDetect = GameObject.Find("ColliderDetect").GetComponent<CapsuleCollider2D>();
             var groundEnemyDetect = transform.Find("GroundDetect").GetComponent<CapsuleCollider2D>();
+
             Physics2D.IgnoreCollision(groundEnemyDetect, groundPlayerDetect);
         }
 
@@ -96,8 +103,6 @@ abstract public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        
-
         //Thsi if is to force change the direction of the enemy
         if ((currentTime + stayTime) < Time.time && !Attacking && !PlayerDetection)
         {
@@ -154,18 +159,16 @@ abstract public class Enemy : MonoBehaviour
             //Translate position of the enemy to simulate destroying this.
             DropObject.InstantiateCachableObject(gameObject.transform.position);
 
-            transform.position = new Vector3(-252f, -247f, -150f);
+            transform.position = new Vector3(-100f, -100f, 0f);
 
             gameObject.SetActive(false);
 
             EnemyRecovery er = FindObjectOfType<EnemyRecovery>();
-            er.SaveEnemy(this);
+            er.SaveEnemyDie(this);
 
             //TODO: Need calculate score
             GameManager.Instance.UpScore(100);
 
-            //TODO: leave this, I need use it to create enemies
-            //er.RecoverSkeletonArcher(0f,0f);
         }
         IsAlive = false; 
     }
@@ -241,6 +244,12 @@ abstract public class Enemy : MonoBehaviour
     //Movement when get vision with the player
     public void MovementToPlayer(Vector2 playerPos)
     {
+        
+        agent.enabled = true;
+        agent.SetDestination(playerPos);
+        
+        
+        /*
         currentPos = rbdEnemy.position;
 
         Vector2 direction = playerPos - currentPos;
@@ -249,6 +258,7 @@ abstract public class Enemy : MonoBehaviour
         Vector2 newPos = currentPos + (direction * (Speed + .8f) * Time.fixedDeltaTime);
 
         rbdEnemy.MovePosition(newPos);
+        */
 
         if (!Attacking)
         {
@@ -259,6 +269,7 @@ abstract public class Enemy : MonoBehaviour
     //The animation have the method of the atack. Check the animation to know when the attack is launched.
      public void Attack()
      {
+        
         if (!Attacking)
         {
             PlayAnimation(directionToAttack);
@@ -274,47 +285,7 @@ abstract public class Enemy : MonoBehaviour
         player.GetComponent<PlayerStats>().restHealth(Damage);
     }
 
-    // **************** IMPORTANT *********************//
-    /* I used RayToPlayerDistance to calculate distance when player enter in a collider visión, 
-     * This methos is INNEFICIENT. 
-     * DON'T USE RAY TO CALCULATE DISTANCE, INSTEAD USE VECTOR2.DISTANCE
-     * 
-     * Memory consumption increase a lot whit this. 
-     * 
-     * Whit Rays when there are 60 enemies only have 15FPS, without Rays with 100 enemies 
-     * have 60FPS.
-     */
-    /*
-    public float RayToPlayerDistance(Rigidbody2D player)
-    {
-        float distance = 100;
-        Vector3 playerPos = player.position;
-        //Correction from pivot
-        playerPos.y += 0.20f;
 
-        if (RayToPlayer(player).collider != null)
-        {
-            distance = Vector2.Distance(currentPos, playerPos);
-        }
-
-        return distance;
-    }
-
-    private RaycastHit2D RayToPlayer(Rigidbody2D player) {
-
-        Vector3 currentPos = rbdEnemy.position;
-        Vector3 playerPos = player.position;
-        //Correction from pivot
-        playerPos.y += 0.20f;
-
-        RaycastHit2D ray = Physics2D.Raycast(currentPos, playerPos);
-
-        //Debug.DrawLine(currentPos, playerPos, Color.blue);
-
-        return ray; 
-    }
-    */
-    // ****************************************//
     protected void SetDirectionToAttack(Vector3 algo) 
     {
         var dirInt = 0; 
@@ -338,22 +309,18 @@ abstract public class Enemy : MonoBehaviour
 
     public void PlayerDetectionMovement() 
     {
-        
+
         Vector3 pos = player.GetComponent<Transform>().position;
         double distance = System.Math.Round(Vector2.Distance(transform.position, pos),2);
 
-
-        if (distance <= DistanceToAttack)   // X <= 2.5f
+        if (distance < DistanceToAttack)   // X <= 2.5f
         {
-            //Change position of the attack, this change te direction look the enemy
-            Ray ray = new Ray(transform.position, (player.transform.position - transform.position));
-
-            SetDirectionToAttack(ray.direction);
-
-            //TODO: quit this
-            //Debug.DrawRay(transform.position, ray.direction, Color.yellow);
-            //Debug.DrawLine(transform.position, ray.direction, Color.green);
-
+            //Disable agent IA 
+            agent.enabled = false;
+            Vector3 direction = player.transform.position - transform.position;
+            
+            SetDirectionToAttack(direction);
+            
             Attack();
         }
         else if (distance < VisionRange && distance > DistanceToAttack)
@@ -365,44 +332,15 @@ abstract public class Enemy : MonoBehaviour
         }
         else if (distance > VisionRange) 
         {
+            //Disable agent IA 
+            agent.enabled = false;
+
             PlayerDetection = false;
             Attacking = false;
         }
     }
 
-    /*
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        //When the player stay in the trigger Collider of the 
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Vector3 pos = other.GetComponent<Transform>().position;
-            float distance = Vector2.Distance(transform.position, pos);
-            
-            if (distance >= DistanceToAttack - .03f)
-            {
-                //I don't know if t his is the bes solution of my bug. Check it.
-                Physics2D.IgnoreCollision(gameObject.GetComponent<CapsuleCollider2D>(), other);
-                MovementToPlayer(pos);
-                
-                Attacking = false; 
-            } 
-            else if (distance < DistanceToAttack && !Attacking)
-            {
-                //Change position of the attack, this change te direction look the enemy
-                Ray ray = new Ray(transform.position, (other.transform.position - transform.position));
-
-                SetDirectionToAttack(ray.direction);
-
-                //TODO: quit this
-                //Debug.DrawRay(transform.position, ray.direction, Color.yellow);
-                //Debug.DrawLine(transform.position, ray.direction, Color.green);
-        
-                Attack();
-            }
-        }
-    }
-    */
+    
     /*
      * Important: colList used to checkc when the player enter in the circleCollider2D. 
      * Enemies only have a CircleCollider2D, is not the better solution, need to search
@@ -434,5 +372,12 @@ abstract public class Enemy : MonoBehaviour
         float currentHealth = Health / 100f;
         healthBar.SetSize(currentHealth);
         healthBar.SetColor(new Color(0.07740552f, 0.6698113f, 0f));
+    }
+
+    //TODO: review this, I don't know if this method is more efficien than translate position
+    public void ActiveEnemey()
+    {
+        gameObject.SetActive(true);
+        enemyRenderer.color = Color.white;
     }
 }

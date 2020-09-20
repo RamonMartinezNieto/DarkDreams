@@ -9,6 +9,12 @@ public class TimeController
     public float currentTimer { get; private set; } = 0;
 
 
+    public int secondsDown { get; private set; } = 59;
+    public int minutesDown { get; private set; } = 0;
+
+    public bool restartTimerColdDown { get; set;  } = true; 
+
+
     public void updateTime()
     {
         currentTimer += Time.deltaTime;
@@ -24,10 +30,40 @@ public class TimeController
         }
     }
 
+
     public string getFormatTimer()
     {
         return string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    public void StartTimerDown() 
+    {
+        minutesDown = minutes-1;
+        secondsDown = 59;
+    }
+
+    public string GetFormatTimerDown() 
+    {
+        if (restartTimerColdDown) {
+            StartTimerDown();
+            restartTimerColdDown = false; 
+        }
+
+        secondsDown = 60 - seconds;
+
+        minutesDown = (minutes*2) - minutes; 
+
+        return string.Format("{0:00}:{1:00}", minutesDown, secondsDown);
+    }
+
+    public bool GetFinishTime() 
+    {
+        if (secondsDown <= 0 && minutesDown <= 0 ) return true;
+        else return false; 
+    }
+
+
+
 
     public void restartTimer()
     {

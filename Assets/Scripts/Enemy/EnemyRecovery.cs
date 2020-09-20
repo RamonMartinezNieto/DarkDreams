@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEditor;
 using UnityEngine;
 
@@ -24,15 +25,13 @@ public class EnemyRecovery : MonoBehaviour
 
     */
 
-
-
     private void Start()
     {
         if (Instance == null) Instance = this;
         else if (Instance != this) Destroy(this);
     }
 
-    public void SaveEnemy(Enemy enemy) {
+    public void SaveEnemyDie(Enemy enemy) {
         enemiesDied.Add(enemy);
 
         if (enemiesAlive.Contains(enemy)) 
@@ -53,8 +52,7 @@ public class EnemyRecovery : MonoBehaviour
             GameObject enemy = Instantiate(Resources.Load(pathPrefab, typeof(GameObject)), gameObject.transform) as GameObject;
             Enemy e = enemy.GetComponent<Enemy>();
             //save enemy when is alive
-            enemiesAlive.Add(e);  
-
+            enemiesAlive.Add(e);
             enemy.GetComponent<Enemy>().Relocate(x, y);
         }
         else {
@@ -62,7 +60,7 @@ public class EnemyRecovery : MonoBehaviour
             e.Relocate(x,y);
             e.RestartHealth();
             e.ActiveEnemey();
-            enemiesDied.RemoveAt(index); 
+            enemiesDied.RemoveAt(index);
             enemiesAlive.Add(e);
         }
     }

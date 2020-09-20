@@ -90,18 +90,20 @@ public class ShotSecondarylWeapon1 : Shot
             && !other.CompareTag("Shot")
             ) 
         {
-
             Vector2 posCenter = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 0.35f);
                 Collider2D [] colls = Physics2D.OverlapCircleAll(
                     posCenter,
                     radiusExplosion, 
                     1  << LayerMask.NameToLayer("Default"),
-                    minDepth:0,
-                    maxDepth:0 
+                    minDepth:-1,
+                    maxDepth:1 
                     );
 
                 foreach(Collider2D col in colls) 
                 {
+
+                
+
                     if (col.CompareTag("Enemy"))
                     { 
                         Enemy enemy = col.GetComponent<Enemy>();

@@ -8,7 +8,6 @@ using UnityEngine.Tilemaps;
 public class EnemyGenerator : MonoBehaviour
 {
     public static EnemyGenerator Instance;
- //   public ExclusionArea exclusionArea; 
     public Tilemap tileMap;
 
     private EnemyRecovery er;
@@ -21,7 +20,6 @@ public class EnemyGenerator : MonoBehaviour
 
     private float timeBetweenEnemies = .3f;
 
-
     private void Awake()
     {
         if (Instance == null)
@@ -32,10 +30,7 @@ public class EnemyGenerator : MonoBehaviour
         {
             Destroy(this);
         }
-
-
     }
-
 
     void Start()
     {
@@ -48,10 +43,11 @@ public class EnemyGenerator : MonoBehaviour
         centerPosition = new Vector2(0f, 0.7f);
 
         //6 enemies in the center
+        
         createEnemiesCenter<EnemySkeleton>(2);
         createEnemiesCenter<EnemySkeletonArcher>(2);
         createEnemiesCenter<EnemyBat>(2);
-        
+       
     }
 
     //Note: forEachDoor is how many enemies respanw of every type forEachDoor = 3 = 12 enemies // 4 doors * 3 enemies.
@@ -112,10 +108,6 @@ public class EnemyGenerator : MonoBehaviour
          for (int h = 0; h < quantity; h++)
          {
             Vector3 a = createRandomCoordenates();
-            
-            
-            //TODOOOOOOOOO
-
 
             while (StaticExclusionArea.CheckCoordinatesSprite(a.x, a.y))
             {

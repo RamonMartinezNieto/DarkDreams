@@ -1,41 +1,109 @@
-﻿using System;
+﻿/**
+ * Department: Game Developer
+ * File: GameManager.cs
+ * Objective: Control the flow of the game
+ * Employee: Ramón Martínez Nieto
+ */
+
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/**
+ * GameManager class to control the flow of the game. 
+ * Inherit of the PlayerConf to know the configuration. 
+ * 
+ * @author Ramón Martínez Nieto
+ */
 public class GameManager : PlayerConf
 {
+    /**
+     * Static variable Instance to Singleton pattern
+     */
     public static GameManager Instance = null;
-    public bool IsNewScore { get; set; } = false; 
 
+    /**
+     * To establish if is a new score or not.
+     */
+    public bool IsNewScore { get; set; } = false;
+
+    /**
+     * To establish if is a new score or not.
+     */
+    [Tooltip("Label with the player's name.")]
     public TMP_Text labelName;
+
+    /**
+     * Label with the player's score.
+     */
+    [Tooltip("Label with the player's score.")]
     public TMP_Text labelScore;
+
+    /**
+     * TextMesh Pro Label with the current time.
+     */
+    [Tooltip("Label with the current time.")]
     public TMP_Text labelTimer;
 
+    /**
+     * TextMesh Pro Label with the timer down
+     */
+    [Tooltip("Label with the timer down.")]
+    public TMP_Text labelTimerDown;
+
+    /**
+     * TextMesh Pro Label with the current round
+     */
+    [Tooltip("label with the current round.")]
     public TMP_Text roundLabel;
-    public Animator roundAnimator; 
 
-    public RectTransform barsTransform; 
+    /**
+     * Animator of the Round Count 
+     */
+    [Tooltip("Animator of the round label.")]
+    public Animator roundAnimator;
 
+    /**
+     * GameObject with the GameOver menu
+     */
+    [Tooltip("GameObject with the GameOver menu")]
     public GameObject CanvasGamerOver;
+
+    /**
+     * GameObject with the escape menu
+     */
+    [Tooltip("GameObject with the escape menu")]
     public GameObject CanvasMenuEsc;
+
+    /**
+     * To establish the Script PlayerStats
+     */
+    [Tooltip("Script PlayerStats")]
     public PlayerStats playerStats;
 
+    /**
+     * Script EnemyRecovery
+     */
+    [Tooltip("Script EnemyRecovery")]
+    public EnemyRecovery enemeyRecovery;
+
     private TimeController timeController; 
-
     private bool writeBD = true;
-
     private int randMin = 10;
     private int randMax = 30; 
 
     //In minutes
     private int timeToShowNewEnemies = 1;
-
     private bool canScroll = true;
     private float timePassBewtweenWheels;
+    private bool activateEvent = false; 
 
     private int _currentScore;
+    /**
+     * Get to know the current Score.
+     * Set to establish a score.
+     */
     public int CurrentScore {
         get { 
             return _currentScore;  
@@ -61,7 +129,7 @@ public class GameManager : PlayerConf
 
     private void Start()
     {
-        EnemyGenerator.Instance.GenerateEnemies(25,3);
+        EnemyGenerator.Instance.GenerateEnemies(325,3);
         writeBD = true;
         labelName.text = UserName;
         labelScore.text = "0000";
@@ -83,7 +151,6 @@ public class GameManager : PlayerConf
 
     private void Update()
     {
-
         
         if (Input.GetKeyDown(KeyCode.T))
         {
@@ -93,15 +160,51 @@ public class GameManager : PlayerConf
 
         if (!CanvasGamerOver.activeSelf)
         {
-            ControlRandMinAndMax();
 
-            GenerateEnemies();
 
-            CallAnimationRoundTimer();
-
-            //Player die
-            if (playerStats.CurrentHealt <= 0 && writeBD)
+            //every 5 minutes.
+            //Activate Event
+            if (timeController.minutes == 2 && !activateEvent)
             {
+                activateEvent = true; 
+            }
+            //Start Event
+            else if (activateEvent) 
+            {
+                AnimationCouldDownTimer();
+                CallAnimationRoundTimer();
+
+                //Desactivate event when don't have more enemies
+                if (enemeyRecovery.GetEnemiesAlive() == 0) activateEvent = false;
+            }
+            //If the event is unactivate, normal game
+            else
+            {
+                if (!timeController.restartTimerColdDown)
+                {
+                    timeController.restartTimerColdDown = true;
+                }
+
+                ControlRandMinAndMax();
+
+                GenerateEnemies();
+
+                CallAnimationRoundTimer();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (CanvasMenuEsc.activeSelf)
+                    CanvasMenuEsc.SetActive(false);
+                else
+                    CanvasMenuEsc.SetActive(true);
+            }
+
+            //Player die || game over if the time event is 0
+            if (playerStats.CurrentHealt <= 0 && writeBD || (timeController.GetFinishTime() && activateEvent))
+            {
+                Debug.Log("debería estar muerto");
+
                 IsNewScore = false;
                 timeToShowNewEnemies = 0;
 
@@ -117,11 +220,6 @@ public class GameManager : PlayerConf
 
                 timeController.restartTimer();
                 writeBD = false;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                CanvasMenuEsc.SetActive(true);
             }
         }
 
@@ -275,14 +373,29 @@ public class GameManager : PlayerConf
 
     }
 
+    /**
+     * Method to increase the score.
+     * 
+     * @param int score to increase
+     */
     public void UpScore(int upScor)
     {
         //Todo: Score
         CurrentScore += upScor;
     }
-    
+
+    /**
+     * Method to know the current Time (depens of the laberTimer, is not the best form to know). 
+     * TODO: I ned change to use timeController to know the time.
+     * 
+     * @return String The time, format HH:mm
+     */
     public string GetCurrentTime() { return labelTimer.text; }
 
+    /**
+     * Control of the round label, start the animation, and change the seconds of the start.
+     * The time shows and go from 10 to 1 
+     */
     private void CallAnimationRoundTimer() 
     {
         if (timeController.seconds == 48)
@@ -301,6 +414,18 @@ public class GameManager : PlayerConf
         }
     }
 
+    private void AnimationCouldDownTimer() 
+    {
+        labelTimerDown.color = Color.red;
+
+        labelTimerDown.text = timeController.GetFormatTimerDown();
+    }
+
+    /**
+     * Method to Show Lable Round and stay 2 seconds visible. 
+     * 
+     * @return IEnumerator stay 2f seconds.
+     */
     private IEnumerator ShowRound(string text) 
     {
         roundLabel.text = text; 
@@ -308,7 +433,10 @@ public class GameManager : PlayerConf
         yield return new WaitForSeconds(2f);
         roundAnimator.SetBool("visible", false);
     }
-    
+
+    /**
+     * Time cooldwon between change weapons with the weel in the mouse. 
+     */
     private void CanWheelTiming()
     {
         timePassBewtweenWheels += Time.deltaTime;
@@ -321,5 +449,4 @@ public class GameManager : PlayerConf
         else
             canScroll = false;
     }
-
 }

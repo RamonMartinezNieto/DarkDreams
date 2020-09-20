@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 4743569536710755286}
   - component: {fileID: 6523834043509594725}
   - component: {fileID: 2388831829286233806}
+  - component: {fileID: -1598225475957411124}
   m_Layer: 0
   m_Name: EnemySkeleton
   m_TagString: Enemy
@@ -5046,6 +5047,28 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!195 &-1598225475957411124
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567051122250754732}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.1
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.81
+  m_BaseOffset: 0.405
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &567051122341878579
 GameObject:
   m_ObjectHideFlags: 0

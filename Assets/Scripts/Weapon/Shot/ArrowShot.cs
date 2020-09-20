@@ -4,15 +4,13 @@ using System.Collections;
 public class ArrowShot : Shot
 {
 
-    //private int damage;
-
     void Start()
     {
         if (player != null)
         {
             MovingShot(ArrowDirection(playerTransform));
 
-            //SetArrowAngle(playerTransform);
+            
             SetShotAngle(playerTransform.position, .2f);
 
             if (shootContainer.transform.position.x > playerTransform.position.x)
@@ -29,6 +27,17 @@ public class ArrowShot : Shot
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * shotVelocity;
     }
 
+    public override void SetShotAngle(Vector3 objectiveTransform, float variationOfY = .0f)
+    {
+        objectiveTransform.y += variationOfY;
+
+        Vector3 vect = new Vector3(transform.position.x, transform.position.y, 1f);
+
+        Quaternion _loookRotation = Quaternion.LookRotation((objectiveTransform - vect).normalized);
+        _loookRotation.x = 0.0f; _loookRotation.y = 0.0f;
+
+        shootContainer.GetComponent<Transform>().rotation = _loookRotation;
+    }
 
     //Overriding OnTriggetEnter2D because Shot is maked to player shots. 
     void OnTriggerEnter2D(Collider2D other)

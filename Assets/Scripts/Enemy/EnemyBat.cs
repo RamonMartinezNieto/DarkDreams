@@ -13,6 +13,7 @@ public class EnemyBat : Enemy
         ATTACKS[2] = "BatAttackW";
         ATTACKS[3] = "BatAttackE";
     }
+
     /*
     private void OnTriggerStay2D(Collider2D other)
     {
