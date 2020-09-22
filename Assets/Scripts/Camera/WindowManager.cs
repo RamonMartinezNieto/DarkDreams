@@ -1,25 +1,43 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: WindowManager.cs
+ * Objective: Knowing when windows have changed size
+ * Employee: Ramón Martínez Nieto
+ */
+using System;
 using UnityEngine;
 
 
-//Create Event to check when screen change size
+/** 
+ *  This class creates a Event to check when the size of the screen changes
+ *  
+ *  @author Ramón Martínez Nieto
+ */
 public class WindowManager : MonoBehaviour
 {
     
-    //Singleton
+    /**
+     * Variable to add Singleton Instance
+     */
     public static WindowManager Instance = null;
 
     //Last saved size
     private Vector2 lastScreenSize;
 
-
-    //  Delgate for the event
+    
+    /**
+     * Delegate of the event
+     */
     public delegate void ScreenSizeChangeEventHandler(int Width, int Height);
-    //  Event
+    
+    /**
+     * Event to suscribe
+     */
     public event ScreenSizeChangeEventHandler ScreenSizeChangeEvent;           
     
+    /**
+     * Virtual method to know when the size of the screen change
+     */
     protected virtual void OnScreenSizeChange(int Width, int Height)
     {   //  Define Function trigger and protect the event for not null;
         if (ScreenSizeChangeEvent != null) ScreenSizeChangeEvent(Width, Height);
@@ -47,8 +65,13 @@ public class WindowManager : MonoBehaviour
         }
     }
 
-
-
+    /**
+     * When the screen change the positión change the size of the bars in the UI
+     * 
+     * @param int Width of the window
+     * @param int Height of the window
+     * @deprecated
+     */
     [Obsolete("Uses CanvasScaler component instead of this method")]
     private void SetSizeBars(int Width, int Height)
     {

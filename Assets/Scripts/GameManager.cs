@@ -14,6 +14,7 @@ using UnityEngine;
  * GameManager class to control the flow of the game. 
  * Inherit of the PlayerConf to know the configuration. 
  * 
+ * @see PlayerConf
  * @author Ramón Martínez Nieto
  */
 public class GameManager : PlayerConf

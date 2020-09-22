@@ -1,7 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿/**
+ * Department: Game Developer
+ * File: ZonTwo.cs
+ * Objective:  Implement second zone in the map to repopulate enemies.
+ * Employee: Ramón Martínez Nieto
+ */
 
+/**
+ * Scond zone on the map, put coordinates in Awake method. 
+ * 
+ *  @author Ramón Martínez Nieto
+ *  @deprecated
+ */
 public class ZoneTwo : Zone
 {
     private void Awake()

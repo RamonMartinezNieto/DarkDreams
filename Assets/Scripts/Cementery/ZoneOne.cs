@@ -1,10 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: ZoneOne.cs
+ * Objective: Implement first zone in the map to repopulate enemies.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 
+/**
+ * First zone on the map, put coordinates in Awake method. 
+ * 
+ *  @author Ramón Martínez Nieto
+ *  @deprecated
+ */
 public class ZoneOne : Zone
 {
+    /**
+     * Specific fog, needed it to dispear slowly. Check that there is visible in the scene.
+     */
     public ParticleSystem fogZoneOne;
 
     private void Awake()

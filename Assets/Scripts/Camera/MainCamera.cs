@@ -1,9 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: MainCamera.cs
+ * Objective: Control the camera's movement.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ * Class to control the basic movement of the camera
+ * 
+ * @author Ramón Martínez Nieto
+ */
 public class MainCamera : MonoBehaviour
 {
+    /**
+     * GameObject that the camera follow
+     */
+    [Tooltip("GameObject that the camera follow")]
     public GameObject FollowGameObject;
 
     private Vector3 tranformGameObject;
@@ -17,7 +30,6 @@ public class MainCamera : MonoBehaviour
     {
         UpdateCamera();
     }
-
 
     private void UpdateCamera()
     {
