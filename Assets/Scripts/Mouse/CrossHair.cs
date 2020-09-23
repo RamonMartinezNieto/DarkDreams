@@ -1,14 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: CrossHair.cs
+ * Objective: Control the crossHair
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ *  Class to control the Crosshair and know the position and angle.
+ * 
+ *  @author Ramón Martínez Nieto
+ *  
+ */
 public class CrossHair : MonoBehaviour
 {
-    public GameObject crossss;
+    /**
+     * Transform of the GameObject's CrossHair
+     */
     public Transform crosshairTransform;
 
+    /**
+     * Sprite with the cross hair blue. 
+     */
+    [Tooltip("Sprite with the cross hair blue")]
     public Sprite crossHairBlue;
+    /**
+     * Sprite with the cross hair red. 
+     */
+    [Tooltip("Sprite with the cross hair red")]
     public Sprite crossHairRed;
+    /**
+     * Sprite with the cross hair white. 
+     */
+    [Tooltip("Sprite with the cross hair white")]
     public Sprite crossHairWhite;
 
     private SpriteRenderer crossHairSpriteRender;
@@ -17,6 +41,7 @@ public class CrossHair : MonoBehaviour
     {
         crossHairSpriteRender = GetComponent<SpriteRenderer>();
     }
+
     void Update()
     {
         //detect mouse position
@@ -29,6 +54,10 @@ public class CrossHair : MonoBehaviour
         Cursor.visible = false;
     }
 
+    /**
+     * Method to update the cross hair, depends of the PlayerPrefs. Call this method 
+     * when the user change the cross hair in the menus. 
+     */
     public void ChangeCrossHair() 
     {
         string crossHair = PlayerPrefs.GetString("crossHair");
@@ -64,8 +93,7 @@ public class CrossHair : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
-
-
+    
     private void crossHairPosition(Transform corsshariTransform)
     {
         //crosshairTransform.localPosition = mice; 
@@ -74,6 +102,9 @@ public class CrossHair : MonoBehaviour
 
     }
 
+    /**
+     * Method to know the position of the cross hair in the scene. 
+     */
     public static Vector3 getMousePosition()
     {
         return Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
@@ -81,6 +112,13 @@ public class CrossHair : MonoBehaviour
 
     //Return number of the direction from object position
     // 0: S // 1 : SE // 2:E // 3:NE // 4:N // 5: NW // 6:W // 7:SW 
+    /**
+     * Method to know the angle betwween the position of
+     * the crosshair and the position passed by parameters.
+     * 
+     * @param Vecator3 other object position
+     * @return float || 0: S || 1 : SE || 2:E || 3:NE || 4:N || 5: NW || 6:W || 7:SW  ||
+     */
     public float CrossHairAngle(Vector3 objectPosition){
         
         Vector3 crossHairDir = CrossHairDirection();
@@ -102,8 +140,9 @@ public class CrossHair : MonoBehaviour
         return Mathf.FloorToInt(stepCount);
     }
 
-
-    //Check direction of the crosshair
+    /**
+     * Check direction of the crosshair
+     */
     private Vector3 CrossHairDirection(){
         Vector3 crossHairDir = new Vector3(0.0f,0.0f,0.0f);
 

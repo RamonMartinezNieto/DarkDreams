@@ -53,14 +53,13 @@ var searchData=
   ['crosshairtransform_87',['crosshairTransform',['../class_cross_hair.html#a7557be70c43315456bc7bc3acd6e82da',1,'CrossHair']]],
   ['crosshairwhite_88',['crossHairWhite',['../class_cross_hair.html#a5c53149b83157847dc96bbe25dfaff25',1,'CrossHair']]],
   ['crossred_89',['crossRed',['../class_handler_options.html#a8b897acd86ddc4f7279bc7f26b211b11',1,'HandlerOptions']]],
-  ['crossss_90',['crossss',['../class_cross_hair.html#afa9a5d60e96392a288f800021e0f667e',1,'CrossHair']]],
-  ['crosswhite_91',['crossWhite',['../class_handler_options.html#a99925cdb734e3ec7a30f672ec57ccfbe',1,'HandlerOptions']]],
-  ['currentarmor_92',['CurrentArmor',['../class_player_stats.html#aeefaf5c44ce217fed0abb2f52712bad2',1,'PlayerStats']]],
-  ['currentbullets_93',['CurrentBullets',['../class_u_i_bullets.html#a3cc68e499696f630a5b903b7b26dc6c5',1,'UIBullets.CurrentBullets()'],['../class_u_i_bullets_shot_gun.html#a29c2fda1725a0e53a355f51283a5ead9',1,'UIBulletsShotGun.CurrentBullets()']]],
-  ['currentdir_94',['CurrentDir',['../class_direction_movement.html#ac622535ba482ec794d580d2107c44190',1,'DirectionMovement']]],
-  ['currenthealt_95',['CurrentHealt',['../class_player_stats.html#a6f33553d95bbd14ada0463758803a2cb',1,'PlayerStats']]],
-  ['currentidle_96',['currentIdle',['../class_movement_player.html#a3eac289c3293f4613c6fe3fdcce0b60c',1,'MovementPlayer']]],
-  ['currentrun_97',['CurrentRun',['../class_movement_player.html#a379a6af5ca3da12687978282f21a87fe',1,'MovementPlayer']]],
-  ['currentscore_98',['CurrentScore',['../class_game_manager.html#a2fc0ff73defd8d2db3b3c23f607670ef',1,'GameManager']]],
-  ['currenttimer_99',['currentTimer',['../class_time_controller.html#a3081c05e8c7e36c0ea82bc77900d1cb8',1,'TimeController']]]
+  ['crosswhite_90',['crossWhite',['../class_handler_options.html#a99925cdb734e3ec7a30f672ec57ccfbe',1,'HandlerOptions']]],
+  ['currentarmor_91',['CurrentArmor',['../class_player_stats.html#aeefaf5c44ce217fed0abb2f52712bad2',1,'PlayerStats']]],
+  ['currentbullets_92',['CurrentBullets',['../class_u_i_bullets.html#a3cc68e499696f630a5b903b7b26dc6c5',1,'UIBullets.CurrentBullets()'],['../class_u_i_bullets_shot_gun.html#a29c2fda1725a0e53a355f51283a5ead9',1,'UIBulletsShotGun.CurrentBullets()']]],
+  ['currentdir_93',['CurrentDir',['../class_direction_movement.html#ac622535ba482ec794d580d2107c44190',1,'DirectionMovement']]],
+  ['currenthealt_94',['CurrentHealt',['../class_player_stats.html#a6f33553d95bbd14ada0463758803a2cb',1,'PlayerStats']]],
+  ['currentidle_95',['currentIdle',['../class_movement_player.html#a3eac289c3293f4613c6fe3fdcce0b60c',1,'MovementPlayer']]],
+  ['currentrun_96',['CurrentRun',['../class_movement_player.html#a379a6af5ca3da12687978282f21a87fe',1,'MovementPlayer']]],
+  ['currentscore_97',['CurrentScore',['../class_game_manager.html#a2fc0ff73defd8d2db3b3c23f607670ef',1,'GameManager']]],
+  ['currenttimer_98',['currentTimer',['../class_time_controller.html#a3081c05e8c7e36c0ea82bc77900d1cb8',1,'TimeController']]]
 ];

@@ -6,6 +6,5 @@ var class_cross_hair =
     [ "crossHairBlue", "class_cross_hair.html#a7a94604274886a40b2169484e08bbe9c", null ],
     [ "crossHairRed", "class_cross_hair.html#aaaa699b6f559ced4717abe41afd6ef7f", null ],
     [ "crosshairTransform", "class_cross_hair.html#a7557be70c43315456bc7bc3acd6e82da", null ],
-    [ "crossHairWhite", "class_cross_hair.html#a5c53149b83157847dc96bbe25dfaff25", null ],
-    [ "crossss", "class_cross_hair.html#afa9a5d60e96392a288f800021e0f667e", null ]
+    [ "crossHairWhite", "class_cross_hair.html#a5c53149b83157847dc96bbe25dfaff25", null ]
 ];

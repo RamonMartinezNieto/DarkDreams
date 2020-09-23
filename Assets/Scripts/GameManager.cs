@@ -130,7 +130,7 @@ public class GameManager : PlayerConf
 
     private void Start()
     {
-        EnemyGenerator.Instance.GenerateEnemies(325,3);
+        EnemyGenerator.Instance.GenerateEnemies(45,3);
         writeBD = true;
         labelName.text = UserName;
         labelScore.text = "0000";
@@ -165,7 +165,7 @@ public class GameManager : PlayerConf
 
             //every 5 minutes.
             //Activate Event
-            if (timeController.minutes == 2 && !activateEvent)
+          /*  if (timeController.minutes == 2 && !activateEvent)
             {
                 activateEvent = true; 
             }
@@ -177,10 +177,10 @@ public class GameManager : PlayerConf
 
                 //Desactivate event when don't have more enemies
                 if (enemeyRecovery.GetEnemiesAlive() == 0) activateEvent = false;
-            }
+            }*/
             //If the event is unactivate, normal game
-            else
-            {
+            //else
+           // {
                 if (!timeController.restartTimerColdDown)
                 {
                     timeController.restartTimerColdDown = true;
@@ -191,7 +191,7 @@ public class GameManager : PlayerConf
                 GenerateEnemies();
 
                 CallAnimationRoundTimer();
-            }
+            //}
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -415,6 +415,7 @@ public class GameManager : PlayerConf
         }
     }
 
+    
     private void AnimationCouldDownTimer() 
     {
         labelTimerDown.color = Color.red;

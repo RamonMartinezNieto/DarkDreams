@@ -11,7 +11,7 @@ var class_enemy =
     [ "Relocate", "class_enemy.html#ab3fa10a290ea693495198d34eefd8f65", null ],
     [ "RestartHealth", "class_enemy.html#a2eb64647ca4ff296015a0266cabca36a", null ],
     [ "SetDirectionAttack", "class_enemy.html#a2836443b955810a09d68d0c0665e0870", null ],
-    [ "SetDirectionToAttack", "class_enemy.html#a70e2ff31537d3a6311bb376b912663d1", null ],
+    [ "SetDirectionToAttack", "class_enemy.html#a480844a345e533521bb1e41719d10f24", null ],
     [ "StaticMovement", "class_enemy.html#aa37910bf49d941af2f093969b11580f7", null ],
     [ "TakeDamage", "class_enemy.html#a12672c4031953055b32228f1ff4d8d7a", null ],
     [ "_attacking", "class_enemy.html#a7558fb5bc6c24bc30f3f6be084bdbd5b", null ],

@@ -16,6 +16,7 @@ public class EnemyRecovery : MonoBehaviour
     public int GetEnemiesAlive() { return enemiesAlive.Count; }
 
     /*
+     //Only to test
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)) {
