@@ -2,7 +2,7 @@ var searchData=
 [
   ['panelanimator_253',['panelAnimator',['../class_main_menu.html#a92c5279c9d40fbd90b5a9c13213bc67a',1,'MainMenu']]],
   ['panelcontrol_254',['panelControl',['../class_controls_animation.html#ae823310f1eb8c4004459736e376d0ff1',1,'ControlsAnimation']]],
-  ['panelshadow_255',['panelShadow',['../class_main_menu.html#a6034d57b6cf345adad4e01e5b8a59f00',1,'MainMenu.panelShadow()'],['../class_name_control.html#a613d99090e619b0d8f6d183b000fbeb5',1,'NameControl.PanelShadow()']]],
+  ['panelshadow_255',['PanelShadow',['../class_name_control.html#a613d99090e619b0d8f6d183b000fbeb5',1,'NameControl.PanelShadow()'],['../class_main_menu.html#a6034d57b6cf345adad4e01e5b8a59f00',1,'MainMenu.panelShadow()']]],
   ['particlesystemsecondaryshoot_256',['particleSystemSecondaryShoot',['../class_shot_secondaryl_weapon1.html#ab5cd01d733f3072dad22fab4905cceaa',1,'ShotSecondarylWeapon1.particleSystemSecondaryShoot()'],['../class_secondary_shoot_shotgun.html#a6763b941fdaae6b6da29b7fe49e1e4c5',1,'SecondaryShootShotgun.particleSystemSecondaryShoot()']]],
   ['particlesystemshot_257',['particleSystemShot',['../class_shot.html#ac8150c7cd860abb3b3aeee088948faaf',1,'Shot']]],
   ['pause_258',['Pause',['../class_pause.html',1,'']]],

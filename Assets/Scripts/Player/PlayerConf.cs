@@ -1,7 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: PlayerConf.cs
+ * Objective: Control player's configuration using PlayerPrefs
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ * Abstract class to set the player's configurations. 
+ */
 public abstract class PlayerConf : MonoBehaviour
 {
     //Settings
@@ -15,6 +22,13 @@ public abstract class PlayerConf : MonoBehaviour
     private int _betterScore;
     private string _timeBetterScore;
 
+    /**
+     * Set & Get the music. On/Off
+     * Save in the PLayerPrefs "musicOn"
+     * 
+     * @return bool On/Off
+     * @param bool On/Off
+     */
     public bool MusicOn
     {
         get
@@ -38,6 +52,13 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
+    /**
+     * Set & Get the music's volumen.
+     * Save in the PLayerPrefs "musicVolumen"
+     * 
+     * @return bool float 0.0f - 1.0f
+     * @param bool float 0.0f - 1.0f
+     */
     public float MusicVolumen
     {
         get
@@ -52,6 +73,14 @@ public abstract class PlayerConf : MonoBehaviour
             PlayerPrefs.SetFloat("musicVolumen", value);
         }
     }
+
+    /**
+     * Set & Get the music effects. On/Off
+     * Save in the PLayerPrefs "musicEffectOn"
+     * 
+     * @return bool On/Off
+     * @param bool On/Off
+     */
     public bool MusicEffectOn
     {
         get
@@ -77,6 +106,13 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
+    /**
+     * Set & Get the music effect's volumen.
+     * Save in the PLayerPrefs "musicEffectVolumen"
+     * 
+     * @return bool float 0.0f - 1.0f
+     * @param bool float 0.0f - 1.0f
+     */
     public float MusicEffectVolumen
     {
         get
@@ -91,6 +127,15 @@ public abstract class PlayerConf : MonoBehaviour
             PlayerPrefs.SetFloat("musicEffectVolumen", value);
         }
     }
+
+    /**
+     * Set & Get the Language selected.
+     * Save in the PLayerPrefs "language"
+     * 0 - English, 1-Spanish, 2-Catalan
+     * 
+     * @return int
+     * @param int
+     */
     public int LanguageInt
     {
         //0 - English, 1-Spanish, 2-Catalan
@@ -106,6 +151,9 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
+    /**
+     * To get String language. 
+     */
     public string GetLanguageString()
     {
         string langauageString;
@@ -128,6 +176,14 @@ public abstract class PlayerConf : MonoBehaviour
         return langauageString;
     }
 
+    /**
+     * Set & Get the string with the name of the crosshair saved.
+     * Save in the PLayerPrefs "crossHair"
+     * 
+     * @return String name's crosshair
+     * @param String name's crosshair
+     * 
+     */
     public string CrossHairString
     {
         get
@@ -142,7 +198,13 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
-
+    /**
+     * Set & get player's name. 
+     * Save in the PLayerPrefs "userName"
+     * 
+     * @return String player's name
+     * @param String player's name
+     */
     public string UserName
     {
         get
@@ -157,7 +219,14 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
-
+    /**
+     * Set & Get the better score of the player.
+     * Save in the PLayerPrefs "betterScore"
+     * 
+     * @return int Score
+     * @param int Score
+     * 
+     */
     private int BetterScore
     {
         get
@@ -172,6 +241,14 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
+    /**
+     * Set & Get the better time of score of the player.
+     * Save in the PLayerPrefs "timeBetterScore"
+     * 
+     * @return string Score
+     * @param string Score
+     * 
+     */
     private string TimeBetterScore
     {
         get
@@ -186,7 +263,12 @@ public abstract class PlayerConf : MonoBehaviour
         }
     }
 
-
+    /**
+     * Protected method to save the score and time at the same time. 
+     * 
+     * @param currentScore int
+     * @param currentTime string
+     */
     protected void SaveScoreAndTime(int currentScore, string currentTime) 
     {
         //Only save score with time when the score is better than the last score

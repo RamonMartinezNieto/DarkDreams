@@ -1,14 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: EnemyIA.cs
+ * Objective: Adding AI to enemies.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 using UnityEngine.AI;
 
+/**
+ * Class to adding AI to the enemies.
+ * 
+ * @author Ramón Martínez Nieto
+ * 
+ */
 public class EnemyIA : MonoBehaviour
 {
+    /**
+     * Target of the enemy, normaly the player.
+     */
+    [Tooltip("Player or other GameObject to be targeted by the enemy")]
     public GameObject target;
 
     private NavMeshAgent agent;
-    private bool stop;
 
     // Start is called before the first frame update
     void Start()

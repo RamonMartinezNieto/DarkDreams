@@ -1,13 +1,22 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: DirectionMovement.cs
+ * Objective: To know the direction movement of the characters.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ * Class to know the direction of the character. I use it with the enemies.
+ * 
+ * @author Ramón Martínez Nieto
+ * 
+ */
 public class DirectionMovement : MonoBehaviour
 {
-
-    int lastDirection;
-
+    /**
+     * Transform of the character.
+     */
     [Tooltip("Transform of the object that you need the direction.")]
     public Transform transformCharacter;
 
@@ -15,14 +24,24 @@ public class DirectionMovement : MonoBehaviour
     private Vector2 newPos;
 
     private RunDirections _currentDir;
-
+    /**
+     * Current direction of the character
+     * 
+     * @return RunDirections 
+     * @see RunDirections
+     */
     public RunDirections CurrentDir
     {
         get { return _currentDir; }
     }
 
     private RunDirections _lastIdle;
-
+    /**
+     * Last direction of the character
+     * 
+     * @return RunDirections 
+     * @see RunDirections
+     */
     public RunDirections lastIdle
     {
         get { return _lastIdle; }
@@ -31,7 +50,6 @@ public class DirectionMovement : MonoBehaviour
 
     void Awake()
     {
-
         //Initial direction
         _lastIdle = RunDirections.IdleS;
 

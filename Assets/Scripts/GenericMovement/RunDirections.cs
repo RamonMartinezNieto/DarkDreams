@@ -1,7 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿/**
+ * Department: Game Developer
+ * File: RunDirections.cs
+ * Objective: Stablish standars directions and idles
+ * Employee: Ramón Martínez Nieto
+ */
 
+/**
+ * Enum to stablish standars directions and idles.
+ * 
+ * @author Ramón Martínez Nieto
+ * 
+ */
 public enum RunDirections 
 {
         RunN = 0,
@@ -20,6 +29,4 @@ public enum RunDirections
         IdleSW = 13, 
         IdleW = 14, 
         IdleNW = 15
-
-    
 }
