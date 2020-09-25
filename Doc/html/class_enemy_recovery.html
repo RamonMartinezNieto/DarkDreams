@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('class_enemy_recovery.html',''); initRe
 <div class="title">EnemyRecovery Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is a pooling of the enemies.  
+ <a href="class_enemy_recovery.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for EnemyRecovery:</div>
 <div class="dyncontent">
@@ -101,20 +104,29 @@ Inheritance diagram for EnemyRecovery:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1873c51a92b64dc7f53d8ff8d83921e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_recovery.html#ac1873c51a92b64dc7f53d8ff8d83921e">GetEnemiesAlive</a> ()</td></tr>
+<tr class="memdesc:ac1873c51a92b64dc7f53d8ff8d83921e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count how many enemies are alive in the scene.  <a href="class_enemy_recovery.html#ac1873c51a92b64dc7f53d8ff8d83921e">More...</a><br /></td></tr>
 <tr class="separator:ac1873c51a92b64dc7f53d8ff8d83921e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5916abd36a3670f518da1f52ab0e74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_recovery.html#aee5916abd36a3670f518da1f52ab0e74">SaveEnemyDie</a> (<a class="el" href="class_enemy.html">Enemy</a> enemy)</td></tr>
+<tr class="memdesc:aee5916abd36a3670f518da1f52ab0e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to save a new enemy when it is eliminated of the scene.  <a href="class_enemy_recovery.html#aee5916abd36a3670f518da1f52ab0e74">More...</a><br /></td></tr>
 <tr class="separator:aee5916abd36a3670f518da1f52ab0e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24afbf0e35b362a6381797682ca6fab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_recovery.html#a24afbf0e35b362a6381797682ca6fab7">ClearEnemyList</a> ()</td></tr>
+<tr class="memdesc:a24afbf0e35b362a6381797682ca6fab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to clear enemies died list, util when the game finish to restart it.  <a href="class_enemy_recovery.html#a24afbf0e35b362a6381797682ca6fab7">More...</a><br /></td></tr>
 <tr class="separator:a24afbf0e35b362a6381797682ca6fab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7c6dcf0e40e250c2a64586a9288429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_recovery.html#aca7c6dcf0e40e250c2a64586a9288429">RecoveryEnemy&lt; T &gt;</a> (float x, float y)</td></tr>
+<tr class="memdesc:aca7c6dcf0e40e250c2a64586a9288429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to recovery a enemy when need a new one.  <a href="class_enemy_recovery.html#aca7c6dcf0e40e250c2a64586a9288429">More...</a><br /></td></tr>
 <tr class="separator:aca7c6dcf0e40e250c2a64586a9288429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4ef2eb355aae19e22566039819b0e81f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_enemy_recovery.html">EnemyRecovery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_recovery.html#a4ef2eb355aae19e22566039819b0e81f">Instance</a></td></tr>
+<tr class="memdesc:a4ef2eb355aae19e22566039819b0e81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton Instance.  <a href="class_enemy_recovery.html#a4ef2eb355aae19e22566039819b0e81f">More...</a><br /></td></tr>
 <tr class="separator:a4ef2eb355aae19e22566039819b0e81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is a pooling of the enemies. </p>
+<p>Take the control of enemies die and alive. Use this class to create new enemies, in case there is no dead in the list, instantiate other one.</p>
+<dl class="section author"><dt>Author</dt><dd>Ramón Martínez Nieto </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a24afbf0e35b362a6381797682ca6fab7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24afbf0e35b362a6381797682ca6fab7">&#9670;&nbsp;</a></span>ClearEnemyList()</h2>
 
@@ -129,6 +141,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to clear enemies died list, util when the game finish to restart it. </p>
 
 </div>
 </div>
@@ -146,6 +160,9 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the count how many enemies are alive in the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>int Count of the alive enemies </dd></dl>
 
 </div>
 </div>
@@ -174,6 +191,11 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to recovery a enemy when need a new one. </p>
+<p>First get the enemy of the enmiesDied list, in case theres in no one instantiate a new enemy.</p>
+<p>Very Impotant: The enemy prefab has to have the same name as the class.</p>
+<p>This is the most beatifull method that I made. </p>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
@@ -201,6 +223,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method to save a new enemy when it is eliminated of the scene. </p>
+<p>Remove of the enemies alive list and put it in the enmies died. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -224,6 +249,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Singleton Instance. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -235,7 +262,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_enemy_recovery.html">EnemyRecovery</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 20:14:39 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Sep 25 2020 19:14:25 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

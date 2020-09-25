@@ -1,7 +1,24 @@
-﻿using UnityEngine;
+﻿/**
+ * Department: Game Developer
+ * File: EnemySkeletonArcher.cs
+ * Objective: Create a skeleton archer enemy.
+ * Employee: Ramón Martínez Nieto
+ */
 
+using UnityEngine;
+
+/**
+ * Skeleton Archer Enemy, create a new enemy using the EnemyConstructor (Enemy class) in the awake method. 
+ * 
+ * @author Ramón Martínez Nieto
+ * @see Enemy#EnemyConstructor
+ * 
+ */
 public class EnemySkeletonArcher : Enemy
 {
+    /**
+     * Arrow that the enemy shot  
+     */
     [Tooltip("Shot (arrow) that the enemy fire")]
     public GameObject arrowType; 
     
@@ -12,8 +29,13 @@ public class EnemySkeletonArcher : Enemy
     }
 
 
-    //Overrride the original FineAttack.
-    //Intantiate arrow, the arrow have the logich of the damage. 
+    /**
+     * Overrride method FineAttack. 
+     * Intantiate arrow, the arrow have the logich of the damage. 
+     * 
+     * @Override FineAttack
+     * @See Enemy#FineAttack
+     */
     public override void FineAttack() => Instantiate(arrowType, gameObject.transform.position, Quaternion.identity); 
     
 }

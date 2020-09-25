@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('class_enemy_skeleton_archer.html','');
 <div class="title">EnemySkeletonArcher Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Skeleton Archer <a class="el" href="class_enemy.html" title="Abstract class with all funcionality of the enemies.">Enemy</a>, create a new enemy using the EnemyConstructor (<a class="el" href="class_enemy.html" title="Abstract class with all funcionality of the enemies.">Enemy</a> class) in the awake method.  
+ <a href="class_enemy_skeleton_archer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for EnemySkeletonArcher:</div>
 <div class="dyncontent">
@@ -104,7 +107,7 @@ Inheritance diagram for EnemySkeletonArcher:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3fbe18bf986dd3d5124e795c1dc1066"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_skeleton_archer.html#ac3fbe18bf986dd3d5124e795c1dc1066">FineAttack</a> ()</td></tr>
-<tr class="memdesc:ac3fbe18bf986dd3d5124e795c1dc1066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply this method to animation attack, in the middle of the animation ocurrs this method.  <a href="class_enemy_skeleton_archer.html#ac3fbe18bf986dd3d5124e795c1dc1066">More...</a><br /></td></tr>
+<tr class="memdesc:ac3fbe18bf986dd3d5124e795c1dc1066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrride method FineAttack.  <a href="class_enemy_skeleton_archer.html#ac3fbe18bf986dd3d5124e795c1dc1066">More...</a><br /></td></tr>
 <tr class="separator:ac3fbe18bf986dd3d5124e795c1dc1066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_enemy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_enemy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_enemy.html">Enemy</a></td></tr>
 <tr class="memitem:ae7c47d204bef785f0895a8cfd0b6a3df inherit pub_methods_class_enemy"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ae7c47d204bef785f0895a8cfd0b6a3df">EnemyConstructor</a> (int health, float speed, float visionRange, int <a class="el" href="class_enemy.html#a464d75aeb33609731785e42c97e21f8b">Damage</a>, float distanteToAttack)</td></tr>
@@ -147,6 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a792842b4e53718a30600ed614306ab94"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_skeleton_archer.html#a792842b4e53718a30600ed614306ab94">arrowType</a></td></tr>
+<tr class="memdesc:a792842b4e53718a30600ed614306ab94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arrow that the enemy shot <br  />
+  <a href="class_enemy_skeleton_archer.html#a792842b4e53718a30600ed614306ab94">More...</a><br /></td></tr>
 <tr class="separator:a792842b4e53718a30600ed614306ab94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_enemy"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_enemy')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_enemy.html">Enemy</a></td></tr>
 <tr class="memitem:a7558fb5bc6c24bc30f3f6be084bdbd5b inherit pub_attribs_class_enemy"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#a7558fb5bc6c24bc30f3f6be084bdbd5b">_attacking</a> = false</td></tr>
@@ -192,7 +197,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a232a3502716cacf3c9b2cdb466eb25b6 inherit properties_class_enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">To know if the enemy is alive.  <a href="class_enemy.html#a232a3502716cacf3c9b2cdb466eb25b6">More...</a><br /></td></tr>
 <tr class="separator:a232a3502716cacf3c9b2cdb466eb25b6 inherit properties_class_enemy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Skeleton Archer <a class="el" href="class_enemy.html" title="Abstract class with all funcionality of the enemies.">Enemy</a>, create a new enemy using the EnemyConstructor (<a class="el" href="class_enemy.html" title="Abstract class with all funcionality of the enemies.">Enemy</a> class) in the awake method. </p>
+<dl class="section author"><dt>Author</dt><dd>Ramón Martínez Nieto </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_enemy.html#ae7c47d204bef785f0895a8cfd0b6a3df" title="Constructor of the all enemies.">Enemy::EnemyConstructor</a> </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3fbe18bf986dd3d5124e795c1dc1066"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3fbe18bf986dd3d5124e795c1dc1066">&#9670;&nbsp;</a></span>FineAttack()</h2>
 
@@ -216,9 +225,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Apply this method to animation attack, in the middle of the animation ocurrs this method. </p>
-<p>To distance attacks is different, the atack is from shoot enemy attacks and not when the animation ocurrs.</p>
-<p>Rest live to the player, depends of the animation </p>
+<p>Overrride method FineAttack. </p>
+<p>Intantiate arrow, the arrow have the logich of the damage.</p>
+<p>@Override FineAttack @See <a class="el" href="class_enemy.html#a6beb465a79e29e281494e8b3d1dae20b" title="Apply this method to animation attack, in the middle of the animation ocurrs this method.">Enemy::FineAttack</a> </p>
 
 <p>Reimplemented from <a class="el" href="class_enemy.html#a6beb465a79e29e281494e8b3d1dae20b">Enemy</a>.</p>
 
@@ -237,6 +246,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Arrow that the enemy shot <br  />
+ </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -248,7 +260,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_enemy_skeleton_archer.html">EnemySkeletonArcher</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 20:14:39 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Sep 25 2020 19:14:25 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

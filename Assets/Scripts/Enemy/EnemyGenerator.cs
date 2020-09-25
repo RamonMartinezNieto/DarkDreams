@@ -1,23 +1,42 @@
-﻿
+﻿/**
+ * Department: Game Developer
+ * File: EnemyGenerator.cs
+ * Objective: Generate enemies in the map.
+ * Employee: Ramón Martínez Nieto
+ */
 using System.Collections;
-using System.Collections.Generic;
-using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+/**
+ * This class provide all necesary to generate enemies in arround the map and on the doors
+ * 
+ * @author Ramón Martínez Nieto
+ */
 public class EnemyGenerator : MonoBehaviour
 {
+    /**
+     * Singleton Instance 
+     */
     public static EnemyGenerator Instance;
+
+    /**
+     * Tile map of the ground. 
+     */
+    [Tooltip("Add Tilemap of the ground.")]
     public Tilemap tileMap;
 
     private EnemyRecovery er;
 
+    //Variables of the door's vectors.
     private Vector2 doorOnePosition;
     private Vector2 doorTwoPosition;
     private Vector2 doorThreePosition;
     private Vector2 doorFourPosition;
+
     private Vector2 centerPosition;
 
+    //Time between respanws
     private float timeBetweenEnemies = .3f;
 
     private void Awake()
@@ -42,15 +61,20 @@ public class EnemyGenerator : MonoBehaviour
         doorFourPosition = new Vector2(6.8f, 4.6f);
         centerPosition = new Vector2(0f, 0.7f);
 
-        //6 enemies in the center
-        
+        //6 enemies in the center in the first call
         createEnemiesCenter<EnemySkeleton>(2);
         createEnemiesCenter<EnemySkeletonArcher>(2);
         createEnemiesCenter<EnemyBat>(2);
-       
     }
 
-    //Note: forEachDoor is how many enemies respanw of every type forEachDoor = 3 = 12 enemies // 4 doors * 3 enemies.
+    
+    /**
+     * Class to generate enemies. 
+     * Note: forEachDoor is how many enemies respanw of every type forEachDoor = 3 = 12 enemies // 4 doors * 3 enemies.
+     * 
+     * @param quantityTotal int Total to generate enemis.
+     * @param enemiesInDorrs How many enemies appears in the doors
+     */
     public void GenerateEnemies(int quantityTotal, int enemiesInDoors)
     {
         
@@ -69,12 +93,18 @@ public class EnemyGenerator : MonoBehaviour
         StartCoroutine(createEnemieRandomPlace<EnemyBat>(r3));
     }
 
+    /**
+     * To create new enemies in the center of the map
+     */ 
     private void createEnemiesCenter<T>(int quantity) where T : Enemy
     {
         for (int a = 0; a < quantity; a++)
             er.RecoveryEnemy<T>(centerPosition.x, centerPosition.y);
     }
 
+    /**
+     * To create enemies in the doors 
+     */
     private IEnumerator createEnemieForEachDorr<T>(int quantity) where T : Enemy
     {
         var quant = quantity / 4;
@@ -102,18 +132,22 @@ public class EnemyGenerator : MonoBehaviour
         }
     }
 
-    
+    /**
+     * To create enemies in random position 
+     */
     private IEnumerator createEnemieRandomPlace<T>(int quantity) where T : Enemy
     {
          for (int h = 0; h < quantity; h++)
          {
             Vector3 a = createRandomCoordenates();
 
+            //Check if the new coordinates are in the Sprite, in this case get new coordinates
             while (StaticExclusionArea.CheckCoordinatesSprite(a.x, a.y))
             {
                 a = createRandomCoordenates();
             }
             
+            //Use RecoveryEnemy to get new enemy (a die enemy or new instance) 
             er.RecoveryEnemy<T>(a.x, a.y);
 
             yield return new WaitForSeconds(timeBetweenEnemies);
@@ -121,6 +155,9 @@ public class EnemyGenerator : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenEnemies);
     }
 
+    /**
+     * Method to get new coordinates  
+     */
     private Vector3 createRandomCoordenates()
     {
         var coordenates = tileMap.GetCellCenterWorld(new Vector3Int(

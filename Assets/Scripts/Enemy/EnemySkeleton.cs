@@ -1,14 +1,19 @@
-﻿
-/* Stats of the Skeleton: 
- * Health = 100;
- * Speed = 0.5f;
- * Vision = 2.0f;
- * Damage = 5; 
- * DistanceToAttack = .7f; 
+﻿/**
+ * Department: Game Developer
+ * File: EnemySkeleton.cs
+ * Objective: Create a skeleton enemy.
+ * Employee: Ramón Martínez Nieto
  */
-using System;
-using UnityEngine;
 
+
+/**
+ * 
+ * Skeleton Enemy, create a new enemy using the EnemyConstructor (Enemy class) in the awake method. 
+ * 
+ * @author Ramón Martínez Nieto
+ * @see Enemy#EnemyConstructor
+ * 
+ */
 public class EnemySkeleton : Enemy
 {
     

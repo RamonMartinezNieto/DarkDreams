@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('class_enemy_generator.html',''); initR
 <div class="title">EnemyGenerator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class provide all necesary to generate enemies in arround the map and on the doors.  
+ <a href="class_enemy_generator.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for EnemyGenerator:</div>
 <div class="dyncontent">
@@ -102,19 +105,25 @@ Inheritance diagram for EnemyGenerator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adf8f75332ee7c941e09d3f0f5d36a30b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_generator.html#adf8f75332ee7c941e09d3f0f5d36a30b">GenerateEnemies</a> (int quantityTotal, int enemiesInDoors)</td></tr>
+<tr class="memdesc:adf8f75332ee7c941e09d3f0f5d36a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to generate enemies.  <a href="class_enemy_generator.html#adf8f75332ee7c941e09d3f0f5d36a30b">More...</a><br /></td></tr>
 <tr class="separator:adf8f75332ee7c941e09d3f0f5d36a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aad02f7984a64ed0ba0612fafadc064c8"><td class="memItemLeft" align="right" valign="top">Tilemap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_generator.html#aad02f7984a64ed0ba0612fafadc064c8">tileMap</a></td></tr>
+<tr class="memdesc:aad02f7984a64ed0ba0612fafadc064c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile map of the ground.  <a href="class_enemy_generator.html#aad02f7984a64ed0ba0612fafadc064c8">More...</a><br /></td></tr>
 <tr class="separator:aad02f7984a64ed0ba0612fafadc064c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:acf86f930479193beabff972e3def8599"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_enemy_generator.html">EnemyGenerator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_generator.html#acf86f930479193beabff972e3def8599">Instance</a></td></tr>
+<tr class="memdesc:acf86f930479193beabff972e3def8599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton Instance.  <a href="class_enemy_generator.html#acf86f930479193beabff972e3def8599">More...</a><br /></td></tr>
 <tr class="separator:acf86f930479193beabff972e3def8599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class provide all necesary to generate enemies in arround the map and on the doors. </p>
+<dl class="section author"><dt>Author</dt><dd>Ramón Martínez Nieto </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adf8f75332ee7c941e09d3f0f5d36a30b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf8f75332ee7c941e09d3f0f5d36a30b">&#9670;&nbsp;</a></span>GenerateEnemies()</h2>
 
@@ -141,6 +150,16 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Class to generate enemies. </p>
+<p>Note: forEachDoor is how many enemies respanw of every type forEachDoor = 3 = 12 enemies // 4 doors * 3 enemies.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quantityTotal</td><td>int Total to generate enemis. </td></tr>
+    <tr><td class="paramname">enemiesInDorrs</td><td>How many enemies appears in the doors </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -164,6 +183,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Singleton Instance. </p>
+
 </div>
 </div>
 <a id="aad02f7984a64ed0ba0612fafadc064c8"></a>
@@ -178,6 +199,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Tile map of the ground. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -189,7 +212,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_enemy_generator.html">EnemyGenerator</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 20:14:39 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Sep 25 2020 19:14:24 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

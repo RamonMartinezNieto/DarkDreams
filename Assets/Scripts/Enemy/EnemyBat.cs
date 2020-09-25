@@ -1,5 +1,20 @@
-﻿using UnityEngine;
+﻿/**
+ * Department: Game Developer
+ * File: EnemyBat.cs
+ * Objective: Create a bat enemy.
+ * Employee: Ramón Martínez Nieto
+ */
 
+/**
+ * 
+ * Bat Enemy, create a new enemy using the EnemyConstructor (Enemy class) in the awake method. 
+ * In this enemy I have replaced the matrix with the attacks, because they have different names.
+ * 
+ * @author Ramón Martínez Nieto
+ * @see Enemy#EnemyConstructor
+ * @see ATTACKS
+ * 
+ */
 public class EnemyBat : Enemy
 {
     void Awake()
