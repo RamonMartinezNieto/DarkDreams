@@ -1,74 +1,91 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
-public class TimeController
+public class TimeController : MonoBehaviour
 {
-    
-    public int seconds { get; set; } = 0;
-    public int minutes { get; private set; } = 0;
+    /**
+     * Delegate to create a new event when the minutes change  
+     */
+    public delegate void TimeMinutesChange();
+    /**
+     * Event to suscribe  
+     */
+    public static event TimeMinutesChange OnMinutesChanged;
+    /**
+     * Delegate to create a new event when the seconds changed
+     */
+    public delegate void TimeSecondsChange();
+    /**
+     * Event to suscribe 
+     */
+    public static event TimeMinutesChange OnSecondsChanged;
+
+    private int _seconds;
+    public int Seconds
+    {
+        get 
+        {
+            return _seconds; 
+        }
+        private set 
+        {
+            this._seconds = value;
+            //Launch event
+            if (OnSecondsChanged != null)
+                OnSecondsChanged();
+        } 
+    }
+
+    private int _minutes; 
+    public int Minutes {
+        get 
+        {
+            return _minutes;
+        } 
+        private set 
+        {
+            _minutes = value;
+
+            //Launch event
+            if (OnMinutesChanged != null)
+            {
+                OnMinutesChanged();
+            }
+        } 
+    }
 
     public float currentTimer { get; private set; } = 0;
 
-
-    public int secondsDown { get; private set; } = 59;
-    public int minutesDown { get; private set; } = 0;
-
-    public bool restartTimerColdDown { get; set;  } = true; 
-
+    private void FixedUpdate()
+    {
+        updateTime();
+    }
 
     public void updateTime()
     {
         currentTimer += Time.deltaTime;
 
-        if (currentTimer >= 1) { 
-            seconds++;
+        if (currentTimer >= 1) {
+            Seconds++;
             currentTimer = 0; 
         }
-        if (seconds == 60) 
+        if (Seconds == 60) 
         {
-            minutes++;
-            seconds = 0;
+            Minutes++;
+            Seconds = 0;
         }
     }
-
 
     public string getFormatTimer()
     {
-        return string.Format("{0:00}:{1:00}", minutes, seconds);
+        return string.Format("{0:00}:{1:00}", Minutes, Seconds);
     }
-
-    public void StartTimerDown() 
-    {
-        minutesDown = minutes-1;
-        secondsDown = 59;
-    }
-
-    public string GetFormatTimerDown() 
-    {
-        if (restartTimerColdDown) {
-            StartTimerDown();
-            restartTimerColdDown = false; 
-        }
-
-        secondsDown = 60 - seconds;
-
-        minutesDown = (minutes*2) - minutes; 
-
-        return string.Format("{0:00}:{1:00}", minutesDown, secondsDown);
-    }
-
-    public bool GetFinishTime() 
-    {
-        if (secondsDown <= 0 && minutesDown <= 0 ) return true;
-        else return false; 
-    }
-
-
-
 
     public void restartTimer()
     {
-        seconds = 0;
-        minutes = 0;
+        Seconds = 0;
+        Minutes = 0;
         currentTimer = 0;
     }
+
 }

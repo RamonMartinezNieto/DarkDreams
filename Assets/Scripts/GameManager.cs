@@ -48,12 +48,6 @@ public class GameManager : PlayerConf
     public TMP_Text labelTimer;
 
     /**
-     * TextMesh Pro Label with the timer down
-     */
-    [Tooltip("Label with the timer down.")]
-    public TMP_Text labelTimerDown;
-
-    /**
      * TextMesh Pro Label with the current round
      */
     [Tooltip("label with the current round.")]
@@ -89,16 +83,16 @@ public class GameManager : PlayerConf
     [Tooltip("Script EnemyRecovery")]
     public EnemyRecovery enemeyRecovery;
 
+    
     private TimeController timeController; 
     private bool writeBD = true;
     private int randMin = 10;
-    private int randMax = 30; 
+    private int randMax = 25; 
 
     //In minutes
     private int timeToShowNewEnemies = 1;
     private bool canScroll = true;
     private float timePassBewtweenWheels;
-    private bool activateEvent = false; 
 
     private int _currentScore;
     /**
@@ -125,7 +119,7 @@ public class GameManager : PlayerConf
             Destroy(this);
         }
 
-        timeController = new TimeController();
+        timeController = GetComponent<TimeController>(); 
     }
 
     private void Start()
@@ -138,60 +132,23 @@ public class GameManager : PlayerConf
         StartCoroutine(ShowRound("Wave 0")); 
 
         SoundManager.Instance.PlayMusic("game1");
+
+        //suscribe methods to event. 
+        TimeController.OnMinutesChanged += ControlRandMinAndMax;
+        TimeController.OnMinutesChanged += GenerateEnemies;
+
+        ChangeLabelTimer(); 
+        TimeController.OnSecondsChanged += ChangeLabelTimer;
     }
-
-    private void FixedUpdate()
-    {
-        if (playerStats.CurrentHealt >= 0f)
-        {
-            timeController.updateTime();
-
-            labelTimer.text = timeController.getFormatTimer();
-        }
-    }
-
+    
     private void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            timeController.seconds++;
-        }
-        
-
+ 
         if (!CanvasGamerOver.activeSelf)
         {
 
+            CallAnimationRoundTimer();
 
-            //every 5 minutes.
-            //Activate Event
-          /*  if (timeController.minutes == 2 && !activateEvent)
-            {
-                activateEvent = true; 
-            }
-            //Start Event
-            else if (activateEvent) 
-            {
-                AnimationCouldDownTimer();
-                CallAnimationRoundTimer();
-
-                //Desactivate event when don't have more enemies
-                if (enemeyRecovery.GetEnemiesAlive() == 0) activateEvent = false;
-            }*/
-            //If the event is unactivate, normal game
-            //else
-           // {
-                if (!timeController.restartTimerColdDown)
-                {
-                    timeController.restartTimerColdDown = true;
-                }
-
-                ControlRandMinAndMax();
-
-                GenerateEnemies();
-
-                CallAnimationRoundTimer();
-            //}
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -202,10 +159,8 @@ public class GameManager : PlayerConf
             }
 
             //Player die || game over if the time event is 0
-            if (playerStats.CurrentHealt <= 0 && writeBD || (timeController.GetFinishTime() && activateEvent))
+            if (playerStats.CurrentHealt <= 0 && writeBD)
             {
-                Debug.Log("debería estar muerto");
-
                 IsNewScore = false;
                 timeToShowNewEnemies = 0;
 
@@ -342,35 +297,35 @@ public class GameManager : PlayerConf
                 });
             }
         }
-
     }
+
+    private void ChangeLabelTimer() => labelTimer.text = timeController.getFormatTimer(); 
 
     private void GenerateEnemies() 
     {
             //Generate more enemies
-        if (timeController.minutes >= timeToShowNewEnemies)
+        if (timeController.Minutes >= timeToShowNewEnemies) 
         {
-            var minutes = timeController.minutes;
+            var minutes = timeController.Minutes;
             
             var randomQuantity = UnityEngine.Random.Range(randMin * minutes, randMax * minutes);
             //generate new enemies and update timeToShowNewEnemies
+            EnemyGenerator.Instance.GenerateEnemies(randomQuantity, minutes);
 
-            EnemyGenerator.Instance.GenerateEnemies(randomQuantity, 2 * minutes);
-
-            timeToShowNewEnemies = timeController.minutes + 1;
-        }
+            timeToShowNewEnemies = timeController.Minutes + 1;
+       }
 
     }
 
     private void ControlRandMinAndMax() 
     {
-        if (timeController.minutes > 4) randMax -= 1;
-        else if (timeController.minutes > 9) randMax -= 1;
-        else if (timeController.minutes > 14) randMax -= 1;
-        else if (timeController.minutes > 19) randMax -= 1;
-        else if (timeController.minutes > 24) randMax -= 1;
-        else if (timeController.minutes > 29) randMax -= 1;
-        else if (timeController.minutes > 34) randMax -= 1;
+        if (timeController.Minutes > 4) randMax -= 1;
+        else if (timeController.Minutes > 9) randMax -= 1;
+        else if (timeController.Minutes > 14) randMax -= 1;
+        else if (timeController.Minutes > 19) randMax -= 1;
+        else if (timeController.Minutes > 24) randMax -= 1;
+        else if (timeController.Minutes > 29) randMax -= 1;
+        else if (timeController.Minutes > 34) randMax -= 1;
 
     }
 
@@ -399,30 +354,23 @@ public class GameManager : PlayerConf
      */
     private void CallAnimationRoundTimer() 
     {
-        if (timeController.seconds == 48)
+        if (timeController.Seconds == 48)
         {
-            roundLabel.text = $"Wave {timeController.minutes + 1}";
+            roundLabel.text = $"Wave {timeController.Minutes + 1}";
             roundAnimator.SetBool("visible", true);
 
         }
-        else if (timeController.seconds >= 50 && timeController.seconds <= 60)
+        else if (timeController.Seconds >= 50 && timeController.Seconds <= 60)
         {
-            roundLabel.text = (60 - timeController.seconds).ToString();
+            roundLabel.text = (60 - timeController.Seconds).ToString();
         }
-        else if (timeController.seconds == 0) 
+        else if (timeController.Seconds == 0) 
         {
             roundAnimator.SetBool("visible", false);
         }
     }
 
     
-    private void AnimationCouldDownTimer() 
-    {
-        labelTimerDown.color = Color.red;
-
-        labelTimerDown.text = timeController.GetFormatTimerDown();
-    }
-
     /**
      * Method to Show Lable Round and stay 2 seconds visible. 
      * 

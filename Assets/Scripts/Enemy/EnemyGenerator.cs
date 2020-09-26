@@ -77,13 +77,11 @@ public class EnemyGenerator : MonoBehaviour
      */
     public void GenerateEnemies(int quantityTotal, int enemiesInDoors)
     {
-        
         int randomEnemies = quantityTotal - (enemiesInDoors * 3);  //3 types of enemies
         int r = Random.Range(4, randomEnemies);
         int r2 = Random.Range(r + 4, randomEnemies - 4);
         int r3 = quantityTotal - r2;
 
-        
         StartCoroutine(createEnemieForEachDorr<EnemySkeleton>(enemiesInDoors));
         StartCoroutine(createEnemieForEachDorr<EnemySkeletonArcher>(enemiesInDoors));
         StartCoroutine(createEnemieForEachDorr<EnemyBat>(enemiesInDoors));
