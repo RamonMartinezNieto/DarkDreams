@@ -103,12 +103,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1720518532293778353}
+  - component: {fileID: 1720518532293778349}
+  - component: {fileID: 1720518532293778354}
   - component: {fileID: 1720518532293778358}
   - component: {fileID: 1720518532293778359}
   - component: {fileID: 1720518532293778355}
   - component: {fileID: 1720518532293778352}
-  - component: {fileID: 1720518532293778349}
-  - component: {fileID: 1720518532293778354}
   - component: {fileID: 1720518532293778348}
   - component: {fileID: 1394239922}
   m_Layer: 0
@@ -135,6 +135,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1720518532293778349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720518532293778356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58eb7338cebf470469b5322131b5d01d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformCharacter: {fileID: 1720518532293778353}
+--- !u!114 &1720518532293778354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720518532293778356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37af095de5199d64bb8a00d2c1dff78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  IsMenuPlayer: 0
+  positionPlayerMenu: 0
+  playerTransform: {fileID: 1720518532293778353}
+  crossHair: {fileID: 0}
 --- !u!212 &1720518532293778358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -242,36 +272,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1720518532293778349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720518532293778356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58eb7338cebf470469b5322131b5d01d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transformCharacter: {fileID: 1720518532293778353}
---- !u!114 &1720518532293778354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720518532293778356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37af095de5199d64bb8a00d2c1dff78c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  IsMenuPlayer: 0
-  positionPlayerMenu: 0
-  playerTransform: {fileID: 1720518532293778353}
-  crossHair: {fileID: 0}
 --- !u!114 &1720518532293778348
 MonoBehaviour:
   m_ObjectHideFlags: 0

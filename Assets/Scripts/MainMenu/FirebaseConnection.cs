@@ -143,8 +143,10 @@ public class FirebaseConnection : MonoBehaviour
 
     public void UpdateListLaderBoardBackground() => StartCoroutine(GetAllScoresUsersDesktop());  //StartCoroutine(GetFirstTenUsersMobile());
 
-    //Only use this when export to Mobile 
-    // in other way use GetFirstTenUsersDesktop(); 
+    /**
+     * Only use this when export to Mobile in other way use GetFirstTenUsersDesktop(); 
+     * 
+     */
     private IEnumerator GetFirstTenUsersMobile()
     {
         usersList.Clear(); 
@@ -235,7 +237,6 @@ public class FirebaseConnection : MonoBehaviour
         }
     }
 
-
     //Sort list comparing time of the final users if they have te same score
     private List<UserScore> GetFirstTenUsers(List<UserScore> users)
     {
@@ -316,14 +317,8 @@ public class FirebaseConnection : MonoBehaviour
         yield return null;
     }
 
-
-    private void PostUserScore(UserScore user)
-    {
-        RestClient.Post<UserScore>($"https://pruebasapirest-13c28.firebaseio.com/UsersScore.json", user);
-    }
-
-    private void PostUser(User user)
-    {
-        RestClient.Post<User>($"https://pruebasapirest-13c28.firebaseio.com/NewUsers.json", user);
-    }
+    private void PostUserScore(UserScore user) =>  RestClient.Post<UserScore>($"https://pruebasapirest-13c28.firebaseio.com/UsersScore.json", user);
+    
+    private void PostUser(User user) => RestClient.Post<User>($"https://pruebasapirest-13c28.firebaseio.com/NewUsers.json", user);
+    
 }

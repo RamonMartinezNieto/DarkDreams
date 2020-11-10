@@ -1,30 +1,66 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+﻿/**
+ * Department: Game Developer
+ * File: MovementPlayer.cs
+ * Objective: Implementing motion player functionality
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
-
+/**
+ * Class with all logic of the player's movement.
+ * 
+ * @author Ramón Martínez Nieto
+ */
 public class MovementPlayer : MonoBehaviour
 {
-
+    /**
+     * Rigibody2D of the player. 
+     */
     protected Rigidbody2D rbody;
 
+    /**
+     * Player's velocity. 
+     */
     [Tooltip("Velocity, only change to test diferents speeds")]
     public float speed = 2f;
 
+    /**
+     * Make this if the player is in the menu
+     */
     [Tooltip("Make true if the player is in the menu.")]
     public bool IsMenuPlayer;
 
-    public RunDirections positionPlayerMenu; 
+    /**
+     * To indicate the RunDirection when the player is in the menu.
+     */
+    [Tooltip("Indicate the RunDirection in the menu.")]
+    public RunDirections positionPlayerMenu;
 
+    /**
+     * PlayerTransform
+     */
+    [Tooltip("Put player transform. (principal character)")]
     public Transform playerTransform;
 
+    /**
+     * CrossHair in the scene
+     */
+    [Tooltip("Put the crosshair of the scene")]
     public GameObject crossHair;
 
+    /**
+     * Animator of the player 
+     */
     protected Animator animator;
 
+    /**
+     * RunDirection of the player in game.  
+     */
     public RunDirections CurrentRun { get; set; }
 
+    /**
+     * Idle position of the player in game. 
+     */
     protected RunDirections currentIdle = RunDirections.IdleS;
 
 
@@ -38,7 +74,6 @@ public class MovementPlayer : MonoBehaviour
     void FixedUpdate()
     {
         if (!IsMenuPlayer) movement();
-        
     }
 
     private void movement()

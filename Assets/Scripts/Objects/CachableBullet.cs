@@ -6,20 +6,11 @@ public class CachableBullet : Cachable
 {
     private UIBullets secondaryShootsUI;
 
-    void Awake()
-    {
-        secondaryShootsUI = GameObject.Find("SecondaryShootsUI").GetComponent<UIBullets>();
-    }
+    void Awake() => secondaryShootsUI = GameObject.Find("SecondaryShootsUI").GetComponent<UIBullets>();
     
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        cachtBullet(other);
-    }
+    void OnTriggerEnter2D(Collider2D other) =>  cachtBullet(other);
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        cachtBullet(other);
-    }
+    private void OnTriggerStay2D(Collider2D other) =>  cachtBullet(other);
 
     private void cachtBullet(Collider2D other) 
     {
@@ -32,5 +23,4 @@ public class CachableBullet : Cachable
             }
         }
     }
-
 }

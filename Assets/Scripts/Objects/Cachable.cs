@@ -1,12 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public abstract class Cachable : MonoBehaviour
 {
     private Image circleBar;
-
     private float timeToDispear;
     private float timePassed = 0f; 
 
@@ -20,11 +18,8 @@ public abstract class Cachable : MonoBehaviour
         StartCoroutine(DispearCatchable());
     }
 
-    private void Update()
-    {
-        circleBarTimer();
-    }
-
+    private void Update() => circleBarTimer();
+    
     private IEnumerator DispearCatchable() {
         yield return new WaitForSeconds(timeToDispear);
 
@@ -32,11 +27,8 @@ public abstract class Cachable : MonoBehaviour
     }
 
     //This method call by DropObject
-    public void SetPosition(Vector3 cachablerPosition) 
-    {
-        transform.position = cachablerPosition;
-    }
-
+    public void SetPosition(Vector3 cachablerPosition) =>  transform.position = cachablerPosition;
+    
     //Method that reduce circle bar timer.
     private void circleBarTimer()
     {
@@ -44,5 +36,4 @@ public abstract class Cachable : MonoBehaviour
 
         circleBar.fillAmount = (((timeToDispear - timePassed) * 100) / timeToDispear) / 100;
     }
-
 }

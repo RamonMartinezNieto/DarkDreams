@@ -1,11 +1,37 @@
-﻿using System.Collections;
+﻿/**
+ * Department: Game Developer
+ * File: ListController.cs
+ * Objective: Create a new List component to add in the laderboard
+ * Employee: Ramón Martínez Nieto
+ */
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Class to create a new component to put in the lader board
+ * 
+ * @author Ramón Martínez Nieto
+ * @see ListItemController
+ */
 public class ListController : MonoBehaviour
 {
-    public FirebaseConnection firebaseConn; 
+    /**
+     * Script FireBaseConnection whit all functionality of the comunication with the database.
+     * @see FirebaseConnection
+     */
+    [Tooltip("Put FireBaseConnection script")]
+    public FirebaseConnection firebaseConn;
+    
+    /**
+     * Prefab with the ListItemUser 
+     */
+    [Tooltip("Put a prefab with the ListItemUser")]
     public GameObject PreffabListItemUser;
+    
+    /**
+     * ContentPanel where adding all ListItemUser
+     */
+    [Tooltip("Put contentpanel laderboard")]
     public GameObject ContentPanel;
 
     List<UserScore> listUsers = new List<UserScore>();
@@ -21,6 +47,9 @@ public class ListController : MonoBehaviour
         }
     }
 
+    /**
+     * Method to search and add higher scores. 
+     */
     public void ChargeHighScores() 
     {
         for (int i = 0; i < listUsers.Count; i++)
@@ -36,6 +65,9 @@ public class ListController : MonoBehaviour
         }
     }
 
+    /**
+     * Method for cleaning the laderboard
+     */
     public void clearList() 
     {
         foreach (GameObject go in listItemController) 

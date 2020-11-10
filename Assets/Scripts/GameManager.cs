@@ -143,7 +143,15 @@ public class GameManager : PlayerConf
     
     private void Update()
     {
- 
+
+        /*
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            timeController.Seconds += 1; 
+        }
+        */
+
+
         if (!CanvasGamerOver.activeSelf)
         {
 

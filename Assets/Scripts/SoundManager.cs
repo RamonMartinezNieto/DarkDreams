@@ -125,6 +125,15 @@ public class SoundManager : PlayerConf
 	}
 
 	/**
+	 * Método básico para las opciones de los menús ya que no admiten valores por defecto.
+	 */
+	public void PlayEffect(string clip)
+	{
+		EffectsSource.clip = getClip(clip, musicEffects);
+		EffectsSource.Play();
+	}
+
+	/**
 	 * Method for playing a secondary effect like secondary shot effects.
 	 * You can change Pitch and Volumen for repetitive sounds.
 	 * Solution for not tiring the user.
@@ -154,6 +163,9 @@ public class SoundManager : PlayerConf
 		MusicSource.Play();
 	}
 
+	/**
+	 * TODO:  
+	 */
 	private AudioClip getClip(string clip, DictionaryClips [] list) 
 	{
 		AudioClip clipToPlay = null;

@@ -125,7 +125,7 @@ abstract public class Enemy : MonoBehaviour
      * @param int Damage of the enemy 
      * @param float Distance to attack (adjust deppends the animation) 
      */
-    public void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
+    protected void EnemyConstructor(int health, float speed, float visionRange, int Damage, float distanteToAttack)
     {
         //Use these variables to calculate when the enemy needs change the position, 
         //This avoid  that enemy stay in the same place when the random vector is so close (because velocity affect at the enemy).

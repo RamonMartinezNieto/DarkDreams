@@ -132,6 +132,8 @@ public class EnemyGenerator : MonoBehaviour
 
     /**
      * To create enemies in random position 
+     * 
+     * @see StaticExclusionArea#CheckCoordinatesSprite
      */
     private IEnumerator createEnemieRandomPlace<T>(int quantity) where T : Enemy
     {

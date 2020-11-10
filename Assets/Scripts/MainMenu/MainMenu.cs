@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
             Time.timeScale = 1.0f;
         }
 
-        //TODO:  TO TEST: PlayerPrefs.DeleteAll();
+        //TODO:  TO TEST:PlayerPrefs.DeleteAll();
 
         ShowNameMenu();
         

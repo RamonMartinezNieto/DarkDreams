@@ -27,7 +27,7 @@ public class TimeController : MonoBehaviour
         {
             return _seconds; 
         }
-        private set 
+        set 
         {
             this._seconds = value;
             //Launch event

@@ -6,20 +6,11 @@ public class CachableBulletShotgun : Cachable
 {
     private UIBulletsShotGun secondaryShootsUI;
 
-    void Awake()
-    {
-        secondaryShootsUI = GameObject.Find("SecondaryShootsShotGunUI").GetComponent<UIBulletsShotGun>();
-    }
+    void Awake() =>  secondaryShootsUI = GameObject.Find("SecondaryShootsShotGunUI").GetComponent<UIBulletsShotGun>();
     
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        cachtBullet(other);
-    }
+    void OnTriggerEnter2D(Collider2D other) => cachtBullet(other);
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        cachtBullet(other);
-    }
+    private void OnTriggerStay2D(Collider2D other) => cachtBullet(other);
 
     private void cachtBullet(Collider2D other) 
     {

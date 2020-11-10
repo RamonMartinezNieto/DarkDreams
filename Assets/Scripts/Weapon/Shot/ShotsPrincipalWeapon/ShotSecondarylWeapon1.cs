@@ -101,9 +101,6 @@ public class ShotSecondarylWeapon1 : Shot
 
                 foreach(Collider2D col in colls) 
                 {
-
-                
-
                     if (col.CompareTag("Enemy"))
                     { 
                         Enemy enemy = col.GetComponent<Enemy>();
