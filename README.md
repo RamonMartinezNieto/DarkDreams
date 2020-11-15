@@ -9,17 +9,17 @@
 
 + Build: Carpeta con el proyecto compilado
 	- DarkDreams.exe 								
-		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Ejecutable para iniciar el juego*
+		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;   *Ejecutable para iniciar el juego*
 	+ DerkDreams: Carpeta con todo el proyecto. 	
-		**_Nota:_ No se incluye carpeta Library**
-	- Assets 										
-		*Solo nombro las carpetas de creación propia, las otras son Assets y útiles empleados*	
+		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;;&ensp;&ensp;;&ensp;&ensp; **_Nota:_ No se incluye carpeta Library**
+	- Assets: 										
+		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Solo nombro las carpetas de creación propia, las otras son Assets y útiles empleados*	
 		- Animations								
 		- Resources
 		- Scenes
 		- Scripts
 	- Doc											
-		*Carpeta con toda la documentación interna.*
+		* <space><space>*<space> *Carpeta con toda la documentación interna.*
 		
 + index-doc-interna.html 							
 	*Index para ir a la documentación interna*
