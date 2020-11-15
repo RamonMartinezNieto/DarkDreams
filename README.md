@@ -1,7 +1,7 @@
 # DarkDreams - Ramon Martínez Nieto
 ---
 
-![Logo Dark Dreams](https://github.com/RamonMartinezNieto/DarkDreams/blob/master/Assets/Resources/logo.jpg.meta)
+![Logo Dark Dreams](https://ibb.co/WyFGGY2)
 
 # Dark Dreams
 
