@@ -1,5 +1,8 @@
-# README - DarkDreams - Ramon Martínez Nieto
+# DarkDreams - Ramon Martínez Nieto
 ---
+
+![Logo Dark Dreams](https://github.com/RamonMartinezNieto/DarkDreams/blob/master/Assets/Resources/logo.jpg.meta)
+
 # Dark Dreams
 
 ### Documentos que se entregan.
@@ -30,6 +33,6 @@
 ---
 
 ### **Importante**
-El juego manda a la base de datos Firebase el nombre de usuario junto con la puntuación 
-y el tiepo que realice en la partida siempre que obtenga un nuevo record. Por seguridad 
-es recomendable no introducir nombres reales. 
+> El juego manda a la base de datos Firebase el nombre de usuario junto con la puntuación  
+ y el tiepo que realice en la partida siempre que obtenga un nuevo record. Por seguridad  
+ es recomendable no introducir nombres reales.  
