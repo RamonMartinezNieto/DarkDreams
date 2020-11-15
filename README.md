@@ -1,12 +1,12 @@
 # README - DarkDreams - Ramon Martínez Nieto
-===
-# Dark Dreams
 ---
+# Dark Dreams
+
 ## Documentos que se entregan.
 
 + Build: Carpeta con el proyecto compilado
-	- DarkDreams.exe 								> ** Ejecutable para iniciar el juego **
-+ DerkDreams: Carpeta con todo el proyecto. 		> ** Nota: No se incluye carpeta Library  **
+	- DarkDreams.exe 								> Ejecutable para iniciar el juego 
+	+ DerkDreams: Carpeta con todo el proyecto. 	> ** Nota: No se incluye carpeta Library  **
 	- Assets 										> ** Solo nombro las carpetas de creación propia, las otras son Assets y útiles empleados **	
 		- Animations								
 		- Resources
@@ -21,11 +21,13 @@
 + Dark Dreams- ANEXO B - Manual de Usuario .pdf 	> ** Manual de Usuario **
 + DarkDreams.exe									> ** Instalador del Juego ** 
 
+---
 
-#### Orientación para jugar
+### Orientación para jugar
 Si no quieres *instalar* el juego puede ejecutarlo diréctamente utilizando el ejecutable
 que se encuentra en la carpeta *Build* pulsando doble click sobre DarkDreams.exe 
 
+---
 
 ### **Importante**
 El juego manda a la base de datos Firebase el nombre de usuario junto con la puntuación 
