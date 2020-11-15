@@ -9,7 +9,7 @@
  * Enum to stablish standars directions and idles.
  * 
  * @author Ramón Martínez Nieto
- * 
+ * @version 1.0.0
  */
 public enum RunDirections 
 {

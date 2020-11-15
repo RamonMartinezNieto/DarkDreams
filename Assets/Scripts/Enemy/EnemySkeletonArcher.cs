@@ -12,7 +12,7 @@ using UnityEngine;
  * 
  * @author Ramón Martínez Nieto
  * @see Enemy#EnemyConstructor
- * 
+ * @version 1.0.0
  */
 public class EnemySkeletonArcher : Enemy
 {

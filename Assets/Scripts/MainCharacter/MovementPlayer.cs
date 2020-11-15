@@ -10,6 +10,7 @@ using UnityEngine;
  * Class with all logic of the player's movement.
  * 
  * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class MovementPlayer : MonoBehaviour
 {

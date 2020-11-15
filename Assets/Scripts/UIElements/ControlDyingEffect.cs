@@ -1,9 +1,27 @@
-﻿using UnityEngine;
+﻿/**
+ * Department: Game Developer
+ * File: ControlDyingEffect.cs
+ * Objective: Control a layer to put on when the enemy has little life.
+ * Employee: Ramón Martínez Nieto
+ */
+using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * 
+ * This class control a layer to put on when the enemy has little life. 
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class ControlDyingEffect : MonoBehaviour
 {
+    /**
+     * Variable with the playerStats
+     */
+    [Tooltip("Add gameObject with the class playerStats")]
     public PlayerStats playerStats; 
+
     private RawImage dyingEffect;
 
     private void Awake()
@@ -28,7 +46,6 @@ public class ControlDyingEffect : MonoBehaviour
         else 
         {
             dyingEffect.color = new Color(1f, 1f, 1f, 0f);
-        }
-        
+        } 
     }
 }

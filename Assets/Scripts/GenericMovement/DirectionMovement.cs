@@ -10,7 +10,7 @@ using UnityEngine;
  * Class to know the direction of the character. I use it with the enemies.
  * 
  * @author Ramón Martínez Nieto
- * 
+ * @version 1.0.0
  */
 public class DirectionMovement : MonoBehaviour
 {

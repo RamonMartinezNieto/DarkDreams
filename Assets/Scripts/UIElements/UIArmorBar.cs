@@ -1,14 +1,38 @@
-﻿
+﻿/**
+ * Department: Game Developer
+ * File: UIArmorBar.cs
+ * Objective: Specification of the UIBar to create a control of the UIArmorBar
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
 
+/**
+ * This class is a especific class to control the ArmorBar, override the methods that it need.
+ * 
+ * @see UIBar
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class UIArmorBar : UIBar
 {
+    /**
+     * Slider of the ArmorBar
+     */
+    [Tooltip("Add Slider of the Armor Bar")]
     public Slider ArmorBar;
+
+    /**
+     * Text in the up of the bar
+     */
+    [Tooltip("Add text up to bar of the Armor Bar")]
     public TMP_Text textArmor;
 
+    /**
+     * Variable that define the cuantity of the armor absorb 
+     */
     public static readonly float DAMAGE_REDUCE = 80;
 
     void Start()
@@ -17,8 +41,16 @@ public class UIArmorBar : UIBar
         SetValueInt(ArmorBar.value);
     }
 
+    /**
+     * Method to change the value of the bar 
+     * 
+     * @see UIBar#SetValueInt
+     */
     public override void SetValueInt(float value) => textArmor.text = Convert.ToInt32((value * 100)).ToString();
 
+    /**
+     * Method to change the color of the bar. Deppends of the size.
+     */
     public override void ChangeColor(float sizeNorm)
     {
         //Original colors to armor 
@@ -42,7 +74,11 @@ public class UIArmorBar : UIBar
         }
     }
 
-    //Armor bar get 80% of the enemy  damage
+    /**
+      * Armor bar get 80% of the enemy  damage
+      * 
+      * @see DAMAGE_REDUCE
+      */
     public float GetDamageRestArmorEffect(int damage)
     {
         //return the damage absorving with armor

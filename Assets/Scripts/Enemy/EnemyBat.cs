@@ -13,7 +13,7 @@
  * @author Ramón Martínez Nieto
  * @see Enemy#EnemyConstructor
  * @see ATTACKS
- * 
+ * @version 1.0.0
  */
 public class EnemyBat : Enemy
 {

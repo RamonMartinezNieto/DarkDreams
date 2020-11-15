@@ -2,7 +2,7 @@
  * Department: Game Developer
  * File: User.cs
  * Objective: Create a basic User only with the name
- * Employee: Ramón Martínez Nieto
+ * Employee: Ramón Martínez Nieto 
  */
 using System;
 using System.Collections.Generic;

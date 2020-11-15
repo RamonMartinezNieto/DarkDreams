@@ -12,6 +12,7 @@ using UnityEngine.Tilemaps;
  * This class provide all necesary to generate enemies in arround the map and on the doors
  * 
  * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class EnemyGenerator : MonoBehaviour
 {

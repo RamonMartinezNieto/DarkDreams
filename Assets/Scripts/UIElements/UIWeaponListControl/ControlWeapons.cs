@@ -1,21 +1,64 @@
-﻿using System;
-using System.Collections;
+﻿/**
+ * Department: Game Developer
+ * File: ControelWeapon.cs
+ * Objective: This class pretend control the diferent weapons in the game, to show in a UI weapons.
+ * Employee: Ramón Martínez Nieto
+ */
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * This class has a list with all weapons in game, all weapons have a important variable "IsActive" to 
+ * controll if the weapon is active (in use).
+ * 
+ * @see Weapons#IsActive
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class ControlWeapons : MonoBehaviour
 {
-    public static ControlWeapons Instance = null; 
+    /**
+     * Singleton Instance of ControlWeapons
+     */
+    public static ControlWeapons Instance = null;
 
+    /**
+     * GameObject with the prefab on the IU show the weapons
+     */
+    [Tooltip("Add GameObject ")]
     public GameObject prefabShowWeapons;
+
+    /**
+     * Variable with the prefab of the secondary weapon
+     */
+    [Tooltip("Add prefab secondary weapon")]
     public GameObject prefabSecondaryWeapons;
 
+    /**
+     * Variable to use class UIBulletsSecondatyPrincipalWeapon
+     */
+    [Tooltip("")]
     public GameObject UIBulletsSecondaryPrincipalWeapon;
+
+    /**
+     * Variable to use class UIBulletsSecondaryShotGun
+     */
+    [Tooltip("")]
     public GameObject UIBulletsSecondaryShotGun;
 
+    /**
+     * Prefab with all content of the panel
+     */
+    [Tooltip("")]
     public GameObject prefabContentPanel;
     
+    /**
+     * List with all weapons in the game. Use a object WeaponListController to create 
+     * a new layout of a weapon.
+     * 
+     * @see WeaponListController
+     */
     List<WeaponListController> listWeaponController = new List<WeaponListController>();
 
     private bool isTheFirst = true; 
@@ -33,6 +76,9 @@ public class ControlWeapons : MonoBehaviour
         }
     }
 
+    /**
+     * Method to know how much weapons are in possesion
+     */
     public int TotalWeaponsInPossesion() { return listWeaponController.Count;  }
 
     private void ChangeWeaponInUse()
@@ -50,6 +96,9 @@ public class ControlWeapons : MonoBehaviour
         });
     }
 
+    /**
+     * Method to change what weapon is in use
+     */
     public void UpdateActiveWeapon(int number) 
     {
         foreach (WeaponListController wlc in listWeaponController)
@@ -69,7 +118,9 @@ public class ControlWeapons : MonoBehaviour
         }
     }
 
-
+    /**
+     * Method to add a weapon when the player catch one
+     */
     public void AddNewWeaponCatched(GameObject go) 
     {
         Weapons w = go.GetComponentInChildren<Weapons>();
@@ -95,9 +146,9 @@ public class ControlWeapons : MonoBehaviour
         listWeaponController.Add(wlc);
     }
 
-
-
-    //Return when weapon (gameObject) IsActive 
+    /**
+      * Return what weapon (gameObject) IsActive 
+      */
     public int WhereIsTheActiveWeapon() 
     {
         int activeWeapon = 0;
@@ -121,5 +172,4 @@ public class ControlWeapons : MonoBehaviour
 
         return weaponsInPossesion;
     }
-
 }

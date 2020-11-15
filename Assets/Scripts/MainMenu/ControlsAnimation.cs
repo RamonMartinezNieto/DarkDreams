@@ -1,39 +1,101 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: ControlsAnimation.cs
+ * Objective: Method to create an animation in the Controls panel 
+ * Employee: Ramón Martínez Nieto
+ */
+using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UIElements;
 
+/**
+ * 
+ * This class create a complete animation in the controls panel. 
+ * To show to the user all controls that they has in the gamne.
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class ControlsAnimation : MonoBehaviour
 {
 
-    Color KeyCapPulsed = new Color(1f, .6f, 0f, 1f);
-    Color KeyCapNoPulsed = new Color(.5f, .75f, .90f, 1f);
+    private Color KeyCapPulsed = new Color(1f, .6f, 0f, 1f);
+    private Color KeyCapNoPulsed = new Color(.5f, .75f, .90f, 1f);
 
+    /**
+     * SpriteRender with the key W  
+     */
     public SpriteRenderer keyW;
+    /**
+     * SpriteRender with the key A 
+     */
     public SpriteRenderer keyA;
+
+    /**
+     * SpriteRender with the key S  
+     */
     public SpriteRenderer keyS;
+
+    /**
+     * SpriteRender with the key D  
+     */
     public SpriteRenderer keyD;
 
+    /**
+     * Animatior of the mini player in the W posiion
+     */
     public Animator playerW;
+
+    /**
+     * Animatior of the mini player in the W posiion
+     */
     public Animator playerA;
+
+    /**
+     * Animatior of the mini player in the S posiion
+     */
     public Animator playerS;
+
+    /**
+     * Animatior of the mini player in the D posiion
+     */
     public Animator playerD;
 
+    /**
+     * Variable to control the time between animations
+     */
     public float timeRun;
 
+    /**
+     * GameObject of the panel control 
+     */
     public GameObject panelControl;
 
+    /**
+     *  GameObject with the esc view
+     */
     public GameObject escView;
+
+    /**
+     *  Sprite render with the key ESC
+     */
     public SpriteRenderer keyESC; 
 
-    /**** Variables to mouse events ***/
+    /**
+     * Sprite Renderer with the mouse in the panel 
+     */
     public SpriteRenderer mouse;
-    public GameObject principalWeapon; 
 
+    /**
+     * GameObject of the weapon that the character has 
+     */
+    public GameObject principalWeapon;
+
+    /**
+     * Method to start all animations, depends of the Coroutine.
+     * the coroutines are in an infinite loop until they leave the panel
+     */
     public void StartKeysAnimation() 
     {
-        
         ResetAllKey();
 
         //Start Coroutine
@@ -44,6 +106,9 @@ public class ControlsAnimation : MonoBehaviour
         StartCoroutine(EscViewControl());
     }
 
+    /**
+     * Method to reset all animations 
+     */
     public void ResetAllKey() 
     {
         playerW.Play(RunDirections.IdleN.ToString());

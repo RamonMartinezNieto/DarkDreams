@@ -1,9 +1,22 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: ShotGunShot.cs
+ * Objective: Have a specification of the secondary bullet of the shotgun
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/**
+ * 
+ * This class is a specification of the class shot, to have a specific principal shot 
+ * of the shot gun. The shot of the shotgun is in reality a multiple shoots with different 
+ * angles. Extend methods with new public method.
+ * 
+ * @see Shot
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class ShotGunShot : Shot
 {
 
@@ -17,6 +30,12 @@ public class ShotGunShot : Shot
         MovingShot();
     }
 
+    /**
+     * Extensión of MovingShot to create a concrete angle to the differents shots, because 
+     * when the principal shoot start, it create a multiple of this shoots. 
+     * 
+     * @see ShotgunWeapon#Shoting
+     */
     new public void MovingShot()
     {
         timeDuration += Time.time;

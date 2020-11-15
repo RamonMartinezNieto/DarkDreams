@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['screensizechangeevent_910',['ScreenSizeChangeEvent',['../class_window_manager.html#a14a0bd1417f4bd63a2892607e6f4d6cb',1,'WindowManager']]]
+  ['onminuteschanged_912',['OnMinutesChanged',['../class_time_controller.html#a28c60f85d0b2537114c247cd288a9ac7',1,'TimeController']]],
+  ['onsecondschanged_913',['OnSecondsChanged',['../class_time_controller.html#a2c4f950db435ee7d6dc09378d7731462',1,'TimeController']]]
 ];

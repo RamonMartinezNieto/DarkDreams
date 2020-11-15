@@ -6,6 +6,7 @@ var class_sound_manager =
     [ "LoopMusic", "class_sound_manager.html#a2aa8abdec9bcf4217d2a806fbfc40d65", null ],
     [ "MuteEffectsSounds", "class_sound_manager.html#a963d9e60a6721e9233efcdf622dfc310", null ],
     [ "MuteMusic", "class_sound_manager.html#ab944ea2b2200ec587ea3ceb104495128", null ],
+    [ "PlayEffect", "class_sound_manager.html#a759bf6179e8f57fb156871798fdd792b", null ],
     [ "PlayEffect", "class_sound_manager.html#a7e42c5a7aacdaa9ca6bd3dba40be166a", null ],
     [ "PlayMusic", "class_sound_manager.html#a60ed3a4b45a06cff12e04bdbd31d4eca", null ],
     [ "PlaySecondaryEffect", "class_sound_manager.html#ada3c69dfda309e2a38f93115c1ac45d1", null ],

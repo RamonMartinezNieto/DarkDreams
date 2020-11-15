@@ -1,6 +1,23 @@
-﻿using UnityEngine;
+﻿/**
+ * Department: Game Developer
+ * File: ArrowShot.cs 
+ * Objective: Control of the enemy's arrow
+ * Employee: Ramón Martínez Nieto
+ */
+using UnityEngine;
 using System.Collections;
 
+/**
+ * 
+ * This class is a specification of the shot arrow. 
+ * The arrows are a fucking disturbing in my brain, 
+ * 
+ * PLEASE DO NOT TOUCH THIS CLASS FOR ANY REASON, seriously this class is easily broken
+ * 
+ * @see Shot
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class ArrowShot : Shot
 {
 
@@ -20,13 +37,20 @@ public class ArrowShot : Shot
         }
     }
 
-    //sobrecharging method (orginal en Shot)
+    /**
+     * Oberride method (orginal en Shot)
+     * 
+     * @see Shot#MovingShot
+     */
     public void MovingShot(Vector3 direction)
     {
         timeDuration += Time.time;
         this.gameObject.GetComponent<Rigidbody2D>().velocity = direction * shotVelocity;
     }
 
+    /**
+     * Override of the SetShotAngel, arrows have a special form to get the correct angle. Fuck me to write this! 
+     */
     public override void SetShotAngle(Vector3 objectiveTransform, float variationOfY = .0f)
     {
         objectiveTransform.y += variationOfY;
@@ -92,6 +116,11 @@ public class ArrowShot : Shot
         return arrowDir;
     }
 
+    /**
+     * Override of DestroyShotAnimation 
+     * 
+     * @return IEnumerator
+     */
     public override IEnumerator DestroyShotAnimation()
     {
         yield return new WaitForSeconds(0);

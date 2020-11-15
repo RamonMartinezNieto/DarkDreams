@@ -1,20 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+﻿/**
+ * Department: Game Developer
+ * File: ShotSecondaryWeapon1.cs
+ * Objective: Create and control secondary shoot of principal weapon.
+ * Employee: Ramón Martínez Nieto
+ */
+using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
+/**
+ * This class under Shot have a complete control of the principal's secondary shoot. 
+ * IS VERY IMPORTANT, because the secondary shoot have a differents system particles, and 
+ * very differnt comportment. 
+ *
+ * @see Shot
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class ShotSecondarylWeapon1 : Shot
 {
+
     private ParticleSystem [] explosionParticles;
+    
     private SpriteRenderer bulletRender; 
 
     private UIBullets secondaryShootsUI;
 
     public bool IsMenuSecondaryShoot;
 
+    /**
+     * Specific particleSystem of the secondary shoot, this is following the shoot and need stop it when the shoot arrive to his position. 
+     */
+    [Tooltip("Add particle system that follow the shoot")]
     public ParticleSystem particleSystemSecondaryShoot;
 
+    /**
+     * Variable to change the radius of the explosion. 
+     */
+    [Tooltip("Add the radius of the explison.")]
     public float radiusExplosion = 1.50f;
 
     //Need to set velocity, damage and destroy animation
@@ -37,6 +59,12 @@ public class ShotSecondarylWeapon1 : Shot
 
     void restBullet() => secondaryShootsUI.disableBullet(UIBullets.CurrentBullets - 1);
 
+    /**
+     * Method overrided to stop the particle system, show the partycle system of the explison, 
+     * and destroy it. 
+     * 
+     * @return IEnumeratos
+     */
     public override IEnumerator DestroyShotAnimation()
     {
         shootRigi.velocity = Vector2.zero;
@@ -54,6 +82,9 @@ public class ShotSecondarylWeapon1 : Shot
         Destroy(shootContainer);
     }
     
+    /**
+     * Method to start the explosion. The explosion is a differents partycle systems. 
+     */
     public void StartExplosion()
     {
         if (!IsMenuSecondaryShoot)
@@ -115,6 +146,9 @@ public class ShotSecondarylWeapon1 : Shot
         }
     }
 
+    /**
+     * Only to test in scene 
+     */
     private void OnDrawGizmos()
     {
         //TODO: TEST 

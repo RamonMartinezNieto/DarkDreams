@@ -1,7 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: CachableBulletShotgun.cs
+ * Objective: Specific class of Cachable to create a cachable bullet of the shotgun.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ *  This class provide a specific methods to control a cachable to add a secondary bullet of the shotgun.
+ * 
+ * @see Cachable
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class CachableBulletShotgun : Cachable
 {
     private UIBulletsShotGun secondaryShootsUI;

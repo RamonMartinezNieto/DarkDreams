@@ -13,7 +13,7 @@ using UnityEngine.AI;
  * new enemies. 
  * 
  * @author Ramón Martínez Nieto
- * 
+ * @version 1.0.0
  */
 abstract public class Enemy : MonoBehaviour
 {

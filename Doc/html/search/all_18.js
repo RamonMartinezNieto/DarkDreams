@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['zone_446',['Zone',['../class_zone.html',1,'']]],
-  ['zone_2ecs_447',['Zone.cs',['../_zone_8cs.html',1,'']]],
-  ['zoneone_448',['ZoneOne',['../class_zone_one.html',1,'']]],
-  ['zoneone_2ecs_449',['ZoneOne.cs',['../_zone_one_8cs.html',1,'']]],
-  ['zonetwo_450',['ZoneTwo',['../class_zone_two.html',1,'']]],
-  ['zonetwo_2ecs_451',['ZoneTwo.cs',['../_zone_two_8cs.html',1,'']]]
+  ['yrange1_446',['yRange1',['../class_zone.html#acc9b3266d2fca3441949384bce648d0b',1,'Zone']]],
+  ['yrange2_447',['yRange2',['../class_zone.html#a856814275b7f3782b159d7fd581cfabc',1,'Zone']]]
 ];

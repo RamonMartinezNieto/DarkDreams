@@ -14,6 +14,7 @@ using UnityEngine;
  * other one. 
  * 
  * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class EnemyRecovery : MonoBehaviour
 {

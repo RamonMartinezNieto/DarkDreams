@@ -13,6 +13,7 @@ using UnityEngine.UI;
  * Healt and armor. 
  * 
  * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class PlayerStats : MonoBehaviour
 {

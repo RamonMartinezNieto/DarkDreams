@@ -28,11 +28,13 @@ var hierarchy =
       [ "EnemyRecovery", "class_enemy_recovery.html", null ],
       [ "ExclusionArea", "class_exclusion_area.html", null ],
       [ "FirebaseConnection", "class_firebase_connection.html", null ],
+      [ "intro", "classintro.html", null ],
       [ "ListController", "class_list_controller.html", null ],
       [ "ListItemController", "class_list_item_controller.html", null ],
       [ "MainCamera", "class_main_camera.html", null ],
       [ "MainMenu", "class_main_menu.html", null ],
       [ "MenusInGame", "class_menus_in_game.html", null ],
+      [ "MinimapCamera", "class_minimap_camera.html", null ],
       [ "MovementPlayer", "class_movement_player.html", null ],
       [ "NameControl", "class_name_control.html", null ],
       [ "Pause", "class_pause.html", null ],
@@ -52,6 +54,7 @@ var hierarchy =
         [ "ShotSecondarylWeapon1", "class_shot_secondaryl_weapon1.html", null ]
       ] ],
       [ "StaticExclusionArea", "class_static_exclusion_area.html", null ],
+      [ "TimeController", "class_time_controller.html", null ],
       [ "UIBar", "class_u_i_bar.html", [
         [ "UIArmorBar", "class_u_i_armor_bar.html", null ],
         [ "UIHealthBar", "class_u_i_health_bar.html", null ]
@@ -71,7 +74,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "StaticListWeapons", "class_static_list_weapons.html", null ],
-    [ "TimeController", "class_time_controller.html", null ],
     [ "User", "class_user.html", [
       [ "UserScore", "class_user_score.html", null ]
     ] ]

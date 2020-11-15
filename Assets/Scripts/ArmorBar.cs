@@ -1,13 +1,17 @@
 ﻿/**
- * This class was remplaced by UIArmorBar
- * \deprecated This class was remplaced by UIArmorBar
+ * Department: Game Developer
+ * File: ArmorBar.cs
+ * Objective: This class was remplaced by UIArmorBar
+ * Employee: Ramón Martínez Nieto
  */
 
 using UnityEngine;
 
 /**
  * This class is obsolete because is remplaced by UIArmorBar
- *  \deprecated This class was remplaced by UIArmorBar
+ * 
+ * @deprecated This class was remplaced by UIArmorBar
+ * @version 1.0.0
  */
 [System.Obsolete("This class is obsolete, remplaced by UIArmorBar", true)]
 public class ArmorBar : MonoBehaviour

@@ -15,7 +15,7 @@ using UnityEngine;
  * The GameObject that contains the bar is a children of the complete GameObject "HealthBar". 
  * 
  * @author Ramón Martínez Nieto
- *  
+ * @version 1.0.0
  */
 public class EnemyHealthBar : MonoBehaviour
 {

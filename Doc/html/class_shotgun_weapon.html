@@ -91,24 +91,30 @@ $(document).ready(function(){initNavTree('class_shotgun_weapon.html',''); initRe
 <div class="title">ShotgunWeapon Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is a specification of the weapon to create a new weapon, shot gun weapon.  
+ <a href="class_shotgun_weapon.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ShotgunWeapon:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_shotgun_weapon.png" usemap="#ShotgunWeapon_map" alt=""/>
   <map id="ShotgunWeapon_map" name="ShotgunWeapon_map">
-<area href="class_weapons.html" alt="Weapons" shape="rect" coords="0,56,104,80"/>
+<area href="class_weapons.html" title="This class is an abstract class to controll all weapons, all weapons are under this class,..." alt="Weapons" shape="rect" coords="0,56,104,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b5c9639b3f95aff1d984da53ede50ed"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shotgun_weapon.html#a7b5c9639b3f95aff1d984da53ede50ed">Shoting</a> (GameObject bulletType)</td></tr>
+<tr class="memdesc:a7b5c9639b3f95aff1d984da53ede50ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override shoting because is a little different, in this case in the shoot are a diferrent individual bullets with different angles.  <a href="class_shotgun_weapon.html#a7b5c9639b3f95aff1d984da53ede50ed">More...</a><br /></td></tr>
 <tr class="separator:a7b5c9639b3f95aff1d984da53ede50ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad46a52e963387f7782870a667e47f7fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shotgun_weapon.html#ad46a52e963387f7782870a667e47f7fa">NormalShoting</a> (GameObject bulletType)</td></tr>
+<tr class="memdesc:ad46a52e963387f7782870a667e47f7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a normal shooting, onlin one shot, to use it to create differents shootings.  <a href="class_shotgun_weapon.html#ad46a52e963387f7782870a667e47f7fa">More...</a><br /></td></tr>
 <tr class="separator:ad46a52e963387f7782870a667e47f7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_weapons"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_weapons')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_weapons.html">Weapons</a></td></tr>
 <tr class="memitem:a74c52743f81ac1821cb46149ba313bcb inherit pub_methods_class_weapons"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a74c52743f81ac1821cb46149ba313bcb">SetActiveWeapon</a> ()</td></tr>
+<tr class="memdesc:a74c52743f81ac1821cb46149ba313bcb inherit pub_methods_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this weapon how active (using it)  <a href="class_weapons.html#a74c52743f81ac1821cb46149ba313bcb">More...</a><br /></td></tr>
 <tr class="separator:a74c52743f81ac1821cb46149ba313bcb inherit pub_methods_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -117,10 +123,13 @@ Properties</h2></td></tr>
 <tr class="separator:a286314f69f9b160c4e46a58580ffded7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_weapons"><td colspan="2" onclick="javascript:toggleInherit('properties_class_weapons')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_weapons.html">Weapons</a></td></tr>
 <tr class="memitem:ab11cf70674464bbcda20a1f040de644b inherit properties_class_weapons"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#ab11cf70674464bbcda20a1f040de644b">IsInPossesion</a> = false<code> [get, set]</code></td></tr>
+<tr class="memdesc:ab11cf70674464bbcda20a1f040de644b inherit properties_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">This variable represent if the user have this weapon in her possesion.  <a href="class_weapons.html#ab11cf70674464bbcda20a1f040de644b">More...</a><br /></td></tr>
 <tr class="separator:ab11cf70674464bbcda20a1f040de644b inherit properties_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01eab3e4dea2869f148a75ce4b33340c inherit properties_class_weapons"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a01eab3e4dea2869f148a75ce4b33340c">IsActive</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a01eab3e4dea2869f148a75ce4b33340c inherit properties_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">This variable represent if the user have this weapon and is using in this moment.  <a href="class_weapons.html#a01eab3e4dea2869f148a75ce4b33340c">More...</a><br /></td></tr>
 <tr class="separator:a01eab3e4dea2869f148a75ce4b33340c inherit properties_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b6779b9e38fa122df07643f930696b inherit properties_class_weapons"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#ad1b6779b9e38fa122df07643f930696b">TotalWeapons</a> = 0<code> [get, set]</code></td></tr>
+<tr class="memdesc:ad1b6779b9e38fa122df07643f930696b inherit properties_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">TotalCount of the all weapons 1 Principal Weapon, 2 ShotGun.  <a href="class_weapons.html#ad1b6779b9e38fa122df07643f930696b">More...</a><br /></td></tr>
 <tr class="separator:ad1b6779b9e38fa122df07643f930696b inherit properties_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66240ddc95caa784a1352ca848485686 inherit properties_class_weapons"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a66240ddc95caa784a1352ca848485686">WeaponPosition</a><code> [get, set]</code></td></tr>
 <tr class="separator:a66240ddc95caa784a1352ca848485686 inherit properties_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,20 +158,28 @@ Properties</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_weapons"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_weapons')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_weapons.html">Weapons</a></td></tr>
 <tr class="memitem:a61a9f2e8864306728c3f5b4e66743123 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a61a9f2e8864306728c3f5b4e66743123">NumberThisWeapon</a> = 0</td></tr>
+<tr class="memdesc:a61a9f2e8864306728c3f5b4e66743123 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of the weapon (assign in the moment when the user catch the weapon).  <a href="class_weapons.html#a61a9f2e8864306728c3f5b4e66743123">More...</a><br /></td></tr>
 <tr class="separator:a61a9f2e8864306728c3f5b4e66743123 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89207fdd742ba3e0aff16003d1325b53 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a89207fdd742ba3e0aff16003d1325b53">transformWeapon</a></td></tr>
+<tr class="memdesc:a89207fdd742ba3e0aff16003d1325b53 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform of the weapon to calculate inital point shot.  <a href="class_weapons.html#a89207fdd742ba3e0aff16003d1325b53">More...</a><br /></td></tr>
 <tr class="separator:a89207fdd742ba3e0aff16003d1325b53 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e496ec294a343f329abaa7ea8b27c6 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a19e496ec294a343f329abaa7ea8b27c6">transformWeaponContainer</a></td></tr>
+<tr class="memdesc:a19e496ec294a343f329abaa7ea8b27c6 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container of the weapon to rotate it.  <a href="class_weapons.html#a19e496ec294a343f329abaa7ea8b27c6">More...</a><br /></td></tr>
 <tr class="separator:a19e496ec294a343f329abaa7ea8b27c6 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a229b65afdfb2b7b05f23bf0fade83123 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a229b65afdfb2b7b05f23bf0fade83123">bulletType1</a></td></tr>
+<tr class="memdesc:a229b65afdfb2b7b05f23bf0fade83123 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Principal bullet type of the weapon.  <a href="class_weapons.html#a229b65afdfb2b7b05f23bf0fade83123">More...</a><br /></td></tr>
 <tr class="separator:a229b65afdfb2b7b05f23bf0fade83123 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b39c697d6b20df19ec9644946bc062 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#ad0b39c697d6b20df19ec9644946bc062">bulletType2</a></td></tr>
+<tr class="memdesc:ad0b39c697d6b20df19ec9644946bc062 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Secondary bullet type of the weapon.  <a href="class_weapons.html#ad0b39c697d6b20df19ec9644946bc062">More...</a><br /></td></tr>
 <tr class="separator:ad0b39c697d6b20df19ec9644946bc062 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2488179d7b52afef415a8d8cabba4884 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">SpriteRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a2488179d7b52afef415a8d8cabba4884">weaponSpriteRender</a></td></tr>
+<tr class="memdesc:a2488179d7b52afef415a8d8cabba4884 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteRender of the weapon to calculate corrections in scene, it deppens of the movement' character.  <a href="class_weapons.html#a2488179d7b52afef415a8d8cabba4884">More...</a><br /></td></tr>
 <tr class="separator:a2488179d7b52afef415a8d8cabba4884 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d39c9ba070395ad2f14fbf8c642552 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a71d39c9ba070395ad2f14fbf8c642552">IsMenuWeapon</a></td></tr>
+<tr class="memdesc:a71d39c9ba070395ad2f14fbf8c642552 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable to asign the weapon to the menu.  <a href="class_weapons.html#a71d39c9ba070395ad2f14fbf8c642552">More...</a><br /></td></tr>
 <tr class="separator:a71d39c9ba070395ad2f14fbf8c642552 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aace1fd773854221d40fe87e4ec0bcea6 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#aace1fd773854221d40fe87e4ec0bcea6">character</a></td></tr>
+<tr class="memdesc:aace1fd773854221d40fe87e4ec0bcea6 inherit pub_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">GameObject of the principal character.  <a href="class_weapons.html#aace1fd773854221d40fe87e4ec0bcea6">More...</a><br /></td></tr>
 <tr class="separator:aace1fd773854221d40fe87e4ec0bcea6 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6738a46748c14317b52e05e95e96611 inherit pub_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#ab6738a46748c14317b52e05e95e96611">canShoot</a></td></tr>
 <tr class="separator:ab6738a46748c14317b52e05e95e96611 inherit pub_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,11 +215,18 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:addf42776588d52bd76d287e98442f774 inherit pro_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_weapons"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_weapons')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_weapons.html">Weapons</a></td></tr>
 <tr class="memitem:a57c4b8020fd3b77b4a00dffc1640d611 inherit pro_static_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#a57c4b8020fd3b77b4a00dffc1640d611">baseDamage</a> = 10</td></tr>
+<tr class="memdesc:a57c4b8020fd3b77b4a00dffc1640d611 inherit pro_static_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bas damage of the bullets (this variable can change in unity menu when assing differents shots at weapon) Only assing this parameter to asing a defect damage.  <a href="class_weapons.html#a57c4b8020fd3b77b4a00dffc1640d611">More...</a><br /></td></tr>
 <tr class="separator:a57c4b8020fd3b77b4a00dffc1640d611 inherit pro_static_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac65f605c4627f1b7cdb4f2fba0c33041 inherit pro_static_attribs_class_weapons"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weapons.html#ac65f605c4627f1b7cdb4f2fba0c33041">baseDistanceBullet</a> = 2.0f</td></tr>
+<tr class="memdesc:ac65f605c4627f1b7cdb4f2fba0c33041 inherit pro_static_attribs_class_weapons"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base distance of the bullets, (this variable can change in unity menu when assing differents shots at weapon) Only assing this parameter to asing a defect damage.  <a href="class_weapons.html#ac65f605c4627f1b7cdb4f2fba0c33041">More...</a><br /></td></tr>
 <tr class="separator:ac65f605c4627f1b7cdb4f2fba0c33041 inherit pro_static_attribs_class_weapons"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a specification of the weapon to create a new weapon, shot gun weapon. </p>
+<dl class="section see"><dt>See also</dt><dd>Weapon </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Ramón Martínez Nieto </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad46a52e963387f7782870a667e47f7fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad46a52e963387f7782870a667e47f7fa">&#9670;&nbsp;</a></span>NormalShoting()</h2>
 
@@ -218,6 +242,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This is a normal shooting, onlin one shot, to use it to create differents shootings. </p>
 
 </div>
 </div>
@@ -244,6 +270,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Override shoting because is a little different, in this case in the shoot are a diferrent individual bullets with different angles. </p>
 
 <p>Reimplemented from <a class="el" href="class_weapons.html#a941c0d0723192f5597159ed0a5c1dd8a">Weapons</a>.</p>
 
@@ -281,7 +309,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_shotgun_weapon.html">ShotgunWeapon</a></li>
-    <li class="footer">Generated on Fri Sep 25 2020 19:55:15 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sun Nov 15 2020 13:12:55 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

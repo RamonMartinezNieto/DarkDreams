@@ -10,6 +10,7 @@
  * 
  *  @author Ramón Martínez Nieto
  *  @deprecated
+ *  @version 0.0.1
  */
 public class ZoneTwo : Zone
 {

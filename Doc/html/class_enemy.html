@@ -111,9 +111,6 @@ Inheritance diagram for Enemy:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7c47d204bef785f0895a8cfd0b6a3df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ae7c47d204bef785f0895a8cfd0b6a3df">EnemyConstructor</a> (int health, float speed, float visionRange, int <a class="el" href="class_enemy.html#a464d75aeb33609731785e42c97e21f8b">Damage</a>, float distanteToAttack)</td></tr>
-<tr class="memdesc:ae7c47d204bef785f0895a8cfd0b6a3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the all enemies.  <a href="class_enemy.html#ae7c47d204bef785f0895a8cfd0b6a3df">More...</a><br /></td></tr>
-<tr class="separator:ae7c47d204bef785f0895a8cfd0b6a3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12672c4031953055b32228f1ff4d8d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#a12672c4031953055b32228f1ff4d8d7a">TakeDamage</a> (int damage)</td></tr>
 <tr class="memdesc:a12672c4031953055b32228f1ff4d8d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease damage of the enemy.  <a href="class_enemy.html#a12672c4031953055b32228f1ff4d8d7a">More...</a><br /></td></tr>
 <tr class="separator:a12672c4031953055b32228f1ff4d8d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +162,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae7c47d204bef785f0895a8cfd0b6a3df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ae7c47d204bef785f0895a8cfd0b6a3df">EnemyConstructor</a> (int health, float speed, float visionRange, int <a class="el" href="class_enemy.html#a464d75aeb33609731785e42c97e21f8b">Damage</a>, float distanteToAttack)</td></tr>
+<tr class="memdesc:ae7c47d204bef785f0895a8cfd0b6a3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the all enemies.  <a href="class_enemy.html#ae7c47d204bef785f0895a8cfd0b6a3df">More...</a><br /></td></tr>
+<tr class="separator:ae7c47d204bef785f0895a8cfd0b6a3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a480844a345e533521bb1e41719d10f24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#a480844a345e533521bb1e41719d10f24">SetDirectionToAttack</a> (Vector3 posTo)</td></tr>
 <tr class="memdesc:a480844a345e533521bb1e41719d10f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set direction to attack, deppens of the array.  <a href="class_enemy.html#a480844a345e533521bb1e41719d10f24">More...</a><br /></td></tr>
 <tr class="separator:a480844a345e533521bb1e41719d10f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,6 +203,7 @@ Properties</h2></td></tr>
 <div class="textblock"><p>Abstract class with all funcionality of the enemies. </p>
 <p>Use the constructor to create new enemies.</p>
 <dl class="section author"><dt>Author</dt><dd>Ramón Martínez Nieto </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae9bf84d8612a47b9f8408e0ed575672e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9bf84d8612a47b9f8408e0ed575672e">&#9670;&nbsp;</a></span>ActiveEnemey()</h2>
@@ -276,6 +277,9 @@ Properties</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Enemy.EnemyConstructor </td>
@@ -313,6 +317,11 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Constructor of the all enemies. </p>
@@ -510,7 +519,7 @@ Properties</h2></td></tr>
 <p>Set direction to attack, deppens of the array. </p>
 <p>Use it to play the correct animation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_enemy.html#a480844a345e533521bb1e41719d10f24" title="Set direction to attack, deppens of the array.">Enemy::SetDirectionToAttack(Vector3)</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>use <a class="el" href="class_enemy.html#a480844a345e533521bb1e41719d10f24" title="Set direction to attack, deppens of the array.">SetDirectionToAttack(Vector3)</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>use <a class="el" href="class_enemy.html#a480844a345e533521bb1e41719d10f24" title="Set direction to attack, deppens of the array.">SetDirectionToAttack(Vector3)</a> </dd></dl>
 
 </div>
 </div>
@@ -857,7 +866,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_enemy.html">Enemy</a></li>
-    <li class="footer">Generated on Fri Sep 25 2020 19:55:15 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sun Nov 15 2020 13:12:54 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

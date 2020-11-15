@@ -11,7 +11,7 @@ using UnityEngine.AI;
  * Class to adding AI to the enemies.
  * 
  * @author Ramón Martínez Nieto
- * 
+ * @version 1.0.0
  */
 public class EnemyIA : MonoBehaviour
 {

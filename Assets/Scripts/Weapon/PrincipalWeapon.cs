@@ -1,7 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: PrincipalWeapon.cs
+ * Objective: There is a specification of the Weapons to create a principal weapon.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ * 
+ * Specification of the weapon to create a specific principal weapon. 
+ * 
+ * @see Weapon 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class PrincipalWeapon : Weapons
 {
     protected override float TimeDelayShot { get; set; } = .15f;

@@ -1,7 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: ShotgunWeapon.cs   
+ * Objective: Specification of the Weapon to create a shotgun weapon.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ * 
+ * This is a specification of the weapon to create a new weapon, shot gun weapon.
+ * 
+ * @see Weapon
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class ShotgunWeapon : Weapons
 {
     protected override float TimeDelayShot { get; set; } = .5f; 
@@ -51,6 +63,10 @@ public class ShotgunWeapon : Weapons
         }
     }
 
+    /**
+     * Override shoting because is a little different, in this case in the shoot are a diferrent individual bullets 
+     * with different angles. 
+     */
     public override void Shoting(GameObject bulletType)
     {
         //TODO: here is a position of the shoot, need move to ShotPrincipalWeapon, and correct the position
@@ -63,6 +79,9 @@ public class ShotgunWeapon : Weapons
         }
     }
 
+    /**
+     * This is a normal shooting, onlin one shot, to use it to create differents shootings 
+     */
     public void NormalShoting(GameObject bulletType)
     {
         //TODO: here is a position of the shoot, need move to ShotPrincipalWeapon, and correct the position

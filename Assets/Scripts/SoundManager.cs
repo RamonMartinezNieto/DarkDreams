@@ -189,7 +189,7 @@ public class SoundManager : PlayerConf
 	 * Method to stop the secondary effect.  
 	 */
 	public void StopSecondaryEffect() => SecondaryShotSource.Stop();
-
+	 
 	/**
 	 * Method to establish the lopping of the music.
 	 * 

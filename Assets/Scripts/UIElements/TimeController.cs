@@ -1,6 +1,17 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
+﻿/**
+ * Department: Game Developer
+ * File: TimeController.cs
+ * Objective: Create a custom timmer to launch events every second and every minute.
+ * Employee: Ramón Martínez Nieto
+ */
+using UnityEngine;
 
+/**
+ * This class make a timmer and events to launch when the sconds or the minutes change it value. 
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class TimeController : MonoBehaviour
 {
     /**
@@ -20,7 +31,11 @@ public class TimeController : MonoBehaviour
      */
     public static event TimeMinutesChange OnSecondsChanged;
 
+
     private int _seconds;
+    /**
+     * New second
+     */
     public int Seconds
     {
         get 
@@ -36,7 +51,10 @@ public class TimeController : MonoBehaviour
         } 
     }
 
-    private int _minutes; 
+    private int _minutes;
+    /**
+     * New minute
+     */
     public int Minutes {
         get 
         {
@@ -54,6 +72,10 @@ public class TimeController : MonoBehaviour
         } 
     }
 
+    /**
+     * Get current timer (public) the setter is private because it control with the specific setters and only this class
+     * can change it. 
+     */
     public float currentTimer { get; private set; } = 0;
 
     private void FixedUpdate()
@@ -61,7 +83,8 @@ public class TimeController : MonoBehaviour
         updateTime();
     }
 
-    public void updateTime()
+    
+    private void updateTime()
     {
         currentTimer += Time.deltaTime;
 
@@ -76,16 +99,21 @@ public class TimeController : MonoBehaviour
         }
     }
 
+    /**
+     * Getter the complete time with the format MM:SS
+     */
     public string getFormatTimer()
     {
         return string.Format("{0:00}:{1:00}", Minutes, Seconds);
     }
 
+    /**
+     * Reset the timer to create a new game.
+     */
     public void restartTimer()
     {
         Seconds = 0;
         Minutes = 0;
         currentTimer = 0;
     }
-
 }

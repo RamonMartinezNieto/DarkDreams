@@ -10,7 +10,7 @@ using UnityEngine;
  *  Class to control the Crosshair and know the position and angle.
  * 
  *  @author Ramón Martínez Nieto
- *  
+ *  @version 1.0.0
  */
 public class CrossHair : MonoBehaviour
 {

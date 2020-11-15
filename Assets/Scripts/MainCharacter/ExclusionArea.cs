@@ -12,6 +12,7 @@ using UnityEngine;
  * can't respawn.
  * 
  * Deppen of the SpriteRenderer. 
+ * @version 1.0.0
  */
 public class ExclusionArea : MonoBehaviour
 {

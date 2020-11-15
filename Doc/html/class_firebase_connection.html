@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('class_firebase_connection.html',''); i
 <div class="title">FirebaseConnection Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>FirabseConnection has all methods to communicate with the FireBase.  
+ <a href="class_firebase_connection.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FirebaseConnection:</div>
 <div class="dyncontent">
@@ -101,22 +104,33 @@ Inheritance diagram for FirebaseConnection:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8ce82a49b612cd9ea0401d510349323"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_user_score.html">UserScore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_firebase_connection.html#ab8ce82a49b612cd9ea0401d510349323">GetListUsers</a> ()</td></tr>
+<tr class="memdesc:ab8ce82a49b612cd9ea0401d510349323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the list of the first ten users (depends of the score and time).  <a href="class_firebase_connection.html#ab8ce82a49b612cd9ea0401d510349323">More...</a><br /></td></tr>
 <tr class="separator:ab8ce82a49b612cd9ea0401d510349323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0cc013e9251dc812e78a9ce8efee4e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_firebase_connection.html#ad0cc013e9251dc812e78a9ce8efee4e6">WriteScoreInBBDD</a> (string user, int score, string time)</td></tr>
+<tr class="memdesc:ad0cc013e9251dc812e78a9ce8efee4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to insert a new SCORE in the LaderBoard, this method check if the user is in the best ten users (depens of the score and time), in it is in the best 10 scores, check the variable IsNewScore and add the new score.  <a href="class_firebase_connection.html#ad0cc013e9251dc812e78a9ce8efee4e6">More...</a><br /></td></tr>
 <tr class="separator:ad0cc013e9251dc812e78a9ce8efee4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc7a5db148bc4fb1feef86ae1fc9c987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_firebase_connection.html#adc7a5db148bc4fb1feef86ae1fc9c987">WriteNewUser</a> (string user)</td></tr>
+<tr class="memdesc:adc7a5db148bc4fb1feef86ae1fc9c987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to write a new user (all users have a name, score and time).  <a href="class_firebase_connection.html#adc7a5db148bc4fb1feef86ae1fc9c987">More...</a><br /></td></tr>
 <tr class="separator:adc7a5db148bc4fb1feef86ae1fc9c987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87d88cce572ffad114a88567940d180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_firebase_connection.html#af87d88cce572ffad114a88567940d180">UpdateListLaderBoardBackground</a> ()</td></tr>
+<tr class="memdesc:af87d88cce572ffad114a88567940d180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to update the lader board, it use a Coroutine.  <a href="class_firebase_connection.html#af87d88cce572ffad114a88567940d180">More...</a><br /></td></tr>
 <tr class="separator:af87d88cce572ffad114a88567940d180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a874ffbde58029a94d1c7bf7e38ebae76"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_firebase_connection.html">FirebaseConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_firebase_connection.html#a874ffbde58029a94d1c7bf7e38ebae76">Instance</a> = null</td></tr>
+<tr class="memdesc:a874ffbde58029a94d1c7bf7e38ebae76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton Instance of <a class="el" href="class_firebase_connection.html" title="FirabseConnection has all methods to communicate with the FireBase.">FirebaseConnection</a>.  <a href="class_firebase_connection.html#a874ffbde58029a94d1c7bf7e38ebae76">More...</a><br /></td></tr>
 <tr class="separator:a874ffbde58029a94d1c7bf7e38ebae76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b274134cd1fa97061ec45231c49feb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_firebase_connection.html#a87b274134cd1fa97061ec45231c49feb">finish</a></td></tr>
+<tr class="memdesc:a87b274134cd1fa97061ec45231c49feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable to know when the list is charged (already).  <a href="class_firebase_connection.html#a87b274134cd1fa97061ec45231c49feb">More...</a><br /></td></tr>
 <tr class="separator:a87b274134cd1fa97061ec45231c49feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>FirabseConnection has all methods to communicate with the FireBase. </p>
+<p>This class use an API RestClient, to ease the work with the communications. RestClient Provide methods to simplify the construction of POST and GET querys.</p>
+<dl class="section author"><dt>Author</dt><dd>Ramón Martínez Nieto </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab8ce82a49b612cd9ea0401d510349323"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8ce82a49b612cd9ea0401d510349323">&#9670;&nbsp;</a></span>GetListUsers()</h2>
 
@@ -131,6 +145,9 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to get the list of the first ten users (depends of the score and time). </p>
+<p>Use this to charge diferents laderboards. </p>
 
 </div>
 </div>
@@ -149,6 +166,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method to update the lader board, it use a Coroutine. </p>
+
 </div>
 </div>
 <a id="adc7a5db148bc4fb1feef86ae1fc9c987"></a>
@@ -166,6 +185,9 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to write a new user (all users have a name, score and time). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_user.html" title="Serializable class with the name.">User</a> </dd></dl>
 
 </div>
 </div>
@@ -201,6 +223,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method to insert a new SCORE in the LaderBoard, this method check if the user is in the best ten users (depens of the score and time), in it is in the best 10 scores, check the variable IsNewScore and add the new score. </p>
+<dl class="section see"><dt>See also</dt><dd>GameManager::param name="IsNewScore" </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -224,6 +249,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Variable to know when the list is charged (already). </p>
+<p>Use this bool to know when the list is already. </p>
+
 </div>
 </div>
 <a id="a874ffbde58029a94d1c7bf7e38ebae76"></a>
@@ -246,6 +274,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Singleton Instance of <a class="el" href="class_firebase_connection.html" title="FirabseConnection has all methods to communicate with the FireBase.">FirebaseConnection</a>. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -257,7 +287,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_firebase_connection.html">FirebaseConnection</a></li>
-    <li class="footer">Generated on Fri Sep 25 2020 19:55:15 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sun Nov 15 2020 13:12:54 for Dark Dreams by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

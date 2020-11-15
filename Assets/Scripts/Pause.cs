@@ -8,7 +8,7 @@ using UnityEngine;
 
 /**
  * Class with all functions to pause and restart the game.
- * 
+ * @version 1.0.0
  * @author Ramón Martínez Nieto
  */
 public class Pause : MonoBehaviour

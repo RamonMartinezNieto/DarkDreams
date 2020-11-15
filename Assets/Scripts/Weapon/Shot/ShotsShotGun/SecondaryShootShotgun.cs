@@ -1,7 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: SecondaryShootShotgun.cs
+ * Objective: Have a speciliciation of the shoot to create a secondary shoot of the shootgun.
+ * Employee: Ramón Martínez Nieto
+ */
+using System.Collections;
 using UnityEngine;
-
+/**
+ * This class is under Shot have a complete control of the shootgun's secondary shoot. 
+ * IS VERY IMPORTANT, because the secondary shoot have a differents system particles, and 
+ * very differnt comportment. 
+ * 
+ * @see Shot
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class SecondaryShootShotgun : Shot
 {
    
@@ -9,12 +22,19 @@ public class SecondaryShootShotgun : Shot
 
     private UIBulletsShotGun secondaryShootsUI;
 
+    /**
+     * Particle System of the secondary Shoot (this particle system follow the shoot)
+     */
+    [Tooltip("Add Particle System of the Secondary Shoot")]
     public ParticleSystem particleSystemSecondaryShoot;
 
+    /**
+     * Prefab of a pellet shoots
+     */
+    [Tooltip("Add prefab with the little bullets (pellet)")]
     public GameObject prefabLittleBullets;
 
     private bool onlyOneTime = true;
-
 
     void Start()
     {
@@ -68,6 +88,13 @@ public class SecondaryShootShotgun : Shot
             Instantiate(prefabLittleBullets, firePosition, transform.rotation);
     }
 
+
+    /**
+     * Method overrided to stop the particle system, show the partycle system of the explison, 
+     * and destroy it. 
+     * 
+     * @return IEnumerator 
+     */
     public override IEnumerator DestroyShotAnimation()
     {
         //Extra explosion if no contanc with any object

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['username_904',['UserName',['../class_player_conf.html#a19084969713fcd4264d43c16792b6569',1,'PlayerConf']]]
+  ['weaponposition_907',['WeaponPosition',['../class_weapons.html#a66240ddc95caa784a1352ca848485686',1,'Weapons']]]
 ];

@@ -1,7 +1,7 @@
 var dir_d4ed64c3e475cf53a063a3a4ed5ea83f =
 [
     [ "ExclusionArea.cs", "_exclusion_area_8cs.html", [
-      [ "ExclusionArea", "class_exclusion_area.html", "class_exclusion_area" ]
+      [ "ExclusionArea", "class_exclusion_area.html", null ]
     ] ],
     [ "MovementPlayer.cs", "_movement_player_8cs.html", [
       [ "MovementPlayer", "class_movement_player.html", "class_movement_player" ]

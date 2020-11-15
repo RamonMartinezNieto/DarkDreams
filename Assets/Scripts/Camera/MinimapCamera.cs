@@ -8,6 +8,9 @@ using UnityEngine;
 
 /**
  * Class to add to mini camera to control it . 
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class MinimapCamera : MonoBehaviour
 {

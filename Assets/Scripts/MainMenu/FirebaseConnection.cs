@@ -1,4 +1,10 @@
-﻿using Firebase;
+﻿/**
+ * Department: Game Developer
+ * File: FirebaseConnection.cs
+ * Objective: In this class there are all methods to cominicate with the Firebase, (selct data and change it) 
+ * Employee: Ramón Martínez Nieto
+ */
+using Firebase;
 using Firebase.Database;
 using Firebase.Unity.Editor;
 using Proyecto26;
@@ -9,11 +15,26 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/**
+ * 
+ * FirabseConnection has all methods to communicate with the FireBase. 
+ * This class use an API RestClient, to ease the work with the communications.
+ * RestClient Provide methods to simplify the construction of POST and GET querys.
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 public class FirebaseConnection : MonoBehaviour
 {
+    /**
+     * Singleton Instance of FirebaseConnection 
+     */
     public static FirebaseConnection Instance = null;
 
-    //Use this bool to know when the list is already
+    /**
+     * Variable to know when the list is charged (already). 
+     * Use this bool to know when the list is already.
+     */
     public static bool finish;
 
     private DatabaseReference dataReference;
@@ -47,11 +68,22 @@ public class FirebaseConnection : MonoBehaviour
         StartCoroutine(GetAllScoresUsersDesktop());
     }
 
+    /**
+     * Method to get the list of the first ten users (depends of the score and time).
+     * Use this to charge diferents laderboards.
+     */
     public List<UserScore> GetListUsers()
     {
         return GetFirstTenUsers(usersList);
     }
 
+    /**
+     * Method to insert a new SCORE in the LaderBoard, this method check if the user 
+     * is in the best ten users (depens of the score and time), in it is in the best 
+     * 10 scores, check the variable IsNewScore and add the new score.
+     * 
+     * @see GameManager#param name="IsNewScore"
+     */
     public void WriteScoreInBBDD(string user, int score, string time)
     {
         List<UserScore> tenBestScores = GetListUsers();
@@ -139,8 +171,16 @@ public class FirebaseConnection : MonoBehaviour
         return value; 
     }
 
+    /**
+     * Method to write a new user (all users have a name, score and time).
+     * 
+     * @see User
+     */
     public void WriteNewUser(string user) => PostUser(new User(user));
 
+    /**
+     * Method to update the lader board, it use a Coroutine 
+     */
     public void UpdateListLaderBoardBackground() => StartCoroutine(GetAllScoresUsersDesktop());  //StartCoroutine(GetFirstTenUsersMobile());
 
     /**

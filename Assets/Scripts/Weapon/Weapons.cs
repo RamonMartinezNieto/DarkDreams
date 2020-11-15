@@ -1,13 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿/**
+ * Department: Game Developer
+ * File: Weapon.cs
+ * Objective: Abstrac class to controll all weapons.
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ * 
+ * This class is an abstract class to controll all weapons, all weapons are under this class, this clase 
+ * provide basic functionality to controll if the weapon is active, how much weapons have the user, 
+ * the position of the weapons (depens of the character), rotation, and all the common basic functionality.
+ * 
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 abstract public class Weapons : MonoBehaviour
 {
+    /**
+     * This variable represent if the user have this weapon in her possesion.
+     */
     public bool IsInPossesion { get; set; } = false;
 
     private bool _isActive;
+
+    /**
+     * This variable represent if the user have this weapon and is using in this moment.
+     */
     public bool IsActive
     {
         get 
@@ -19,38 +39,74 @@ abstract public class Weapons : MonoBehaviour
             this._isActive = value; 
         }
     }
-    //1 Principal Weapon, 2 ShotGun. TODO: Need change this variable with enumarator or other structure
+
+    /**
+     * TotalCount of the all weapons
+     * 1 Principal Weapon, 2 ShotGun. TODO: Need change this variable with enumarator or other structure
+     */
     public static int TotalWeapons { get; set; } = 0;
 
+    /**
+     * Number of the weapon (assign in the moment when the user catch the weapon). 
+     * It deppend on the order of catching.
+     */
     public int NumberThisWeapon = 0;
 
+    /**
+     * Transform of the weapon to calculate inital point shot
+     */
     [Tooltip("Transform with initial point from shot")]
     public Transform transformWeapon;
 
+    /**
+     * Container of the weapon to rotate it
+     */
     [Tooltip("Container of the weapon")]
     public Transform transformWeaponContainer;
 
+    /**
+     * Principal bullet type of the weapon
+     */
     [Tooltip("Specific bullet type infinite armor to shot")]
     public GameObject bulletType1;
 
+    /**
+     * Secondary bullet type of the weapon
+     */
     [Tooltip("Specific bullet type that only have 5 bullets")]
     public GameObject bulletType2;
 
+    /**
+     * SpriteRender of the weapon to calculate corrections in scene, it deppens of the movement' character
+     */
     [Tooltip("Weapon Sprite Renderer to calculate the corrections to check correct initial bullet position")]
     public SpriteRenderer weaponSpriteRender;
 
+    /**
+     * Variable to asign the weapon to the menu
+     */
     [Tooltip("Check bool when the weapoin is present in the menu")]
     public bool IsMenuWeapon;
 
+    /**
+     * GameObject of the principal character
+     */
     public GameObject character;
 
     [HideInInspector] public bool canShoot;
     [HideInInspector] public bool canShootManual;
 
+    /**
+     * Bas damage of the bullets (this variable can change in unity menu when assing differents shots at weapon) 
+     * Only assing this parameter to asing a defect damage
+     */
     protected const int baseDamage = 10;
 
+    /**
+     * Base distance of the bullets, (this variable can change in unity menu when assing differents shots at weapon) 
+     * Only assing this parameter to asing a defect damage
+     */
     protected const float baseDistanceBullet = 2.0f;
-
 
     [System.NonSerialized()]
     protected Vector3 _weaponPosition;
@@ -141,9 +197,7 @@ abstract public class Weapons : MonoBehaviour
 
     protected abstract float TimeDelayShot { get; set; }
     protected float TimePassBewtweenShots { get; set; }
-
- 
-
+    
     protected void CanShootTiming()
     {
         TimePassBewtweenShots += Time.deltaTime;
@@ -157,11 +211,13 @@ abstract public class Weapons : MonoBehaviour
             canShoot = false;
     }
 
+    /**
+     * Set this weapon how active (using it) 
+     */
     public void SetActiveWeapon()
     {
         gameObject.SetActive(true);
     }
-
 
     //Methods to places weapon. 
     protected virtual void UpdateWeaponPosition(Transform characterTransform, GameObject weaponObject, GameObject character, Transform transformWeaponContainer)
@@ -260,6 +316,11 @@ abstract public class Weapons : MonoBehaviour
         weaponContainerTransform.right = direction;
     }
 
+    /**
+     * Method to shoot a bullet. This method is virtual to override in the specification if the shoot is different. 
+     * 
+     * @param GameObject bulletType
+     */
     public virtual void Shoting(GameObject bulletType)
     {
         //TODO: here is a position of the shoot, need move to ShotPrincipalWeapon, and correct the position
@@ -285,5 +346,4 @@ abstract public class Weapons : MonoBehaviour
 
         }
     }
-
 }

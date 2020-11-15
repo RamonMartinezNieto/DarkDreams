@@ -16,6 +16,7 @@ using UnityEngine;
  * 
  * @see PlayerConf
  * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class GameManager : PlayerConf
 {

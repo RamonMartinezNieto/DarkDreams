@@ -1,20 +1,44 @@
-﻿using System;
+﻿/**
+ * Department: Game Developer
+ * File: Shot.cs
+ * Objective: Complete control of a shot
+ * Employee: Ramón Martínez Nieto
+ */
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
+/**
+ * 
+ * This class provide a complete control of a shoot, use this clas to extend and create a new one. 
+ * There are methods virtual to override, check it. 
+ * 
+ * You can change all variables of the shoot in Unity, and change protected variables in the specification
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */
 abstract public class Shot : MonoBehaviour
 {
-
+    /**
+     * Shoot container to rotate the shoot correctly 
+     */
     public GameObject shootContainer;
 
-    [Tooltip("Shot velocity.")]
+    /**
+     * Establish the shoot velcity 
+     */
+    [Tooltip("Shoot velocity.")]
     public float shotVelocity = 2.5f;
 
-    [Tooltip("Weapon damage.")]
+    /**
+     * Establish a damage of the shoot  
+     */
+    [Tooltip("Shoot damage.")]
     public int damage = 5;
 
+    /**
+     * Time duration of the shoot  
+     */
     [Tooltip("Time duration of the shoot.")]
     public float timeDuration = 2;
 
@@ -41,9 +65,7 @@ abstract public class Shot : MonoBehaviour
         player = GameObject.Find("Player");
         if (player == null) Destroy(this);
         else playerTransform = player.GetComponent<Rigidbody2D>().transform;
-        // _shotDamage = damage;
-        
-        
+        // _shotDamage = damage;    
     }
 
     private void Update()
@@ -58,6 +80,11 @@ abstract public class Shot : MonoBehaviour
     }
 
     //TODO: include animation
+    /**
+     * Virtual IEnumeratior to destroy the animation of the shoot. 
+     * 
+     * @return IEnumerator
+     */
     public virtual IEnumerator DestroyShotAnimation()
     {
         shootRigi.velocity = Vector2.zero;
@@ -72,6 +99,11 @@ abstract public class Shot : MonoBehaviour
         Destroy(shootContainer);
     }
 
+    /**
+     *  Method to get the duration of the animation
+     *  
+     *  @return float Anim Duration
+     */
     protected float GetAnimDuration(Animator anim, string nameAnim) 
     {
         float animDur = .5f; 
@@ -120,7 +152,9 @@ abstract public class Shot : MonoBehaviour
         }
     }
 
-    //Set arrow angle,  be carefoul, the angle that changes is the angle of the arrow container 
+    /**
+     * Set arrow angle,  be carefoul, the angle that changes is the angle of the arrow container  
+     */
     public virtual void SetShotAngle(Vector3 objectiveTransform, float variationOfY = .0f)
     {
         objectiveTransform.y += variationOfY;

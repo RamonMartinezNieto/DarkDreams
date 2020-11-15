@@ -1,7 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/**
+ * Department: Game Developer
+ * File: CatchWeapon.cs
+ * Objective: Have a control when the user catch a new weapon
+ * Employee: Ramón Martínez Nieto
+ */
 using UnityEngine;
 
+/**
+ * 
+ * This c lase is to add a weapon in the ground, this class activate the proces of the catching a weapon. 
+ * Search the weapon in  the list, acitve it, and the rest of classes do their job to control the weapon.
+ * 
+ * @author Ramón Martínez Nieto
+ * @version 1.0.0
+ */ 
 public class CatchWeapon : MonoBehaviour
 {
     public GameObject weaponCatched;

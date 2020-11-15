@@ -12,6 +12,7 @@ using UnityEngine;
  *  This class creates a Event to check when the size of the screen changes
  *  
  *  @author Ramón Martínez Nieto
+ *  @version 1.0.0
  */
 public class WindowManager : MonoBehaviour
 {

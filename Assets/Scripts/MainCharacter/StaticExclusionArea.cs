@@ -13,6 +13,7 @@ using UnityEngine;
  * 
  * @see ExclusionArea
  * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class StaticExclusionArea : MonoBehaviour
 {

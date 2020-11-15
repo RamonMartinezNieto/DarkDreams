@@ -10,6 +10,7 @@ using UnityEngine;
  * Class to control the basic movement of the camera
  * 
  * @author Ramón Martínez Nieto
+ * @version 1.0.0
  */
 public class MainCamera : MonoBehaviour
 {

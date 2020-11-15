@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_armor_bar_8cs.html",
-"class_main_camera.html#ac3fb544d30ec253ce634c4fd8589c36a",
+"class_main_menu.html",
 "class_zone.html"
 ];
 

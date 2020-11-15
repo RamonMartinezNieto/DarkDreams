@@ -68,3 +68,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ShadowIntro
+    uniqueID: 3423330853
+    locked: 0

@@ -3,7 +3,7 @@
  * File: PlayerConf.cs
  * Objective: Control player's configuration using PlayerPrefs
  * Employee: Ramón Martínez Nieto
- */
+ */ 
 using UnityEngine;
 
 /**
