@@ -9,7 +9,7 @@
 
 + Build: Carpeta con el proyecto compilado
 	- DarkDreams.exe 								
-		<pre>			*Ejecutable para iniciar el juego*</pre>   
+		$\qquad$ *Ejecutable para iniciar el juego* 
 	+ DerkDreams: 
 		&ensp;&ensp; Carpeta con todo el proyecto. **_Nota:_ No se incluye carpeta Library**
 	- Assets: 										
