@@ -11,9 +11,9 @@
 	- DarkDreams.exe 								
 		&emsp; *Ejecutable para iniciar el juego* 
 	+ DerkDreams: 
-		&ensp;&ensp; Carpeta con todo el proyecto. **_Nota:_ No se incluye carpeta Library**
+		&emsp; Carpeta con todo el proyecto. **_Nota:_ No se incluye carpeta Library**
 	- Assets: 										
-		&ensp;&ensp; *Solo nombro las carpetas de creación propia, las otras son Assets y útiles empleados*	
+		&emsp; *Solo nombro las carpetas de creación propia, las otras son Assets y útiles empleados*	
 		- Animations								
 		- Resources
 		- Scenes
@@ -22,17 +22,17 @@
 		&ensp;&ensp; *Carpeta con toda la documentación interna.*
 		
 + index-doc-interna.html 							
-	&ensp;&ensp; *Index para ir a la documentación interna*
+	&emsp; *Index para ir a la documentación interna*
 + PI1_RamónMartinezNieto.pdf 						
-	&ensp;&ensp; *Fase 1 del proyecto*
+	&emsp; *Fase 1 del proyecto*
 + PI2_RamónMartinezNieto.pdf						
-	&ensp;&ensp; *Fase 2 del proyecto*
+	&emsp; *Fase 2 del proyecto*
 + Dark Dreams- ANEXO A - Manual de Instalación.pdf	
-	&ensp;&ensp; *Manual de Isntalación*
+	&emsp; *Manual de Isntalación*
 + Dark Dreams- ANEXO B - Manual de Usuario .pdf 	
-	&ensp;&ensp; *Manual de Usuario*
+	&emsp; *Manual de Usuario*
 + DarkDreams.exe									
-	&ensp;&ensp; *Instalador del Juego* 
+	&emsp; *Instalador del Juego* 
 
 ---
 
