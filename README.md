@@ -9,6 +9,7 @@
 
 First Header | Second Header
 --------------------------------------------------- | -------------------------------------------------
+algo | algo
 + Build: Carpeta con el proyecto compilado			|
 	- DarkDreams.exe 								| ** Ejecutable para iniciar el juego **
 	+ DerkDreams: Carpeta con todo el proyecto. 	| ** Nota: No se incluye carpeta Library  **
