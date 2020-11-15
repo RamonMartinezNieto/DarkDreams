@@ -9,30 +9,30 @@
 
 + Build: Carpeta con el proyecto compilado
 	- DarkDreams.exe 								
-		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;   *Ejecutable para iniciar el juego*
+		<pre>			*Ejecutable para iniciar el juego*</pre>   
 	+ DerkDreams: 
-		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Carpeta con todo el proyecto. **_Nota:_ No se incluye carpeta Library**
+		&ensp;&ensp; Carpeta con todo el proyecto. **_Nota:_ No se incluye carpeta Library**
 	- Assets: 										
-		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Solo nombro las carpetas de creación propia, las otras son Assets y útiles empleados*	
+		&ensp;&ensp; *Solo nombro las carpetas de creación propia, las otras son Assets y útiles empleados*	
 		- Animations								
 		- Resources
 		- Scenes
 		- Scripts
 	- Doc											
-		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Carpeta con toda la documentación interna.*
+		&ensp;&ensp; *Carpeta con toda la documentación interna.*
 		
 + index-doc-interna.html 							
-	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Index para ir a la documentación interna*
+	&ensp;&ensp; *Index para ir a la documentación interna*
 + PI1_RamónMartinezNieto.pdf 						
-	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Fase 1 del proyecto*
+	&ensp;&ensp; *Fase 1 del proyecto*
 + PI2_RamónMartinezNieto.pdf						
-	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Fase 2 del proyecto*
+	&ensp;&ensp; *Fase 2 del proyecto*
 + Dark Dreams- ANEXO A - Manual de Instalación.pdf	
-	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Manual de Isntalación*
+	&ensp;&ensp; *Manual de Isntalación*
 + Dark Dreams- ANEXO B - Manual de Usuario .pdf 	
-	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Manual de Usuario*
+	&ensp;&ensp; *Manual de Usuario*
 + DarkDreams.exe									
-	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Instalador del Juego* 
+	&ensp;&ensp; *Instalador del Juego* 
 
 ---
 
